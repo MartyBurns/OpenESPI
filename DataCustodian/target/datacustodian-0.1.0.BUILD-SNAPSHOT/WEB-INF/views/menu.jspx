@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 EnergyOS.Org
+ *
+ * Licensed by EnergyOS.Org under one or more contributor license agreements.
+ * See the NOTICE file distributed with this work for additional information
+ * regarding copyright ownership.  The EnergyOS.org licenses this file
+ * to you under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License.  You may obtain a copy
+ * of the License at:
+ *  
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *  
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ *  
+ *******************************************************************************/
+-->
+
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_thirdparty" z="xLlYNpbWahWCN5oOU4Db7ay4oQs=">
+            <menu:item id="i_thirdparty_new" messageCode="global_menu_new" url="/thirdpartys?form" z="aIzMVquLemMerZkXNjQ8UeaV05s="/>
+            <menu:item id="i_thirdparty_list" messageCode="global_menu_list" url="/thirdpartys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="F5atB7Gq7EfcRHsmSUn0lXfjk9Y="/>
+        </menu:category>
+        <menu:category id="c_retailcustomer" z="1XGjQpTtEeCBJywc4ckb8cDuWpQ=">
+            <menu:item id="i_retailcustomer_new" messageCode="global_menu_new" url="/retailcustomers?form" z="M6mo5rz1OyCPSOh2QiLe4Kuu2AM="/>
+            <menu:item id="i_retailcustomer_list" messageCode="global_menu_list" url="/retailcustomers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="wSJdfCew79LG3EwPva5LDIWzNZ8="/>
+        </menu:category>
+        <menu:category id="c_usagepoint" z="Usj/p4i7dKJLndMM29tx6YFxg74=">
+            <menu:item id="i_usagepoint_new" messageCode="global_menu_new" url="/usagepoints?form" z="vs2ED/QxVg3FKcCpiEI1OmAQeKs="/>
+            <menu:item id="i_usagepoint_list" messageCode="global_menu_list" url="/usagepoints?page=1&amp;size=${empty param.size ? 10 : param.size}" z="PDsPl0oJ8NlBxMdPHwau0EWGczg="/>
+        </menu:category>
+        <menu:category id="c_meterreading" z="A8Oo93YGN0joZ9awHEh8xnm/VVI=">
+            <menu:item id="i_meterreading_new" messageCode="global_menu_new" url="/meterreadings?form" z="MoCvANntymHEBMtbvYnNY70xU+o="/>
+            <menu:item id="i_meterreading_list" messageCode="global_menu_list" url="/meterreadings?page=1&amp;size=${empty param.size ? 10 : param.size}" z="j0V12x5JqWSV8MawhV9AmKAFdr0="/>
+        </menu:category>
+        <menu:category id="c_intervalreading" z="SwQzNhGqmk3RudUAapo3BLRqi5E=">
+            <menu:item id="i_intervalreading_new" messageCode="global_menu_new" url="/intervalreadings?form" z="zIiLDfmwqZifSKoQH0gGgzN+6hI="/>
+            <menu:item id="i_intervalreading_list" messageCode="global_menu_list" url="/intervalreadings?page=1&amp;size=${empty param.size ? 10 : param.size}" z="AAaN7utp9HJRqvuvN5hh+exg9qs="/>
+        </menu:category>
+        <menu:category id="c_datacustodian" z="TeO1lVn72uO2yg1QFAqW1Kihsmg=">
+            <menu:item id="i_datacustodian_new" messageCode="global_menu_new" url="/datacustodians?form" z="2Illw0XMVtLV7POVVg9NxFC2ko0="/>
+            <menu:item id="i_datacustodian_list" messageCode="global_menu_list" url="/datacustodians?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7bf2L0R/RFsVGj6AvK2wRZLDtZM="/>
+        </menu:category>
+        <menu:category id="c_usagepointasset" z="3ONozUzlLpl4tqslebAOgHnERZY=">
+            <menu:item id="i_usagepointasset_new" messageCode="global_menu_new" url="/usagepointassets?form" z="I7OMaXVoy3dU/1axadR70MTMBNA="/>
+            <menu:item id="i_usagepointasset_list" messageCode="global_menu_list" url="/usagepointassets?page=1&amp;size=${empty param.size ? 10 : param.size}" z="SMs56/8Qz0o1JsBSb7mHqMRmJbk="/>
+        </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__thirdpartyindex_id" messageCode="global_generic" url="/thirdparty/index" z="PmBdZwSgbMfgRZ+ZmLeD2yuS2/c="/>
+            <menu:item id="i_controller__retailcustomerindex_id" messageCode="global_generic" url="/retailcustomer/index" z="0MvNdOzzW/pxPWe0qOeNtKz93/s="/>
+            <menu:item id="i_controller__usagepointindex_id" messageCode="global_generic" url="/usagepoint/index" z="xroemMs5bXcy4Ex1UnMgzsW4/ko="/>
+            <menu:item id="i_controller__usagepointassetindex_id" messageCode="global_generic" url="/usagepointasset/index" z="rvbAYLsCRNkffegPgF9zcO4zHOw="/>
+            <menu:item id="i_controller__meterreadingindex_id" messageCode="global_generic" url="/meterreading/index" z="GwU4zHxOVhMjTxbpOBuALAEISEo="/>
+            <menu:item id="i_controller__intervalreadingindex_id" messageCode="global_generic" url="/intervalreading/index" z="x01M/yTo1Wq/W5K+KxXfUKBWJ2o="/>
+        </menu:category>
+        <menu:category id="c_seleniumtests" z="PPLMd2yNB6/LSbjIWogAacRPU+Q=">
+            <menu:item id="si_seleniumtests_test" messageCode="selenium_menu_test_suite" url="/resources/selenium/test-suite.xhtml" z="wwunW/IPDcunN97u41MvMJZQ2to="/>
+        </menu:category>
+    </menu:menu>
+</div>

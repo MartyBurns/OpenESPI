@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form"
+	xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<page:list id="pl_org_energyos_espi_thirdparty_domain_UsagePointAsset"
+		items="${usagepointassets}" z="0iMT6pgFKE9l9/CgVj8QvS0F09A=">
+		<table:table data="${usagepointassets}"
+			id="l_org_energyos_espi_thirdparty_domain_UsagePointAsset"
+			path="/usagepointassets" z="mfK583MrnWVW4ifxTIOCjDLFMFA=">
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_UsagePointAsset_name"
+				property="name" z="IuLcHgjQv0VM2y0nanrfX7JS1Ow=" />
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_UsagePointAsset_usagePoint"
+				property="usagePoint" z="XwxFgs/asgtO8q2cCqEs/NnykxY=" />
+		</table:table>
+	</page:list>
+</div>

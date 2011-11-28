@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<page:show id="ps_org_energyos_espi_thirdparty_domain_RetailCustomer"
+		object="${retailcustomer}" path="/retailcustomers"
+		z="nxlV8Yn5r7h9HQ6iPO68EvSpq4E=">
+		<field:display field="authenticated"
+			id="s_org_energyos_espi_thirdparty_domain_RetailCustomer_authenticated"
+			object="${retailcustomer}" z="nVO1WpIxwQnZB98VU0Hm9BrJWts=" />
+		<field:display field="firstName"
+			id="s_org_energyos_espi_thirdparty_domain_RetailCustomer_firstName"
+			object="${retailcustomer}" z="vnfW0u+BURD8faJIMM0KlPDcQxY=" />
+		<field:display field="lastName"
+			id="s_org_energyos_espi_thirdparty_domain_RetailCustomer_lastName"
+			object="${retailcustomer}" z="3KgFAjXP+Ba/SCXxBZehYoNdGZU=" />
+		<field:display field="email"
+			id="s_org_energyos_espi_thirdparty_domain_RetailCustomer_email"
+			object="${retailcustomer}" z="DZd84av8Ynf3SF8SQaHlmLswSfE=" />
+		<field:display calendar="true"
+			dateTimePattern="${retailCustomer_customersince_date_format}"
+			field="customerSince"
+			id="s_org_energyos_espi_thirdparty_domain_RetailCustomer_customerSince"
+			object="${retailcustomer}" z="FGIcdh/a9EuD1VMKMCOVyK8gck8=" />
+	</page:show>
+</div>

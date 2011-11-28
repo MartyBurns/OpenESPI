@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form"
+	xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<page:list id="pl_org_energyos_espi_thirdparty_domain_RetailCustomer"
+		items="${retailcustomers}" z="DXloxZ3xc0s9gF99aqUO5JN0zYI=">
+		<table:table data="${retailcustomers}"
+			id="l_org_energyos_espi_thirdparty_domain_RetailCustomer"
+			path="/retailcustomers" z="QbsOCYp23KfYWKguPl7DmB6mniM=">
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_authenticated"
+				property="authenticated" z="fOehFErBiFFsWaD7dZ68g3ipRjU=" />
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_firstName"
+				property="firstName" z="jbc2gp0LA5yKnkIBQ69p1LPoeTY=" />
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_lastName"
+				property="lastName" z="yQzVI+fbwGslkrJVt7j4tZVx9lg=" />
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_email"
+				property="email" z="wHqFH7i7hbmYamgd63dvWGsWZkE=" />
+			<table:column calendar="true"
+				dateTimePattern="${retailCustomer_customersince_date_format}"
+				id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_customerSince"
+				property="customerSince" z="7GZlLsWNZzeKriimox1UM09ssGk=" />
+		</table:table>
+	</page:list>
+</div>

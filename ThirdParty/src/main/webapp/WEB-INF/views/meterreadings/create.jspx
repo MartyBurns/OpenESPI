@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields"
+	xmlns:form="urn:jsptagdir:/WEB-INF/tags/form"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:spring="http://www.springframework.org/tags" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<form:create id="fc_org_energyos_espi_thirdparty_domain_MeterReading"
+		modelAttribute="meterReading" path="/meterreadings"
+		render="${empty dependencies}" z="YNNIWMCVX1ATe2q1YlYwRhhudbA=">
+		<field:input field="name"
+			id="c_org_energyos_espi_thirdparty_domain_MeterReading_name" max="30"
+			min="3" required="true" z="HbHqNjvcfKHoSMDCEigbuqtype0=" />
+		<field:textarea field="description"
+			id="c_org_energyos_espi_thirdparty_domain_MeterReading_description"
+			z="BV2/wj2V9SplA+qmhOTZl+z/nq0=" />
+		<field:select field="usagePoint"
+			id="c_org_energyos_espi_thirdparty_domain_MeterReading_usagePoint"
+			itemValue="id" items="${usagepoints}" path="/usagepoints"
+			z="SjlcIOZpGsw9Cw59EHtAFlfBwqo=" />
+	</form:create>
+	<form:dependency dependencies="${dependencies}"
+		id="d_org_energyos_espi_thirdparty_domain_MeterReading"
+		render="${not empty dependencies}" z="7y0eIlitmB7QvU9oKFPFB/Ix9co=" />
+</div>

@@ -1,0 +1,33 @@
+<aspectj>
+<aspects>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointIntegrationTest_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.DataCustodianDataOnDemand_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.MeterReadingIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="org.energyos.espi.thirdparty.domain.MeterReadingDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="org.energyos.espi.thirdparty.domain.IntervalReadingDataOnDemand_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointAssetDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="org.energyos.espi.thirdparty.domain.RetailCustomerDataOnDemand_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.IntervalReadingIntegrationTest_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.DataCustodianDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="org.energyos.espi.thirdparty.domain.DataCustodianIntegrationTest_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.RetailCustomerIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointAssetIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointDataOnDemand_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.ThirdPartyIntegrationTest_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.RetailCustomerIntegrationTest_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.MeterReadingDataOnDemand_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.IntervalReadingIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="org.energyos.espi.thirdparty.domain.ThirdPartyDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="org.energyos.espi.thirdparty.domain.MeterReadingIntegrationTest_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.ThirdPartyIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="org.energyos.espi.thirdparty.domain.ThirdPartyDataOnDemand_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.IntervalReadingDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointAssetDataOnDemand_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointAssetIntegrationTest_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.RetailCustomerDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="org.energyos.espi.thirdparty.domain.DataCustodianIntegrationTest_Roo_IntegrationTest"/>
+</aspects>
+</aspectj>
+

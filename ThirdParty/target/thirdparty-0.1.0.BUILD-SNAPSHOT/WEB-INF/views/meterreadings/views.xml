@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition extends="default" name="meterreadings/list">
+		<put-attribute name="body"
+			value="/WEB-INF/views/meterreadings/list.jspx" />
+	</definition>
+	<definition extends="default" name="meterreadings/show">
+		<put-attribute name="body"
+			value="/WEB-INF/views/meterreadings/show.jspx" />
+	</definition>
+	<definition extends="default" name="meterreadings/create">
+		<put-attribute name="body"
+			value="/WEB-INF/views/meterreadings/create.jspx" />
+	</definition>
+	<definition extends="default" name="meterreadings/update">
+		<put-attribute name="body"
+			value="/WEB-INF/views/meterreadings/update.jspx" />
+	</definition>
+</tiles-definitions>

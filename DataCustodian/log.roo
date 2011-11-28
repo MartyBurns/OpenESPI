@@ -1,0 +1,181 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-27 15:34:55
+project --topLevelPackage org.energyos.espi.DataCustodian
+persistence setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
+dependency add --artifactId common --groupId org.energyos.espi --version 0.1.0.BUILD-SNAPSHOT
+enum type --class ~.domain.MeterReadingType
+enum constant --name Not_Applicable --permitReservedWords
+enum constant --name Currency --permitReservedWords
+enum constant --name Current --permitReservedWords
+enum constant --name CurrentAngle --permitReservedWords
+enum constant --name Date --permitReservedWords
+enum constant --name Demand --permitReservedWords
+enum constant --name Energy --permitReservedWords
+enum constant --name Frequency --permitReservedWords
+enum constant --name Power --permitReservedWords
+enum constant --name PowerFactor --permitReservedWords
+enum constant --name QuantityPower --permitReservedWords
+enum constant --name Voltage --permitReservedWords
+enum constant --name VoltageAngle --permitReservedWords
+enum constant --name DistortionPowerFactor --permitReservedWords
+enum constant --name VolumetricFlow --permitReservedWords
+enum type --class ~.domain.AccumulatedBehaviourType
+enum constant --name Applicable --permitReservedWords
+enum constant --name BulkQuantity --permitReservedWords
+enum constant --name Cumulative --permitReservedWords
+enum constant --name DeltaData --permitReservedWords
+enum constant --name Indicating --permitReservedWords
+enum constant --name Summation --permitReservedWords
+enum constant --name Instantaneous --permitReservedWords
+enum type --class ~.domain.CommodityType
+enum constant --name Applicable --permitReservedWords
+enum constant --name value --permitReservedWords
+enum constant --name Air --permitReservedWords
+enum constant --name NaturalGas --permitReservedWords
+enum constant --name Propane --permitReservedWords
+enum constant --name PotableWater --permitReservedWords
+enum constant --name Steam --permitReservedWords
+enum constant --name WasteWater --permitReservedWords
+enum constant --name HeatingFluid --permitReservedWords
+enum constant --name CoolingFluid --permitReservedWords
+enum type --class ~.domain.ataQualifierType
+enum constant --name Applicable --permitReservedWords
+enum constant --name Average --permitReservedWords
+enum constant --name Maximum --permitReservedWords
+enum constant --name Minimum --permitReservedWords
+enum constant --name Normal --permitReservedWords
+enum type --class ~.domain.FlowDirectionType
+enum constant --name Applicable --permitReservedWords
+enum constant --name Forward --permitReservedWords
+enum constant --name Reverse --permitReservedWords
+enum type --class ~.domain.KindType
+enum constant --name Applicable --permitReservedWords
+enum constant --name Currency --permitReservedWords
+enum constant --name Current --permitReservedWords
+enum constant --name CurrentAngle --permitReservedWords
+enum constant --name Date --permitReservedWords
+enum constant --name Demand --permitReservedWords
+enum constant --name Energy --permitReservedWords
+enum constant --name Frequency --permitReservedWords
+enum constant --name Power --permitReservedWords
+enum constant --name PowerFactor --permitReservedWords
+enum constant --name QuantityPower --permitReservedWords
+enum constant --name Voltage --permitReservedWords
+enum constant --name VoltageAngle --permitReservedWords
+enum constant --name DistortionPowerFactor --permitReservedWords
+enum constant --name VolumetricFlow --permitReservedWords
+enum type --class ~.domain.PhaseCode
+enum constant --name Applicable --permitReservedWords
+enum constant --name AN --permitReservedWords
+enum constant --name A --permitReservedWords
+enum constant --name AB --permitReservedWords
+enum constant --name BN --permitReservedWords
+enum constant --name B --permitReservedWords
+enum constant --name CN --permitReservedWords
+enum constant --name C --permitReservedWords
+enum constant --name ABC --permitReservedWords
+enum constant --name BC --permitReservedWords
+enum constant --name CA --permitReservedWords
+enum constant --name S1 --permitReservedWords
+enum constant --name S2 --permitReservedWords
+enum constant --name S1S2 --permitReservedWords
+enum constant --name S1N --permitReservedWords
+enum constant --name S2N --permitReservedWords
+enum constant --name S1S2N --permitReservedWords
+enum type --class ~.domain.TimeAttributeType
+enum constant --name Applicable --permitReservedWords
+enum constant --name minute10 --permitReservedWords
+enum constant --name minute15 --permitReservedWords
+enum constant --name minute24 --permitReservedWords
+enum constant --name minute30 --permitReservedWords
+enum constant --name minute60 --permitReservedWords
+enum constant --name hour --permitReservedWords
+enum constant --name Daily --permitReservedWords
+enum constant --name Monthly --permitReservedWords
+enum constant --name Present --permitReservedWords
+enum constant --name Previous --permitReservedWords
+enum constant --name Weekly --permitReservedWords
+enum constant --name ForTheSpecifiedPeriod --permitReservedWords
+enum constant --name Daily30minuteFixedBlock --permitReservedWords
+enum type --class ~.domain.UomType
+enum constant --name Applicable --permitReservedWords
+enum constant --name Current --permitReservedWords
+enum constant --name Voltage --permitReservedWords
+enum type --class ~.domain.CurrencyCode
+enum constant --name Applicable --permitReservedWords
+enum constant --name AUDollar --permitReservedWords
+enum constant --name CADollar --permitReservedWords
+enum constant --name USDollar --permitReservedWords
+enum constant --name Euro --permitReservedWords
+enum type --class ~.domain.QualityOfReading
+enum constant --name Not_Applicable --permitReservedWords
+enum constant --name manually_edited  --permitReservedWords
+enum constant --name estimated_rd  --permitReservedWords
+enum constant --name estimated_li  --permitReservedWords
+enum constant --name questionable  --permitReservedWords
+enum constant --name derived  --permitReservedWords
+enum constant --name projected  --permitReservedWords
+enum constant --name mixed  --permitReservedWords
+enum constant --name raw  --permitReservedWords
+enum constant --name normalized_weather  --permitReservedWords
+enum constant --name other  --permitReservedWords
+enum constant --name validated  --permitReservedWords
+enum constant --name verified  --permitReservedWords
+entity --class ~.domain.DataCustodian --testAutomatically
+field string --fieldName name --sizeMin 3 --sizeMax 30 --class ~.domain.DataCustodian
+field string --fieldName description --sizeMax 512 --class ~.domain.DataCustodian
+enum type --class ~.reference.DataCustodianType
+enum constant --name PublicUtilityCommission --class ~.reference.DataCustodianType
+enum constant --name InvestorOwnedUtility --class ~.reference.DataCustodianType
+enum constant --name MunicpleUtility --class ~.reference.DataCustodianType
+enum constant --name Cooperative --class ~.reference.DataCustodianType
+enum constant --name Private --class ~.reference.DataCustodianType
+enum constant --name Other --class ~.reference.DataCustodianType
+entity --class ~.domain.ThirdParty --testAutomatically
+field string --fieldName name --sizeMin 3 --sizeMax 30 --class ~.domain.ThirdParty
+field string --fieldName description --sizeMax 512 --class ~.domain.ThirdParty
+field boolean --fieldName authorized --notNull --primitive --class ~.domain.ThirdParty
+entity --class ~.domain.RetailCustomer --testAutomatically
+field boolean --fieldName authenticated --notNull --primitive --class ~.domain.RetailCustomer
+field string --fieldName firstName --sizeMin 3 --sizeMax 30 --class ~.domain.RetailCustomer
+field string --fieldName lastName --sizeMin 3 --sizeMax 30 --class ~.domain.RetailCustomer
+field string --fieldName email --sizeMax 30 --sizeMin 6 --class ~.domain.RetailCustomer
+field date --fieldName customerSince --type java.util.Calendar --notNull --past --class ~.domain.RetailCustomer
+entity --class ~.domain.UsagePoint --testAutomatically
+field string --fieldName address --notNull --sizeMax 50 --sizeMin 1 --class ~.domain.UsagePoint
+field string --fieldName city --notNull --sizeMax 30 --class ~.domain.UsagePoint
+field reference --fieldName retailCustomer --type ~.domain.RetailCustomer --class ~.domain.UsagePoint
+entity --class ~.domain.UsagePointAsset --testAutomatically
+field string --fieldName name  --notNull --sizeMax 50 --sizeMin 1 --class ~.domain.UsagePointAsset
+field reference --fieldName usagePoint --notNull --type ~domain.UsagePoint --class ~.domain.UsagePointAsset
+entity --class ~.domain.MeterReading --testAutomatically
+field string --fieldName name --sizeMin 3 --sizeMax 30 --class ~.domain.MeterReading
+field string --fieldName description --sizeMax 512 --class ~.domain.MeterReading
+field enum --fieldName readingType --type ~.domain.MeterReadingType --class ~.domain.MeterReadingType
+field reference --fieldName usagePoint --type ~.domain.UsagePoint --class ~.domain.MeterReading
+entity --class ~.domain.IntervalReading --testAutomatically
+field reference --fieldName meterReading --type ~.domain.MeterReading --class ~.domain.IntervalReading
+field number --fieldName cost --type java.lang.Float --notNull --min 0
+field number --fieldName reading --type java.lang.Float --notNull --min 0
+field date --fieldName startDate --type java.util.Date --notNull --past
+field date --fieldName endDate --type java.util.Date --notNull --past
+field date --fieldName intervalDuration --type java.util.Date --notNull --past
+web mvc setup
+web mvc all --package ~.web
+controller class --class ThirdParty
+controller class --class RetailCustomer
+controller class --class UsagePoint
+controller class --class UsagePointAsset
+controller class --class MeterReading
+controller class --class IntervalReading
+selenium test --controller ~.web.ThirdPartyController
+selenium test --controller ~.web.RetailCustomerController
+selenium test --controller ~.web.UsagePointController
+selenium test --controller ~.web.UsagePointAssetController
+selenium test --controller ~.web.MeterReadingController
+selenium test --controller ~.web.IntervalReadingController
+logging setup --level INFO
+// script --file ../DataCustodian.roo
+exit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-11-27 15:35:48
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-11-27 15:48:26
+// Spring Roo UNKNOWN VERSION log opened at 2011-11-27 17:54:51

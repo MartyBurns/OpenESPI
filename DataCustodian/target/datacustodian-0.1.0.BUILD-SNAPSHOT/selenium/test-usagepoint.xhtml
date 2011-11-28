@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 EnergyOS.Org
+ *
+ * Licensed by EnergyOS.Org under one or more contributor license agreements.
+ * See the NOTICE file distributed with this work for additional information
+ * regarding copyright ownership.  The EnergyOS.org licenses this file
+ * to you under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License.  You may obtain a copy
+ * of the License at:
+ *  
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *  
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ *  
+ *******************************************************************************/
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+		<link href="http://localhost:8080/" rel="selenium.base"/>
+		<title>Selenium test for UsagePointController</title>
+	</head>
+	<body>
+		<table border="1" cellpadding="1" cellspacing="1">
+			<thead>
+				<tr>
+					<td colspan="3" rowspan="1">Selenium test for UsagePointController</td>
+				</tr>
+			</thead>
+			<tbody>
+		
+		
+			<tr>
+                    <td>open</td>
+                    <td>http://localhost:8080/datacustodian/usagepoints?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_address_id</td>
+                    <td>someAddress1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_city_id</td>
+                    <td>someCity1</td>
+                </tr>
+                <tr>
+                    <td>clickAndWait</td>
+                    <td>//input[@id='proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_domain_UsagePoint_address_address_id</td>
+                    <td>someAddress1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_domain_UsagePoint_city_city_id</td>
+                    <td>someCity1</td>
+                </tr>
+            </tbody>
+		</table>
+	</body>
+</html>

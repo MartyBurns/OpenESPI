@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<page:show id="ps_org_energyos_espi_thirdparty_domain_IntervalReading"
+		object="${intervalreading}" path="/intervalreadings"
+		z="er9LijhZq75k3yMXWm7yLQdSYvI=">
+		<field:display field="meterReading"
+			id="s_org_energyos_espi_thirdparty_domain_IntervalReading_meterReading"
+			object="${intervalreading}" z="0D02NEAZQAKtdbKCgiVowxBT2SY=" />
+		<field:display field="cost"
+			id="s_org_energyos_espi_thirdparty_domain_IntervalReading_cost"
+			object="${intervalreading}" z="ahGS0xP3QWS5cHJKDyogQEeW4zo=" />
+		<field:display field="reading"
+			id="s_org_energyos_espi_thirdparty_domain_IntervalReading_reading"
+			object="${intervalreading}" z="7pJjTfE5GvRkyj7PjzwGAlh54b8=" />
+		<field:display date="true"
+			dateTimePattern="${intervalReading_startdate_date_format}"
+			field="startDate"
+			id="s_org_energyos_espi_thirdparty_domain_IntervalReading_startDate"
+			object="${intervalreading}" z="Ai/jRZf6Dsf2J7dnZg6pzphS0S0=" />
+		<field:display date="true"
+			dateTimePattern="${intervalReading_enddate_date_format}"
+			field="endDate"
+			id="s_org_energyos_espi_thirdparty_domain_IntervalReading_endDate"
+			object="${intervalreading}" z="lQDe8eNyuP0XaH7XcQuU5XjpSmM=" />
+		<field:display date="true"
+			dateTimePattern="${intervalReading_intervalduration_date_format}"
+			field="intervalDuration"
+			id="s_org_energyos_espi_thirdparty_domain_IntervalReading_intervalDuration"
+			object="${intervalreading}" z="ACO2I1aKXnusUKGqYcV2sRfykWg=" />
+	</page:show>
+</div>

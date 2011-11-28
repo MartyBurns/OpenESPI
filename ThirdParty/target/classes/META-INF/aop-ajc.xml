@@ -1,0 +1,41 @@
+<aspectj>
+<aspects>
+<aspect name="org.energyos.espi.thirdparty.domain.MeterReading_Roo_JavaBean"/>
+<aspect name="org.energyos.espi.thirdparty.domain.DataCustodian_Roo_JavaBean"/>
+<aspect name="org.energyos.espi.thirdparty.domain.RetailCustomer_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.web.UsagePointAssetController_Roo_Controller"/>
+<aspect name="org.energyos.espi.thirdparty.domain.ThirdParty_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.IntervalReading_Roo_Entity"/>
+<aspect name="org.energyos.espi.thirdparty.domain.MeterReading_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.web.UsagePointController_Roo_Controller"/>
+<aspect name="org.energyos.espi.thirdparty.domain.MeterReading_Roo_ToString"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePoint_Roo_ToString"/>
+<aspect name="org.energyos.espi.thirdparty.web.IntervalReadingController_Roo_Controller"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePoint_Roo_JavaBean"/>
+<aspect name="org.energyos.espi.thirdparty.domain.IntervalReading_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointAsset_Roo_JavaBean"/>
+<aspect name="org.energyos.espi.thirdparty.domain.RetailCustomer_Roo_ToString"/>
+<aspect name="org.energyos.espi.thirdparty.web.MeterReadingController_Roo_Controller"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointAsset_Roo_ToString"/>
+<aspect name="org.energyos.espi.thirdparty.domain.IntervalReading_Roo_ToString"/>
+<aspect name="org.energyos.espi.thirdparty.domain.RetailCustomer_Roo_JavaBean"/>
+<aspect name="org.energyos.espi.thirdparty.domain.MeterReading_Roo_Entity"/>
+<aspect name="org.energyos.espi.thirdparty.domain.RetailCustomer_Roo_Entity"/>
+<aspect name="org.energyos.espi.thirdparty.domain.ThirdParty_Roo_ToString"/>
+<aspect name="org.energyos.espi.thirdparty.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePoint_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.DataCustodian_Roo_ToString"/>
+<aspect name="org.energyos.espi.thirdparty.domain.ThirdParty_Roo_Entity"/>
+<aspect name="org.energyos.espi.thirdparty.web.DataCustodianController_Roo_Controller"/>
+<aspect name="org.energyos.espi.thirdparty.domain.ThirdParty_Roo_JavaBean"/>
+<aspect name="org.energyos.espi.thirdparty.domain.DataCustodian_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointAsset_Roo_Configurable"/>
+<aspect name="org.energyos.espi.thirdparty.web.ThirdPartyController_Roo_Controller"/>
+<aspect name="org.energyos.espi.thirdparty.domain.DataCustodian_Roo_Entity"/>
+<aspect name="org.energyos.espi.thirdparty.web.RetailCustomerController_Roo_Controller"/>
+<aspect name="org.energyos.espi.thirdparty.domain.IntervalReading_Roo_JavaBean"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePointAsset_Roo_Entity"/>
+<aspect name="org.energyos.espi.thirdparty.domain.UsagePoint_Roo_Entity"/>
+</aspects>
+</aspectj>
+

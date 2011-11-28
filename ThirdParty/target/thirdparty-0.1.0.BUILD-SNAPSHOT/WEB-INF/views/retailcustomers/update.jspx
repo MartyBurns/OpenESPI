@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields"
+	xmlns:form="urn:jsptagdir:/WEB-INF/tags/form"
+	xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<form:update id="fu_org_energyos_espi_thirdparty_domain_RetailCustomer"
+		modelAttribute="retailCustomer" path="/retailcustomers"
+		versionField="Version" z="/fqt7D9byneZq76CGTFf5XPzS9M=">
+		<field:checkbox field="authenticated"
+			id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_authenticated"
+			z="UMvDbe/4x8Ad0Nd1Usmw3R2qd3A=" />
+		<field:input field="firstName"
+			id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_firstName"
+			max="30" min="3" required="true" z="d+4trfKp6v9YnFyd+jARreWuPzE=" />
+		<field:input field="lastName"
+			id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_lastName"
+			max="30" min="3" required="true" z="3wJWiUAuUArqwGFXm/t1h8KccUI=" />
+		<field:input field="email"
+			id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_email"
+			max="30" min="6" required="true"
+			validationMessageCode="field_invalid_email"
+			z="pABO8MnXBMMoBk5G4DpBIQqyNOU=" />
+		<field:datetime
+			dateTimePattern="${retailCustomer_customersince_date_format}"
+			field="customerSince"
+			id="c_org_energyos_espi_thirdparty_domain_RetailCustomer_customerSince"
+			past="true" required="true" z="gaNx4y7VKV+sYf9/bkRkGWlt07w=" />
+	</form:update>
+</div>

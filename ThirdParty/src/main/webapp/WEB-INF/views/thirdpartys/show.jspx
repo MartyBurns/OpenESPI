@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<page:show id="ps_org_energyos_espi_thirdparty_domain_ThirdParty"
+		object="${thirdparty}" path="/thirdpartys"
+		z="KjVUpaATOG0PiH3a4MWSAjIPqqI=">
+		<field:display field="name"
+			id="s_org_energyos_espi_thirdparty_domain_ThirdParty_name"
+			object="${thirdparty}" z="u/NaE9sMIuQLY6yuU7S3iBspqNo=" />
+		<field:display field="description"
+			id="s_org_energyos_espi_thirdparty_domain_ThirdParty_description"
+			object="${thirdparty}" z="ptyr0v5rvfucyhQyABKuGakegSU=" />
+	</page:show>
+</div>

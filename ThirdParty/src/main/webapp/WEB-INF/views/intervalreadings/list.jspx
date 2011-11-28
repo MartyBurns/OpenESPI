@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:page="urn:jsptagdir:/WEB-INF/tags/form"
+	xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<page:list id="pl_org_energyos_espi_thirdparty_domain_IntervalReading"
+		items="${intervalreadings}" z="rVBIYXxME2GTp69Q565eaxEt7/M=">
+		<table:table data="${intervalreadings}"
+			id="l_org_energyos_espi_thirdparty_domain_IntervalReading"
+			path="/intervalreadings" z="ODF/6iz8k/rY4KMSkqeoSLtAyTA=">
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_IntervalReading_meterReading"
+				property="meterReading" z="flJ1DYKdg3RpwMW8C+967yqPeS4=" />
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_IntervalReading_cost"
+				property="cost" z="Ow3UmOFv/yeBaZ2oC0en8S3cDK8=" />
+			<table:column
+				id="c_org_energyos_espi_thirdparty_domain_IntervalReading_reading"
+				property="reading" z="Jb7r8aaM+B8SNYCkwWGMXp9SRQs=" />
+			<table:column date="true"
+				dateTimePattern="${intervalReading_startdate_date_format}"
+				id="c_org_energyos_espi_thirdparty_domain_IntervalReading_startDate"
+				property="startDate" z="V5qNGp83ZwmbAZbk1qUBXE+gobk=" />
+			<table:column date="true"
+				dateTimePattern="${intervalReading_enddate_date_format}"
+				id="c_org_energyos_espi_thirdparty_domain_IntervalReading_endDate"
+				property="endDate" z="Lk/opf15pIVq8NsB6zjZUePZ27M=" />
+			<table:column date="true"
+				dateTimePattern="${intervalReading_intervalduration_date_format}"
+				id="c_org_energyos_espi_thirdparty_domain_IntervalReading_intervalDuration"
+				property="intervalDuration" z="EUnw3gENyWUzPR6y3EpxAiY7J3I=" />
+		</table:table>
+	</page:list>
+</div>
