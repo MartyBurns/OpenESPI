@@ -2,10 +2,20 @@
 <!--
 ==========================================================================
  Stylesheet: ESPIRender_xslt1.xsl
-    Version: 0.5 20111014
+    Version: 0.7 20120115
      Author: Ron Pasquarelli, Marty Burns (Hypertek for EnerNex)
      Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
-========================================================================== -->
+========================================================================== 
+Copyright (c) 2011, 2012 EnergyOS.Org
+ 
+Licensed by EnergyOS.Org under one or more contributor license agreements.
+ 
+See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The EnergyOS.org licenses this file to you under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  You may obtain a copy of the License at:
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.
+
+-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:espi="http://naesb.org/espi" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<xsl:variable name="XML" select="/"/>
 	<xsl:template match="/">
@@ -270,41 +280,40 @@
 																	</xsl:for-each>
 																</xsl:for-each>
 															</xsl:for-each>
-														</th>			
-<!--														
-														<th>
-															<span style="font-family:Century Gothic; font-style:normal; ">
-																<xsl:text>Cost</xsl:text>
-															</span>
-															<br/>
-															<xsl:for-each select="$XML">
-																<xsl:for-each select="atom:feed">
-																	<xsl:for-each select="atom:entry">
-																		<xsl:for-each select="atom:content">
-																			<xsl:for-each select="espi:ElectricPowerUsageSummary">
-																				<xsl:for-each select="espi:currency">
-																					<span>
-																						<xsl:text>(</xsl:text>
-																					</span>
-																					<xsl:call-template name="Curency"/>
-																					<span>
-																						<xsl:text>)</xsl:text>
-																					</span>
+														</th>
+														<!-- see if cost exists -->
+														<xsl:if test="count(espi:IntervalReading/espi:cost)>0">
+															<th>
+																<span style="font-family:Century Gothic; font-style:normal; ">
+																	<xsl:text>Cost</xsl:text>
+																</span>
+																<br/>
+																<xsl:for-each select="$XML">
+																	<xsl:for-each select="atom:feed">
+																		<xsl:for-each select="atom:entry">
+																			<xsl:for-each select="atom:content">
+																				<xsl:for-each select="espi:ElectricPowerUsageSummary">
+																					<xsl:for-each select="espi:currency">
+																						<span>
+																							<xsl:text>(</xsl:text>
+																						</span>
+																						<xsl:call-template name="Curency"/>
+																						<span>
+																							<xsl:text>)</xsl:text>
+																						</span>
+																					</xsl:for-each>
 																				</xsl:for-each>
 																			</xsl:for-each>
 																		</xsl:for-each>
 																	</xsl:for-each>
 																</xsl:for-each>
-															</xsl:for-each>
-														</th>
--->														
-<!--
+															</th>
+														</xsl:if>
 														<th>
 															<span style="font-family:Century Gothic; font-style:normal; ">
 																<xsl:text>Events occurred</xsl:text>
 															</span>
 														</th>
--->														
 													</tr>
 												</thead>
 												<tbody>
@@ -330,14 +339,13 @@
 																	<xsl:apply-templates/>
 																</xsl:for-each>
 															</td>
-<!--															
-															<td align="right">
-																<xsl:for-each select="espi:cost">
-																	<xsl:value-of select="format-number( . div(100000),&quot;0.##&quot;)"/>
-																</xsl:for-each>
-															</td>
--->															
-<!--															
+															<xsl:if test="count(espi:cost)>0">
+																<td align="right">
+																	<xsl:for-each select="espi:cost">
+																		<xsl:value-of select="format-number( . div(100000),&quot;0.##&quot;)"/>
+																	</xsl:for-each>
+																</td>
+															</xsl:if>
 															<td>
 																<span>
 																	<xsl:text>&#160; </xsl:text>
@@ -357,7 +365,6 @@
 																	</xsl:for-each>
 																</xsl:for-each>
 															</td>
--->															
 														</tr>
 													</xsl:for-each>
 												</tbody>
@@ -481,24 +488,20 @@
 								<xsl:call-template name="Date"/>
 							</xsl:for-each>
 							<br/>
-<!--							
 							<xsl:for-each select="espi:currency">
 									<xsl:text>Curency: </xsl:text>
 								<xsl:call-template name="Curency"/>
+								<br/>
 							</xsl:for-each>
-							<br/>
--->							
-<!--							
-								<xsl:text>Cost of usage(</xsl:text>
-							<xsl:for-each select="espi:currency">
-								<xsl:call-template name="Curency"/>
-							</xsl:for-each>
-								<xsl:text>): </xsl:text>
+								<xsl:for-each select="espi:currency">
+									<xsl:text>Cost of usage(</xsl:text>
+									<xsl:call-template name="Curency"/>
+									<xsl:text>): </xsl:text>
+								</xsl:for-each>
 							<xsl:for-each select="espi:billToDate">
 									<xsl:value-of select="format-number( . div(100000),&apos;0.##&apos;)"/>
+									<br/>
 							</xsl:for-each>
-							<br/>
--->							
 								<xsl:text>Consumption</xsl:text>
 							<xsl:for-each select="espi:currentBillingPeriodOverAllConsumption">
 									<xsl:text>(</xsl:text>
@@ -515,9 +518,8 @@
 							</xsl:for-each>
 							<xsl:for-each select="espi:currentBillingPeriodOverAllConsumption"/>
 							<br/>
-<!--														
-							<br/>
 							<xsl:for-each select="espi:billingPeriod">
+								<br/>
 								<xsl:variable name="vStart" select="round(espi:start)"/>
 									<xsl:text>Last billing period:</xsl:text>
 								<span>
@@ -537,11 +539,9 @@
 									<xsl:with-param name="vDuration" select="espi:duration"/>
 								</xsl:call-template>
 							</xsl:for-each>
-							<br/>
--->							
-<!--							
 							<xsl:for-each select="espi:billLastPeriod">
-									<xsl:text>Bill last period(</xsl:text>
+								<br/>
+								<xsl:text>Bill last period(</xsl:text>
 								<xsl:for-each select="$XML">
 									<xsl:for-each select="atom:feed">
 										<xsl:for-each select="atom:entry">
@@ -555,33 +555,31 @@
 										</xsl:for-each>
 									</xsl:for-each>
 								</xsl:for-each>
-									<xsl:text>): </xsl:text>
-									<xsl:value-of select="format-number( . div(100000),&quot;0.##&quot;)"/>
-							</xsl:for-each>							
-							<br/>
--->							
-<!--							
-								<xsl:text>Cost of usage last billing period (</xsl:text>
-							<xsl:for-each select="$XML">
-								<xsl:for-each select="atom:feed">
-									<xsl:for-each select="atom:entry">
-										<xsl:for-each select="atom:content">
-											<xsl:for-each select="espi:ElectricPowerUsageSummary">
-												<xsl:for-each select="espi:currency">
-													<xsl:call-template name="Curency"/>
+								<xsl:text>): </xsl:text>
+								<xsl:value-of select="format-number( . div(100000),&quot;0.##&quot;)"/>
+								<br/>
+							</xsl:for-each>
+							<xsl:for-each select="espi:billLastPeriod">
+								<xsl:for-each select="$XML">
+									<xsl:for-each select="atom:feed">
+										<xsl:for-each select="atom:entry">
+											<xsl:for-each select="atom:content">
+												<xsl:for-each select="espi:ElectricPowerUsageSummary">
+													<xsl:for-each select="espi:currency">
+														<xsl:text>Cost of usage last billing period (</xsl:text>
+														<xsl:call-template name="Curency"/>
+														<xsl:text>):&#160; </xsl:text>
+													</xsl:for-each>
 												</xsl:for-each>
 											</xsl:for-each>
 										</xsl:for-each>
 									</xsl:for-each>
-								</xsl:for-each>
-							</xsl:for-each>
-								<xsl:text>):&#160; </xsl:text>
-								<xsl:value-of select="format-number((espi:billLastPeriod - espi:costAdditionalLastPeriod)div(100000),&quot;0.##&quot;)"/>
-							<br/>
--->
-<!--							
+								</xsl:for-each>								
+								<xsl:value-of select="format-number((../espi:billLastPeriod - ../espi:costAdditionalLastPeriod)div(100000),&quot;0.##&quot;)"/>
+								<br/>
+							</xsl:for-each>	
 							<xsl:for-each select="espi:costAdditionalLastPeriod">
-										<xsl:text>Cost additional last period (taxes and other fixed charges) (</xsl:text>
+								<xsl:text>Cost additional last period (taxes and other fixed charges) (</xsl:text>
 								<xsl:for-each select="$XML">
 									<xsl:for-each select="atom:feed">
 										<xsl:for-each select="atom:entry">
@@ -595,11 +593,10 @@
 										</xsl:for-each>
 									</xsl:for-each>
 								</xsl:for-each>
-									<xsl:text>): </xsl:text>
-									<xsl:value-of select="format-number( . div(100000),&apos;####.##&apos;)"/>
+								<xsl:text>): </xsl:text>
+								<xsl:value-of select="format-number( . div(100000),&apos;####.##&apos;)"/>
+								<br/>
 							</xsl:for-each>
-							<br/>
--->							
 						</xsl:for-each>
 					</xsl:for-each>
 				</xsl:for-each>
@@ -752,11 +749,7 @@
 		<xsl:variable name="smonth" select="concat(substring('00',1,2 - string-length(string($month))),string($month))"/>
 		<xsl:variable name="syear" select="concat(substring('00',1,4 - string-length(string($year))),string($year))"/>
 		<!-- final output -->
-<!--		
 		<xsl:value-of select="concat($syear,'-',$smonth,'-',$sday)"/>
--->		
-		<xsl:value-of select="concat($smonth,'-',$sday,'-',$syear)"/>
-		
 	</xsl:template>
 	<!--
 ==========================================================================
@@ -2005,7 +1998,8 @@
 		<xsl:variable name="dtJulian" select="($dtTmp div 86400)+2440588"/>
 		<xsl:call-template name="float-to-date-time">
 			<xsl:with-param name="value" select="$dtJulian"/>
-			<xsl:with-param name="round-seconds" select="false()"/>
+<!--			<xsl:with-param name="round-seconds" select="false()"/>-->
+			<xsl:with-param name="round-seconds" select="true()"/>
 		</xsl:call-template>
-	</xsl:template>	
+	</xsl:template>
 </xsl:stylesheet>
