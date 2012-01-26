@@ -657,6 +657,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
              No limitation on use - except this code may not be published,
              in whole or in part, without prior written consent of copyright
              owner.
+			 
+Note: these routines make use of chronological Julian Day which is dawn based as opposed to normal 
+Julian Day which is noon based for the fractional day representation. 
+See http://en.wikipedia.org/wiki/Julian_day.
+			 
 ========================================================================== -->
 	<!-- ========================================================================== -->
 	<!-- these are 'string arrays' - change for language requirements               -->
@@ -1993,13 +1998,23 @@ Unless required by applicable law or agreed to in writing, software distributed 
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	
+	<xsl:template name="convert-unix-to-julianday">
+		<xsl:param name="ut"/>
+		<!-- Convert unix time to days plus fractional day -->
+		<xsl:value-of select="ceiling( (($ut div 86400)+2440588) * 100000) div 100000"/>
+	</xsl:template>
+		
 	<xsl:template name="convert-unix-to-date-time">
 		<xsl:param name="dtTmp"/>
-		<xsl:variable name="dtJulian" select="($dtTmp div 86400)+2440588"/>
+		<xsl:variable name="dtJulian">
+			<xsl:call-template name="convert-unix-to-julianday">
+				<xsl:with-param name="ut" select="$dtTmp"/>
+			</xsl:call-template>
+		</xsl:variable>
 		<xsl:call-template name="float-to-date-time">
 			<xsl:with-param name="value" select="$dtJulian"/>
-<!--			<xsl:with-param name="round-seconds" select="false()"/>-->
-			<xsl:with-param name="round-seconds" select="true()"/>			
+			<xsl:with-param name="round-seconds" select="false()"/>
 		</xsl:call-template>
-	</xsl:template>	
+	</xsl:template>
 </xsl:stylesheet>
