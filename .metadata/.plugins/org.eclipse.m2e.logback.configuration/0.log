@@ -113,3 +113,9 @@ Caused by: java.nio.channels.UnresolvedAddressException: null
 2012-01-12 08:55:30,125 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2012-01-12 08:55:30,127 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2012-01-12 08:55:30,127 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-02-19 11:23:46,589 [Worker-7] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2012-02-19 11:24:06,773 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.energyos.espi.datacustodian:datacustodian:0.1.0.BUILD-SNAPSHOT @ /home/user1/workspace/DataCustodian/pom.xml.
+2012-02-19 11:24:11,849 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.energyos.espi.thirdparty:thirdparty:0.1.0.BUILD-SNAPSHOT @ /home/user1/workspace/ThirdParty/pom.xml.
+2012-02-19 11:24:11,929 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.energyos.espi:common:0.1.0.BUILD-SNAPSHOT @ /home/user1/workspace/common/pom.xml.
+2012-02-19 11:24:11,941 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact aspectj:aspectjrt:jar:1.5.4 has been relocated to org.aspectj:aspectjrt:jar:1.5.4
+2012-02-19 11:24:29,860 [Worker-7] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo1.maven.org/maven2 in 43279 ms

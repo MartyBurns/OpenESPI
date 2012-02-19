@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="/Users/johnt/Documents/EnergyOS_Working/OpenESPI/espi_java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/Users/johnt/Documents/EnergyOS_Working/OpenESPI/espi_java/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DataCustodian" path="/datacustodian" reloadable="true" source="org.eclipse.jst.j2ee.server:DataCustodian"/></Host>
+      <Context docBase="/home/user1/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/home/user1/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DataCustodian" path="/datacustodian" reloadable="true" source="org.eclipse.jst.j2ee.server:DataCustodian"/></Host>
     </Engine>
   </Service>
 </Server>

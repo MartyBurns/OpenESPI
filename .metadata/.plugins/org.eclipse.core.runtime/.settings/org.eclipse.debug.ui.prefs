@@ -1,3 +1,4 @@
-#Wed Jan 11 15:00:37 PST 2012
+#Sun Feb 19 12:02:59 MST 2012
 eclipse.preferences.version=1
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
+org.eclipse.debug.ui.save_dirty_editors_before_launch=never
