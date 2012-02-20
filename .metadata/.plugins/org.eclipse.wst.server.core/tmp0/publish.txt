@@ -1,3 +1,0 @@
-#Tomcat publish data
-#Sun Feb 19 11:59:14 MST 2012
-org.eclipse.jst.j2ee.server\:common=WEB-INF/lib/common-0.1.0.BUILD-SNAPSHOT.jar

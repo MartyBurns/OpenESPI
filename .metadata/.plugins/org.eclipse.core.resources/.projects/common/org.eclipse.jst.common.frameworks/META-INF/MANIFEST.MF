@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: aspectjrt.jar
-Build-Jdk: 1.6.0_29
-Built-By: johnt
-Created-By: Maven Integration for Eclipse
-
