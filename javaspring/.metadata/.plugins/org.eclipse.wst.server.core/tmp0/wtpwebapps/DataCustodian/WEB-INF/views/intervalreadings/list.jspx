@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 EnergyOS.Org
+ *
+ * Licensed by EnergyOS.Org under one or more contributor license agreements.
+ * See the NOTICE file distributed with this work for additional information
+ * regarding copyright ownership.  The EnergyOS.org licenses this file
+ * to you under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License.  You may obtain a copy
+ * of the License at:
+ *  
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *  
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ *  
+ *******************************************************************************/
+-->
+
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_domain_IntervalReading" items="${intervalreadings}" z="RVW3jpFwr8UrbAA1jWqCYaiuCU8=">
+        <table:table data="${intervalreadings}" id="l_org_energyos_espi_datacustodian_domain_IntervalReading" path="/intervalreadings" z="2vdMRSlzmVTJh0u9fwOp7rZoMLE=">
+            <table:column id="c_org_energyos_espi_datacustodian_domain_IntervalReading_meterReading" property="meterReading" z="a/6xJnaQmte8a1OafmVtWU5m/iI="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_IntervalReading_cost" property="cost" z="G/RIqFotLcIROuyLumExgc1oQyc="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_IntervalReading_reading" property="reading" z="gjkvQL8w61zxBwm1fQG0x8zw0m0="/>
+            <table:column date="true" dateTimePattern="${intervalReading_startdate_date_format}" id="c_org_energyos_espi_datacustodian_domain_IntervalReading_startDate" property="startDate" z="u96/9GCFZoyUqmkImboQS09SRRo="/>
+            <table:column date="true" dateTimePattern="${intervalReading_enddate_date_format}" id="c_org_energyos_espi_datacustodian_domain_IntervalReading_endDate" property="endDate" z="bNrD00VLQ/0MGm0mpPu6HgR9ktc="/>
+            <table:column date="true" dateTimePattern="${intervalReading_intervalduration_date_format}" id="c_org_energyos_espi_datacustodian_domain_IntervalReading_intervalDuration" property="intervalDuration" z="ZdCp8CNdmX6PxFcrwDHS9vCU2lI="/>
+        </table:table>
+    </page:list>
+</div>

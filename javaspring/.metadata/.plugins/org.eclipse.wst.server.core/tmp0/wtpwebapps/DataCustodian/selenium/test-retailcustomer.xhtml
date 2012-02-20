@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 EnergyOS.Org
+ *
+ * Licensed by EnergyOS.Org under one or more contributor license agreements.
+ * See the NOTICE file distributed with this work for additional information
+ * regarding copyright ownership.  The EnergyOS.org licenses this file
+ * to you under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License.  You may obtain a copy
+ * of the License at:
+ *  
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *  
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ *  
+ *******************************************************************************/
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+		<link href="http://localhost:8080/" rel="selenium.base"/>
+		<title>Selenium test for RetailCustomerController</title>
+	</head>
+	<body>
+		<table border="1" cellpadding="1" cellspacing="1">
+			<thead>
+				<tr>
+					<td colspan="3" rowspan="1">Selenium test for RetailCustomerController</td>
+				</tr>
+			</thead>
+			<tbody>
+		
+		
+			<tr>
+                    <td>open</td>
+                    <td>http://localhost:8080/datacustodian/retailcustomers?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_authenticated_id</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_firstName_id</td>
+                    <td>someFirstName1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_lastName_id</td>
+                    <td>someLastName1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_email_id</td>
+                    <td>some@email.com</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_customerSince_id</td>
+                    <td>Oct 26, 2010</td>
+                </tr>
+                <tr>
+                    <td>clickAndWait</td>
+                    <td>//input[@id='proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_domain_RetailCustomer_authenticated_authenticated_id</td>
+                    <td>false</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_domain_RetailCustomer_firstName_firstName_id</td>
+                    <td>someFirstName1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_domain_RetailCustomer_lastName_lastName_id</td>
+                    <td>someLastName1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_domain_RetailCustomer_email_email_id</td>
+                    <td>some@email.com</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_domain_RetailCustomer_customerSince_customerSince_id</td>
+                    <td>Oct 26, 2010</td>
+                </tr>
+            </tbody>
+		</table>
+	</body>
+</html>
