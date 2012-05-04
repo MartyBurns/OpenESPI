@@ -26,14 +26,91 @@ import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
 import javax.validation.constraints.Size;
 
+import org.energyos.espi.common.eui.DateTimeInterval;
+import org.energyos.espi.common.informationmodel.*;
+
 @RooJavaBean
 @RooToString
 @RooEntity
-public class DataCustodian {
+public class DataCustodian implements org.energyos.espi.common.informationmodel.DataCustodian {
 
     @Size(min = 3, max = 30)
     private String name;
 
     @Size(max = 512)
     private String description;
+
+	@Override
+	public ThirdPartyId _CreateThirdPartyId(
+			ApplicationInformation ApplicationInformation) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AuthorizationList _ReadAuthorizationList(RetailCustomerId customerID) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean _UpdateAuthorization(Authorization authorization) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Authorization Authorize(Authorization authorization) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AccessToken CreateAccessToken(Authorization authRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Token CreateRequestToken(Authorization authRequest) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean CreateSubscription(Authorization authorization) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean DeleteSubscription(Authorization authorization) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Batch ReadData(BatchLocation batch) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DataResource ReadData_(Authorization authorization,
+			DateTimeInterval requestedInterval) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ServiceStatus ReadServiceStatus() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean RequestData(Authorization authorization) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
