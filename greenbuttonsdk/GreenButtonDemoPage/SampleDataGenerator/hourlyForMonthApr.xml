@@ -52,12 +52,12 @@ permissions and limitations under the License.
 -->
     
 <feed xmlns="http://www.w3.org/2005/Atom" xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <id>urn:uuid:E14B54EC-4853-408F-9F7E-CDC74C66B01F</id>
+    <id>urn:uuid:462FB5FD-622E-4085-A76C-06CE173F5D65</id>
  <title>ThirdPartyX Batch Feed</title>
  <updated>1899-12-30T00:00:00Z</updated>
  <link rel="self" href="/ThirdParty/83e269c1/Batch"/>
     <entry>
-    <id>urn:uuid:2AC63818-B3A9-4296-90D5-D0B364CB49A7</id>
+    <id>urn:uuid:62DB4E2A-B494-475B-B8AE-7321CD6DC06A</id>
         <link rel="self" href="/User/9b6c7063/UsagePoint/01"/>
         <link rel="up" href="/User/9b6c7063"/>
         <link rel="related" href="/User/9b6c7063/UsagePoint/01/MeterReading"/>
@@ -73,7 +73,7 @@ permissions and limitations under the License.
         <updated>1899-12-30T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:FA828AE1-2735-46C3-8A21-35824FE1764E</id>
+    <id>urn:uuid:3086BDD3-2287-44B3-8582-F483EE45BBB0</id>
             <link rel="self" href="/User/9b6c7063/UsagePoint/01/LocalTimeParameters"/>
             <link rel="up" href="/User/9b6c7063/UsagePoint/01"/>
             <title>DST For North America</title>
@@ -89,7 +89,7 @@ permissions and limitations under the License.
         <updated>1899-12-30T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:B446CD7A-F4A6-4146-BFDD-FE95C6122840</id>
+    <id>urn:uuid:E75891B6-4283-4E6F-BF0D-72EBFDAC4E68</id>
         <link rel="self" href="/User/9b6c7063/UsagePoint/01/MeterReading/01"/>
         <link rel="up" href="/User/9b6c7063/UsagePoint/01"/>
         <link rel="related" href="/User/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
@@ -102,7 +102,7 @@ permissions and limitations under the License.
         <updated>1899-12-30T00:00:00Z</updated>
     </entry>
 <entry>
-    <id>urn:uuid:7C5BE6FA-24F4-4389-B3F9-DA2A3090C482</id>
+    <id>urn:uuid:16BFAA9A-F645-4845-A9C2-25F9339476BD</id>
     <link rel="self" href="/User/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/0173"/>
     <link rel="up" href="/User/9b6c7063/UsagePoint/01/MeterReading/01"/>
     <title/>
@@ -6802,7 +6802,7 @@ permissions and limitations under the License.
     <updated>1899-12-30T00:00:00Z</updated>
 </entry>
     <entry>
-    <id>urn:uuid:774999FE-C7B6-4630-8073-7173D1828633</id>
+    <id>urn:uuid:A5E62C07-499D-4307-B8A5-1699EFD5E3BB</id>
         <link rel="self" href="/ReadingType/07"/>
         <link rel="up" type="" href="/User/9b6c7063/UsagePoint/01/MeterReading/01"/>
         <title>Energy Delivered (kWh)</title>
@@ -6824,7 +6824,7 @@ permissions and limitations under the License.
         <updated>1899-12-30T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:59ADEA5A-3721-471D-AE4A-261E604A69D4</id>
+    <id>urn:uuid:6C0CFD24-4072-4268-A2D5-8DC9C5E12495</id>
         <link rel="self" href="/User/9b6c7063/ElectricPowerUsageSummary"/>
         <link rel="up" type="" href="/User/9b6c7063/UsagePoint/01"/>
         <title>Usage Summary</title>
