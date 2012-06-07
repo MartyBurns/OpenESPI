@@ -1,31 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://www.greenbuttondata.org/ESPIRender_xslt1.xslt"?>
+<?xml-stylesheet type="text/xsl" href="GreenButtonDataStyleSheet.xslt"?>
 
 <!--
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+
+To view this data file in a browser in a more readable tabluar form
+please download the GreenButtonDataStyleSheet.xslt file by copying and
+pasting the following link in your browser and place the file in the same
+directory as this XML file:
+=====|
+http://www.greenbuttondata.org/data/downloading.aspx?file=GreenButtonDataStyleSheet.xslt
+|=====
+
+Please leave this heading comment section in this file.
+
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+=========================================================
+-->
+<!--
 ==========================================================================
-Stylesheet:  GBESPIRender_xslt1.xsl
+Sample Green Button Data File:  1hrLP_32Days.xml
 Version: 0.7 20120116
      Author: Ron Pasquarelli, Marty Burns (Hypertek for EnerNex)
      Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
 ==========================================================================
-Copyright (c) 2011, 2012 EnergyOS.Org
- 
-Licensed by EnergyOS.Org under one or more contributor license agreements.
- 
-See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The EnergyOS.org licenses this file to you under the Apache License, Version 2.0 (the "; License; "); you may not use this file except in compliance with the License.  You may obtain a copy of the License at:
+Copyright (c) 2012 EnergyOS.org
+
+Licensed by EnergyOS.org under one or more contributor license agreements.
+
+See the NOTICE file distributed with this work for additional 
+information regarding copyright ownership. The EnergyOS.org licenses this 
+file to you under the Apache License, Version 2.0 (the "; License; "); 
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
 http://www.apache.org/licenses/LICENSE-2.0
   
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.
-
+Unless required by applicable law or agreed to in writing, software 
+distributed under the License is distributed on an "AS IS" BASIS, 
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or 
+implied.  See the License for the specific language governing 
+permissions and limitations under the License.
 -->
     
 <feed xmlns="http://www.w3.org/2005/Atom" xsi:schemaLocation="http://naesb.org/espi espi.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
- <id>urn:uuid:046638c0-8701-11e0-9d78-0800200c9a66</id>
+    <id>urn:uuid:14AF9594-7800-4804-A1A6-B47E6E5B1AD4</id>
  <title>ThirdPartyX Batch Feed</title>
  <updated>2012-05-21T18:01:00Z</updated>
  <link rel="self" href="/ThirdParty/83e269c1/Batch"/>
     <entry>
-        <id>urn:uuid:c990b150-8320-11e0-9d78-0800200c9a66</id>
+    <id>urn:uuid:8F675D86-AA76-4EA6-86B1-0F788111DBD1</id>
         <link rel="self" href="/User/9b6c7063/UsagePoint/01"/>
         <link rel="up" href="/User/9b6c7063"/>
         <link rel="related" href="/User/9b6c7063/UsagePoint/01/MeterReading"/>
@@ -37,11 +69,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
                     </ServiceCategory>
             </UsagePoint>
         </content>
-        <published>2012-05-21T18:01:00Z</published>
-        <updated>2012-05-21T18:01:00Z</updated>
+        <published>2012-5-2T10:2:50Z</published>
+        <updated>2012-5-2T10:2:50Z</updated>
     </entry>
     <entry>
-        <id>urn:uuid:f2034e91-8320-11e0-9d78-0800200c9a66</id>
+    <id>urn:uuid:5581A19B-2DA9-4B3F-A140-897E7A279DD5</id>
         <link rel="self" href="/User/9b6c7063/UsagePoint/01/MeterReading/01"/>
         <link rel="up" href="/User/9b6c7063/UsagePoint/01"/>
         <link rel="related" href="/User/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
@@ -50,11 +82,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
         <content>
             <MeterReading xmlns="http://naesb.org/espi"/>
         </content>
-        <published>2012-05-21T18:01:00Z</published>
-        <updated>2012-05-21T18:01:00Z</updated>
+        <published>2012-5-2T10:2:50Z</published>
+        <updated>2012-5-2T10:2:50Z</updated>
     </entry>
 <entry>
-    <id>urn:uuid:f2034e93-8320-11e0-9d78-0800200c9a66</id>
+    <id>urn:uuid:62F39DA9-6D55-4E4F-B766-47416ABCCD16</id>
     <link rel="self" href="/User/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/0173"/>
     <link rel="up" href="/User/9b6c7063/UsagePoint/01/MeterReading/01"/>
     <title/>
@@ -63,6 +95,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1314835200</start>
+        <!-- start date: 9/1/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -261,6 +294,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1314921600</start>
+        <!-- start date: 9/2/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -459,6 +493,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315008000</start>
+        <!-- start date: 9/3/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -657,6 +692,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315094400</start>
+        <!-- start date: 9/4/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -855,6 +891,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315180800</start>
+        <!-- start date: 9/5/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -1053,6 +1090,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315267200</start>
+        <!-- start date: 9/6/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -1251,6 +1289,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315353600</start>
+        <!-- start date: 9/7/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -1449,6 +1488,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315440000</start>
+        <!-- start date: 9/8/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -1647,6 +1687,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315526400</start>
+        <!-- start date: 9/9/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -1845,6 +1886,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315612800</start>
+        <!-- start date: 9/10/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -2043,6 +2085,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315699200</start>
+        <!-- start date: 9/11/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -2241,6 +2284,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315785600</start>
+        <!-- start date: 9/12/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -2439,6 +2483,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315872000</start>
+        <!-- start date: 9/13/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -2637,6 +2682,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1315958400</start>
+        <!-- start date: 9/14/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -2835,6 +2881,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316044800</start>
+        <!-- start date: 9/15/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -3033,6 +3080,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316131200</start>
+        <!-- start date: 9/16/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -3231,6 +3279,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316217600</start>
+        <!-- start date: 9/17/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -3429,6 +3478,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316304000</start>
+        <!-- start date: 9/18/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -3627,6 +3677,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316390400</start>
+        <!-- start date: 9/19/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -3825,6 +3876,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316476800</start>
+        <!-- start date: 9/20/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -4023,6 +4075,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316563200</start>
+        <!-- start date: 9/21/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -4221,6 +4274,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316649600</start>
+        <!-- start date: 9/22/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -4419,6 +4473,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316736000</start>
+        <!-- start date: 9/23/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -4617,6 +4672,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316822400</start>
+        <!-- start date: 9/24/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -4815,6 +4871,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316908800</start>
+        <!-- start date: 9/25/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -5013,6 +5070,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1316995200</start>
+        <!-- start date: 9/26/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -5211,6 +5269,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1317081600</start>
+        <!-- start date: 9/27/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -5409,6 +5468,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1317168000</start>
+        <!-- start date: 9/28/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -5607,6 +5667,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1317254400</start>
+        <!-- start date: 9/29/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -5805,6 +5866,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1317340800</start>
+        <!-- start date: 9/30/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -6003,6 +6065,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1317427200</start>
+        <!-- start date: 10/1/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -6201,6 +6264,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
     <interval>
         <duration>86400</duration>
         <start>1317513600</start>
+        <!-- start date: 10/2/2011 -->
     </interval>
 <IntervalReading>
     <cost>2691</cost>
@@ -6396,11 +6460,11 @@ Unless required by applicable law or agreed to in writing, software distributed 
 </IntervalReading>
 </IntervalBlock>
     </content>
-    <published>2012-05-21T18:01:00Z</published>
-    <updated>2012-05-21T18:01:00Z</updated>
+    <published>2012-5-2T10:2:50Z</published>
+    <updated>2012-5-2T10:2:50Z</updated>
 </entry>
     <entry>
-        <id>urn:uuid:2557def0-8321-11e0-9d78-0800200c9a66</id>
+    <id>urn:uuid:390D888F-1A33-4BBC-9CEE-F3F982F65362</id>
         <link rel="self" href="/ReadingType/07"/>
         <link rel="up" type="" href="/User/9b6c7063/UsagePoint/01/MeterReading/01"/>
         <title>Energy Delivered (kWh)</title>
@@ -6421,18 +6485,17 @@ Unless required by applicable law or agreed to in writing, software distributed 
                 <phase>769</phase>
                 <!--L1L2N Residential service-->
                 <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
-                <!--kilo-->
                 <timeAttribute>0</timeAttribute>
                 <!--N/A-->
                 <uom>72</uom>
                 <!--Watt hours-->
             </ReadingType>
         </content>
-        <published>2012-05-21T18:01:00Z</published>
-        <updated>2012-05-21T18:01:00Z</updated>
+        <published>2012-5-2T10:2:50Z</published>
+        <updated>2012-5-2T10:2:50Z</updated>
     </entry>
     <entry>
-        <id>urn:uuid:3557def0-8321-11e0-9d78-0800200c9a66</id>
+    <id>urn:uuid:7CC72E0B-BE7D-40D6-A1FC-74FBFCB20948</id>
         <link rel="self" href="/User/9b6c7063/ElectricPowerUsageSummary"/>
         <link rel="up" type="" href="/User/9b6c7063/UsagePoint/01"/>
         <title>Usage Summary</title>
@@ -6448,7 +6511,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
                 <currency>840</currency>
                 <currentBillingPeriodOverAllConsumption>
                     <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
-                    <timeStamp> 1317599999 </timeStamp>
+                    <timeStamp>1317599999</timeStamp>
                     <uom>72</uom>
                     <value>172224</value>
                 </currentBillingPeriodOverAllConsumption>
@@ -6456,7 +6519,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
                 <statusTimeStamp>1317599999</statusTimeStamp>
             </ElectricPowerUsageSummary>
         </content>
-        <published>2012-05-21T18:01:00Z</published>
-        <updated>2012-05-21T18:01:00Z</updated>
+        <published>2012-5-2T10:2:50Z</published>
+        <updated>2012-5-2T10:2:50Z</updated>
     </entry>
 </feed>
