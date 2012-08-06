@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="readingqualitys/list">
+        <put-attribute name="body" value="/WEB-INF/views/readingqualitys/list.jspx"/>
+    </definition>
+<definition extends="default" name="readingqualitys/show">
+        <put-attribute name="body" value="/WEB-INF/views/readingqualitys/show.jspx"/>
+    </definition>
+<definition extends="default" name="readingqualitys/create">
+        <put-attribute name="body" value="/WEB-INF/views/readingqualitys/create.jspx"/>
+    </definition>
+<definition extends="default" name="readingqualitys/update">
+        <put-attribute name="body" value="/WEB-INF/views/readingqualitys/update.jspx"/>
+    </definition>
+</tiles-definitions>

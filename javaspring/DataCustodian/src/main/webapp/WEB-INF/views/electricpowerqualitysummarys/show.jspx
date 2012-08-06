@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary" object="${electricpowerqualitysummary}" path="/electricpowerqualitysummarys" z="w8Nm+mRk66AUcqx3qozIE4wi5ew=">
+        <field:display field="uuid" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_uuid" object="${electricpowerqualitysummary}" z="xYZNVYoVRHzk/vrVbZF2VL1KwhI="/>
+        <field:display field="description" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_description" object="${electricpowerqualitysummary}" z="bodLuYMSJVa3/tcjisHflFu0Jiw="/>
+        <field:display field="flickerPlt" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_flickerPlt" object="${electricpowerqualitysummary}" z="P/1uRyvBwZoI1NVbdHQRIxaz8Cg="/>
+        <field:display field="flickerPst" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_flickerPst" object="${electricpowerqualitysummary}" z="F7bu80Iw2XMlofLVHD4/84z2Nx0="/>
+        <field:display field="harmonicVoltage" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_harmonicVoltage" object="${electricpowerqualitysummary}" z="7pQNiDbRgh4ZohIYpse85TR7umE="/>
+        <field:display field="longInterruptions" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_longInterruptions" object="${electricpowerqualitysummary}" z="2mpnAg90FZRXWQY48DRswyhA8hI="/>
+        <field:display field="mainsVoltage" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_mainsVoltage" object="${electricpowerqualitysummary}" z="YgTdfMSqVQKXKCmrl1sXZhIQHEk="/>
+        <field:display field="measurementProtocol" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_measurementProtocol" object="${electricpowerqualitysummary}" z="dU1H3YqFr0JL8E1N9ajsJYac3XE="/>
+        <field:display field="powerFrequency" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_powerFrequency" object="${electricpowerqualitysummary}" z="zj2J0jy1p3RZ0SAxM/VggEH80JM="/>
+        <field:display field="rapidVoltageChanges" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_rapidVoltageChanges" object="${electricpowerqualitysummary}" z="MQNLKDKtlKrFSPBeEzWPnr/n6bY="/>
+        <field:display field="shortInterruptions" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_shortInterruptions" object="${electricpowerqualitysummary}" z="OayWl21Gd8GqXTR6oYHPqtNJ5aM="/>
+        <field:display field="summaryInterval" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_summaryInterval" object="${electricpowerqualitysummary}" z="iLKwVoIZq2KEb9/isA+62R5kcFM="/>
+        <field:display field="supplyVoltageDips" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_supplyVoltageDips" object="${electricpowerqualitysummary}" z="9gtiFk/yegiBtjcMc6VpyXAZlFg="/>
+        <field:display field="supplyVoltageImbalance" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_supplyVoltageImbalance" object="${electricpowerqualitysummary}" z="XlQ5c4TUaooX68ERcBUBM4mIzug="/>
+        <field:display field="supplyVoltageVariations" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_supplyVoltageVariations" object="${electricpowerqualitysummary}" z="eVz0PHUztTaf2BNKaW6Ff0MplIE="/>
+        <field:display field="tempOvervoltage" id="s_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_tempOvervoltage" object="${electricpowerqualitysummary}" z="LnTfIcTEGEqH9pySeaUGioEu49Y="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_thirdparty_common_AccumulationBehavior" items="${accumulationbehaviors}" z="Zx1ICdrlVo9YZOod8ZfaRKXgrBU=">
+        <table:table data="${accumulationbehaviors}" id="l_org_energyos_espi_thirdparty_common_AccumulationBehavior" path="/accumulationbehaviors" z="wjPVSdp+tyqCCqTm6e6JXea+hFI=">
+            <table:column id="c_org_energyos_espi_thirdparty_common_AccumulationBehavior_typeValue" property="typeValue" z="npA8i2rCaz+JrMJlQGTUwNvEhf0="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_AccumulationBehavior_typeMap" property="typeMap" z="KAk9rHR0ftwP0occ9a5UvE382nU="/>
+        </table:table>
+    </page:list>
+</div>

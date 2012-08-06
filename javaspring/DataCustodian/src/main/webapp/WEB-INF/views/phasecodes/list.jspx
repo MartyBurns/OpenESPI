@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_common_PhaseCode" items="${phasecodes}" z="8aP2dWX8AxYg85BCXgJwedL37uE=">
+        <table:table data="${phasecodes}" id="l_org_energyos_espi_datacustodian_common_PhaseCode" path="/phasecodes" z="EmjR2pF1oQF2KoYPrwlu7+EygEk=">
+            <table:column id="c_org_energyos_espi_datacustodian_common_PhaseCode_typeValue" property="typeValue" z="fQ8G78akiixiACbotveLjg2niLo="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_PhaseCode_typeMap" property="typeMap" z="f8jGy6vskIZ7lU16NYHqBx9xqqw="/>
+        </table:table>
+    </page:list>
+</div>

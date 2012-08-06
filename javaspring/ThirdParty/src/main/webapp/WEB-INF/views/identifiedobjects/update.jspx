@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_common_IdentifiedObject" modelAttribute="identifiedObject" path="/identifiedobjects" versionField="Version" z="eknhqGUkOKPuP+T9D/FZLc0V8Mw=">
+        <field:input field="uuid" id="c_org_energyos_espi_thirdparty_common_IdentifiedObject_uuid" z="kQHgzxzEFbiesEYnsdZVStBt3EI="/>
+        <field:input field="description" id="c_org_energyos_espi_thirdparty_common_IdentifiedObject_description" z="J+OK8QDDUN5C8xLyQ4dy7NL4XwE="/>
+    </form:update>
+</div>

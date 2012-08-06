@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_energyos_espi_datacustodian_common_ApplicationInformation" modelAttribute="applicationInformation" path="/applicationinformations" render="${empty dependencies}" z="3igmeaD8GP+4y3ntVbEIx1KF1As=">
+        <field:input field="uuid" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_uuid" z="G3DhzE0MnkB4E8XMF/5fBrcR3jw="/>
+        <field:input field="description" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_description" z="y6St5GOC/b1EpOudKtW/g4UtpfA="/>
+        <field:select field="dataCustodianApplicationStatus" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_dataCustodianApplicationStatus" itemValue="id" items="${datacustodianapplicationstatuses}" path="/datacustodianapplicationstatuses" z="7Ay+Tq4kNdlax0NyOp8aTRNaM9Q="/>
+        <field:input field="dataCustodianDefaultBatchResource" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_dataCustodianDefaultBatchResource" z="M+lLSR7BkJFqTIuyXV6qHHKUQo8="/>
+        <field:input field="dataCustodianDefaultSubscriptionResource" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_dataCustodianDefaultSubscriptionResource" z="UIwQwoJxBrg0E8nq1Bh2HdxCibo="/>
+        <field:textarea field="dataCustodianThirdPartyId" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_dataCustodianThirdPartyId" z="sKeUGcX2nK1n5yAecCelncg/AbM="/>
+        <field:textarea field="dataCustodianThirdPartySecret" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_dataCustodianThirdPartySecret" z="/A6Ya3JUhqtp3IJ4rQMhPoDWX5g="/>
+        <field:input field="thirdPartyApplicationDescription" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyApplicationDescription" z="YSj3N+h4JHpbVZAP83ak/CO1/4A="/>
+        <field:input field="thirdPartyApplicationLogo" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyApplicationLogo" z="WhqjU5KvhdZY0fxOkOpH0j/GJo8="/>
+        <field:textarea field="thirdPartyApplicationName" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyApplicationName" z="8SPy4kL5CesONPEjZQkD5kCgwZM="/>
+        <field:select field="thirdPartyApplicationStatus" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyApplicationStatus" itemValue="id" items="${thirdpartyapplicationstatuses}" path="/thirdpartyapplicationstatuses" z="qCG9BMnwTQiAyHnZgbfVAsRsETg="/>
+        <field:select field="thirdPartyApplicationType" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyApplicationType" itemValue="id" items="${thirdpartyapplicationtypes}" path="/thirdpartyapplicationtypes" z="Y99L/3mzgAcqoCHEjp+c7gHm5QY="/>
+        <field:select field="thirdPartyApplicationUse" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyApplicationUse" itemValue="id" items="${thirdpartyapplicationuses}" path="/thirdpartyapplicationuses" z="n+kbppBiSnZ21n6P7hGkIberI44="/>
+        <field:input field="thirdPartyApplicationWebsite" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyApplicationWebsite" z="IKLl2ykayHC/ecHXdikF+m0/obc="/>
+        <field:input field="thirdPartyDefaultBatchResource" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyDefaultBatchResource" z="FsB1X9f7Hzm31XZLHWQTMyKJjR0="/>
+        <field:input field="thirdPartyDefaultNotifyResource" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyDefaultNotifyResource" z="XOsQ7GZBh5b/RULYUJ7V8cy90Pw="/>
+        <field:input field="thirdPartyDefaultOAuthCallback" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyDefaultOAuthCallback" z="xWKPQ8urnPTxQ0i8osMm1HZ8IPM="/>
+        <field:textarea field="thirdPartyEmail" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyEmail" z="C+WSmrjIoZqWMqt13XmxG4h87tI="/>
+        <field:textarea field="thirdPartyName" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyName" z="gmFdltOqD0xydniIPw3GR8oeY6s="/>
+        <field:textarea field="thirdPartyPhone" id="c_org_energyos_espi_datacustodian_common_ApplicationInformation_thirdPartyPhone" z="tj/lh09+1C9DeR3aySSj/3I/e7M="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_energyos_espi_datacustodian_common_ApplicationInformation" render="${not empty dependencies}" z="asNGXw3gOF0ph5kDGgXF8uBP+qw="/>
+</div>

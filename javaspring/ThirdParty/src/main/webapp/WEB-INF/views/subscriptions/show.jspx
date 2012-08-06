@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_thirdparty_common_Subscription" object="${subscription}" path="/subscriptions" z="ZarhPKWnHDS3jUS2P27tzwTeaCo=">
+        <field:display field="uuid" id="s_org_energyos_espi_thirdparty_common_Subscription_uuid" object="${subscription}" z="tyDJcVK1ZiS3DBBO3BqdH5TMH90="/>
+        <field:display field="description" id="s_org_energyos_espi_thirdparty_common_Subscription_description" object="${subscription}" z="eXgZNTJ58JA0mHXsourK2GW4L1o="/>
+        <field:display field="subscriptionParameters" id="s_org_energyos_espi_thirdparty_common_Subscription_subscriptionParameters" object="${subscription}" z="hdcnvQlVbh2Ay7xaTirlu/qH0TY="/>
+    </page:show>
+</div>

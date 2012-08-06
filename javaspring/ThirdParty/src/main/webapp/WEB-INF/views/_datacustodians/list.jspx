@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_thirdparty_common__DataCustodian" items="${_datacustodians}" z="O2HqZyzdJi+ub53V6b3Sf/hHu3k=">
+        <table:table data="${_datacustodians}" id="l_org_energyos_espi_thirdparty_common__DataCustodian" path="/_datacustodians" z="K7nnjI3QKvGless2SlwBXrv+WCU=">
+            <table:column id="c_org_energyos_espi_thirdparty_common__DataCustodian_dataCustodianID" property="dataCustodianID" z="V1J89AZ3KNSWl6iUO7rZV0qC4Sk="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_energyos_espi_datacustodian_common_RationalNumber" modelAttribute="rationalNumber" path="/rationalnumbers" render="${empty dependencies}" z="eeWxf0bYqXhmVqMbAl8rsA3Jqic=">
+        <field:input field="numerator" id="c_org_energyos_espi_datacustodian_common_RationalNumber_numerator" validationMessageCode="field_invalid_integer" z="WqNgGJMfNzZHEwerp8IgcKY6b20="/>
+        <field:input field="denominator" id="c_org_energyos_espi_datacustodian_common_RationalNumber_denominator" validationMessageCode="field_invalid_integer" z="zZK3n2T4GIhdTJTi71ozdCu4lbY="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_energyos_espi_datacustodian_common_RationalNumber" render="${not empty dependencies}" z="ubNZxYJ4iZ92R1dInqMeIjx6i84="/>
+</div>

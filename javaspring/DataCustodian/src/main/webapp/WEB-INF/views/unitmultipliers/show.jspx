@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_common_UnitMultiplier" object="${unitmultiplier}" path="/unitmultipliers" z="9wWEZKToAfFheoS3Vwbno+a0sg4=">
+        <field:display field="typeValue" id="s_org_energyos_espi_datacustodian_common_UnitMultiplier_typeValue" object="${unitmultiplier}" z="H8VPhnd2Ahoe33DrluPJks/woeU="/>
+        <field:display field="typeMap" id="s_org_energyos_espi_datacustodian_common_UnitMultiplier_typeMap" object="${unitmultiplier}" z="v4uJWDs2Fri2jAzomLs8Hsl1vDA="/>
+    </page:show>
+</div>

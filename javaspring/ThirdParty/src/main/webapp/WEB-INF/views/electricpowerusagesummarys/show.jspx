@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary" object="${electricpowerusagesummary}" path="/electricpowerusagesummarys" z="+KotBM6ZC9tyOpi7OzzKKHdQHpk=">
+        <field:display field="uuid" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_uuid" object="${electricpowerusagesummary}" z="smned/weQ+oORpQ7v1i2sfYwBKs="/>
+        <field:display field="description" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_description" object="${electricpowerusagesummary}" z="h86J7hg+8a5yI+VA067+fP0utBo="/>
+        <field:display field="billingPeriod" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_billingPeriod" object="${electricpowerusagesummary}" z="juT52+dOax6YDLBn/JV4dL5DqUk="/>
+        <field:display field="billLastPeriod" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_billLastPeriod" object="${electricpowerusagesummary}" z="Ib+NvRs+wsVUD676c0KDGxgj/jo="/>
+        <field:display field="billToDate" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_billToDate" object="${electricpowerusagesummary}" z="DxoA+bXXCVuQhjze5FvLaUdDV2U="/>
+        <field:display field="costAdditionalLastPeriod" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_costAdditionalLastPeriod" object="${electricpowerusagesummary}" z="xN0sPLCn0MalwGPiTdHyfEwvKLM="/>
+        <field:display field="currency" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_currency" object="${electricpowerusagesummary}" z="ZJJumQHuE1+QiDDW/9/8XVPf3v0="/>
+        <field:display field="currentBillingPeriodOverAllConsumption" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_currentBillingPeriodOverAllConsumption" object="${electricpowerusagesummary}" z="PV7gpvAr+iLRUtFVbyO+Pi301k8="/>
+        <field:display field="currentDayLastYearNetConsumption" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_currentDayLastYearNetConsumption" object="${electricpowerusagesummary}" z="qn+6KyZROpeenKR9+P1yrSbgfw8="/>
+        <field:display field="currentDayNetConsumption" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_currentDayNetConsumption" object="${electricpowerusagesummary}" z="fkDSQ/K10W4h2eUJFtnDds1m3HQ="/>
+        <field:display field="currentDayOverallConsumption" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_currentDayOverallConsumption" object="${electricpowerusagesummary}" z="r4smGR/FF8YFHhUipnKxfk52j4k="/>
+        <field:display field="peakDemand" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_peakDemand" object="${electricpowerusagesummary}" z="DlcjuMPO0xDh+2Zajww4snEgZIg="/>
+        <field:display field="previousDayLastYearOverallConsumption" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_previousDayLastYearOverallConsumption" object="${electricpowerusagesummary}" z="jtePKQBXeYQ0boN2+W5AESGbk3E="/>
+        <field:display field="previousDayNetConsumption" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_previousDayNetConsumption" object="${electricpowerusagesummary}" z="BLuwUvrFnIJzfsN9vv0x5XaiI9U="/>
+        <field:display field="previousDayOverallConsumption" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_previousDayOverallConsumption" object="${electricpowerusagesummary}" z="UTR3WNewazsqWIvaorZpPZubIw0="/>
+        <field:display field="qualityOfReading" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_qualityOfReading" object="${electricpowerusagesummary}" z="lu2nWeR6gxdLRzXUrLnc70L1PeA="/>
+        <field:display field="ratchetDemand" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_ratchetDemand" object="${electricpowerusagesummary}" z="F+nOD9fy60IjSUsbb9res5UzExA="/>
+        <field:display field="ratchetDemandPeriod" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_ratchetDemandPeriod" object="${electricpowerusagesummary}" z="fj4AhrPXmXMsWcdwOkOxpIOeX+U="/>
+        <field:display field="statusTimeStamp" id="s_org_energyos_espi_thirdparty_common_ElectricPowerUsageSummary_statusTimeStamp" object="${electricpowerusagesummary}" z="a4VXXRe2LOmj8tk7BwFL28pfeA0="/>
+    </page:show>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_common_IntervalBlock" object="${intervalblock}" path="/intervalblocks" z="5enI8I2slLdVR070bhY5RlnN33U=">
+        <field:display field="uuid" id="s_org_energyos_espi_datacustodian_common_IntervalBlock_uuid" object="${intervalblock}" z="4v9EutW11IUNAShWR6DRn3pEdEg="/>
+        <field:display field="description" id="s_org_energyos_espi_datacustodian_common_IntervalBlock_description" object="${intervalblock}" z="vvdZ6pQNYxiEQEXQaD67511ft9M="/>
+        <field:display field="interval" id="s_org_energyos_espi_datacustodian_common_IntervalBlock_interval" object="${intervalblock}" z="D5cLXCG7Tzv9wzzSbWY023kh/4Q="/>
+        <field:display field="meterReading" id="s_org_energyos_espi_datacustodian_common_IntervalBlock_meterReading" object="${intervalblock}" z="PCNR5dnjWaBY15QhI73AP5wtgHk="/>
+        <field:display field="readingType" id="s_org_energyos_espi_datacustodian_common_IntervalBlock_readingType" object="${intervalblock}" z="NuA+bpcIapC9t0Q+6uxDgEcxYJI="/>
+    </page:show>
+</div>

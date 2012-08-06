@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary" modelAttribute="electricPowerQualitySummary" path="/electricpowerqualitysummarys" versionField="Version" z="8MiTuBLEYtCaoMdF6cQmvMz8WTM=">
+        <field:input field="uuid" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_uuid" z="7gnVKfziwwlAIktiKNrq5YJkyzY="/>
+        <field:input field="description" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_description" z="miOQaFMaiBYCy21LSC0DvTzLsnA="/>
+        <field:input field="flickerPlt" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_flickerPlt" validationMessageCode="field_invalid_integer" z="rDKCwzm9b1alpqE13XPShLbugnM="/>
+        <field:input field="flickerPst" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_flickerPst" validationMessageCode="field_invalid_integer" z="/MhwBqTnImM+OQP9Mpb9ZtqJlWk="/>
+        <field:input field="harmonicVoltage" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_harmonicVoltage" validationMessageCode="field_invalid_integer" z="BE4n2Zw3KwGIxQP9sdU41Cts5Uw="/>
+        <field:input field="longInterruptions" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_longInterruptions" validationMessageCode="field_invalid_integer" z="uuyt/BrYFKpUHmbqPeQwatoLJOk="/>
+        <field:input field="mainsVoltage" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_mainsVoltage" validationMessageCode="field_invalid_integer" z="N24vgI12yLlM8M4DJONvGXoK7y4="/>
+        <field:input field="measurementProtocol" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_measurementProtocol" z="1sTpjmDVd15Dc7bIJtlV9x710PQ="/>
+        <field:input field="powerFrequency" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_powerFrequency" validationMessageCode="field_invalid_integer" z="w4BM6q4d/5ark/5+1GWJqmyRTTg="/>
+        <field:input field="rapidVoltageChanges" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_rapidVoltageChanges" validationMessageCode="field_invalid_integer" z="L3R0JOeF6R9aMSM20uWH1HvPluk="/>
+        <field:input field="shortInterruptions" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_shortInterruptions" validationMessageCode="field_invalid_integer" z="LZbzR59rlRCmO4/5THACwmaVfEo="/>
+        <field:select field="summaryInterval" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_summaryInterval" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" required="true" z="VX0dlWJirGvTKlSGDotp9MmTVCM="/>
+        <field:input field="supplyVoltageDips" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_supplyVoltageDips" validationMessageCode="field_invalid_integer" z="7AHSGMDvUdZ5F3jVZckPkoEsmeY="/>
+        <field:input field="supplyVoltageImbalance" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_supplyVoltageImbalance" validationMessageCode="field_invalid_integer" z="8GKvjAcPExmFkwBfPKVSlp+e2Qw="/>
+        <field:input field="supplyVoltageVariations" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_supplyVoltageVariations" validationMessageCode="field_invalid_integer" z="upn7ENitxmCInZVWzkKSbsgLj8k="/>
+        <field:input field="tempOvervoltage" id="c_org_energyos_espi_datacustodian_common_ElectricPowerQualitySummary_tempOvervoltage" validationMessageCode="field_invalid_integer" z="amp24Igd6LCPDHhJg2DgbcFGf5M="/>
+    </form:update>
+</div>

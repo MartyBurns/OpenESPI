@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_datacustodian_common__ThirdParty" modelAttribute="_ThirdParty_" path="/_thirdparties" versionField="Version" z="PTiYgMB3k7f9kxxA4XVDx7h9yHs=">
+        <field:input field="thirdPartyID" id="c_org_energyos_espi_datacustodian_common__ThirdParty_thirdPartyID" z="QUTxUWZi3602+5L5mwm+GTopaqM="/>
+    </form:update>
+</div>

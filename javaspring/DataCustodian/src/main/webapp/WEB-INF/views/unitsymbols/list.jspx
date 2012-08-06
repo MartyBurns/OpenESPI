@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_common_UnitSymbol" items="${unitsymbols}" z="xKAee90HtjeXmBB32YgcJcEZQqc=">
+        <table:table data="${unitsymbols}" id="l_org_energyos_espi_datacustodian_common_UnitSymbol" path="/unitsymbols" z="3nHgXdbaAScGAoYh/X+lMEtVhvA=">
+            <table:column id="c_org_energyos_espi_datacustodian_common_UnitSymbol_typeValue" property="typeValue" z="7CwlcwDg9+uKBOy9QW5kmXWriQc="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_UnitSymbol_typeMap" property="typeMap" z="wJecI4b2F3SXVWxrkiWaCMFlE4c="/>
+        </table:table>
+    </page:list>
+</div>

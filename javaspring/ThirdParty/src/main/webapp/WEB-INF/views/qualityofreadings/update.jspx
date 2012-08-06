@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_common_QualityOfReading" modelAttribute="qualityOfReading" path="/qualityofreadings" versionField="Version" z="0voEL9Lju/gQ7UUryUdbYhS3rPk=">
+        <field:select field="typeValue" id="c_org_energyos_espi_thirdparty_common_QualityOfReading_typeValue" items="${qualityofreadingenums}" path="qualityofreadingenums" required="true" z="gd7NpHG8L1ZG0KOxdNdLPEQ/8n0="/>
+        <field:input field="typeMap" id="c_org_energyos_espi_thirdparty_common_QualityOfReading_typeMap" required="true" validationMessageCode="field_invalid_integer" z="UrSGE3q8q3ZDWsYlOHrU71gqI8A="/>
+    </form:update>
+</div>

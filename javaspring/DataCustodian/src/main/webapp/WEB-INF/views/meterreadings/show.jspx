@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_common_MeterReading" object="${meterreading}" path="/meterreadings" z="NMYB+H8Jwh4jc/3dWwIljDVxysU=">
+        <field:display field="uuid" id="s_org_energyos_espi_datacustodian_common_MeterReading_uuid" object="${meterreading}" z="fl40/34VFLjvAigIv+URJm+1dGk="/>
+        <field:display field="description" id="s_org_energyos_espi_datacustodian_common_MeterReading_description" object="${meterreading}" z="rIj7PHXlWX8nWam9LRdna8UOYA0="/>
+        <field:display field="usagePoint" id="s_org_energyos_espi_datacustodian_common_MeterReading_usagePoint" object="${meterreading}" z="lr4KB6zgW7s0uAgwASSMdnjcua4="/>
+    </page:show>
+</div>

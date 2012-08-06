@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_common_RationalNumber" modelAttribute="rationalNumber" path="/rationalnumbers" versionField="Version" z="9Jkz3thv/uCdBuTqkXsxo28JNTY=">
+        <field:input field="numerator" id="c_org_energyos_espi_thirdparty_common_RationalNumber_numerator" validationMessageCode="field_invalid_integer" z="0NB5fWZ7NcOaDgem7FaJZ2giiM4="/>
+        <field:input field="denominator" id="c_org_energyos_espi_thirdparty_common_RationalNumber_denominator" validationMessageCode="field_invalid_integer" z="V2PG1QtiQOBA9JZFHWYi2m34DwE="/>
+    </form:update>
+</div>

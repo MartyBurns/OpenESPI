@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_datacustodian_common_Authorization" modelAttribute="authorization" path="/authorizations" versionField="Version" z="ndLXDgcAk5QHAsZxaKMACFJ0914=">
+        <field:input field="uuid" id="c_org_energyos_espi_datacustodian_common_Authorization_uuid" z="0pN9ZrX+rmQ0F2HEPbNmkHCFIiY="/>
+        <field:input field="description" id="c_org_energyos_espi_datacustodian_common_Authorization_description" z="UWhepDc9MqjyPVZyOWamtwWbdSs="/>
+        <field:textarea field="accessToken" id="c_org_energyos_espi_datacustodian_common_Authorization_accessToken" z="9UkzaUyR5gNpBebXfNhosESui8w="/>
+        <field:input field="authorizationServer" id="c_org_energyos_espi_datacustodian_common_Authorization_authorizationServer" z="O9xoJ+cgkW0ytMtZqzSIPmsd1Hw="/>
+        <field:select field="authorizedPeriod" id="c_org_energyos_espi_datacustodian_common_Authorization_authorizedPeriod" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="WH+K/G9sfnbjOClIuWWw/jSNWl4="/>
+        <field:select field="publishedPeriod" id="c_org_energyos_espi_datacustodian_common_Authorization_publishedPeriod" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="zqYsYKxbVIJh6uhE+VFoJ4dGUA0="/>
+        <field:input field="resource" id="c_org_energyos_espi_datacustodian_common_Authorization_resource" z="hmDZgq7cjHX9PG2J6FLVY7EkKRY="/>
+        <field:select field="status" id="c_org_energyos_espi_datacustodian_common_Authorization_status" itemValue="id" items="${authorizationstatuses}" path="/authorizationstatuses" z="khYtME8UgPhpJKF2+KdSA9rvgtI="/>
+        <field:textarea field="thirdParty" id="c_org_energyos_espi_datacustodian_common_Authorization_thirdParty" z="C5gqWMYelaMwmcgByKDLJttPZfg="/>
+    </form:update>
+</div>

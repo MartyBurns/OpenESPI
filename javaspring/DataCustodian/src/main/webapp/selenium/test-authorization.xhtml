@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<link href="http://localhost:8080/" rel="selenium.base"/>
+<title>Selenium test for AuthorizationController</title>
+</head>
+<body>
+    <table border="1" cellpadding="1" cellspacing="1">
+        <thead>
+            <tr>
+                <td colspan="3" rowspan="1">Selenium test for AuthorizationController</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+                    <td>open</td>
+                    <td>http://localhost:8080/datacustodian/authorizations?form&amp;lang=en_US</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_uuid_id</td>
+                    <td>someUuid1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_description_id</td>
+                    <td>someDescription1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_accessToken_id</td>
+                    <td>someAccessToken1</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_authorizationServer_id</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_resource_id</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>_thirdParty_id</td>
+                    <td>someThirdParty1</td>
+                </tr>
+                <tr>
+                    <td>clickAndWait</td>
+                    <td>//input[@id = 'proceed']</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_common_Authorization_uuid_uuid_id</td>
+                    <td>someUuid1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_common_Authorization_description_description_id</td>
+                    <td>someDescription1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_common_Authorization_accessToken_accessToken_id</td>
+                    <td>someAccessToken1</td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_common_Authorization_authorizationServer_authorizationServer_id</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_common_Authorization_resource_resource_id</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>verifyText</td>
+                    <td>_s_org_energyos_espi_datacustodian_common_Authorization_thirdParty_thirdParty_id</td>
+                    <td>someThirdParty1</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>

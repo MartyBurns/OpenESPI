@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_common__AccessToken" modelAttribute="_AccessToken_" path="/_accesstokens" versionField="Version" z="FvnbxoraeQ1AXmKmyTfTbgtcQY8=">
+        <field:input field="accessToken" id="c_org_energyos_espi_thirdparty_common__AccessToken_accessToken" z="MZEINPY0ghoXBlx50B7sog5QPeg="/>
+    </form:update>
+</div>

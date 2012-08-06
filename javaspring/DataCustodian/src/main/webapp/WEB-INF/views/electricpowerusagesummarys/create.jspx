@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary" modelAttribute="electricPowerUsageSummary" path="/electricpowerusagesummarys" render="${empty dependencies}" z="6ZpxnTwX55YbwMgR0klZbpSMhEA=">
+        <field:input field="uuid" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_uuid" z="s2FmNuUFFeUt89CYOaSKBtmT9D0="/>
+        <field:input field="description" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_description" z="2HQnkxJSU6NPCZE5G2bSlu58zKw="/>
+        <field:select field="billingPeriod" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_billingPeriod" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="ims7WgrfC7L/6G7pCV/QN50IoRU="/>
+        <field:input field="billLastPeriod" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_billLastPeriod" validationMessageCode="field_invalid_integer" z="xKTyMtOEK8lZ2f+N6+sDfMjMQ80="/>
+        <field:input field="billToDate" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_billToDate" validationMessageCode="field_invalid_integer" z="APN4+syWQGugKAA7UjWR7WdbsbM="/>
+        <field:input field="costAdditionalLastPeriod" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_costAdditionalLastPeriod" validationMessageCode="field_invalid_integer" z="IKfXMH4pTkITGifV/RWsXAwO4sU="/>
+        <field:select field="currency" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_currency" itemValue="id" items="${currencys}" path="/currencys" z="n77xYieLpiI2Hn8l3o1opcbfZBM="/>
+        <field:select field="currentBillingPeriodOverAllConsumption" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_currentBillingPeriodOverAllConsumption" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="xH2Z9k6fj7lIqEV3xuNFXPkdmyU="/>
+        <field:select field="currentDayLastYearNetConsumption" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_currentDayLastYearNetConsumption" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="cKg93OuvdZFLf/DCUfWw1wewkps="/>
+        <field:select field="currentDayNetConsumption" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_currentDayNetConsumption" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="OLgvQjYmvvYLRjckw6FqoIIhGu4="/>
+        <field:select field="currentDayOverallConsumption" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_currentDayOverallConsumption" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="qvBUn+ybWwiaaFaPbCWGyeEI7q4="/>
+        <field:select field="peakDemand" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_peakDemand" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="TPib4CGZ6eWIowo047EUq496b5U="/>
+        <field:select field="previousDayLastYearOverallConsumption" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_previousDayLastYearOverallConsumption" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="oMp6BRPlaoEQC7iSpxfOaOdlq08="/>
+        <field:select field="previousDayNetConsumption" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_previousDayNetConsumption" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="19Gj8c9TEpPSRUPTutyJdWav1zg="/>
+        <field:select field="previousDayOverallConsumption" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_previousDayOverallConsumption" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="91W1bm82EexSeuu2pVp5XLFqh/s="/>
+        <field:select field="qualityOfReading" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_qualityOfReading" itemValue="id" items="${qualityofreadings}" path="/qualityofreadings" z="iUm2Yj0UcCrEZO7lUxBRNMa48L0="/>
+        <field:select field="ratchetDemand" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_ratchetDemand" itemValue="id" items="${summarymeasurements}" path="/summarymeasurements" z="BqtkC43UzhPCgN23JQi+rv85Q/8="/>
+        <field:select field="ratchetDemandPeriod" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_ratchetDemandPeriod" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="pr+eEuhyGG7hZFTs2Ga4Nh5MuGY="/>
+        <field:input field="statusTimeStamp" id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_statusTimeStamp" validationMessageCode="field_invalid_integer" z="GrdQ8IzR+9L0AiUWElKTwqwqoaI="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary" render="${not empty dependencies}" z="7eYRRS4afzmfQvZjTKIrIjxRcwo="/>
+</div>

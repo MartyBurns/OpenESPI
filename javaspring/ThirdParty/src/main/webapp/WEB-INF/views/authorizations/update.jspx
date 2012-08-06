@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_common_Authorization" modelAttribute="authorization" path="/authorizations" versionField="Version" z="u1kmFJH7Jkeas5WhO2tKxRNFCrs=">
+        <field:input field="uuid" id="c_org_energyos_espi_thirdparty_common_Authorization_uuid" z="XLbrrhK7M1GQiuhGp5+6BRSDIMs="/>
+        <field:input field="description" id="c_org_energyos_espi_thirdparty_common_Authorization_description" z="7JMsyelbPa8W+wMDOh2VseA2FGY="/>
+        <field:textarea field="accessToken" id="c_org_energyos_espi_thirdparty_common_Authorization_accessToken" z="ezvl8/SK2qWhLv6XfPym9+WX9bA="/>
+        <field:input field="authorizationServer" id="c_org_energyos_espi_thirdparty_common_Authorization_authorizationServer" z="VYSsF5IrkKjWxb7fHrKvjjeunl4="/>
+        <field:select field="authorizedPeriod" id="c_org_energyos_espi_thirdparty_common_Authorization_authorizedPeriod" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="zi7qSH3r/9wht1biDfp9SvoKeQk="/>
+        <field:select field="publishedPeriod" id="c_org_energyos_espi_thirdparty_common_Authorization_publishedPeriod" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="NtTFcYYdY0bTSGLdpyBu2sR70w0="/>
+        <field:input field="resource" id="c_org_energyos_espi_thirdparty_common_Authorization_resource" z="nFB2xD6CfeBTKRMMCcf4xhydeHc="/>
+        <field:select field="status" id="c_org_energyos_espi_thirdparty_common_Authorization_status" itemValue="id" items="${authorizationstatuses}" path="/authorizationstatuses" z="ed4NUZdnIv+UvJdTLss1ha7sKeQ="/>
+        <field:textarea field="thirdParty" id="c_org_energyos_espi_thirdparty_common_Authorization_thirdParty" z="Pmy0qaSeXnu4NGMf3Tr2rhAioj4="/>
+    </form:update>
+</div>

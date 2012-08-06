@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_datacustodian_domain_RetailCustomer" modelAttribute="retailCustomer" path="/retailcustomers" versionField="Version" z="mtlrPPYesn92lVIfTt1Us/As0D8=">
+        <field:input field="firstName" id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_firstName" max="30" min="3" required="true" z="5SNW/ekGjf9pPS0UQAGanTjzoMQ="/>
+        <field:input field="lastName" id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_lastName" max="30" min="3" required="true" z="V8B79TE3jTfjPPR9cRsfwj+SGPE="/>
+        <field:input field="email" id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_email" max="30" min="6" required="true" validationMessageCode="field_invalid_email" z="aWnx2UfOmCZ8h98Lx0YpUlGCnkw="/>
+        <field:datetime dateTimePattern="${retailCustomer_customersince_date_format}" field="customerSince" id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_customerSince" past="true" required="true" z="VfhQth8s0JJtvkFmEoVJiqVX39A="/>
+        <field:select field="authorizedDataCustodian" id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_authorizedDataCustodian" itemValue="id" items="${datacustodians}" path="/datacustodians" z="1hZPVoRTMksvOEAgW176cRFCPzQ="/>
+        <field:select field="thirdPartys" id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_thirdPartys" itemValue="id" items="${thirdpartys}" multiple="true" path="/thirdpartys" z="1JcvimPJ+uhj7JxPptUcTTP1AFc="/>
+        <field:select field="usagePoints" id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_usagePoints" itemValue="id" items="${usagepoints}" multiple="true" path="/usagepoints" z="LMr1J4C353vFpENIx1x7CUAjC9k="/>
+    </form:update>
+</div>

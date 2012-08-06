@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_thirdparty_common_ElectricPowerQualitySummary" items="${electricpowerqualitysummarys}" z="lTHTyzAZZr/pyYItu23+tVC9LqY=">
+        <table:table data="${electricpowerqualitysummarys}" id="l_org_energyos_espi_thirdparty_common_ElectricPowerQualitySummary" path="/electricpowerqualitysummarys" z="6os6OISKHk0ihlETgGPoBS1O/sY=">
+            <table:column id="c_org_energyos_espi_thirdparty_common_ElectricPowerQualitySummary_uuid" property="uuid" z="Dr4FQYBCy1GeF5xrzYIcdqBywto="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ElectricPowerQualitySummary_description" property="description" z="LSOr+a5h3hPS+g6xn8XLeechyk0="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ElectricPowerQualitySummary_flickerPlt" property="flickerPlt" z="6A7h+8hR/fFnDS1CvQfOtSoN7Z8="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ElectricPowerQualitySummary_flickerPst" property="flickerPst" z="LkcsCBLkZvbtc1vb1pOpouP8dOo="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ElectricPowerQualitySummary_harmonicVoltage" property="harmonicVoltage" z="85G24E1x2vS+F8+qkvIzV6NHIZI="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ElectricPowerQualitySummary_longInterruptions" property="longInterruptions" z="fna4UwzWzzOe0hPXXpcz14oUVc8="/>
+        </table:table>
+    </page:list>
+</div>

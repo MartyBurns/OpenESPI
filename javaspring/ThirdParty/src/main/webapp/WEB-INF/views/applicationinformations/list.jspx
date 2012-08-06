@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_thirdparty_common_ApplicationInformation" items="${applicationinformations}" z="suUfSEvLY3Z3J3BWL5V65u02UgA=">
+        <table:table data="${applicationinformations}" id="l_org_energyos_espi_thirdparty_common_ApplicationInformation" path="/applicationinformations" z="ucIFP6gLtoeBHTex2Jn9FOT7L4w=">
+            <table:column id="c_org_energyos_espi_thirdparty_common_ApplicationInformation_uuid" property="uuid" z="b0WXuq2vdWnr7kO4EfUtCvQc8hU="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ApplicationInformation_description" property="description" z="lfExlYzYOwZKPcBUuchrvDS0Qy4="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ApplicationInformation_dataCustodianApplicationStatus" property="dataCustodianApplicationStatus" z="j+wBb2PvQbkkBsaMRXJzOVblHXU="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ApplicationInformation_dataCustodianDefaultBatchResource" property="dataCustodianDefaultBatchResource" z="fMrwuc9qcOvspMmaNlfjg0ECzcI="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ApplicationInformation_dataCustodianDefaultSubscriptionResource" property="dataCustodianDefaultSubscriptionResource" z="vIcuxMTtBOJoHYzPDtLVpSKXGTQ="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ApplicationInformation_dataCustodianThirdPartyId" property="dataCustodianThirdPartyId" z="R9Xgsa/pguT7ZGRvQQ3wy545teI="/>
+        </table:table>
+    </page:list>
+</div>

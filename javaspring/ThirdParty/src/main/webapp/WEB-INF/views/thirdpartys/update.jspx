@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_domain_ThirdParty" modelAttribute="thirdParty" path="/thirdpartys" versionField="Version" z="6zsB07XRP1IEZotyWeq8BkG+cng=">
+        <field:input field="name" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_name" max="30" min="3" required="true" z="aDN/UywwKWKFWASJ50j6nTNOYAM="/>
+        <field:textarea field="description" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_description" z="7G289J4FC0JUKN0iY88how+NI9Q="/>
+        <field:checkbox field="authorized" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_authorized" z="fTrVCDFlnkQ9YZSnsZHHFAXB+rc="/>
+        <field:select field="authorizedDataCustodian" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_authorizedDataCustodian" itemValue="id" items="${datacustodians}" path="/datacustodians" z="MRGPRzUphhaaaXhOShkPMQ0Mu/U="/>
+        <field:select field="retailCustomers" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_retailCustomers" itemValue="id" items="${retailcustomers}" multiple="true" path="/retailcustomers" required="true" z="QigiLHh+0WNzHY+7zmJzpQ4K6RI="/>
+        <field:select field="applicationInformation" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_applicationInformation" itemValue="id" items="${applicationinformations}" multiple="true" path="/applicationinformations" z="iye7DM18aDj7zL4akQYh9CcQb6I="/>
+        <field:select field="dataCustodianApplicationStatus" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_dataCustodianApplicationStatus" itemValue="id" items="${datacustodianapplicationstatuses}" path="/datacustodianapplicationstatuses" z="mkppfpNI3/aNmcTAuelJb3Sm9I0="/>
+        <field:select field="applicationTypes" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_applicationTypes" itemValue="id" items="${thirdpartyapplicationtypes}" multiple="true" path="/thirdpartyapplicationtypes" required="true" z="6Ow0w57ZY5P6J9CF/rkqiJi6t9c="/>
+        <field:select field="authorizationStatus" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_authorizationStatus" itemValue="id" items="${authorizationstatuses}" multiple="true" path="/authorizationstatuses" z="TqrCpxrwc0H237PQO03w8LZvV+o="/>
+        <field:select field="applicationUse" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_applicationUse" itemValue="id" items="${thirdpartyapplicationuses}" path="/thirdpartyapplicationuses" z="8YaZFzNqSv/7baMrGraBUSHZJlQ="/>
+        <field:select field="serviceStatus" id="c_org_energyos_espi_thirdparty_domain_ThirdParty_serviceStatus" itemValue="id" items="${servicestatuses}" path="/servicestatuses" z="W2UzoY4woRy32OTi4ghdcJao/w8="/>
+    </form:update>
+</div>

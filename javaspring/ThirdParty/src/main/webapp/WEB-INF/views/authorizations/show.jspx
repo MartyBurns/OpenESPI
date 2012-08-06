@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_thirdparty_common_Authorization" object="${authorization}" path="/authorizations" z="bZaB8FTFgkmheS1vsrCnvmTdrhw=">
+        <field:display field="uuid" id="s_org_energyos_espi_thirdparty_common_Authorization_uuid" object="${authorization}" z="QFXGZgW7SxRLsWgtO75uPwp26ZU="/>
+        <field:display field="description" id="s_org_energyos_espi_thirdparty_common_Authorization_description" object="${authorization}" z="n0J1D6VhSU6iG7yGu5Cfr3t2Ggc="/>
+        <field:display field="accessToken" id="s_org_energyos_espi_thirdparty_common_Authorization_accessToken" object="${authorization}" z="oWxRcnEM0zZLgnA1Pmkb8zY97SA="/>
+        <field:display field="authorizationServer" id="s_org_energyos_espi_thirdparty_common_Authorization_authorizationServer" object="${authorization}" z="mvMs5z7JQwVIAUIoItZ2yfA9qnM="/>
+        <field:display field="authorizedPeriod" id="s_org_energyos_espi_thirdparty_common_Authorization_authorizedPeriod" object="${authorization}" z="ApKTCFacwRPRxjd/vFCL/TtzO/k="/>
+        <field:display field="publishedPeriod" id="s_org_energyos_espi_thirdparty_common_Authorization_publishedPeriod" object="${authorization}" z="BHqaGVxcRNIs+Ced8fLfKaY/NR0="/>
+        <field:display field="resource" id="s_org_energyos_espi_thirdparty_common_Authorization_resource" object="${authorization}" z="FhNfhWYAm6n59/FzdQacdpJZ4Lk="/>
+        <field:display field="status" id="s_org_energyos_espi_thirdparty_common_Authorization_status" object="${authorization}" z="nFo+/4iItKsyvAdZhAQVDms33jc="/>
+        <field:display field="thirdParty" id="s_org_energyos_espi_thirdparty_common_Authorization_thirdParty" object="${authorization}" z="OlceYMXgL7cjqaM5W2YgYriIgBk="/>
+    </page:show>
+</div>

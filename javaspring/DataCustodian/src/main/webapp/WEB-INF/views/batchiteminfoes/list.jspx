@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_common_BatchItemInfo" items="${batchiteminfoes}" z="MJyf/1KhbjvTHzwSZ+p2jOfT79U=">
+        <table:table data="${batchiteminfoes}" id="l_org_energyos_espi_datacustodian_common_BatchItemInfo" path="/batchiteminfoes" z="fXYXFhL2CiPhJ2tjlaguStSj5bg=">
+            <table:column id="c_org_energyos_espi_datacustodian_common_BatchItemInfo_name" property="name" z="zGqqtClcoWonevFNr9+jSgKPQtQ="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_BatchItemInfo_operation" property="operation" z="6Nj+wSwLHzAMipJarv32gslXeKo="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_BatchItemInfo_statusCode" property="statusCode" z="1j6ago3KQEhGJOH46vtANVDK8vg="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_BatchItemInfo_statusReason" property="statusReason" z="/yGRiNxhqer5xZy5D2yRNLGOepE="/>
+        </table:table>
+    </page:list>
+</div>

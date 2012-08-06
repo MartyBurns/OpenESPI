@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_common_UsagePoint" items="${usagepoints}" z="76JXLb5TznorlbvJXoOBW5reNbo=">
+        <table:table data="${usagepoints}" id="l_org_energyos_espi_datacustodian_common_UsagePoint" path="/usagepoints" z="/tMzGTK+tVul79MCljqXDi3Toxo=">
+            <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_uuid" property="uuid" z="7PrDgAh3gQECLokjT+ptMP7Vo/U="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_description" property="description" z="AEOSXY2E+vEpvY3bk4cjJFC8huc="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_roleFlags" property="roleFlags" z="Y6qVRyvfn9AWCaUyst6Ja473TOw="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_serviceCategory" property="serviceCategory" z="NoD2T162yyqpzFhz9nSKzojGg20="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_status" property="status" z="z1vWpapiGDMwh1w9EAf2r1UF6G8="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_address" property="address" z="ap3nLcMg31kVaRoZX69v4GP1U+o="/>
+        </table:table>
+    </page:list>
+</div>

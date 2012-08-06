@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary" items="${electricpowerusagesummarys}" z="9tDQmr1vQUb1BSJuCOuUzFUP93M=">
+        <table:table data="${electricpowerusagesummarys}" id="l_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary" path="/electricpowerusagesummarys" z="Wq3PM7O2azG4xZRzPmmrvdgqiw8=">
+            <table:column id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_uuid" property="uuid" z="+c7fW64kHT0GCwLOj15xAVB1spM="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_description" property="description" z="eeGeIJj/oGSGnF6W0uwKs6f/lso="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_billingPeriod" property="billingPeriod" z="rv0cIDNCi37eaGyzmavHM8szrNg="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_billLastPeriod" property="billLastPeriod" z="OpUOxHeT+gA9AF5ds60JE4rRKxE="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_billToDate" property="billToDate" z="YvcejUMzLdsCC0sbrVg06a/20U0="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_ElectricPowerUsageSummary_costAdditionalLastPeriod" property="costAdditionalLastPeriod" z="B14tHD/G31lqOMMbvMeJPRDy4gM="/>
+        </table:table>
+    </page:list>
+</div>

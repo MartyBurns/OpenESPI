@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_common_Authorization" object="${authorization}" path="/authorizations" z="9wYEJzOvS6i23pG3eDkfTEjuvaQ=">
+        <field:display field="uuid" id="s_org_energyos_espi_datacustodian_common_Authorization_uuid" object="${authorization}" z="U4m5cWg/pLTKkw8uaJpbEH7JzME="/>
+        <field:display field="description" id="s_org_energyos_espi_datacustodian_common_Authorization_description" object="${authorization}" z="QwQHczzBf48/jTpSWaJLoyjFgaY="/>
+        <field:display field="accessToken" id="s_org_energyos_espi_datacustodian_common_Authorization_accessToken" object="${authorization}" z="OJ1VlJ0xJ0sAjyXmJizlqM0w01M="/>
+        <field:display field="authorizationServer" id="s_org_energyos_espi_datacustodian_common_Authorization_authorizationServer" object="${authorization}" z="wmalRFcyupmMjcgBTqf4VesERZQ="/>
+        <field:display field="authorizedPeriod" id="s_org_energyos_espi_datacustodian_common_Authorization_authorizedPeriod" object="${authorization}" z="5Rb0JZ0Ys95BnWJh/vgOsBYi/+w="/>
+        <field:display field="publishedPeriod" id="s_org_energyos_espi_datacustodian_common_Authorization_publishedPeriod" object="${authorization}" z="VZanYF6VGGGZzEEdovmRcBqt6bs="/>
+        <field:display field="resource" id="s_org_energyos_espi_datacustodian_common_Authorization_resource" object="${authorization}" z="haTnGlzoihZJ1yF1eJggz5n17Ng="/>
+        <field:display field="status" id="s_org_energyos_espi_datacustodian_common_Authorization_status" object="${authorization}" z="yh4GZ1ITttu5N7v0aEXiXiyJA1E="/>
+        <field:display field="thirdParty" id="s_org_energyos_espi_datacustodian_common_Authorization_thirdParty" object="${authorization}" z="1ID1Vqu4MykjEZmIXsOMNKdUTtw="/>
+    </page:show>
+</div>

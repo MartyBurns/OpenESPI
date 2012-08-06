@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_thirdparty_common_UsagePoint" object="${usagepoint}" path="/usagepoints" z="7EFYnspOi73q4ZQYASOgwM43d9A=">
+        <field:display field="uuid" id="s_org_energyos_espi_thirdparty_common_UsagePoint_uuid" object="${usagepoint}" z="JgQ98GCoE6IRp54OzGjSLMqQ8zU="/>
+        <field:display field="description" id="s_org_energyos_espi_thirdparty_common_UsagePoint_description" object="${usagepoint}" z="pdsKnh0wl4IAbzsrKIIaxerJ4tg="/>
+        <field:display field="roleFlags" id="s_org_energyos_espi_thirdparty_common_UsagePoint_roleFlags" object="${usagepoint}" z="NuHZLaik4JYZwK1wesSBsoHXmnk="/>
+        <field:display field="serviceCategory" id="s_org_energyos_espi_thirdparty_common_UsagePoint_serviceCategory" object="${usagepoint}" z="4SPAl0AnAsqf+7uLMke0NHV2QOQ="/>
+        <field:display field="status" id="s_org_energyos_espi_thirdparty_common_UsagePoint_status" object="${usagepoint}" z="Z9dnuBi0DHLpRFhtLd6eL6ZFCHw="/>
+        <field:display field="address" id="s_org_energyos_espi_thirdparty_common_UsagePoint_address" object="${usagepoint}" z="AU11pB3TJCp15wu6OYlucCgbaOM="/>
+        <field:display field="location" id="s_org_energyos_espi_thirdparty_common_UsagePoint_location" object="${usagepoint}" z="uZoXy7lErLzH5S2Ex9ZjihYuwWM="/>
+        <field:display field="retailCustomer" id="s_org_energyos_espi_thirdparty_common_UsagePoint_retailCustomer" object="${usagepoint}" z="yqJhrtOOAvLSgi8RezmfHr/o2zg="/>
+        <field:display field="dataCustodian" id="s_org_energyos_espi_thirdparty_common_UsagePoint_dataCustodian" object="${usagepoint}" z="Lino3dqJJPU28LfJhTFhVMoD74s="/>
+    </page:show>
+</div>

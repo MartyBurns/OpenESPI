@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_energyos_espi_thirdparty_common_Commodity" modelAttribute="commodity" path="/commoditys" render="${empty dependencies}" z="HpN/kfkULiCg+osR1kGnQ73/XxI=">
+        <field:select field="typeValue" id="c_org_energyos_espi_thirdparty_common_Commodity_typeValue" items="${commodityenums}" path="commodityenums" required="true" z="Ca6RsFdxA0saKTiPekIrKJ47+qg="/>
+        <field:input field="typeMap" id="c_org_energyos_espi_thirdparty_common_Commodity_typeMap" required="true" validationMessageCode="field_invalid_integer" z="wlFzIa5dkguKIqYwhIGs2/hbH5g="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_energyos_espi_thirdparty_common_Commodity" render="${not empty dependencies}" z="V8NY1szwnvvvsb1YJ2mxt5J9rLo="/>
+</div>

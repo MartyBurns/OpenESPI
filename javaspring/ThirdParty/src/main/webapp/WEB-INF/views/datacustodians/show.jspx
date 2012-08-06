@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_thirdparty_domain_DataCustodian" object="${datacustodian}" path="/datacustodians" z="OFM+G2g4ZOsrJLLslxc34z/tGJU=">
+        <field:display field="name" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_name" object="${datacustodian}" z="+Fm78RFTzZp83gH8MSLoQRAFrAc="/>
+        <field:display field="description" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_description" object="${datacustodian}" z="FO6b1Naxc9g5/SAZGmideOCtZIA="/>
+        <field:display field="serviceType" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_serviceType" object="${datacustodian}" z="WnmOO/+nG3RN9W8Y727UH75PkoE="/>
+        <field:display field="authorizedThirdPartys" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_authorizedThirdPartys" object="${datacustodian}" z="0Pmzl+t8KomEjJCQw1njWed8oK8="/>
+        <field:display field="retailCustomers" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_retailCustomers" object="${datacustodian}" z="Krm+KxbUYtPnqJr3d6p/1g8hNIM="/>
+        <field:display field="applicationInformation" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_applicationInformation" object="${datacustodian}" z="19uqjP43Ugi3IO+83W+kPJlarAk="/>
+        <field:display field="dataCustodianApplicationStatus" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_dataCustodianApplicationStatus" object="${datacustodian}" z="4fL2ahz7VB+sQK1JHyXELrK7vjY="/>
+        <field:display field="serviceStatus" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_serviceStatus" object="${datacustodian}" z="Dpjh0Oc/C2cP9t3mjyXgmdmva+s="/>
+        <field:display field="MRID" id="s_org_energyos_espi_thirdparty_domain_DataCustodian_mRID" object="${datacustodian}" z="3xc6jpFqoVUYNyNyL+W6peFkG68="/>
+    </page:show>
+</div>

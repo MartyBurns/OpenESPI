@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_domain_DataCustodian" object="${datacustodian}" path="/datacustodians" z="zorooHFSlQm257peq54J1su8oYQ=">
+        <field:display field="name" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_name" object="${datacustodian}" z="4GR2tz1dJRfRx9Ch847yCGiib7k="/>
+        <field:display field="description" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_description" object="${datacustodian}" z="yHt4nNQeBsz+Hcl4Q0ACx9UR8o8="/>
+        <field:display field="MRID" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_mRID" object="${datacustodian}" z="Z7UvDscMA9hWvdT5mpx8xIZIYAI="/>
+        <field:display field="serviceType" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_serviceType" object="${datacustodian}" z="5lFb/yeoj9f4VCUhwz6xhTtngVg="/>
+        <field:display field="authorizedThirdPartys" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_authorizedThirdPartys" object="${datacustodian}" z="bNvQMIWlo1UJLh2+oSm3Q+SBm3g="/>
+        <field:display field="retailCustomers" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_retailCustomers" object="${datacustodian}" z="mvvDzCrVUSwga0pTm5KoR3jXHwY="/>
+        <field:display field="applicationInformation" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_applicationInformation" object="${datacustodian}" z="F/ISVl3xWaOpzTJPjC0o+8ca2YU="/>
+        <field:display field="dataCustodianApplicationStatus" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_dataCustodianApplicationStatus" object="${datacustodian}" z="zV1/yu//4ResAL5HytMEp3WS4kk="/>
+        <field:display field="serviceStatus" id="s_org_energyos_espi_datacustodian_domain_DataCustodian_serviceStatus" object="${datacustodian}" z="WlhGNKE4Uf8RlBu2RgwY7LCUGMw="/>
+    </page:show>
+</div>

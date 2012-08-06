@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_domain_RetailCustomer" items="${retailcustomers}" z="m45LaoQtzvSpcrjAq2GA09UYf1M=">
+        <table:table data="${retailcustomers}" id="l_org_energyos_espi_datacustodian_domain_RetailCustomer" path="/retailcustomers" z="QnJdQEGJvl1WuX2Cmudx9ix7dkU=">
+            <table:column id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_firstName" property="firstName" z="DrlRvBnRAm6nmlKELsnjNEcpe1k="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_lastName" property="lastName" z="lo6tauA0+2r/cz4Y4x/R8uGItxc="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_email" property="email" z="ZxNijv2cvk4INObnCJq1mQ0z2vM="/>
+            <table:column date="true" dateTimePattern="${retailCustomer_customersince_date_format}" id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_customerSince" property="customerSince" z="souM5g/m5QLa7TYXvpWtJxp3p2A="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_authorizedDataCustodian" property="authorizedDataCustodian" z="xDzmdh6LAHPABzQZZspegXn9V50="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_RetailCustomer_thirdPartys" property="thirdPartys" z="YGyE0j9hKsp1r0t8GdhmQZnrOKs="/>
+        </table:table>
+    </page:list>
+</div>
