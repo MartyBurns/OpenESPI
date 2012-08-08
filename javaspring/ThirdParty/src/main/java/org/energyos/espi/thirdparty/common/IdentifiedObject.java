@@ -28,9 +28,11 @@ import java.util.Iterator;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import org.energyos.espi.thirdparty.common.IdentifiedObject;
 import org.energyos.espi.thirdparty.common.ApplicationInformation;
 import org.energyos.espi.thirdparty.common.Authorization;
 import org.energyos.espi.thirdparty.common.ElectricPowerQualitySummary;
@@ -74,7 +76,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooJpaActiveRecord
 
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 @XmlType(name = "IdentifiedObject", propOrder = {
     "id", "version",
     "uuid",
@@ -96,13 +98,14 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 public class IdentifiedObject {
 
+	@XmlElement
     private String uuid;
-
+	
+    @XmlElement
     private String description;
    
     public IdentifiedObject () {
- 
-    	/*
+        // TODO complete the construction of the URI
         HashMap classes = new HashMap();
         classes.put("IntervalBlock", "01");
         classes.put("MeterReading", "02");
@@ -114,6 +117,10 @@ public class IdentifiedObject {
         classes.put("Subscription", "08");
         classes.put("ElectricPowerQualitySummary", "09");
         classes.put("ReadingType", "0a");
+        classes.get("UsagePoint");
+        /*
+        // get the mRID of the data custodian
+        String mRID = DataCustodian.getmRID();
         
     	Class theClass;
     	theClass = this.getClass();
@@ -154,3 +161,4 @@ public class IdentifiedObject {
 	}
     
 }
+
