@@ -67,7 +67,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooJpaActiveRecord
 
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 @XmlType(name = "Resource")
 @XmlSeeAlso({
     IdentifiedObject.class
@@ -85,7 +85,8 @@ public class Resource {
 
     @Size(max = 8)
     @XmlAttribute
-    @XmlJavaTypeAdapter(HexBinaryAdapter.class)
+    // TODO need to encode the responseRequired
+    // @XmlJavaTypeAdapter(HexBinaryAdapter.class)
     private String responseRequired;
 
     @XmlAttribute
