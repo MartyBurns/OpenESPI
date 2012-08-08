@@ -26,6 +26,7 @@ import javax.persistence.ManyToOne;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 
 /*
 import javax.xml.bind.annotation.XmlAccessType;
@@ -71,7 +72,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooJpaActiveRecord
 
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 @XmlType(name = "BatchItemInfo", propOrder = {
     "name",
     "operation",
@@ -81,19 +82,23 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 public class BatchItemInfo {
 
-	/*  from the jaxb compiler expansion of the xsd - but likely not needed in this representation
-	@XmlElement(type = String.class)
-	@XmlJavaTypeAdapter(HexBinaryAdapter.class)
-	*/
+	//  from the jaxb compiler expansion of the xsd - but likely not needed in this representation
+	@XmlElement
+	// TODO the HexBinary stuff:
+	// @XmlJavaTypeAdapter(HexBinaryAdapter.class)
+	
     @Size(min = 16, max = 16)
     private String name;
 
     @ManyToOne
+	@XmlElement(name="operation")
     private CRUDOperation operation;
 
     @ManyToOne
+	@XmlElement
     private StatusCode statusCode;
 
     @Size(max = 256)
+	@XmlElement
     private String statusReason;
 }
