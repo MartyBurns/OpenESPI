@@ -25,6 +25,7 @@ package org.energyos.espi.thirdparty.common;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 import org.springframework.roo.addon.javabean.RooJavaBean;
@@ -56,7 +57,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooJpaActiveRecord
 
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 @XmlType(name = "RationalNumber", propOrder = {
     "numerator",
     "denominator"
@@ -64,7 +65,9 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 public class RationalNumber {
 
+	@XmlElement
     private Long numerator;
 
+	@XmlElement
     private Long denominator;
 }
