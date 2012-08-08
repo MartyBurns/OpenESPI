@@ -87,7 +87,7 @@ import javax.xml.namespace.QName;
  * 
  * 
  */
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 @XmlType(name = "feedType", namespace = "http://www.w3.org/2005/Atom", propOrder = {
     "authorOrCategoryOrContributor"
 })
