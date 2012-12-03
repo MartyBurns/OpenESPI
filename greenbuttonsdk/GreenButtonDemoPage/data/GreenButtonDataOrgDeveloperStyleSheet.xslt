@@ -97,8 +97,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 						<xsl:variable name="ServiceKind" select="espi:ServiceCategory/espi:kind"/>
 
 						<!-- The following javascript is used when plotting -->
-						<p>
-							<!-- <script type="text/javascript">initComp();</script> -->
+					<p>
+					<script type="text/javascript">initComp();</script>				
 						</p>
 						<br/>
 						<table class="GBDataTable" width="100%">
@@ -260,7 +260,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 		<xsl:text>For location: </xsl:text>
 		<xsl:value-of select="../../atom:title"/>
 		<!-- The following javascript is used when plotting -->
-		<!-- <script type="text/javascript">initLocation('<xsl:value-of select="../../atom:title"/>');</script> -->
+			<script type="text/javascript">initLocation('<xsl:value-of select="../../atom:title"/>');</script>
+
 	</xsl:template>
 	<!--
 ==========================================================================
@@ -357,14 +358,14 @@ Unless required by applicable law or agreed to in writing, software distributed 
 								<xsl:text>Data for period starting: </xsl:text>
 								<xsl:for-each select="espi:start">
 									<!-- The following javascript is used when plotting -->
-									<!-- <script type="text/javascript">
+									<script type="text/javascript">
 													compStartDay('<xsl:call-template name="Date">
 										<xsl:with-param name="TZ" select="$TZ"/>
 										<xsl:with-param name="dateDSTStartUnix" select="$DSTStartUnix"/>
 										<xsl:with-param name="dateDSTEndUnix" select="$DSTEndUnix"/>
 										<xsl:with-param name="dstOffset" select="$dstOffset"/>										
 									</xsl:call-template>');
-									</script> -->
+												</script>
 									<xsl:call-template name="Date">
 										<xsl:with-param name="TZ" select="$TZ"/>
 										<xsl:with-param name="dateDSTStartUnix" select="$DSTStartUnix"/>
@@ -475,7 +476,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 										<xsl:sort select="./espi:timePeriod/espi:start" data-type="number" order="ascending"/>
 										<xsl:variable name="PlotYVal" select="espi:value * $valueMultiplier"/>
 										<!-- The following javascript is used when plotting -->
-										<!-- <script type="text/javascript">compAddValueAndDate('<xsl:value-of select="$PlotYVal"/>','<xsl:for-each select="espi:timePeriod">
+										<script type="text/javascript">compAddValueAndDate('<xsl:value-of select="$PlotYVal"/>','<xsl:for-each select="espi:timePeriod">
 												<xsl:for-each select="espi:start">
 													<xsl:call-template name="Date">
 															<xsl:with-param name="TZ" select="$TZ"/>
@@ -487,7 +488,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 												</xsl:for-each>
 											</xsl:for-each>','<xsl:for-each select="espi:cost">
 												<xsl:value-of select="format-number( . div(100000),&quot;0.00&quot;)"/>
-											</xsl:for-each>');</script> -->
+											</xsl:for-each>');</script>
 										<tr>
 											<td>
 												<xsl:for-each select="espi:timePeriod">

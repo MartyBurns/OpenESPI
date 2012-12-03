@@ -52,30 +52,32 @@ permissions and limitations under the License.
 -->
     
 <feed xmlns="http://www.w3.org/2005/Atom" xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <id>urn:uuid:56172A10-D8AE-4AF9-BB33-07E05467A17E</id>
+    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
  <title>ThirdPartyX Batch Feed</title>
- <updated>1899-12-30T00:00:00Z</updated>
+ <updated>2012-10-24T00:00:00Z</updated>
  <link rel="self" href="/ThirdParty/83e269c1/Batch"/>
     <entry>
-    <id>urn:uuid:0A1347E1-2914-4118-8DA0-088F951302CC</id>
-        <link rel="self" href="/User/9b6c7066/UsagePoint/01"/>
-        <link rel="up" href="/User/9b6c7066"/>
-        <link rel="related" href="/User/9b6c7066/UsagePoint/01/MeterReading"/>
+    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+        <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01"/>
+        <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint"/>
+        <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
+        <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/ElectricPowerUsageSummary"/>
+        <link rel="related" href="LocalTimeParameters/01"/>
         <title>a galaxy far, far away</title>
         <content>
             <UsagePoint xmlns="http://naesb.org/espi">
                 <ServiceCategory>
                     <kind> 0 </kind>
-                    </ServiceCategory>
+                </ServiceCategory>
             </UsagePoint>
         </content>
-        <published>1899-12-30T00:00:00Z</published>
-        <updated>1899-12-30T00:00:00Z</updated>
+        <published>2012-10-24T00:00:00Z</published>
+        <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:0ED331D8-4E98-49BB-BD1D-62E112EFB778</id>
-            <link rel="self" href="/User/9b6c7066/UsagePoint/01/LocalTimeParameters"/>
-            <link rel="up" href="/User/9b6c7066/UsagePoint/01"/>
+    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+            <link rel="self" href="LocalTimeParameters/01"/>
+            <link rel="up" href="LocalTimeParameters"/>
             <title>DST For North America</title>
             <content>
             <LocalTimeParameters xmlns="http://naesb.org/espi">
@@ -85,26 +87,26 @@ permissions and limitations under the License.
                         <tzOffset>-18000</tzOffset>
             </LocalTimeParameters>
         </content>
-        <published>1899-12-30T00:00:00Z</published>
-        <updated>1899-12-30T00:00:00Z</updated>
+        <published>2012-10-24T00:00:00Z</published>
+        <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:7DE7D4C1-7ACE-4997-BAA3-D1237B287276</id>
-        <link rel="self" href="/User/9b6c7066/UsagePoint/01/MeterReading/01"/>
-        <link rel="up" href="/User/9b6c7066/UsagePoint/01"/>
-        <link rel="related" href="/User/9b6c7066/UsagePoint/01/MeterReading/01/IntervalBlock"/>
-        <link rel="related" href="/ReadingType/07"/>
+    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+        <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01"/>
+        <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
+        <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
+        <link rel="related" href="ReadingType/07"/>
         <title>Hourly Electricity Consumption</title>
         <content>
             <MeterReading xmlns="http://naesb.org/espi"/>
         </content>
-        <published>1899-12-30T00:00:00Z</published>
-        <updated>1899-12-30T00:00:00Z</updated>
+        <published>2012-10-24T00:00:00Z</published>
+        <updated>2012-10-24T00:00:00Z</updated>
     </entry>
 <entry>
-    <id>urn:uuid:DCAE9D6D-35DF-4653-A332-B46BB1CE9DC8</id>
-    <link rel="self" href="/User/9b6c7066/UsagePoint/01/MeterReading/01/IntervalBlock/0173"/>
-    <link rel="up" href="/User/9b6c7066/UsagePoint/01/MeterReading/01"/>
+    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/0173"/>
+    <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
     <title/>
     <content>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -114,274 +116,274 @@ permissions and limitations under the License.
         <!-- start date: 4/1/2011 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1371031</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1301630400</start>
          <!-- 4/1/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>112431</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1105740</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1301716800</start>
          <!-- 4/2/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>139145</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1087035</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1301803200</start>
          <!-- 4/3/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>136791</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1469813</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1301889600</start>
          <!-- 4/4/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120531</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1573556</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1301976000</start>
          <!-- 4/5/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129039</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1519673</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302062400</start>
          <!-- 4/6/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>124620</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1573260</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302148800</start>
          <!-- 4/7/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129014</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1565952</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302235200</start>
          <!-- 4/8/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128415</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1304419</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302321600</start>
          <!-- 4/9/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>164147</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1230966</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302408000</start>
          <!-- 4/10/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>154904</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1494315</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302494400</start>
          <!-- 4/11/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>122541</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1562464</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302580800</start>
          <!-- 4/12/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128129</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1536444</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302667200</start>
          <!-- 4/13/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125995</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1667320</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302753600</start>
          <!-- 4/14/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>136728</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1476684</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302840000</start>
          <!-- 4/15/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121095</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1253255</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1302926400</start>
          <!-- 4/16/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>157708</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1105575</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303012800</start>
          <!-- 4/17/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>139124</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1596087</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303099200</start>
          <!-- 4/18/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>130886</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1478813</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303185600</start>
          <!-- 4/19/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121269</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1369019</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303272000</start>
          <!-- 4/20/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>112266</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1470733</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303358400</start>
          <!-- 4/21/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120607</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1526093</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303444800</start>
          <!-- 4/22/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125146</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1232684</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303531200</start>
          <!-- 4/23/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>155120</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1312912</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303617600</start>
          <!-- 4/24/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>165216</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1649883</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303704000</start>
          <!-- 4/25/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135298</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1636984</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303790400</start>
          <!-- 4/26/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134240</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1472467</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303876800</start>
          <!-- 4/27/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120749</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1494322</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1303963200</start>
          <!-- 4/28/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>122541</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1534857</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304049600</start>
          <!-- 4/29/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125865</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1097416</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304136000</start>
          <!-- 4/30/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>138098</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -391,283 +393,283 @@ permissions and limitations under the License.
         <!-- start date: 5/1/2011 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1111003</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304222400</start>
          <!-- 5/1/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>139807</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1610857</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304308800</start>
          <!-- 5/2/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132098</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1594386</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304395200</start>
          <!-- 5/3/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>130747</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1567080</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304481600</start>
          <!-- 5/4/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128508</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1632529</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304568000</start>
          <!-- 5/5/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133875</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1618389</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304654400</start>
          <!-- 5/6/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132715</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1293819</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304740800</start>
          <!-- 5/7/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>162813</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1100237</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304827200</start>
          <!-- 5/8/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>138453</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1613756</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1304913600</start>
          <!-- 5/9/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132335</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1641878</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305000000</start>
          <!-- 5/10/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134641</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1426774</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305086400</start>
          <!-- 5/11/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117002</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1534734</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305172800</start>
          <!-- 5/12/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125855</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1665690</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305259200</start>
          <!-- 5/13/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>136594</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1240017</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305345600</start>
          <!-- 5/14/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>156042</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1220216</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305432000</start>
          <!-- 5/15/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>153551</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1412381</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305518400</start>
          <!-- 5/16/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115822</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1511716</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305604800</start>
          <!-- 5/17/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>123968</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1534939</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305691200</start>
          <!-- 5/18/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125872</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1620871</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305777600</start>
          <!-- 5/19/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132919</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1484366</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305864000</start>
          <!-- 5/20/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121725</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1262409</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1305950400</start>
          <!-- 5/21/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>158860</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1131478</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306036800</start>
          <!-- 5/22/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>142384</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1392008</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306123200</start>
          <!-- 5/23/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114151</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1518609</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306209600</start>
          <!-- 5/24/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>124533</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1392376</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306296000</start>
          <!-- 5/25/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114181</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1446698</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306382400</start>
          <!-- 5/26/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118636</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1554939</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306468800</start>
          <!-- 5/27/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127512</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1282170</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306555200</start>
          <!-- 5/28/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>161347</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1247118</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306641600</start>
          <!-- 5/29/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>156936</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1453468</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306728000</start>
          <!-- 5/30/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>119191</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1529960</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306814400</start>
          <!-- 5/31/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125464</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -677,274 +679,274 @@ permissions and limitations under the License.
         <!-- start date: 6/1/2011 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1473055</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306900800</start>
          <!-- 6/1/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120797</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1486501</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1306987200</start>
          <!-- 6/2/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121900</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1443700</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307073600</start>
          <!-- 6/3/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118390</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1181044</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307160000</start>
          <!-- 6/4/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>148621</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1276978</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307246400</start>
          <!-- 6/5/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>160694</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1480714</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307332800</start>
          <!-- 6/6/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121425</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1578813</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307419200</start>
          <!-- 6/7/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129470</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1408994</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307505600</start>
          <!-- 6/8/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115544</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1526047</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307592000</start>
          <!-- 6/9/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125143</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1498410</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307678400</start>
          <!-- 6/10/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>122876</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1315888</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307764800</start>
          <!-- 6/11/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>165590</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1177885</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307851200</start>
          <!-- 6/12/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>148224</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1404467</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1307937600</start>
          <!-- 6/13/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115173</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1658695</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308024000</start>
          <!-- 6/14/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>136020</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1559010</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308110400</start>
          <!-- 6/15/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127846</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1595419</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308196800</start>
          <!-- 6/16/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>130832</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1648091</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308283200</start>
          <!-- 6/17/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135151</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1327189</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308369600</start>
          <!-- 6/18/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>167012</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1200472</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308456000</start>
          <!-- 6/19/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>151066</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1580524</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308542400</start>
          <!-- 6/20/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129610</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1655799</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308628800</start>
          <!-- 6/21/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135783</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1528515</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308715200</start>
          <!-- 6/22/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125345</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1444005</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308801600</start>
          <!-- 6/23/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118415</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1484096</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308888000</start>
          <!-- 6/24/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121703</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1096295</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1308974400</start>
          <!-- 6/25/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>137957</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1118964</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309060800</start>
          <!-- 6/26/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>140809</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1411725</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309147200</start>
          <!-- 6/27/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115768</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1636735</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309233600</start>
          <!-- 6/28/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134220</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1435735</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309320000</start>
          <!-- 6/29/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117737</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1584158</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309406400</start>
          <!-- 6/30/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129908</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -954,283 +956,283 @@ permissions and limitations under the License.
         <!-- start date: 7/1/2011 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1421284</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309492800</start>
          <!-- 7/1/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116552</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1252874</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309579200</start>
          <!-- 7/2/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>157660</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1187583</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309665600</start>
          <!-- 7/3/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>149444</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1569959</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309752000</start>
          <!-- 7/4/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128744</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1371768</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309838400</start>
          <!-- 7/5/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>112491</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1468636</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1309924800</start>
          <!-- 7/6/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120435</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1438046</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310011200</start>
          <!-- 7/7/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117926</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1413749</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310097600</start>
          <!-- 7/8/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115934</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1323808</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310184000</start>
          <!-- 7/9/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>166587</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1193209</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310270400</start>
          <!-- 7/10/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>150152</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1426932</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310356800</start>
          <!-- 7/11/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117015</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1578182</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310443200</start>
          <!-- 7/12/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129418</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1460480</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310529600</start>
          <!-- 7/13/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>119766</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1621193</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310616000</start>
          <!-- 7/14/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132945</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1393732</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310702400</start>
          <!-- 7/15/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114292</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1089043</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310788800</start>
          <!-- 7/16/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>137044</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1251064</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310875200</start>
          <!-- 7/17/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>157433</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1389068</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1310961600</start>
          <!-- 7/18/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>113910</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1549217</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311048000</start>
          <!-- 7/19/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127043</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1386957</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311134400</start>
          <!-- 7/20/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>113737</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1659038</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311220800</start>
          <!-- 7/21/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>136049</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1392041</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311307200</start>
          <!-- 7/22/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114154</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1143083</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311393600</start>
          <!-- 7/23/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>143844</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1195482</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311480000</start>
          <!-- 7/24/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>150438</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1443519</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311566400</start>
          <!-- 7/25/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118375</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1415005</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311652800</start>
          <!-- 7/26/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116037</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1493488</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311739200</start>
          <!-- 7/27/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>122473</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1639661</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311825600</start>
          <!-- 7/28/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134460</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1403208</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311912000</start>
          <!-- 7/29/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115069</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1122872</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1311998400</start>
          <!-- 7/30/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>141301</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1312250</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312084800</start>
          <!-- 7/31/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>165132</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -1240,283 +1242,283 @@ permissions and limitations under the License.
         <!-- start date: 8/1/2011 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1417504</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312171200</start>
          <!-- 8/1/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116242</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1407255</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312257600</start>
          <!-- 8/2/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115401</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1641327</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312344000</start>
          <!-- 8/3/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134596</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1524300</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312430400</start>
          <!-- 8/4/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>124999</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1390865</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312516800</start>
          <!-- 8/5/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114057</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1238060</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312603200</start>
          <!-- 8/6/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>155796</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1086786</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312689600</start>
          <!-- 8/7/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>136760</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1606182</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312776000</start>
          <!-- 8/8/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131714</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1630828</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312862400</start>
          <!-- 8/9/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133735</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1580213</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1312948800</start>
          <!-- 8/10/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129585</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1567232</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313035200</start>
          <!-- 8/11/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128520</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1474620</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313121600</start>
          <!-- 8/12/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120925</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1270400</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313208000</start>
          <!-- 8/13/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>159866</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1213675</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313294400</start>
          <!-- 8/14/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>152728</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1668123</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313380800</start>
          <!-- 8/15/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>136794</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1436130</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313467200</start>
          <!-- 8/16/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117769</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1602835</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313553600</start>
          <!-- 8/17/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131440</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1609207</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313640000</start>
          <!-- 8/18/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131962</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1493438</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313726400</start>
          <!-- 8/19/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>122469</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1196971</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313812800</start>
          <!-- 8/20/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>150626</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1293142</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313899200</start>
          <!-- 8/21/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>162728</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1539049</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1313985600</start>
          <!-- 8/22/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>126209</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1482267</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314072000</start>
          <!-- 8/23/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121553</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1368403</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314158400</start>
          <!-- 8/24/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>112215</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1405405</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314244800</start>
          <!-- 8/25/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115250</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1430361</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314331200</start>
          <!-- 8/26/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117296</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1161294</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314417600</start>
          <!-- 8/27/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>146136</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1309876</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314504000</start>
          <!-- 8/28/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>164833</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1531911</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314590400</start>
          <!-- 8/29/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125624</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1582399</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314676800</start>
          <!-- 8/30/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129764</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1609656</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314763200</start>
          <!-- 8/31/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131999</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -1526,274 +1528,274 @@ permissions and limitations under the License.
         <!-- start date: 9/1/2011 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1579815</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314849600</start>
          <!-- 9/1/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129552</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1570464</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1314936000</start>
          <!-- 9/2/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128785</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1130312</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315022400</start>
          <!-- 9/3/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>142237</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1111441</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315108800</start>
          <!-- 9/4/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>139863</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1652742</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315195200</start>
          <!-- 9/5/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135532</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1603711</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315281600</start>
          <!-- 9/6/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131512</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1551520</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315368000</start>
          <!-- 9/7/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127232</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1604032</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315454400</start>
          <!-- 9/8/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131538</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1436176</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315540800</start>
          <!-- 9/9/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117773</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1130055</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315627200</start>
          <!-- 9/10/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>142205</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1304761</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315713600</start>
          <!-- 9/11/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>164190</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1582436</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315800000</start>
          <!-- 9/12/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129767</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1450944</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315886400</start>
          <!-- 9/13/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118984</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1602189</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1315972800</start>
          <!-- 9/14/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131387</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1403874</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316059200</start>
          <!-- 9/15/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115124</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1441236</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316145600</start>
          <!-- 9/16/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118188</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1165629</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316232000</start>
          <!-- 9/17/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>146682</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1311654</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316318400</start>
          <!-- 9/18/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>165057</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1374606</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316404800</start>
          <!-- 9/19/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>112724</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1576540</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316491200</start>
          <!-- 9/20/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129283</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1599795</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316577600</start>
          <!-- 9/21/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131190</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1520972</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316664000</start>
          <!-- 9/22/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>124727</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1613881</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316750400</start>
          <!-- 9/23/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132346</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1087813</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316836800</start>
          <!-- 9/24/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>136889</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1100860</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1316923200</start>
          <!-- 9/25/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>138531</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1435555</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317009600</start>
          <!-- 9/26/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117722</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1414017</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317096000</start>
          <!-- 9/27/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115956</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1590065</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317182400</start>
          <!-- 9/28/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>130393</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1619245</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317268800</start>
          <!-- 9/29/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132785</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1434313</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317355200</start>
          <!-- 9/30/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117620</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -1803,283 +1805,283 @@ permissions and limitations under the License.
         <!-- start date: 10/1/2011 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1196033</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317441600</start>
          <!-- 10/1/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>150508</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1148609</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317528000</start>
          <!-- 10/2/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>144540</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1463591</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317614400</start>
          <!-- 10/3/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120021</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1635165</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317700800</start>
          <!-- 10/4/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134091</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1471607</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317787200</start>
          <!-- 10/5/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120678</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1421000</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317873600</start>
          <!-- 10/6/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116528</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1660024</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1317960000</start>
          <!-- 10/7/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>136129</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1311680</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318046400</start>
          <!-- 10/8/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>165061</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1208091</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318132800</start>
          <!-- 10/9/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>152025</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1394985</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318219200</start>
          <!-- 10/10/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114395</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1468700</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318305600</start>
          <!-- 10/11/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120440</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1589159</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318392000</start>
          <!-- 10/12/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>130318</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1549896</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318478400</start>
          <!-- 10/13/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127098</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1517087</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318564800</start>
          <!-- 10/14/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>124408</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1146545</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318651200</start>
          <!-- 10/15/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>144280</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1305650</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318737600</start>
          <!-- 10/16/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>164302</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1559907</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318824000</start>
          <!-- 10/17/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127919</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1367374</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318910400</start>
          <!-- 10/18/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>112131</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1414733</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1318996800</start>
          <!-- 10/19/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116014</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1402619</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319083200</start>
          <!-- 10/20/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115021</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1485407</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319169600</start>
          <!-- 10/21/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121810</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1280703</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319256000</start>
          <!-- 10/22/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>161162</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1285900</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319342400</start>
          <!-- 10/23/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>161816</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1424171</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319428800</start>
          <!-- 10/24/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116788</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1437721</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319515200</start>
          <!-- 10/25/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117900</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1474417</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319601600</start>
          <!-- 10/26/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120909</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1416850</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319688000</start>
          <!-- 10/27/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116188</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1488899</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319774400</start>
          <!-- 10/28/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>122096</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1116872</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319860800</start>
          <!-- 10/29/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>140546</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1172396</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1319947200</start>
          <!-- 10/30/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>147533</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1496825</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1320033600</start>
          <!-- 10/31/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>122746</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -2089,283 +2091,274 @@ permissions and limitations under the License.
         <!-- start date: 11/1/2011 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1394294</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1320120000</start>
          <!-- 11/1/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114338</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1631245</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1320206400</start>
          <!-- 11/2/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133769</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1644528</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1320292800</start>
          <!-- 11/3/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134859</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1538039</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1320379200</start>
          <!-- 11/4/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>126126</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1199044</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1320465600</start>
          <!-- 11/5/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>150887</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1253135</cost>
     <timePeriod>
-        <duration>86400</duration>
+        <duration>90000</duration>
         <start>1320552000</start>
          <!-- 11/6/2011 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>158734</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1380903</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1320638400</start>
-         <!-- 11/7/2011 4:00:00 AM  -->
+        <start>1320642000</start>
+         <!-- 11/7/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>113240</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1631513</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1320724800</start>
-         <!-- 11/8/2011 4:00:00 AM  -->
+        <start>1320728400</start>
+         <!-- 11/8/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133791</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1573732</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1320811200</start>
-         <!-- 11/9/2011 4:00:00 AM  -->
+        <start>1320814800</start>
+         <!-- 11/9/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129053</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1618928</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1320897600</start>
-         <!-- 11/10/2011 4:00:00 AM  -->
+        <start>1320901200</start>
+         <!-- 11/10/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132759</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1469389</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1320984000</start>
-         <!-- 11/11/2011 4:00:00 AM  -->
+        <start>1320987600</start>
+         <!-- 11/11/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120497</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1302529</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321070400</start>
-         <!-- 11/12/2011 4:00:00 AM  -->
+        <start>1321074000</start>
+         <!-- 11/12/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>163909</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1133811</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321156800</start>
-         <!-- 11/13/2011 4:00:00 AM  -->
+        <start>1321160400</start>
+         <!-- 11/13/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>142678</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1622440</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321243200</start>
-         <!-- 11/14/2011 4:00:00 AM  -->
+        <start>1321246800</start>
+         <!-- 11/14/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133047</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1646264</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321329600</start>
-         <!-- 11/15/2011 4:00:00 AM  -->
+        <start>1321333200</start>
+         <!-- 11/15/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135001</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1530978</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321416000</start>
-         <!-- 11/16/2011 4:00:00 AM  -->
+        <start>1321419600</start>
+         <!-- 11/16/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125547</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1458126</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321502400</start>
-         <!-- 11/17/2011 4:00:00 AM  -->
+        <start>1321506000</start>
+         <!-- 11/17/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>119573</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1547944</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321588800</start>
-         <!-- 11/18/2011 4:00:00 AM  -->
+        <start>1321592400</start>
+         <!-- 11/18/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>126938</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1248829</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321675200</start>
-         <!-- 11/19/2011 4:00:00 AM  -->
+        <start>1321678800</start>
+         <!-- 11/19/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>157151</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1210506</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321761600</start>
-         <!-- 11/20/2011 4:00:00 AM  -->
+        <start>1321765200</start>
+         <!-- 11/20/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>152329</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1366945</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321848000</start>
-         <!-- 11/21/2011 4:00:00 AM  -->
+        <start>1321851600</start>
+         <!-- 11/21/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>112096</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1647563</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1321934400</start>
-         <!-- 11/22/2011 4:00:00 AM  -->
+        <start>1321938000</start>
+         <!-- 11/22/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135108</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1565115</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1322020800</start>
-         <!-- 11/23/2011 4:00:00 AM  -->
+        <start>1322024400</start>
+         <!-- 11/23/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128347</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1639998</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1322107200</start>
-         <!-- 11/24/2011 4:00:00 AM  -->
+        <start>1322110800</start>
+         <!-- 11/24/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134487</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1382578</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1322193600</start>
-         <!-- 11/25/2011 4:00:00 AM  -->
+        <start>1322197200</start>
+         <!-- 11/25/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>113378</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1173656</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1322280000</start>
-         <!-- 11/26/2011 4:00:00 AM  -->
+        <start>1322283600</start>
+         <!-- 11/26/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>147692</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1291081</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1322366400</start>
-         <!-- 11/27/2011 4:00:00 AM  -->
+        <start>1322370000</start>
+         <!-- 11/27/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>162468</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1401020</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1322452800</start>
-         <!-- 11/28/2011 4:00:00 AM  -->
+        <start>1322456400</start>
+         <!-- 11/28/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114890</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1461099</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1322539200</start>
-         <!-- 11/29/2011 4:00:00 AM  -->
+        <start>1322542800</start>
+         <!-- 11/29/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>119817</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1409711</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1322625600</start>
-         <!-- 11/30/2011 4:00:00 AM  -->
+        <start>1322629200</start>
+         <!-- 11/30/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
-</IntervalReading>
-<IntervalReading>
-    <cost>1517667</cost>
-    <timePeriod>
-        <duration>86400</duration>
-        <start>1322712000</start>
-         <!-- 12/1/2011 4:00:00 AM  -->
-    </timePeriod>
-    <value>124456</value>
+    <value>115603</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -2375,283 +2368,283 @@ permissions and limitations under the License.
         <!-- start date: 12/1/2011 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1386005</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1322715600</start>
          <!-- 12/1/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>113659</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1668230</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1322802000</start>
          <!-- 12/2/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>136802</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1160872</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1322888400</start>
          <!-- 12/3/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>146083</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1209070</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1322974800</start>
          <!-- 12/4/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>152148</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1424347</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323061200</start>
          <!-- 12/5/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116803</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1433228</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323147600</start>
          <!-- 12/6/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117531</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1385966</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323234000</start>
          <!-- 12/7/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>113655</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1418874</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323320400</start>
          <!-- 12/8/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116354</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1551931</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323406800</start>
          <!-- 12/9/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127265</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1314639</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323493200</start>
          <!-- 12/10/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>165433</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1134205</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323579600</start>
          <!-- 12/11/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>142727</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1406568</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323666000</start>
          <!-- 12/12/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115345</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1647021</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323752400</start>
          <!-- 12/13/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135063</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1572207</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323838800</start>
          <!-- 12/14/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128928</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1431590</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1323925200</start>
          <!-- 12/15/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117397</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1563745</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324011600</start>
          <!-- 12/16/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128234</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1303024</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324098000</start>
          <!-- 12/17/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>163971</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1194768</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324184400</start>
          <!-- 12/18/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>150348</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1403694</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324270800</start>
          <!-- 12/19/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115109</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1529238</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324357200</start>
          <!-- 12/20/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125404</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1564907</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324443600</start>
          <!-- 12/21/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128329</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1416161</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324530000</start>
          <!-- 12/22/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116132</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1437463</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324616400</start>
          <!-- 12/23/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117878</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1246582</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324702800</start>
          <!-- 12/24/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>156869</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1124591</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324789200</start>
          <!-- 12/25/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>141517</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1452272</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324875600</start>
          <!-- 12/26/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>119093</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1443620</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1324962000</start>
          <!-- 12/27/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118383</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1584496</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325048400</start>
          <!-- 12/28/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129936</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1632859</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325134800</start>
          <!-- 12/29/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133902</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1573490</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325221200</start>
          <!-- 12/30/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>129033</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1234110</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325307600</start>
          <!-- 12/31/2011 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>155299</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -2661,283 +2654,283 @@ permissions and limitations under the License.
         <!-- start date: 1/1/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1146105</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325394000</start>
          <!-- 1/1/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>144225</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1601847</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325480400</start>
          <!-- 1/2/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131359</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1611762</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325566800</start>
          <!-- 1/3/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132172</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1373171</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325653200</start>
          <!-- 1/4/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>112606</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1634145</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325739600</start>
          <!-- 1/5/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134007</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1513702</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325826000</start>
          <!-- 1/6/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>124130</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1102807</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325912400</start>
          <!-- 1/7/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>138776</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1169757</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1325998800</start>
          <!-- 1/8/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>147201</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1637905</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326085200</start>
          <!-- 1/9/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134316</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1602093</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326171600</start>
          <!-- 1/10/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131379</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1505054</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326258000</start>
          <!-- 1/11/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>123421</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1555906</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326344400</start>
          <!-- 1/12/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127591</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1649877</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326430800</start>
          <!-- 1/13/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135297</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1148814</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326517200</start>
          <!-- 1/14/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>144566</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1201532</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326603600</start>
          <!-- 1/15/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>151200</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1503795</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326690000</start>
          <!-- 1/16/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>123318</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1383296</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326776400</start>
          <!-- 1/17/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>113436</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1463768</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326862800</start>
          <!-- 1/18/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>120036</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1439386</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1326949200</start>
          <!-- 1/19/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118036</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1525409</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327035600</start>
          <!-- 1/20/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125090</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1324554</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327122000</start>
          <!-- 1/21/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>166681</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1174054</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327208400</start>
          <!-- 1/22/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>147742</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1638856</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327294800</start>
          <!-- 1/23/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134394</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1509834</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327381200</start>
          <!-- 1/24/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>123813</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1556814</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327467600</start>
          <!-- 1/25/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127666</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1430677</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327554000</start>
          <!-- 1/26/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117322</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1442176</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327640400</start>
          <!-- 1/27/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118265</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1316347</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327726800</start>
          <!-- 1/28/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>165648</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1291006</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327813200</start>
          <!-- 1/29/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>162459</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1627415</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327899600</start>
          <!-- 1/30/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133455</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1564329</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1327986000</start>
          <!-- 1/31/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128282</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -2947,265 +2940,265 @@ permissions and limitations under the License.
         <!-- start date: 2/1/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1655306</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328072400</start>
          <!-- 2/1/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135743</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1506484</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328158800</start>
          <!-- 2/2/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>123538</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1485774</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328245200</start>
          <!-- 2/3/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121840</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1123888</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328331600</start>
          <!-- 2/4/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>141429</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1182858</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328418000</start>
          <!-- 2/5/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>148850</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1528255</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328504400</start>
          <!-- 2/6/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125324</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1428836</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328590800</start>
          <!-- 2/7/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117171</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1634368</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328677200</start>
          <!-- 2/8/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>134026</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1656389</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328763600</start>
          <!-- 2/9/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135831</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1628471</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328850000</start>
          <!-- 2/10/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133542</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1195597</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1328936400</start>
          <!-- 2/11/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>150453</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1255188</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329022800</start>
          <!-- 2/12/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>157952</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1404527</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329109200</start>
          <!-- 2/13/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115178</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1599510</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329195600</start>
          <!-- 2/14/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131167</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1591078</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329282000</start>
          <!-- 2/15/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>130476</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1385519</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329368400</start>
          <!-- 2/16/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>113619</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1537538</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329454800</start>
          <!-- 2/17/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>126085</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1109027</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329541200</start>
          <!-- 2/18/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>139559</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1112691</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329627600</start>
          <!-- 2/19/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>140020</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1428826</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329714000</start>
          <!-- 2/20/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117170</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1567166</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329800400</start>
          <!-- 2/21/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>128515</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1509536</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329886800</start>
          <!-- 2/22/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>123789</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1426003</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1329973200</start>
          <!-- 2/23/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116939</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1516296</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330059600</start>
          <!-- 2/24/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>124343</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1177128</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330146000</start>
          <!-- 2/25/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>148129</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1293825</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330232400</start>
          <!-- 2/26/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>162814</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1587661</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330318800</start>
          <!-- 2/27/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>130195</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1391545</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330405200</start>
          <!-- 2/28/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114113</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1456251</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330491600</start>
          <!-- 2/29/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>119419</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -3215,298 +3208,299 @@ permissions and limitations under the License.
         <!-- start date: 3/1/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1448190</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330578000</start>
          <!-- 3/1/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>118758</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1426409</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330664400</start>
          <!-- 3/2/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>116972</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1281304</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330750800</start>
          <!-- 3/3/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>161238</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1327412</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330837200</start>
          <!-- 3/4/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>167040</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1616488</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330923600</start>
          <!-- 3/5/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132559</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1616396</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331010000</start>
          <!-- 3/6/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>132552</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1460219</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331096400</start>
          <!-- 3/7/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>119745</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1544424</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331182800</start>
          <!-- 3/8/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>126650</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1666984</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331269200</start>
          <!-- 3/9/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>136700</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1270104</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331355600</start>
          <!-- 3/10/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>159829</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1191630</cost>
     <timePeriod>
-        <duration>86400</duration>
+        <duration>82800</duration>
         <start>1331442000</start>
          <!-- 3/11/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>148956</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1535902</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1331528400</start>
-         <!-- 3/12/2012 5:00:00 AM  -->
+        <start>1331524800</start>
+         <!-- 3/12/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125951</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1400057</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1331614800</start>
-         <!-- 3/13/2012 5:00:00 AM  -->
+        <start>1331611200</start>
+         <!-- 3/13/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>114811</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1529532</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1331701200</start>
-         <!-- 3/14/2012 5:00:00 AM  -->
+        <start>1331697600</start>
+         <!-- 3/14/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>125429</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1652783</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1331787600</start>
-         <!-- 3/15/2012 5:00:00 AM  -->
+        <start>1331784000</start>
+         <!-- 3/15/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>135536</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1626117</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1331874000</start>
-         <!-- 3/16/2012 5:00:00 AM  -->
+        <start>1331870400</start>
+         <!-- 3/16/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>133349</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1127010</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1331960400</start>
-         <!-- 3/17/2012 5:00:00 AM  -->
+        <start>1331956800</start>
+         <!-- 3/17/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>141822</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1276093</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332046800</start>
-         <!-- 3/18/2012 5:00:00 AM  -->
+        <start>1332043200</start>
+         <!-- 3/18/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>160582</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1434716</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332133200</start>
-         <!-- 3/19/2012 5:00:00 AM  -->
+        <start>1332129600</start>
+         <!-- 3/19/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117653</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1428482</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332219600</start>
-         <!-- 3/20/2012 5:00:00 AM  -->
+        <start>1332216000</start>
+         <!-- 3/20/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>117142</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1605676</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332306000</start>
-         <!-- 3/21/2012 5:00:00 AM  -->
+        <start>1332302400</start>
+         <!-- 3/21/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>131673</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1414365</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332392400</start>
-         <!-- 3/22/2012 5:00:00 AM  -->
+        <start>1332388800</start>
+         <!-- 3/22/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>115984</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1555583</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332478800</start>
-         <!-- 3/23/2012 5:00:00 AM  -->
+        <start>1332475200</start>
+         <!-- 3/23/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127565</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1254032</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332565200</start>
-         <!-- 3/24/2012 5:00:00 AM  -->
+        <start>1332561600</start>
+         <!-- 3/24/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>157806</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1215149</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332651600</start>
-         <!-- 3/25/2012 5:00:00 AM  -->
+        <start>1332648000</start>
+         <!-- 3/25/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>152913</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1538664</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332738000</start>
-         <!-- 3/26/2012 5:00:00 AM  -->
+        <start>1332734400</start>
+         <!-- 3/26/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>126177</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1589151</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332824400</start>
-         <!-- 3/27/2012 5:00:00 AM  -->
+        <start>1332820800</start>
+         <!-- 3/27/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>130318</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1546308</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332910800</start>
-         <!-- 3/28/2012 5:00:00 AM  -->
+        <start>1332907200</start>
+         <!-- 3/28/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>126804</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1481774</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1332997200</start>
-         <!-- 3/29/2012 5:00:00 AM  -->
+        <start>1332993600</start>
+         <!-- 3/29/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>121512</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1517667</cost>
+    <cost>1552640</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1333083600</start>
-         <!-- 3/30/2012 5:00:00 AM  -->
+        <start>1333080000</start>
+         <!-- 3/30/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>124456</value>
+    <value>127324</value>
 </IntervalReading>
 <IntervalReading>
-    <cost>1207317</cost>
+    <cost>1102373</cost>
     <timePeriod>
         <duration>86400</duration>
-        <start>1333170000</start>
-         <!-- 3/31/2012 5:00:00 AM  -->
+        <start>1333166400</start>
+         <!-- 3/31/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>151928</value>
+    <value>138721</value>
 </IntervalReading>
 </IntervalBlock>
     </content>
-    <published>1899-12-30T00:00:00Z</published>
-    <updated>1899-12-30T00:00:00Z</updated>
+    <published>2012-10-24T00:00:00Z</published>
+    <updated>2012-10-24T00:00:00Z</updated>
 </entry>
     <entry>
-    <id>urn:uuid:CDA19961-E9FF-4F08-B858-5D00FE338D96</id>
-        <link rel="self" href="/ReadingType/07"/>
-        <link rel="up" type="" href="/User/9b6c7066/UsagePoint/01/MeterReading/01"/>
+    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+        <link rel="self" href="ReadingType/07"/>
+        <link rel="up" href="ReadingType"/>
         <title>Energy Delivered (kWh)</title>
         <content>
             <ReadingType xmlns="http://naesb.org/espi">
                 <accumulationBehaviour> 4 </accumulationBehaviour>
                 <commodity> 1 </commodity>
+                <currency>840</currency>
                 <dataQualifier> 12 </dataQualifier>
                 <flowDirection> 1 </flowDirection>
                 <intervalLength> 86400 </intervalLength>
@@ -3517,13 +3511,13 @@ permissions and limitations under the License.
                 <uom>72</uom>
             </ReadingType>
         </content>
-        <published>1899-12-30T00:00:00Z</published>
-        <updated>1899-12-30T00:00:00Z</updated>
+        <published>2012-10-24T00:00:00Z</published>
+        <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:C0A2168B-613B-47ED-AD03-67FDFA1600AB</id>
-        <link rel="self" href="/User/9b6c7066/ElectricPowerUsageSummary"/>
-        <link rel="up" type="" href="/User/9b6c7066/UsagePoint/01"/>
+    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+        <link rel="self" href="RetailCustomer/9b6c7063/ElectricPowerUsageSummary/01"/>
+        <link rel="up" type="" href="RetailCustomer/9b6c7063/UsagePoint/01/ElectricPowerUsageSummary"/>
         <title>Usage Summary</title>
         <content>
             <ElectricPowerUsageSummary xmlns="http://naesb.org/espi">
@@ -3531,21 +3525,26 @@ permissions and limitations under the License.
                     <duration>2592000</duration>
                     <start>1301630400</start>
                 </billingPeriod>
-                <billLastPeriod>44082860</billLastPeriod>
-                <billToDate>481660179</billToDate>
+                <billLastPeriod>44115000</billLastPeriod>
+                <billToDate>479920000</billToDate>
                 <costAdditionalLastPeriod>1346000</costAdditionalLastPeriod>
                 <currency>840</currency>
+                <overallConsumptionLastPeriod>
+                    <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
+                    <uom>72</uom>
+                    <value>3977658</value>
+                </overallConsumptionLastPeriod>
                 <currentBillingPeriodOverAllConsumption>
                     <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
                     <timeStamp>1333252800</timeStamp>
                     <uom>72</uom>
-                    <value>44578984</value>
+                    <value>44442123</value>
                 </currentBillingPeriodOverAllConsumption>
                 <qualityOfReading>14</qualityOfReading>
                 <statusTimeStamp>1333252800</statusTimeStamp>
             </ElectricPowerUsageSummary>
         </content>
-        <published>1899-12-30T00:00:00Z</published>
-        <updated>1899-12-30T00:00:00Z</updated>
+        <published>2012-10-24T00:00:00Z</published>
+        <updated>2012-10-24T00:00:00Z</updated>
     </entry>
 </feed>

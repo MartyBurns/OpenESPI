@@ -28,7 +28,7 @@ Please leave this heading comment section in this file.
 -->
 <!--
 ==========================================================================
-Sample Green Button Data File:  Water.xml
+Sample Green Button Data File:  Electric.xml
 Version: 0.7 20120116
      Author: Ron Pasquarelli, Marty Burns (Hypertek for EnerNex)
      Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
@@ -67,7 +67,7 @@ permissions and limitations under the License.
         <content>
             <UsagePoint xmlns="http://naesb.org/espi">
                 <ServiceCategory>
-                    <kind> 2 </kind>
+                    <kind> 0 </kind>
                 </ServiceCategory>
             </UsagePoint>
         </content>
@@ -96,7 +96,7 @@ permissions and limitations under the License.
         <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
         <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
         <link rel="related" href="ReadingType/07"/>
-        <title>Monthly Water Consumption</title>
+        <title>Summary of Electricity Consumption</title>
         <content>
             <MeterReading xmlns="http://naesb.org/espi"/>
         </content>
@@ -105,7 +105,7 @@ permissions and limitations under the License.
     </entry>
 <entry>
     <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
-    <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/`"/>
+    <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/0173"/>
     <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
     <title/>
     <content>
@@ -116,29 +116,29 @@ permissions and limitations under the License.
         <!-- start date: 4/1/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>35684</cost>
+    <cost>40278866</cost>
     <timePeriod>
         <duration>2592000</duration>
         <start>1333252800</start>
          <!-- 4/1/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>26154</value>
+    <value>5045842</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
     <interval>
-        <duration>345600</duration>
+        <duration>950400</duration>
         <start>1335844800</start>
         <!-- start date: 5/1/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>5219</cost>
+    <cost>18023907</cost>
     <timePeriod>
-        <duration>345600</duration>
+        <duration>950400</duration>
         <start>1335844800</start>
          <!-- 5/1/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>2505</value>
+    <value>1494280</value>
 </IntervalReading>
 </IntervalBlock>
     </content>
@@ -153,15 +153,16 @@ permissions and limitations under the License.
         <content>
             <ReadingType xmlns="http://naesb.org/espi">
                 <accumulationBehaviour> 4 </accumulationBehaviour>
-                <commodity> 9 </commodity>
+                <commodity> 1 </commodity>
                 <currency>840</currency>
                 <dataQualifier> 12 </dataQualifier>
                 <flowDirection> 1 </flowDirection>
                 <intervalLength> 2678400 </intervalLength>
                 <kind> 12 </kind>
-                <powerOfTenMultiplier> 3 </powerOfTenMultiplier>
+                <phase> 769 </phase>
+                <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
                 <timeAttribute> 0 </timeAttribute>
-                <uom>128</uom>
+                <uom>72</uom>
             </ReadingType>
         </content>
         <published>2012-10-24T00:00:00Z</published>
@@ -178,23 +179,23 @@ permissions and limitations under the License.
                     <duration>2592000</duration>
                     <start>1333252800</start>
                 </billingPeriod>
-                <billLastPeriod>1886000</billLastPeriod>
-                <billToDate>5000</billToDate>
-                <costAdditionalLastPeriod>1850000</costAdditionalLastPeriod>
+                <billLastPeriod>41625000</billLastPeriod>
+                <billToDate>18024000</billToDate>
+                <costAdditionalLastPeriod>1346000</costAdditionalLastPeriod>
                 <currency>840</currency>
                 <overallConsumptionLastPeriod>
-                    <powerOfTenMultiplier> 3 </powerOfTenMultiplier>
-                    <uom>128</uom>
-                    <value>26154</value>
+                    <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
+                    <uom>72</uom>
+                    <value>5045842</value>
                 </overallConsumptionLastPeriod>
                 <currentBillingPeriodOverAllConsumption>
-                    <powerOfTenMultiplier> 3 </powerOfTenMultiplier>
-                    <timeStamp>1336190400</timeStamp>
-                    <uom>128</uom>
-                    <value>2505</value>
+                    <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
+                    <timeStamp>1336795200</timeStamp>
+                    <uom>72</uom>
+                    <value>1494280</value>
                 </currentBillingPeriodOverAllConsumption>
                 <qualityOfReading>14</qualityOfReading>
-                <statusTimeStamp>1336190400</statusTimeStamp>
+                <statusTimeStamp>1336795200</statusTimeStamp>
             </ElectricPowerUsageSummary>
         </content>
         <published>2012-10-24T00:00:00Z</published>
