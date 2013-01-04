@@ -2,7 +2,7 @@
 <!--
 ==========================================================================
  Stylesheet: GreenButtonDataStyleSheet.xsl
-    Version: 0.7.20121130
+    Version: 0.7.20130104
      Author: Ron Pasquarelli, Marty Burns (Hypertek for EnerNex)
      Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
 ========================================================================== 
@@ -96,9 +96,35 @@ Unless required by applicable law or agreed to in writing, software distributed 
 												
 						<xsl:variable name="ServiceKind" select="espi:ServiceCategory/espi:kind"/>
 
-						<!-- The following javascript is used when plotting -->
-						<p>
-							<!-- <script type="text/javascript">initComp();</script> -->
+					<p>
+					<xsl:variable name="UnitsAxisName">
+						<xsl:for-each select="$XML/atom:feed/atom:entry[atom:link[@rel='up' and @href=$MeterReadingLink]]/atom:content/espi:MeterReading">
+							<xsl:for-each select="$XML/atom:feed/atom:entry[atom:link[@rel='self' and @href=current()/../../atom:link[@rel='related']/@href]]/atom:content/espi:ReadingType/espi:uom">
+								<xsl:call-template name="UOMForPlot"/>	
+							</xsl:for-each>
+						</xsl:for-each>
+					</xsl:variable>
+					<xsl:variable name="CostAxisName">
+						<xsl:for-each select="$XML/atom:feed/atom:entry[atom:link[@rel='up' and @href=$MeterReadingLink]]/atom:content/espi:MeterReading">
+							<xsl:for-each select="$XML/atom:feed/atom:entry[atom:link[@rel='self' and @href=current()/../../atom:link[@rel='related']/@href]]/atom:content/espi:ReadingType/espi:currency">
+								<xsl:choose>
+									<xsl:when test=". = 840">
+										<xsl:text>$</xsl:text>
+									</xsl:when>
+									<xsl:when test=". = 978">
+										<xsl:text>Euro</xsl:text>
+									</xsl:when>
+									<xsl:otherwise>
+										<xsl:text>unknown</xsl:text>
+									</xsl:otherwise>
+								</xsl:choose>
+							</xsl:for-each>
+						</xsl:for-each>
+					</xsl:variable>
+					
+					<!-- The following javascript is used when plotting -->
+					<!-- <script type="text/javascript">initComp('<xsl:value-of select="$CostAxisName"/>','<xsl:value-of select="$UnitsAxisName"/>');</script> -->
+	
 						</p>
 						<br/>
 						<table class="GBDataTable" width="100%">
@@ -1125,6 +1151,56 @@ Unless required by applicable law or agreed to in writing, software distributed 
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	
+	<xsl:template name="UOMForPlot">
+		<xsl:choose>
+			<xsl:when test=". = 72">
+				<xsl:variable name="DisplayUnits">
+					<xsl:call-template name="GetPowerOf10String">
+						<xsl:with-param name="po10" select="$gl_PresentationMultiplierElectricy"/>
+					</xsl:call-template>
+				</xsl:variable>
+				
+				<xsl:value-of select="$DisplayUnits"/>
+				<xsl:text>watt-hours</xsl:text>
+			</xsl:when>
+			<xsl:when test=". = 132">
+				<xsl:variable name="DisplayUnits">
+					<xsl:call-template name="GetPowerOf10String">
+						<xsl:with-param name="po10" select="gl_PresentationMultiplierGas"/>
+					</xsl:call-template>
+				</xsl:variable>
+				
+				<xsl:value-of select="$DisplayUnits"/>
+				<xsl:text>BTU</xsl:text>
+			</xsl:when>
+			<xsl:when test=". = 128">
+				<xsl:variable name="DisplayUnits">
+					<xsl:call-template name="GetPowerOf10String">
+						<xsl:with-param name="po10" select="gl_PresentationMultiplierWater"/>
+					</xsl:call-template>
+				</xsl:variable>
+				
+				<xsl:value-of select="$DisplayUnits"/>
+				<xsl:text>USG</xsl:text>
+			</xsl:when>
+			<!-- Therms -->
+			<xsl:when test=". = 169">
+				<xsl:variable name="DisplayUnits">
+					<xsl:call-template name="GetPowerOf10String">
+						<xsl:with-param name="po10" select="gl_PresentationMultiplierTherms"/>
+					</xsl:call-template>
+				</xsl:variable>
+				
+				<xsl:value-of select="$DisplayUnits"/>
+				<xsl:text>Therms</xsl:text>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:text>Unknown</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
 	<xsl:template name="Currency">
 		<xsl:choose>
 			<xsl:when test=". = 840">
