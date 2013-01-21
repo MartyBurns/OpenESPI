@@ -1,6 +1,9 @@
 var glOpCnt;
 var chart;
 var glLocation;
+var gl_strUnitsScale;
+var gl_strCostScale;
+var gl_strMainCostAxisName;
 
 var GLMainOptions = {series:[],categories:[]};
 
@@ -10,11 +13,24 @@ var GLMainOptions = {series:[],categories:[]};
   // 068622
 
 
-function initComp()
+function initComp(strCostScale,strUnitsScale)
 {
 	glOpCnt = -1;           
 	GLMainOptions.series = [];
 	GLMainOptions.categories = [];
+	
+	gl_strUnitsScale = strUnitsScale;
+	gl_strCostScale = strCostScale;
+	
+	if(strCostScale == '')
+	{
+		gl_strMainCostAxisName = '';
+	}
+	else
+	{
+		gl_strMainCostAxisName = 'Cost';
+	}
+		
 
 	GLMainOptions.series[0] = { 
 		name: "Daily Usage",
@@ -270,7 +286,8 @@ function refreshGraph(strTitle)
 		   },
 		   yAxis: [{
 								title: {
-										text: 'Cost',
+										//text: 'Cost',
+										text : gl_strMainCostAxisName,
 										style: {
 												color: '#4572A7'
 														}                                                       
@@ -283,7 +300,7 @@ function refreshGraph(strTitle)
 												}
 												else
 												{
-														return CommaFormatted(CurrencyFormatted(this.value)) +' $';
+														return CommaFormatted(CurrencyFormatted(this.value)) + ' ' + gl_strCostScale;
 														}
 										},
 										style: {
@@ -301,7 +318,7 @@ function refreshGraph(strTitle)
 								opposite: true,
 								labels: {
 										formatter: function() {
-												return this.value +' kWh';
+												return this.value + ' ' + gl_strUnitsScale;
 										},
 										style: {
 												color: '#068622'
