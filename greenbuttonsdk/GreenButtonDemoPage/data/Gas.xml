@@ -67,7 +67,7 @@ permissions and limitations under the License.
         <content>
             <UsagePoint xmlns="http://naesb.org/espi">
                 <ServiceCategory>
-                    <kind> 1 </kind>
+                    <kind>1</kind>
                 </ServiceCategory>
             </UsagePoint>
         </content>
@@ -328,15 +328,15 @@ permissions and limitations under the License.
         <title>Energy Delivered (kWh)</title>
         <content>
             <ReadingType xmlns="http://naesb.org/espi">
-                <accumulationBehaviour> 4 </accumulationBehaviour>
-                <commodity> 7 </commodity>
+                <accumulationBehaviour>4</accumulationBehaviour>
+                <commodity>7</commodity>
                 <currency>840</currency>
-                <dataQualifier> 12 </dataQualifier>
-                <flowDirection> 1 </flowDirection>
-                <intervalLength> 2678400 </intervalLength>
-                <kind> 12 </kind>
-                <powerOfTenMultiplier>-3 </powerOfTenMultiplier>
-                <timeAttribute> 0 </timeAttribute>
+                <dataQualifier>12</dataQualifier>
+                <flowDirection>1</flowDirection>
+                <intervalLength>2678400</intervalLength>
+                <kind>12</kind>
+                <powerOfTenMultiplier>-3</powerOfTenMultiplier>
+                <timeAttribute>0</timeAttribute>
                 <uom>169</uom>
             </ReadingType>
         </content>
@@ -359,12 +359,12 @@ permissions and limitations under the License.
                 <costAdditionalLastPeriod>804000</costAdditionalLastPeriod>
                 <currency>840</currency>
                 <overallConsumptionLastPeriod>
-                    <powerOfTenMultiplier>-3 </powerOfTenMultiplier>
+                    <powerOfTenMultiplier>-3</powerOfTenMultiplier>
                     <uom>169</uom>
                     <value>88322</value>
                 </overallConsumptionLastPeriod>
                 <currentBillingPeriodOverAllConsumption>
-                    <powerOfTenMultiplier>-3 </powerOfTenMultiplier>
+                    <powerOfTenMultiplier>-3</powerOfTenMultiplier>
                     <timeStamp>1334462400</timeStamp>
                     <uom>169</uom>
                     <value>43029</value>
