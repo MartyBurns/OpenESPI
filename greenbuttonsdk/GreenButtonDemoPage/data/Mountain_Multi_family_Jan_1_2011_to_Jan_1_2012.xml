@@ -28,14 +28,27 @@ Please leave this heading comment section in this file.
 -->
 <!--
 ==========================================================================
-Sample Green Button Data File: Mountain_Multi_family_Jan_1_2011_to_Jan_1_2012.xml
+Sample Green Button Data File:  Mountain_Multi_family_Jan_1_2011_to_Jan_1_2012.xml
 Version: 0.7 20120116
      Author: Ron Pasquarelli, Marty Burns (Hypertek for EnerNex)
      Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
 ==========================================================================
+Copyright (c) 2012 EnergyOS.org
 
-Data provided by San Diego Gas and Electric.  Data is Informational only and SDG&E does not warrant or is any way responsible for any outcomes when using this data.
+Licensed by EnergyOS.org under one or more contributor license agreements.
 
+See the NOTICE file distributed with this work for additional 
+information regarding copyright ownership. The EnergyOS.org licenses this 
+file to you under the Apache License, Version 2.0 (the "; License; "); 
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
+http://www.apache.org/licenses/LICENSE-2.0
+  
+Unless required by applicable law or agreed to in writing, software 
+distributed under the License is distributed on an "AS IS" BASIS, 
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or 
+implied.  See the License for the specific language governing 
+permissions and limitations under the License.
 -->
     
 <feed xmlns="http://www.w3.org/2005/Atom" xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -54,7 +67,7 @@ Data provided by San Diego Gas and Electric.  Data is Informational only and SDG
         <content>
             <UsagePoint xmlns="http://naesb.org/espi">
                 <ServiceCategory>
-                    <kind> 0 </kind>
+                    <kind>0</kind>
                 </ServiceCategory>
             </UsagePoint>
         </content>
@@ -97,16 +110,16 @@ Data provided by San Diego Gas and Electric.  Data is Informational only and SDG
         <title>Energy Delivered (kWh)</title>
         <content>
             <ReadingType xmlns="http://naesb.org/espi">
-                <accumulationBehaviour> 4 </accumulationBehaviour>
-                <commodity> 1 </commodity>
+                <accumulationBehaviour>4</accumulationBehaviour>
+                <commodity>1</commodity>
                 <currency>840</currency>
-                <dataQualifier> 12 </dataQualifier>
-                <flowDirection> 1 </flowDirection>
-                <intervalLength> 3600 </intervalLength>
-                <kind> 12 </kind>
-                <phase> 769 </phase>
-                <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
-                <timeAttribute> 0 </timeAttribute>
+                <dataQualifier>12</dataQualifier>
+                <flowDirection>1</flowDirection>
+                <intervalLength>3600</intervalLength>
+                <kind>12</kind>
+                <phase>769</phase>
+                <powerOfTenMultiplier>0</powerOfTenMultiplier>
+                <timeAttribute>0</timeAttribute>
                 <uom>72</uom>
             </ReadingType>
         </content>
@@ -61540,13 +61553,13 @@ Data provided by San Diego Gas and Electric.  Data is Informational only and SDG
                     <!-- start: 11/1/2011 7:00:00 AM-->
                 </billingPeriod>
                 <currentBillingPeriodOverAllConsumption>
-                    <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
-                    <timeStamp> 1325401200 </timeStamp>
+                    <powerOfTenMultiplier>0</powerOfTenMultiplier>
+                    <timeStamp>1325401200</timeStamp>
                     <uom>72</uom>
                     <value>647817</value>
                 </currentBillingPeriodOverAllConsumption>
                 <qualityOfReading>14</qualityOfReading>
-                <statusTimeStamp> 1325401200 </statusTimeStamp>
+                <statusTimeStamp>1325401200</statusTimeStamp>
                 <!-- statusTimeStamp: 12/31/2011 11:00:00 PM -->
             </ElectricPowerUsageSummary>
         </content>

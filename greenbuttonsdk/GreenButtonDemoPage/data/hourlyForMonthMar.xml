@@ -67,7 +67,7 @@ permissions and limitations under the License.
         <content>
             <UsagePoint xmlns="http://naesb.org/espi">
                 <ServiceCategory>
-                    <kind> 0 </kind>
+                    <kind>0</kind>
                 </ServiceCategory>
             </UsagePoint>
         </content>
@@ -7024,16 +7024,16 @@ permissions and limitations under the License.
         <title>Energy Delivered (kWh)</title>
         <content>
             <ReadingType xmlns="http://naesb.org/espi">
-                <accumulationBehaviour> 4 </accumulationBehaviour>
-                <commodity> 1 </commodity>
+                <accumulationBehaviour>4</accumulationBehaviour>
+                <commodity>1</commodity>
                 <currency>840</currency>
-                <dataQualifier> 12 </dataQualifier>
-                <flowDirection> 1 </flowDirection>
-                <intervalLength> 3600 </intervalLength>
-                <kind> 12 </kind>
-                <phase> 769 </phase>
-                <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
-                <timeAttribute> 0 </timeAttribute>
+                <dataQualifier>12</dataQualifier>
+                <flowDirection>1</flowDirection>
+                <intervalLength>3600</intervalLength>
+                <kind>12</kind>
+                <phase>769</phase>
+                <powerOfTenMultiplier>0</powerOfTenMultiplier>
+                <timeAttribute>0</timeAttribute>
                 <uom>72</uom>
             </ReadingType>
         </content>
@@ -7056,12 +7056,12 @@ permissions and limitations under the License.
                 <costAdditionalLastPeriod>1346000</costAdditionalLastPeriod>
                 <currency>840</currency>
                 <overallConsumptionLastPeriod>
-                    <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
+                    <powerOfTenMultiplier>0</powerOfTenMultiplier>
                     <uom>72</uom>
                     <value>2266226</value>
                 </overallConsumptionLastPeriod>
                 <currentBillingPeriodOverAllConsumption>
-                    <powerOfTenMultiplier> 0 </powerOfTenMultiplier>
+                    <powerOfTenMultiplier>0</powerOfTenMultiplier>
                     <timeStamp>1301630400</timeStamp>
                     <uom>72</uom>
                     <value>0</value>

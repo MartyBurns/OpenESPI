@@ -63,11 +63,11 @@ permissions and limitations under the License.
         <link rel="related" href="User/9b6c7063/UsagePoint/01/MeterReading"/>
         <link rel="related" href="User/9b6c7063/UsagePoint/01/ElectricPowerUsageSummary"/>
         <link rel="related" href="LocalTimeParameters/01"/>
-        <title>NSTAR Test Acount</title>
+        <title>my house</title>
         <content>
             <UsagePoint xmlns="http://naesb.org/espi">
                 <ServiceCategory>
-                    <kind> 0 </kind>
+                    <kind>0</kind>
                 </ServiceCategory>
             </UsagePoint>
         </content>
@@ -344,16 +344,16 @@ permissions and limitations under the License.
         <title>Energy Delivered (kWh)</title>
         <content>
             <ReadingType xmlns="http://naesb.org/espi">
-                <accumulationBehaviour> 4 </accumulationBehaviour>
-                <commodity> 1 </commodity>
+                <accumulationBehaviour>4</accumulationBehaviour>
+                <commodity>1</commodity>
                 <currency>840</currency>
-                <dataQualifier> 12 </dataQualifier>
-                <flowDirection> 1 </flowDirection>
-                <intervalLength> 2678400 </intervalLength>
-                <kind> 12 </kind>
-                <phase> 769 </phase>
-                <powerOfTenMultiplier> 3 </powerOfTenMultiplier>
-                <timeAttribute> 0 </timeAttribute>
+                <dataQualifier>12</dataQualifier>
+                <flowDirection>1</flowDirection>
+                <intervalLength>2678400</intervalLength>
+                <kind>12</kind>
+                <phase>769</phase>
+                <powerOfTenMultiplier>3</powerOfTenMultiplier>
+                <timeAttribute>0</timeAttribute>
                 <uom>72</uom>
             </ReadingType>
         </content>
@@ -376,12 +376,12 @@ permissions and limitations under the License.
                 <costAdditionalLastPeriod>0</costAdditionalLastPeriod>
                 <currency>840</currency>
                 <overallConsumptionLastPeriod>
-                    <powerOfTenMultiplier> 3 </powerOfTenMultiplier>
+                    <powerOfTenMultiplier>3</powerOfTenMultiplier>
                     <uom>72</uom>
                     <value>797</value>
                 </overallConsumptionLastPeriod>
                 <currentBillingPeriodOverAllConsumption>
-                    <powerOfTenMultiplier> 3 </powerOfTenMultiplier>
+                    <powerOfTenMultiplier>3</powerOfTenMultiplier>
                     <timeStamp>1348977600</timeStamp>
                     <uom>72</uom>
                     <value>101</value>
