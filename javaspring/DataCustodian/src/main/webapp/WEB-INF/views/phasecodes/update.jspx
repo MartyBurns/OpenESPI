@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:update id="fu_org_energyos_espi_datacustodian_common_PhaseCode" modelAttribute="phaseCode" path="/phasecodes" versionField="Version" z="28v2+3tHes0KWnpZP7DjJw5UE+0=">
-        <field:select field="typeValue" id="c_org_energyos_espi_datacustodian_common_PhaseCode_typeValue" items="${phasecodeenums}" path="phasecodeenums" required="true" z="7f/RBCpXOOXXBrJLPuZIEFm9nFQ="/>
-        <field:input field="typeMap" id="c_org_energyos_espi_datacustodian_common_PhaseCode_typeMap" required="true" validationMessageCode="field_invalid_integer" z="ll3tOzqEtie8PPlBJjLlR43QA48="/>
-    </form:update>
-</div>

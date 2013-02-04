@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:update id="fu_org_energyos_espi_datacustodian_common_ThirdPartyApplicationType" modelAttribute="thirdPartyApplicationType" path="/thirdpartyapplicationtypes" versionField="Version" z="gFBnV1Z5KJjABtjz14EsC2OF/mo=">
-        <field:select field="typeValue" id="c_org_energyos_espi_datacustodian_common_ThirdPartyApplicationType_typeValue" items="${thirdpartyapplicationtypeenums}" path="thirdpartyapplicationtypeenums" required="true" z="4xNC7JuQ5xYO4P45Mce1ofCyhaI="/>
-        <field:input field="typeMap" id="c_org_energyos_espi_datacustodian_common_ThirdPartyApplicationType_typeMap" required="true" validationMessageCode="field_invalid_integer" z="jXEJ8JttkPIF8Eol/beo+Cpu2/w="/>
-    </form:update>
-</div>
