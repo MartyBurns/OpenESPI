@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:create id="fc_org_energyos_espi_thirdparty_common_ServiceCategory" modelAttribute="serviceCategory" path="/servicecategorys" render="${empty dependencies}" z="dbQyaXvTxhuYXwH7a2PbA93eweA=">
-        <field:select field="kind" id="c_org_energyos_espi_thirdparty_common_ServiceCategory_kind" itemValue="id" items="${servicekinds}" path="/servicekinds" z="9dRHPT/fbxxE5/uLPWOlcO8GyFs="/>
-    </form:create>
-    <form:dependency dependencies="${dependencies}" id="d_org_energyos_espi_thirdparty_common_ServiceCategory" render="${not empty dependencies}" z="6uV1REmSDW2d56QyBNb65oLsXQE="/>
-</div>

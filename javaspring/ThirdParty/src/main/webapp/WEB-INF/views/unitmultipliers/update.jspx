@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:update id="fu_org_energyos_espi_thirdparty_common_UnitMultiplier" modelAttribute="unitMultiplier" path="/unitmultipliers" versionField="Version" z="sNJY0TeOULGcclhvDye4dwOJhA4=">
-        <field:select field="typeValue" id="c_org_energyos_espi_thirdparty_common_UnitMultiplier_typeValue" items="${unitmultiplierenums}" path="unitmultiplierenums" required="true" z="n6T4Hs3PZY2MMsqXrcC32syGRpo="/>
-        <field:input field="typeMap" id="c_org_energyos_espi_thirdparty_common_UnitMultiplier_typeMap" required="true" validationMessageCode="field_invalid_integer" z="mpjPQ6Y70AuVYi2UvvcnhKV2y4w="/>
-    </form:update>
-</div>

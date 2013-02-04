@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <page:show id="ps_org_energyos_espi_datacustodian_common_StatusCode" object="${statuscode}" path="/statuscodes" z="hczdanhv3GAZXGpoVKMl4AiA/SY=">
-        <field:display field="typeValue" id="s_org_energyos_espi_datacustodian_common_StatusCode_typeValue" object="${statuscode}" z="a4zV1POkROGuL/3ZonFv2tWTx8Y="/>
-        <field:display field="typeMap" id="s_org_energyos_espi_datacustodian_common_StatusCode_typeMap" object="${statuscode}" z="UHxZvE4rcmX38rLvVY6hSnqzv+I="/>
-    </page:show>
-</div>

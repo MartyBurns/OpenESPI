@@ -849,3 +849,4 @@ selenium test --controller ~.web.UsagePointController
 // script ../DataCustodian.roo
 quit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-05 21:22:35
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-29 16:36:57

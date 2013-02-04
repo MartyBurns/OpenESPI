@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:create id="fc_org_energyos_espi_datacustodian_common__Token" modelAttribute="_Token_" path="/_tokens" render="${empty dependencies}" z="4ljBXd45OhwoZhxpQdCwbvQrweY=">
-        <field:input field="token" id="c_org_energyos_espi_datacustodian_common__Token_token" z="q0KPRcZzjEnURLoFytXI1nl4r/Y="/>
-    </form:create>
-    <form:dependency dependencies="${dependencies}" id="d_org_energyos_espi_datacustodian_common__Token" render="${not empty dependencies}" z="Sc4ylWSHyT1GdY9IzKTYpGHngyQ="/>
-</div>
