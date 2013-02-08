@@ -29,7 +29,7 @@ Please leave this heading comment section in this file.
 <!--
 ==========================================================================
 Sample Green Button Data File:  Coastal_Multi_Family_12hr_Jan_1_2011_to_Jan_1_2012.xml
-Version: 0.7 20120116
+Version: 0.7 20130208
      Author: Ron Pasquarelli, Marty Burns (Hypertek for EnerNex)
      Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
 ==========================================================================
@@ -52,12 +52,12 @@ permissions and limitations under the License.
 -->
     
 <feed xmlns="http://www.w3.org/2005/Atom" xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:29987D52-6E4D-4256-BDF6-56943C6C6C7F</id>
  <title>ThirdPartyX Batch Feed</title>
  <updated>2012-10-24T00:00:00Z</updated>
  <link rel="self" href="/ThirdParty/83e269c1/Batch"/>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:04E5131D-AF6C-45CF-BEC0-C5E808F5F334</id>
         <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01"/>
         <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint"/>
         <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
@@ -75,7 +75,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:97DDC2DB-01A1-44F1-B25B-899EF097E742</id>
             <link rel="self" href="LocalTimeParameters/01"/>
             <link rel="up" href="LocalTimeParameters"/>
             <title>DST For North America</title>
@@ -91,7 +91,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:65661876-DCB2-4690-9183-DBEAA48C0A62</id>
         <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01"/>
         <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
         <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
@@ -104,7 +104,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:4FA389AD-38BB-4952-9CF1-D9B13A10F237</id>
         <link rel="self" href="ReadingType/07"/>
         <link rel="up" href="ReadingType"/>
         <title>Energy Delivered (kWh)</title>
@@ -127,7 +127,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
 <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:CD3FA5D5-33BA-44D6-B32D-4B999C1F6512</id>
     <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/0173"/>
     <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
     <title/>
@@ -66567,7 +66567,7 @@ permissions and limitations under the License.
     <updated>2012-10-24T00:00:00Z</updated>
 </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:CABAF5BE-7F88-4E5E-8648-189EDCAED031</id>
         <link rel="self" href="RetailCustomer/9b6c7063/ElectricPowerUsageSummary/01"/>
         <link rel="up" type="" href="RetailCustomer/9b6c7063/UsagePoint/01/ElectricPowerUsageSummary"/>
         <title>Usage Summary</title>

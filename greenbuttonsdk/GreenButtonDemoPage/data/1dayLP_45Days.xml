@@ -29,7 +29,7 @@ Please leave this heading comment section in this file.
 <!--
 ==========================================================================
 Sample Green Button Data File:  1dayLP_45Days.xml
-Version: 0.7 20120116
+Version: 0.7 20130208
      Author: Ron Pasquarelli, Marty Burns (Hypertek for EnerNex)
      Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
 ==========================================================================
@@ -52,12 +52,12 @@ permissions and limitations under the License.
 -->
     
 <feed xmlns="http://www.w3.org/2005/Atom" xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:728B5594-414E-471A-A230-08FCCDAC655C</id>
  <title>ThirdPartyX Batch Feed</title>
  <updated>2012-10-24T00:00:00Z</updated>
  <link rel="self" href="/ThirdParty/83e269c1/Batch"/>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:97EAEBAD-1214-4A58-A3D4-A16A6DE718E1</id>
         <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01"/>
         <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint"/>
         <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
@@ -75,7 +75,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:2B17570B-DABC-4380-B989-2E5C1B2C0004</id>
             <link rel="self" href="LocalTimeParameters/01"/>
             <link rel="up" href="LocalTimeParameters"/>
             <title>DST For North America</title>
@@ -91,7 +91,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:C172C045-6FD2-4FFF-9079-D0D075BB3155</id>
         <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01"/>
         <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
         <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
@@ -104,7 +104,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
 <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:E9BEBDE3-B790-4911-89B6-F96074394C96</id>
     <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/0173"/>
     <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
     <title/>
@@ -116,13 +116,13 @@ permissions and limitations under the License.
         <!-- start date: 3/1/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>594042</cost>
+    <cost>539919</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330578000</start>
          <!-- 3/1/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>63540</value>
+    <value>57751</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -132,13 +132,13 @@ permissions and limitations under the License.
         <!-- start date: 3/2/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>557736</cost>
+    <cost>548528</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330664400</start>
          <!-- 3/2/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>59657</value>
+    <value>58672</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -148,13 +148,13 @@ permissions and limitations under the License.
         <!-- start date: 3/3/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>499462</cost>
+    <cost>448878</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330750800</start>
          <!-- 3/3/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>81983</value>
+    <value>73680</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -164,13 +164,13 @@ permissions and limitations under the License.
         <!-- start date: 3/4/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>418889</cost>
+    <cost>489925</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330837200</start>
          <!-- 3/4/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>68757</value>
+    <value>80417</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -180,13 +180,13 @@ permissions and limitations under the License.
         <!-- start date: 3/5/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>524709</cost>
+    <cost>532368</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1330923600</start>
          <!-- 3/5/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>56124</value>
+    <value>56943</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -196,13 +196,13 @@ permissions and limitations under the License.
         <!-- start date: 3/6/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>574714</cost>
+    <cost>619563</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331010000</start>
          <!-- 3/6/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>61473</value>
+    <value>66270</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -212,13 +212,13 @@ permissions and limitations under the License.
         <!-- start date: 3/7/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>601765</cost>
+    <cost>581145</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331096400</start>
          <!-- 3/7/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>64366</value>
+    <value>62161</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -228,13 +228,13 @@ permissions and limitations under the License.
         <!-- start date: 3/8/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>559295</cost>
+    <cost>596781</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331182800</start>
          <!-- 3/8/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>59824</value>
+    <value>63833</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -244,13 +244,13 @@ permissions and limitations under the License.
         <!-- start date: 3/9/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>592299</cost>
+    <cost>524109</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331269200</start>
          <!-- 3/9/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>63354</value>
+    <value>56060</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -260,13 +260,13 @@ permissions and limitations under the License.
         <!-- start date: 3/10/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>474235</cost>
+    <cost>416553</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331355600</start>
          <!-- 3/10/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>77842</value>
+    <value>68374</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -276,13 +276,13 @@ permissions and limitations under the License.
         <!-- start date: 3/11/2012 5:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>464394</cost>
+    <cost>449456</cost>
     <timePeriod>
         <duration>82800</duration>
         <start>1331442000</start>
          <!-- 3/11/2012 5:00:00 AM  -->
     </timePeriod>
-    <value>75719</value>
+    <value>73284</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -292,13 +292,13 @@ permissions and limitations under the License.
         <!-- start date: 3/12/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>604268</cost>
+    <cost>533210</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331524800</start>
          <!-- 3/12/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>64634</value>
+    <value>57033</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -308,13 +308,13 @@ permissions and limitations under the License.
         <!-- start date: 3/13/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>607318</cost>
+    <cost>597404</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331611200</start>
          <!-- 3/13/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>64960</value>
+    <value>63900</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -324,13 +324,13 @@ permissions and limitations under the License.
         <!-- start date: 3/14/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>591820</cost>
+    <cost>569462</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331697600</start>
          <!-- 3/14/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>63302</value>
+    <value>60911</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -340,13 +340,13 @@ permissions and limitations under the License.
         <!-- start date: 3/15/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>621288</cost>
+    <cost>584975</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331784000</start>
          <!-- 3/15/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>66454</value>
+    <value>62570</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -356,13 +356,13 @@ permissions and limitations under the License.
         <!-- start date: 3/16/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>576750</cost>
+    <cost>620737</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331870400</start>
          <!-- 3/16/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>61691</value>
+    <value>66396</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -372,13 +372,13 @@ permissions and limitations under the License.
         <!-- start date: 3/17/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>477611</cost>
+    <cost>504687</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1331956800</start>
          <!-- 3/17/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>78396</value>
+    <value>82841</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -388,13 +388,13 @@ permissions and limitations under the License.
         <!-- start date: 3/18/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>448299</cost>
+    <cost>498850</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332043200</start>
          <!-- 3/18/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>73585</value>
+    <value>81882</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -404,13 +404,13 @@ permissions and limitations under the License.
         <!-- start date: 3/19/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>535680</cost>
+    <cost>627134</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332129600</start>
          <!-- 3/19/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>57298</value>
+    <value>67080</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -420,13 +420,13 @@ permissions and limitations under the License.
         <!-- start date: 3/20/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>565680</cost>
+    <cost>570372</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332216000</start>
          <!-- 3/20/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>60506</value>
+    <value>61008</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -436,13 +436,13 @@ permissions and limitations under the License.
         <!-- start date: 3/21/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>542795</cost>
+    <cost>586063</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332302400</start>
          <!-- 3/21/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>58059</value>
+    <value>62687</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -452,13 +452,13 @@ permissions and limitations under the License.
         <!-- start date: 3/22/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>576022</cost>
+    <cost>591591</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332388800</start>
          <!-- 3/22/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>61613</value>
+    <value>63278</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -468,13 +468,13 @@ permissions and limitations under the License.
         <!-- start date: 3/23/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>546556</cost>
+    <cost>611971</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332475200</start>
          <!-- 3/23/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>58461</value>
+    <value>65458</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -484,13 +484,13 @@ permissions and limitations under the License.
         <!-- start date: 3/24/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>423607</cost>
+    <cost>436042</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332561600</start>
          <!-- 3/24/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>69532</value>
+    <value>71573</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -500,13 +500,13 @@ permissions and limitations under the License.
         <!-- start date: 3/25/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>443343</cost>
+    <cost>428342</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332648000</start>
          <!-- 3/25/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>72771</value>
+    <value>70309</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -516,13 +516,13 @@ permissions and limitations under the License.
         <!-- start date: 3/26/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>585319</cost>
+    <cost>528923</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332734400</start>
          <!-- 3/26/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>62607</value>
+    <value>56575</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -532,13 +532,13 @@ permissions and limitations under the License.
         <!-- start date: 3/27/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>619686</cost>
+    <cost>521825</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332820800</start>
          <!-- 3/27/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>66283</value>
+    <value>55816</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -548,13 +548,13 @@ permissions and limitations under the License.
         <!-- start date: 3/28/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>616018</cost>
+    <cost>527699</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332907200</start>
          <!-- 3/28/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>65891</value>
+    <value>56444</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -564,13 +564,13 @@ permissions and limitations under the License.
         <!-- start date: 3/29/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>581196</cost>
+    <cost>577979</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1332993600</start>
          <!-- 3/29/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>62166</value>
+    <value>61822</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -580,13 +580,13 @@ permissions and limitations under the License.
         <!-- start date: 3/30/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>527377</cost>
+    <cost>620182</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333080000</start>
          <!-- 3/30/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>56409</value>
+    <value>66336</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -596,13 +596,13 @@ permissions and limitations under the License.
         <!-- start date: 3/31/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>437935</cost>
+    <cost>454131</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333166400</start>
          <!-- 3/31/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>71884</value>
+    <value>74542</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -612,13 +612,13 @@ permissions and limitations under the License.
         <!-- start date: 4/1/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>431566</cost>
+    <cost>473336</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333252800</start>
          <!-- 4/1/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>70838</value>
+    <value>77694</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -628,13 +628,13 @@ permissions and limitations under the License.
         <!-- start date: 4/2/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>634671</cost>
+    <cost>569202</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333339200</start>
          <!-- 4/2/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>67886</value>
+    <value>60883</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -644,13 +644,13 @@ permissions and limitations under the License.
         <!-- start date: 4/3/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>550591</cost>
+    <cost>557385</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333425600</start>
          <!-- 4/3/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>58892</value>
+    <value>59619</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -660,13 +660,13 @@ permissions and limitations under the License.
         <!-- start date: 4/4/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>535919</cost>
+    <cost>593845</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333512000</start>
          <!-- 4/4/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>57323</value>
+    <value>63519</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -676,13 +676,13 @@ permissions and limitations under the License.
         <!-- start date: 4/5/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>565529</cost>
+    <cost>589648</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333598400</start>
          <!-- 4/5/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>60490</value>
+    <value>63070</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -692,13 +692,13 @@ permissions and limitations under the License.
         <!-- start date: 4/6/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>541559</cost>
+    <cost>539169</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333684800</start>
          <!-- 4/6/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>57926</value>
+    <value>57671</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -708,13 +708,13 @@ permissions and limitations under the License.
         <!-- start date: 4/7/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>465200</cost>
+    <cost>464606</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333771200</start>
          <!-- 4/7/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>76359</value>
+    <value>76261</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -724,13 +724,13 @@ permissions and limitations under the License.
         <!-- start date: 4/8/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>493527</cost>
+    <cost>491254</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333857600</start>
          <!-- 4/8/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>81009</value>
+    <value>80636</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -740,13 +740,13 @@ permissions and limitations under the License.
         <!-- start date: 4/9/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>587435</cost>
+    <cost>582452</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1333944000</start>
          <!-- 4/9/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>62833</value>
+    <value>62300</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -756,13 +756,13 @@ permissions and limitations under the License.
         <!-- start date: 4/10/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>601882</cost>
+    <cost>628637</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1334030400</start>
          <!-- 4/10/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>64379</value>
+    <value>67241</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -772,13 +772,13 @@ permissions and limitations under the License.
         <!-- start date: 4/11/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>631657</cost>
+    <cost>602537</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1334116800</start>
          <!-- 4/11/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>67564</value>
+    <value>64449</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -788,13 +788,13 @@ permissions and limitations under the License.
         <!-- start date: 4/12/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>633172</cost>
+    <cost>538246</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1334203200</start>
          <!-- 4/12/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>67726</value>
+    <value>57572</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -804,13 +804,13 @@ permissions and limitations under the License.
         <!-- start date: 4/13/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>579732</cost>
+    <cost>574579</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1334289600</start>
          <!-- 4/13/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>62009</value>
+    <value>61458</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -820,13 +820,13 @@ permissions and limitations under the License.
         <!-- start date: 4/14/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>447161</cost>
+    <cost>485705</cost>
     <timePeriod>
         <duration>86400</duration>
         <start>1334376000</start>
          <!-- 4/14/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>73398</value>
+    <value>79725</value>
 </IntervalReading>
 </IntervalBlock>
     </content>
@@ -834,7 +834,7 @@ permissions and limitations under the License.
     <updated>2012-10-24T00:00:00Z</updated>
 </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:3460D5F1-92D4-4B2C-BA4C-03E8FB56C0F7</id>
         <link rel="self" href="ReadingType/07"/>
         <link rel="up" href="ReadingType"/>
         <title>Energy Delivered (kWh)</title>
@@ -857,7 +857,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:7DBBF949-12FE-498D-9B92-22A722F190E3</id>
         <link rel="self" href="RetailCustomer/9b6c7063/ElectricPowerUsageSummary/01"/>
         <link rel="up" type="" href="RetailCustomer/9b6c7063/UsagePoint/01/ElectricPowerUsageSummary"/>
         <title>Usage Summary</title>
@@ -867,20 +867,20 @@ permissions and limitations under the License.
                     <duration>2588400</duration>
                     <start>1330578000</start>
                 </billingPeriod>
-                <billLastPeriod>20877000</billLastPeriod>
-                <billToDate>8140000</billToDate>
+                <billLastPeriod>20810000</billLastPeriod>
+                <billToDate>8145000</billToDate>
                 <costAdditionalLastPeriod>4525000</costAdditionalLastPeriod>
                 <currency>840</currency>
                 <overallConsumptionLastPeriod>
                     <powerOfTenMultiplier>0</powerOfTenMultiplier>
                     <uom>72</uom>
-                    <value>1957257</value>
+                    <value>1951364</value>
                 </overallConsumptionLastPeriod>
                 <currentBillingPeriodOverAllConsumption>
                     <powerOfTenMultiplier>0</powerOfTenMultiplier>
                     <timeStamp>1334462400</timeStamp>
                     <uom>72</uom>
-                    <value>1000516</value>
+                    <value>1006640</value>
                 </currentBillingPeriodOverAllConsumption>
                 <qualityOfReading>14</qualityOfReading>
                 <statusTimeStamp>1334462400</statusTimeStamp>
