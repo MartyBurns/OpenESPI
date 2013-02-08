@@ -29,7 +29,7 @@ Please leave this heading comment section in this file.
 <!--
 ==========================================================================
 Sample Green Button Data File:  Water.xml
-Version: 0.7 20120116
+Version: 0.7 20130208
      Author: Ron Pasquarelli, Marty Burns (Hypertek for EnerNex)
      Notice: This is draft prototype developed for SGIP by the Administrator Technical Team (EnerNex)
 ==========================================================================
@@ -52,12 +52,12 @@ permissions and limitations under the License.
 -->
     
 <feed xmlns="http://www.w3.org/2005/Atom" xsi:schemaLocation="http://naesb.org/espi espiDerived.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:AC1F857C-2AEB-4061-A22D-3ACE8162B56E</id>
  <title>ThirdPartyX Batch Feed</title>
  <updated>2012-10-24T00:00:00Z</updated>
  <link rel="self" href="/ThirdParty/83e269c1/Batch"/>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:F1B76E54-07F4-410A-BE18-5C5A4825944F</id>
         <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01"/>
         <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint"/>
         <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
@@ -75,7 +75,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:81FB2010-2A30-4A8E-BE0E-5E7E0EAA8760</id>
             <link rel="self" href="LocalTimeParameters/01"/>
             <link rel="up" href="LocalTimeParameters"/>
             <title>DST For North America</title>
@@ -91,7 +91,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:EF2232FE-BAC0-413A-859E-11097B997610</id>
         <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01"/>
         <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading"/>
         <link rel="related" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
@@ -104,7 +104,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
 <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:8F4297F4-326D-4F8F-9146-E5B33E518362</id>
     <link rel="self" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock/`"/>
     <link rel="up" href="RetailCustomer/9b6c7063/UsagePoint/01/MeterReading/01/IntervalBlock"/>
     <title/>
@@ -116,13 +116,13 @@ permissions and limitations under the License.
         <!-- start date: 4/1/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>35684</cost>
+    <cost>37236</cost>
     <timePeriod>
         <duration>2592000</duration>
         <start>1333252800</start>
          <!-- 4/1/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>26154</value>
+    <value>27291</value>
 </IntervalReading>
 </IntervalBlock>
 <IntervalBlock xmlns="http://naesb.org/espi">
@@ -132,13 +132,13 @@ permissions and limitations under the License.
         <!-- start date: 5/1/2012 4:00:00 AM -->
     </interval>
 <IntervalReading>
-    <cost>5219</cost>
+    <cost>5365</cost>
     <timePeriod>
         <duration>345600</duration>
         <start>1335844800</start>
          <!-- 5/1/2012 4:00:00 AM  -->
     </timePeriod>
-    <value>2505</value>
+    <value>2575</value>
 </IntervalReading>
 </IntervalBlock>
     </content>
@@ -146,7 +146,7 @@ permissions and limitations under the License.
     <updated>2012-10-24T00:00:00Z</updated>
 </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:8CC314FE-0196-4BCD-86CE-D5C23D0D36D6</id>
         <link rel="self" href="ReadingType/07"/>
         <link rel="up" href="ReadingType"/>
         <title>Energy Delivered (kWh)</title>
@@ -168,7 +168,7 @@ permissions and limitations under the License.
         <updated>2012-10-24T00:00:00Z</updated>
     </entry>
     <entry>
-    <id>urn:uuid:35DD5F37-1A74-4616-B66D-2F59E014BE04</id>
+    <id>urn:uuid:01FB0939-501C-4E5A-8F59-E4B009109435</id>
         <link rel="self" href="RetailCustomer/9b6c7063/ElectricPowerUsageSummary/01"/>
         <link rel="up" type="" href="RetailCustomer/9b6c7063/UsagePoint/01/ElectricPowerUsageSummary"/>
         <title>Usage Summary</title>
@@ -178,20 +178,20 @@ permissions and limitations under the License.
                     <duration>2592000</duration>
                     <start>1333252800</start>
                 </billingPeriod>
-                <billLastPeriod>1886000</billLastPeriod>
+                <billLastPeriod>1887000</billLastPeriod>
                 <billToDate>5000</billToDate>
                 <costAdditionalLastPeriod>1850000</costAdditionalLastPeriod>
                 <currency>840</currency>
                 <overallConsumptionLastPeriod>
                     <powerOfTenMultiplier>3</powerOfTenMultiplier>
                     <uom>128</uom>
-                    <value>26154</value>
+                    <value>27291</value>
                 </overallConsumptionLastPeriod>
                 <currentBillingPeriodOverAllConsumption>
                     <powerOfTenMultiplier>3</powerOfTenMultiplier>
                     <timeStamp>1336190400</timeStamp>
                     <uom>128</uom>
-                    <value>2505</value>
+                    <value>2575</value>
                 </currentBillingPeriodOverAllConsumption>
                 <qualityOfReading>14</qualityOfReading>
                 <statusTimeStamp>1336190400</statusTimeStamp>
