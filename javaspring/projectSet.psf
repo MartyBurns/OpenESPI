@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.egit.core.GitProvider">
-<project reference="1.0,https://github.com/energyos/OpenESPI.git,master,javaspring/Servers"/>
 <project reference="1.0,https://github.com/energyos/OpenESPI.git,master,javaspring/DataCustodian"/>
 <project reference="1.0,https://github.com/energyos/OpenESPI.git,master,javaspring/ThirdParty"/>
 </provider>
