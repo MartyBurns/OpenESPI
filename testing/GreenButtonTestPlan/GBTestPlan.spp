@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml"/>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
+		<File FilePath="CopyTest.xsl" HomeFolder="Yes"/>
+		<File FilePath="iso_schematron_skeleton.xsl" HomeFolder="Yes"/>
+		<File FilePath="MergeResults.xsl" HomeFolder="Yes"/>
+		<File FilePath="PresentResults.xsl" HomeFolder="Yes"/>
+		<File FilePath="schematron-report.xsl" HomeFolder="Yes"/>
+		<File FilePath="XMLschematron-report.xsl" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery"/>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd"/>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+	<File FilePath="CompileResults.cmd" HomeFolder="Yes"/>
+	<File FilePath="GenTests.cmd" HomeFolder="Yes"/>
+	<File FilePath="ResultsSummaryTemplate.xml" HomeFolder="Yes"/>
+	<File FilePath="RunTests.cmd" HomeFolder="Yes"/>
+	<ExtMountFolder FolderName="GeneratedTests"/>
+	<ExtMountFolder FolderName="TestData"/>
+	<ExtMountFolder FolderName="TestResults"/>
+</Project>
