@@ -8,7 +8,7 @@
             <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_description" property="description" z="AEOSXY2E+vEpvY3bk4cjJFC8huc="/>
             <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_roleFlags" property="roleFlags" z="Y6qVRyvfn9AWCaUyst6Ja473TOw="/>
             <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_serviceCategory" property="serviceCategory" z="NoD2T162yyqpzFhz9nSKzojGg20="/>
-            <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_status" property="status" z="z1vWpapiGDMwh1w9EAf2r1UF6G8="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_UP_status" property="UP_status" z="EUaMPcDZmYLozSsKGne1vsN1Jxg="/>
             <table:column id="c_org_energyos_espi_datacustodian_common_UsagePoint_address" property="address" z="ap3nLcMg31kVaRoZX69v4GP1U+o="/>
         </table:table>
     </page:list>

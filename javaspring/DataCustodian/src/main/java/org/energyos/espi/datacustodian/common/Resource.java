@@ -21,6 +21,7 @@
 */
 
 
+
 package org.energyos.espi.datacustodian.common;
 
 import java.net.URI;
@@ -67,7 +68,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooJpaActiveRecord
 
-@XmlAccessorType(XmlAccessType.NONE)
+@XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Resource")
 @XmlSeeAlso({
     IdentifiedObject.class
@@ -85,8 +86,7 @@ public class Resource {
 
     @Size(max = 8)
     @XmlAttribute
-    // TODO need to encode the responseRequired
-    // @XmlJavaTypeAdapter(HexBinaryAdapter.class)
+    @XmlJavaTypeAdapter(HexBinaryAdapter.class)
     private String responseRequired;
 
     @XmlAttribute

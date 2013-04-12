@@ -7,7 +7,7 @@
         <field:input field="description" id="c_org_energyos_espi_datacustodian_common_UsagePoint_description" z="I/IYelQ3IynGW+GhaOnR7Y9I+eU="/>
         <field:input field="roleFlags" id="c_org_energyos_espi_datacustodian_common_UsagePoint_roleFlags" validationMessageCode="field_invalid_integer" z="HpksbC3DewVowl/q7xarXa80C0Q="/>
         <field:select field="serviceCategory" id="c_org_energyos_espi_datacustodian_common_UsagePoint_serviceCategory" itemValue="id" items="${servicecategorys}" path="/servicecategorys" z="Kp7Asng1TtJcHgR4sRSoelhlBWU="/>
-        <field:input field="status" id="c_org_energyos_espi_datacustodian_common_UsagePoint_status" z="KWNh512C65cHPAnhiCfCBIsh6cI="/>
+        <field:input field="UP_status" id="c_org_energyos_espi_datacustodian_common_UsagePoint_UP_status" z="I4TYcUQUHOPHOZTlslijOwrkmaY="/>
         <field:select field="address" id="c_org_energyos_espi_datacustodian_common_UsagePoint_address" itemValue="id" items="${addresses}" path="/addresses" z="4+gH8xAzYnID+vUwDeSLhk441cE="/>
         <field:select field="location" id="c_org_energyos_espi_datacustodian_common_UsagePoint_location" itemValue="id" items="${locations}" path="/locations" z="Hk6+EhxyOWmKP+P84DtGr9BxjM0="/>
         <field:select field="retailCustomer" id="c_org_energyos_espi_datacustodian_common_UsagePoint_retailCustomer" itemValue="id" items="${retailcustomers}" path="/retailcustomers" z="XwgN4/+FgH0BnjuXASk97+29NsY="/>
