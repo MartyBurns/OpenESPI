@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_energyos_espi_thirdparty_common_ThirdPartyApplicationType" modelAttribute="thirdPartyApplicationType" path="/thirdpartyapplicationtypes" render="${empty dependencies}" z="8zUsd9bnyCOleCk7mUhAfAUEnao=">
+        <field:select field="typeValue" id="c_org_energyos_espi_thirdparty_common_ThirdPartyApplicationType_typeValue" items="${thirdpartyapplicationtypeenums}" path="thirdpartyapplicationtypeenums" required="true" z="SAF8JY5+GuHY9u/KJZ3YnL4eWvE="/>
+        <field:input field="typeMap" id="c_org_energyos_espi_thirdparty_common_ThirdPartyApplicationType_typeMap" required="true" validationMessageCode="field_invalid_integer" z="CNMvVbLa/GGjs7iPPztn5noZm2E="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_energyos_espi_thirdparty_common_ThirdPartyApplicationType" render="${not empty dependencies}" z="B078VkLMwgGtheWCOwukM9HBhiM="/>
+</div>

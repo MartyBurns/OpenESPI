@@ -21,6 +21,7 @@
 */
 
 
+
 package org.energyos.espi.thirdparty.common;
 
 import javax.persistence.ManyToOne;

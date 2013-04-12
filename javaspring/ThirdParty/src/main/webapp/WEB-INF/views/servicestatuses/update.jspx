@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_common_ServiceStatus" modelAttribute="serviceStatus" path="/servicestatuses" versionField="Version" z="dTs2HcOtuAj6r11HRRy8gIYkBS4=">
+        <field:select field="typeValue" id="c_org_energyos_espi_thirdparty_common_ServiceStatus_typeValue" items="${servicestatusenums}" path="servicestatusenums" required="true" z="6LEjPLLQWeHmlSEFMHTJNNicjq0="/>
+        <field:input field="typeMap" id="c_org_energyos_espi_thirdparty_common_ServiceStatus_typeMap" required="true" validationMessageCode="field_invalid_integer" z="Ts0rWEChSPOqGW9ST4HDSPuW4w4="/>
+    </form:update>
+</div>

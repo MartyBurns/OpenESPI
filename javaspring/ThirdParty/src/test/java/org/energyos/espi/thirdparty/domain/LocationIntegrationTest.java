@@ -20,6 +20,7 @@
  ******************************************************************************
 */
 
+
 package org.energyos.espi.thirdparty.domain;
 
 import org.junit.Test;

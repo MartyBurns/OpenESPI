@@ -3,6 +3,11 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+   <hr style="height:5px; background-color:#346108; box-shadow: 2px 2px 2px #346108;"  />
+        <menu:category id="c_thirdparty" z="xLlYNpbWahWCN5oOU4Db7ay4oQs=">
+            <menu:item id="i_thirdparty_new" messageCode="global_menu_new" url="/thirdpartys?form" z="aIzMVquLemMerZkXNjQ8UeaV05s="/>
+            <menu:item id="i_thirdparty_list" messageCode="global_menu_list" url="/thirdpartys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="F5atB7Gq7EfcRHsmSUn0lXfjk9Y="/>
+        </menu:category>
         <menu:category id="c_datacustodian" z="TeO1lVn72uO2yg1QFAqW1Kihsmg=">
             <menu:item id="i_datacustodian_new" messageCode="global_menu_new" url="/datacustodians?form" z="2Illw0XMVtLV7POVVg9NxFC2ko0="/>
             <menu:item id="i_datacustodian_list" messageCode="global_menu_list" url="/datacustodians?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7bf2L0R/RFsVGj6AvK2wRZLDtZM="/>
@@ -11,10 +16,7 @@
             <menu:item id="i_retailcustomer_new" messageCode="global_menu_new" url="/retailcustomers?form" z="M6mo5rz1OyCPSOh2QiLe4Kuu2AM="/>
             <menu:item id="i_retailcustomer_list" messageCode="global_menu_list" url="/retailcustomers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="wSJdfCew79LG3EwPva5LDIWzNZ8="/>
         </menu:category>
-        <menu:category id="c_thirdparty" z="xLlYNpbWahWCN5oOU4Db7ay4oQs=">
-            <menu:item id="i_thirdparty_new" messageCode="global_menu_new" url="/thirdpartys?form" z="aIzMVquLemMerZkXNjQ8UeaV05s="/>
-            <menu:item id="i_thirdparty_list" messageCode="global_menu_list" url="/thirdpartys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="F5atB7Gq7EfcRHsmSUn0lXfjk9Y="/>
-        </menu:category>
+   <hr style="height:5px; background-color:#346108; box-shadow: 2px 2px 2px #346108;"  />
         <menu:category id="c_applicationinformation" z="l186BKUUEq2dUHdcvIprTipP49w=">
             <menu:item id="i_applicationinformation_new" messageCode="global_menu_new" url="/applicationinformations?form" z="2gMWJ1i6ISGeokLdfk3RASzAiEY="/>
             <menu:item id="i_applicationinformation_list" messageCode="global_menu_list" url="/applicationinformations?page=1&amp;size=${empty param.size ? 10 : param.size}" z="LOA9OB2q2lXREy7fe0QvEBjhPM0="/>
@@ -27,10 +29,7 @@
             <menu:item id="i_subscription_new" messageCode="global_menu_new" url="/subscriptions?form" z="9Dr3ZfLiB+31yYvs7eBReS2foXg="/>
             <menu:item id="i_subscription_list" messageCode="global_menu_list" url="/subscriptions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="03VnWizM7afNsFFTvgrrta2Xv3w="/>
         </menu:category>
-        <menu:category id="c_usagepoint" z="Usj/p4i7dKJLndMM29tx6YFxg74=">
-            <menu:item id="i_usagepoint_new" messageCode="global_menu_new" url="/usagepoints?form" z="vs2ED/QxVg3FKcCpiEI1OmAQeKs="/>
-            <menu:item id="i_usagepoint_list" messageCode="global_menu_list" url="/usagepoints?page=1&amp;size=${empty param.size ? 10 : param.size}" z="PDsPl0oJ8NlBxMdPHwau0EWGczg="/>
-        </menu:category>
+   <hr style="height:5px; background-color:#346108; box-shadow: 2px 2px 2px #346108;"  />
         <menu:category id="c_meterreading" z="A8Oo93YGN0joZ9awHEh8xnm/VVI=">
             <menu:item id="i_meterreading_new" messageCode="global_menu_new" url="/meterreadings?form" z="MoCvANntymHEBMtbvYnNY70xU+o="/>
             <menu:item id="i_meterreading_list" messageCode="global_menu_list" url="/meterreadings?page=1&amp;size=${empty param.size ? 10 : param.size}" z="j0V12x5JqWSV8MawhV9AmKAFdr0="/>
@@ -43,14 +42,19 @@
             <menu:item id="i_electricpowerusagesummary_new" messageCode="global_menu_new" url="/electricpowerusagesummarys?form" z="x5YCcPWxanzfobai2R+ZipFLXK8="/>
             <menu:item id="i_electricpowerusagesummary_list" messageCode="global_menu_list" url="/electricpowerusagesummarys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="TcGldRI7WDFhwINX2RwBA379+PU="/>
         </menu:category>
+        <menu:category id="c_batchiteminfo" z="5/20TujHbEXGVctYMvfeBj/ZVoM=">
+            <menu:item id="i_batchiteminfo_new" messageCode="global_menu_new" url="/batchiteminfoes?form" z="39OWhrBNWEnIGX8DVbRkPSqxMwo="/>
+            <menu:item id="i_batchiteminfo_list" messageCode="global_menu_list" url="/batchiteminfoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="WI/FV/QwWE4SQ07VTWVcu/2ZUMU="/>
+        </menu:category>
+        <menu:category id="c_usagepoint" z="Usj/p4i7dKJLndMM29tx6YFxg74=">
+            <menu:item id="i_usagepoint_new" messageCode="global_menu_new" url="/usagepoints?form" z="vs2ED/QxVg3FKcCpiEI1OmAQeKs="/>
+            <menu:item id="i_usagepoint_list" messageCode="global_menu_list" url="/usagepoints?page=1&amp;size=${empty param.size ? 10 : param.size}" z="PDsPl0oJ8NlBxMdPHwau0EWGczg="/>
+        </menu:category>
         <menu:category id="c_intervalblock" z="ZBI3qujE3rWd/khn25KXmqvcdL8=">
             <menu:item id="i_intervalblock_new" messageCode="global_menu_new" url="/intervalblocks?form" z="bI3y2Nb5kBRUvDpqlQaEurGB1B8="/>
             <menu:item id="i_intervalblock_list" messageCode="global_menu_list" url="/intervalblocks?page=1&amp;size=${empty param.size ? 10 : param.size}" z="yD+2ERoVJsWlytPcod+QbAs3gZA="/>
         </menu:category>
-        <menu:category id="c_identifiedobject" z="ZKu+tGOZzxjcdD/xwz6Uk5tCtXE=">
-            <menu:item id="i_identifiedobject_new" messageCode="global_menu_new" url="/identifiedobjects?form" z="YsRtN7PnVokiG8N980GyDeNnGsM="/>
-            <menu:item id="i_identifiedobject_list" messageCode="global_menu_list" url="/identifiedobjects?page=1&amp;size=${empty param.size ? 10 : param.size}" z="hPLq79xjN8ySBaMipG2sPygB4iA="/>
-        </menu:category>
+   <hr style="height:5px; background-color:#346108; box-shadow: 2px 2px 2px #346108;"  />
         <menu:category id="c_seleniumtests" z="PPLMd2yNB6/LSbjIWogAacRPU+Q=">
             <menu:item id="si_seleniumtests_test" messageCode="selenium_menu_test_suite" url="/resources/selenium/test-suite.xhtml" z="wwunW/IPDcunN97u41MvMJZQ2to="/>
         </menu:category>

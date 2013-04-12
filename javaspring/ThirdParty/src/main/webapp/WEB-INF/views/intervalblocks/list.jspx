@@ -6,7 +6,7 @@
         <table:table data="${intervalblocks}" id="l_org_energyos_espi_thirdparty_common_IntervalBlock" path="/intervalblocks" z="HOsrRnNd/V/xqbRSdyx5EHPDZlc=">
             <table:column id="c_org_energyos_espi_thirdparty_common_IntervalBlock_uuid" property="uuid" z="cV67dmVlo1reL6cy1lVzgxK7vo8="/>
             <table:column id="c_org_energyos_espi_thirdparty_common_IntervalBlock_description" property="description" z="8EOLSM/brleaYGLQ/UQsi645JIM="/>
-            <table:column id="c_org_energyos_espi_thirdparty_common_IntervalBlock_interval" property="interval" z="2SJ5QenTT+RCF7PNDDRuSP3/U1I="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_IntervalBlock_espiinterval" property="espiinterval" z="gG8exWXB9kadDUNkIl2hF8hKveQ="/>
             <table:column id="c_org_energyos_espi_thirdparty_common_IntervalBlock_meterReading" property="meterReading" z="65qvov2+Lq5N94JPp89LMd56qTE="/>
             <table:column id="c_org_energyos_espi_thirdparty_common_IntervalBlock_readingType" property="readingType" z="7EnTQIMmzbWIHlSkXXnMje8M7+c="/>
         </table:table>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_thirdparty_common_UnitMultiplier" items="${unitmultipliers}" z="2kkswk9Z8cQnhwpRK+MDgSHHDXQ=">
+        <table:table data="${unitmultipliers}" id="l_org_energyos_espi_thirdparty_common_UnitMultiplier" path="/unitmultipliers" z="1y+29a/2GfeVBjHMULsKXaise5g=">
+            <table:column id="c_org_energyos_espi_thirdparty_common_UnitMultiplier_typeValue" property="typeValue" z="gEWUe6T/bGqJzcGWjelxntkNZng="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_UnitMultiplier_typeMap" property="typeMap" z="7tlURUQ/ccbv2wTFcDdY5/V8XCU="/>
+        </table:table>
+    </page:list>
+</div>

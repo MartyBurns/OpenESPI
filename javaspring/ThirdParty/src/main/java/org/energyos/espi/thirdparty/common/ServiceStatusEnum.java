@@ -20,10 +20,11 @@
  ******************************************************************************
 */
 
+
 package org.energyos.espi.thirdparty.common;
 
 
 public enum ServiceStatusEnum {
 
-    Unavailable, Normal, Revoked, Active;
+    Unavailable, Normal, Active, Revoked;
 }

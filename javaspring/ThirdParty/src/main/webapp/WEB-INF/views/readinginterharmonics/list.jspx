@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_thirdparty_common_ReadingInterharmonic" items="${readinginterharmonics}" z="5cD5PiIQtFbypNZd36ruyM4snsU=">
+        <table:table data="${readinginterharmonics}" id="l_org_energyos_espi_thirdparty_common_ReadingInterharmonic" path="/readinginterharmonics" z="GSugBs0cSLe4GNAgVShG+fM6G3I=">
+            <table:column id="c_org_energyos_espi_thirdparty_common_ReadingInterharmonic_numerator" property="numerator" z="Rk7kis3bfAIU5QuhkaDAR7wDK08="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ReadingInterharmonic_denominator" property="denominator" z="qcGASEYX1UbFUVIALHs/SBxJZN4="/>
+        </table:table>
+    </page:list>
+</div>

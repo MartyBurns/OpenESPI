@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_thirdparty_common_ReadingType" items="${readingtypes}" z="64gaXcr97qE0089skRgG6XVOVZI=">
+        <table:table data="${readingtypes}" id="l_org_energyos_espi_thirdparty_common_ReadingType" path="/readingtypes" z="cRoVFHRhz0ba03pIIuA4nldi1/s=">
+            <table:column id="c_org_energyos_espi_thirdparty_common_ReadingType_uuid" property="uuid" z="4sMuNv7Q353I+gF+VAE9cL6kJsY="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ReadingType_description" property="description" z="cMKvf3ocSUHymwAi2oOElroQaS8="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ReadingType_accumulationBehavior" property="accumulationBehavior" z="hWcRqbsxSZxl+b75tef+gAE+29Y="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ReadingType_commodity" property="commodity" z="GK5xoD7K7RjyHwvgxtxLgTbhWXM="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ReadingType_dataQualifier" property="dataQualifier" z="H8VoyfEJaBZW3/fNkKGEQSlQF30="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_ReadingType_flowDirection" property="flowDirection" z="93Nfuz/nYjpnBrLRDDq1Vujetmk="/>
+        </table:table>
+    </page:list>
+</div>

@@ -20,6 +20,7 @@
  ******************************************************************************
 */
 
+
 package org.energyos.espi.thirdparty.domain;
 
 import java.util.HashSet;
@@ -96,7 +97,8 @@ import org.springframework.roo.addon.tostring.RooToString;
     //
     public IdentifiedObject getResource(String uuid) {
 	// TODO find the ESPI visible resources managed by this data custodian
-	return IdentifiedObject.findIdentifiedObject(uuid);
+	//return IdentifiedObject.findIdentifiedObject(uuid);
+	return new IdentifiedObject();
     }
 
     // "Official" ESPI interfaces that must be supported.

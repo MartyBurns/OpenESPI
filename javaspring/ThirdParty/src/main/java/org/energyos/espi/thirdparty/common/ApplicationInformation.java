@@ -20,6 +20,7 @@
  ******************************************************************************
 */
 
+
 /**
  * Contains information about a Third Party Application requesting access to the DataCustodian services. Information requested may include items such as Organization Name, Website, Contact Info, Application Name, Description, Icon, Type, default Notification and Callback endpoints, and may also include agreement with terms of service.
  * 
