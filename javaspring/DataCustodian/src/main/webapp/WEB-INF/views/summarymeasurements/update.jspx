@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_datacustodian_common_SummaryMeasurement" modelAttribute="summaryMeasurement" path="/summarymeasurements" versionField="Version" z="GsXL+5HSbGhgj/CBvKXokWuniMA=">
+        <field:select field="powerOfTenMultiplier" id="c_org_energyos_espi_datacustodian_common_SummaryMeasurement_powerOfTenMultiplier" itemValue="id" items="${unitmultipliers}" path="/unitmultipliers" z="uSi+7ZM1nqUGeqwoKKvtFob7AiM="/>
+        <field:input field="timeStamp" id="c_org_energyos_espi_datacustodian_common_SummaryMeasurement_timeStamp" validationMessageCode="field_invalid_integer" z="XcMr/iwPmPbZnII7TcmOP9Gzc10="/>
+        <field:select field="uom" id="c_org_energyos_espi_datacustodian_common_SummaryMeasurement_uom" itemValue="id" items="${unitsymbols}" path="/unitsymbols" z="5zf7tAqrc/LHhx9jfCZ+rjCN8BM="/>
+        <field:input field="summaryMeasurementValue" id="c_org_energyos_espi_datacustodian_common_SummaryMeasurement_summaryMeasurementValue" validationMessageCode="field_invalid_integer" z="Uzn3tBtnaPlqt9QtaJAIId7qOFQ="/>
+    </form:update>
+</div>

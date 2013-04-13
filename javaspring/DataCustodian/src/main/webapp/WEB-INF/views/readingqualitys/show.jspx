@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_common_ReadingQuality" object="${readingquality}" path="/readingqualitys" z="C5A/WtZl99t+YqKl1+0FpRl0Llo=">
+        <field:display field="quality" id="s_org_energyos_espi_datacustodian_common_ReadingQuality_quality" object="${readingquality}" z="DjYUvA0LWqOSmHwURrK57Vg+2bw="/>
+    </page:show>
+</div>

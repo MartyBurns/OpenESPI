@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:oauth="http://www.springframework.org/schema/security/oauth2"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/security/oauth2 http://www.springframework.org/schema/security/spring-security-oauth2-1.0.xsd 
+    	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+    
+    <!--
+    	Common Services shared between Authorization and Resource Servers 
+     -->
+    <bean id="accessDecisionManager" class="org.springframework.security.access.vote.UnanimousBased" xmlns="http://www.springframework.org/schema/beans">
+		<constructor-arg>
+			<list>
+				<bean class="org.springframework.security.oauth2.provider.vote.ScopeVoter" />
+				<bean class="org.springframework.security.access.vote.RoleVoter" />
+				<bean class="org.springframework.security.access.vote.AuthenticatedVoter" />
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="tokenServices" class="org.springframework.security.oauth2.provider.token.DefaultTokenServices" xmlns="http://www.springframework.org/schema/beans">
+		<property name="tokenStore">
+			<beans:bean class="org.springframework.security.oauth2.provider.token.InMemoryTokenStore" />
+		</property>
+		<property name="supportRefreshToken" value="true" />
+	</bean>
+	
+	<!-- 
+		RESOURCE SERVER - (Protected Resources) 
+	-->
+	<http pattern="/testResource" access-decision-manager-ref="accessDecisionManager" entry-point-ref="http403ForbiddenEntryPoint">		
+		<intercept-url pattern="/testResource" access="ROLE_USER,SCOPE_READ" />
+		<intercept-url pattern="/testResource/**" access="ROLE_USER,SCOPE_READ" />			
+		
+		<custom-filter ref="resourceServerFilter" after="EXCEPTION_TRANSLATION_FILTER" />
+	</http>
+
+	<beans:bean id="http403ForbiddenEntryPoint" class="org.springframework.security.web.authentication.Http403ForbiddenEntryPoint"/>
+	
+	<oauth:resource-server id="resourceServerFilter" resource-id="sparklr" token-services-ref="tokenServices" />		
+
+	<!-- 
+		AUTHORIZATION SERVER (Authorize and Token Endpoints 
+	-->    
+	<http name="tokenHttpChain" pattern="/oauth/token" create-session="never"	authentication-manager-ref="clientAuthenticationManager">
+		<intercept-url pattern="/oauth/token" access="IS_AUTHENTICATED_FULLY" />
+		<anonymous enabled="false" />
+		<http-basic />
+	</http>	
+		
+	<http  access-denied-page="/login" access-decision-manager-ref="accessDecisionManager" authentication-manager-ref="userAuthenticationManager">
+		<!-- This needs to be anonymous so that the auth endpoint can handle oauth errors itself -->
+		<intercept-url pattern="/oauth/authorize" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/oauth/**" access="ROLE_USER" />
+		<intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY,DENY_OAUTH" />
+
+		<form-login authentication-failure-url="/login?login_error=t" default-target-url="/index.jsp" login-page="/login" login-processing-url="/resources/j_spring_security_check" />		
+		<logout logout-success-url="/index.jsp" logout-url="/resources/j_spring_security_logout" />		
+		<anonymous />
+	</http>	
+	
+	<!-- Resource owners credentials-->
+	<authentication-manager alias="userAuthenticationManager">
+		<authentication-provider>
+			<user-service>
+				<user name="resourceOwner" password="resourceOwner" authorities="ROLE_USER" />
+				<user name="resourceOwner2" password="resourceOwner2" authorities="ROLE_USER" />
+			</user-service>
+		</authentication-provider>
+	</authentication-manager>
+	
+	<!-- Client applications credentials-->
+	<authentication-manager id="clientAuthenticationManager">
+		<authentication-provider user-service-ref="clientDetailsUserService" />
+	</authentication-manager>
+	
+	<bean id="clientDetailsUserService" class="org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService" xmlns="http://www.springframework.org/schema/beans">
+		<constructor-arg ref="clientDetails" />
+	</bean>
+
+	<oauth:client-details-service id="clientDetails" >
+	
+		<oauth:client client-id="my-client-id" resource-ids="sparklr" authorized-grant-types="authorization_code,client_credentials,implicit" authorities="ROLE_CLIENT,ROLE_USER" scope="read,write" secret="secret" />			
+		<!-- 
+			<oauth:client client-id="my-trusted-client" authorized-grant-types="password,authorization_code,refresh_token,implicit" authorities="ROLE_CLIENT, ROLE_TRUSTED_CLIENT" scope="read,write,trust" />
+			<oauth:client client-id="my-trusted-client-with-secret" authorized-grant-types="password,authorization_code,refresh_token,implicit" secret="somesecret" authorities="ROLE_CLIENT, ROLE_TRUSTED_CLIENT" />
+			<oauth:client client-id="my-less-trusted-client" authorized-grant-types="authorization_code,implicit" authorities="ROLE_CLIENT" />
+			<oauth:client client-id="my-client-with-registered-redirect" authorized-grant-types="authorization_code,client_credentials" authorities="ROLE_CLIENT" redirect-uri="http://anywhere" scope="trust" />
+			<oauth:client client-id="my-untrusted-client-with-registered-redirect" authorized-grant-types="authorization_code" authorities="ROLE_CLIENT" redirect-uri="http://anywhere" scope="read" />
+ 		-->							
+	</oauth:client-details-service>
+		
+	<!-- Expression Handler Configuration -->
+	<global-method-security pre-post-annotations="enabled" proxy-target-class="true">
+		<expression-handler ref="oauthExpressionHandler" />
+	</global-method-security>
+	<oauth:expression-handler id="oauthExpressionHandler" />
+</beans:beans>

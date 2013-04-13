@@ -1,0 +1,48 @@
+<div xmlns:spring="http://www.springframework.org/tags"
+	xmlns:sec="http://www.springframework.org/security/tags"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/util"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:form="http://www.springframework.org/tags/form"
+	xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	<!-- <spring:message code="security_login_title" var="title" htmlEscape="false" /> -->
+
+	<!-- <jsp:useBean id="SPRING_SECURITY_LAST_EXCEPTION" class="java.lang.String" scope="session"></jsp:useBean> -->
+
+	<h1>TomTom Places</h1>
+	
+	
+		<c:if test="${not empty param.login_error}">
+			<div class="errors">
+				<p><spring:message code="security_login_unsuccessful" /><c:out value="${SPRING_SECURITY_LAST_EXCEPTION.message}" />.</p>
+			</div>
+		</c:if>
+<!-- 		<c:if test="${empty param.login_error}">
+			<p><spring:message code="security_login_message" /> </p>
+		</c:if> -->
+
+		<c:remove scope="session" var="SPRING_SECURITY_LAST_EXCEPTION" />
+
+		<sec:authorize ifAllGranted="ROLE_USER">
+
+ 			<p>You hereby authorize " <c:out value="${client.clientId}" /> " to access your protected resources. <c:out value="${auth_request.resourceIds}" /></p>
+			<p>Requested scope:<c:out value="${auth_request.scope}" /></p>
+			
+			<spring:url value="/oauth/authorize" var="form_url" />
+<div class="submit">
+			<form name="confirmationForm" action="${fn:escapeXml(form_url)}" method="POST">
+				<input name="user_oauth_approval" value="true" type="hidden" />
+				<label><input name="authorize" value="Authorize" type="submit" /></label>
+			</form>
+
+			<form name="denialForm" action="${fn:escapeXml(form_url)}" method="POST">
+				<input name="user_oauth_approval" value="false" type="hidden" />
+				<label><input name="deny" value="Deny" type="submit" /></label>									
+			</form>
+</div>
+		</sec:authorize>
+		<br/>
+</div>

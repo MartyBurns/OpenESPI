@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_common_AuthorizationStatus" object="${authorizationstatus}" path="/authorizationstatuses" z="mhAGIUB72q/9vxuLdLPjDIEDWtE=">
+        <field:display field="typeValue" id="s_org_energyos_espi_datacustodian_common_AuthorizationStatus_typeValue" object="${authorizationstatus}" z="Jdq9OWHz+hRI9th2lmrG1D5gAWo="/>
+        <field:display field="typeMap" id="s_org_energyos_espi_datacustodian_common_AuthorizationStatus_typeMap" object="${authorizationstatus}" z="7mmO7guPvGHxCEsIchaLezO6Zkc="/>
+    </page:show>
+</div>

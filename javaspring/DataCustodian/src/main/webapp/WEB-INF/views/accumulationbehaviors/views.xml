@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="accumulationbehaviors/list">
+        <put-attribute name="body" value="/WEB-INF/views/accumulationbehaviors/list.jspx"/>
+    </definition>
+<definition extends="default" name="accumulationbehaviors/show">
+        <put-attribute name="body" value="/WEB-INF/views/accumulationbehaviors/show.jspx"/>
+    </definition>
+<definition extends="default" name="accumulationbehaviors/create">
+        <put-attribute name="body" value="/WEB-INF/views/accumulationbehaviors/create.jspx"/>
+    </definition>
+<definition extends="default" name="accumulationbehaviors/update">
+        <put-attribute name="body" value="/WEB-INF/views/accumulationbehaviors/update.jspx"/>
+    </definition>
+</tiles-definitions>

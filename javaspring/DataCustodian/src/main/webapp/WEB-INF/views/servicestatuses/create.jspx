@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_energyos_espi_datacustodian_common_ServiceStatus" modelAttribute="serviceStatus" path="/servicestatuses" render="${empty dependencies}" z="q8TGtEYPruI2YSPFNArXeB1pUgU=">
+        <field:select field="typeValue" id="c_org_energyos_espi_datacustodian_common_ServiceStatus_typeValue" items="${servicestatusenums}" path="servicestatusenums" required="true" z="iCCZX0hZ7BgKbgM4r/m9ZHLyJPw="/>
+        <field:input field="typeMap" id="c_org_energyos_espi_datacustodian_common_ServiceStatus_typeMap" required="true" validationMessageCode="field_invalid_integer" z="8M24XyVoV+Y+rtwPLZVvmhsA3kE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_energyos_espi_datacustodian_common_ServiceStatus" render="${not empty dependencies}" z="VVNbxhdFw2rb3jLhZF6TuD/EYlI="/>
+</div>
