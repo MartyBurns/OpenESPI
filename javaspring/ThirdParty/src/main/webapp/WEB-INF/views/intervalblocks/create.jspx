@@ -5,7 +5,7 @@
     <form:create id="fc_org_energyos_espi_thirdparty_common_IntervalBlock" modelAttribute="intervalBlock" path="/intervalblocks" render="${empty dependencies}" z="rjh4pZi70dTnBzU0qw544/NPvro=">
         <field:input field="uuid" id="c_org_energyos_espi_thirdparty_common_IntervalBlock_uuid" z="SsBaOevX3P4JbrcNLR8SCUw9zmI="/>
         <field:input field="description" id="c_org_energyos_espi_thirdparty_common_IntervalBlock_description" z="JugaW4XueqLt2ut4PjENU/BScb4="/>
-        <field:select field="interval" id="c_org_energyos_espi_thirdparty_common_IntervalBlock_interval" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="SXAbP/TcSlKE4SasZJSoETxOOcU="/>
+        <field:select field="espiinterval" id="c_org_energyos_espi_thirdparty_common_IntervalBlock_espiinterval" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="hJoAZwf9bkXTKZW5+V+w13FR+28="/>
         <field:simple field="intervalReading" id="c_org_energyos_espi_thirdparty_common_IntervalBlock_intervalReading" messageCode="entity_reference_not_managed" messageCodeAttribute="Interval Reading" z="rHaj4AIyX1Z9I3bssH1s9847JUI="/>
         <field:select field="meterReading" id="c_org_energyos_espi_thirdparty_common_IntervalBlock_meterReading" itemValue="id" items="${meterreadings}" path="/meterreadings" z="OlvcPuD/ugrwoC7Y/vRuLIiPYtk="/>
         <field:select field="readingType" id="c_org_energyos_espi_thirdparty_common_IntervalBlock_readingType" itemValue="id" items="${readingtypes}" path="/readingtypes" z="7Pya3fdKgfSr9ioDNrs7x2AcG/E="/>

@@ -20,6 +20,7 @@
  ******************************************************************************
 */
 
+
 package org.energyos.espi.thirdparty.common;
 
 import org.springframework.roo.addon.dod.RooDataOnDemand;

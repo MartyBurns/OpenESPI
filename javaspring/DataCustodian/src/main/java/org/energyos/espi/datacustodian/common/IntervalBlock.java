@@ -21,6 +21,7 @@
 */
 
 
+
 package org.energyos.espi.datacustodian.common;
 
 import java.util.HashSet;
@@ -77,7 +78,7 @@ public class IntervalBlock extends IdentifiedObject {
 
     @ManyToOne
     @XmlElement(name = "interval")
-    private DateTimeInterval interval;
+    private DateTimeInterval espiinterval;
 
     @OneToMany(cascade = CascadeType.ALL)
     @XmlElement(name = "intervalReading")

@@ -20,6 +20,7 @@
  ******************************************************************************
 */
 
+
 package org.energyos.espi.datacustodian.common;
 
 import javax.persistence.Enumerated;

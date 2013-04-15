@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_common_Resource" modelAttribute="resource" path="/resources" versionField="Version" z="K/XlMwIt6o1oPiM574N1xZtuscQ=">
+        <field:input field="href" id="c_org_energyos_espi_thirdparty_common_Resource_href" z="K1DLdlKbBevPuRtj9FL9ZBNGvKA="/>
+        <field:input field="replyTo" id="c_org_energyos_espi_thirdparty_common_Resource_replyTo" z="+c3BHIgTIa240MptqCHdXKE86c4="/>
+        <field:input field="responseRequired" id="c_org_energyos_espi_thirdparty_common_Resource_responseRequired" max="8" z="sRSxaPWgBWW5BqtQGX+aSEwdM20="/>
+        <field:checkbox field="signatureRequired" id="c_org_energyos_espi_thirdparty_common_Resource_signatureRequired" z="whbpzSjJLbLrSJdYR8E72vNhXcE="/>
+        <field:checkbox field="subscribable" id="c_org_energyos_espi_thirdparty_common_Resource_subscribable" z="rtWE7jHnW6M4EF9glnknd6JWxVU="/>
+    </form:update>
+</div>

@@ -5,7 +5,7 @@
     <page:show id="ps_org_energyos_espi_thirdparty_common_IntervalBlock" object="${intervalblock}" path="/intervalblocks" z="KpXR9iwT8fWl+NsABFKYfQ84aac=">
         <field:display field="uuid" id="s_org_energyos_espi_thirdparty_common_IntervalBlock_uuid" object="${intervalblock}" z="nk2b3i+dHImTd/Oq5EgK8XnuwME="/>
         <field:display field="description" id="s_org_energyos_espi_thirdparty_common_IntervalBlock_description" object="${intervalblock}" z="LC9vm7E2OgDy3mgaOeRWBjFBpZE="/>
-        <field:display field="interval" id="s_org_energyos_espi_thirdparty_common_IntervalBlock_interval" object="${intervalblock}" z="PJ+VATU2UPpaBIy4cEDn0iqarwg="/>
+        <field:display field="espiinterval" id="s_org_energyos_espi_thirdparty_common_IntervalBlock_espiinterval" object="${intervalblock}" z="vP4GrFPO7XpjvEx+C4VQXarJpo0="/>
         <field:display field="meterReading" id="s_org_energyos_espi_thirdparty_common_IntervalBlock_meterReading" object="${intervalblock}" z="PQlf1BuF0oFTWNfL2Ytf7MtFUdk="/>
         <field:display field="readingType" id="s_org_energyos_espi_thirdparty_common_IntervalBlock_readingType" object="${intervalblock}" z="68AT+MBuKryI2vDDtpyubhhFdxc="/>
     </page:show>

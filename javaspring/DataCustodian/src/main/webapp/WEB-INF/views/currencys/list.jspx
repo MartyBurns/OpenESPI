@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_common_Currency" items="${currencys}" z="B4r9wUuXUBZtbCSHycLHQsN0gUw=">
+        <table:table data="${currencys}" id="l_org_energyos_espi_datacustodian_common_Currency" path="/currencys" z="FL2x1s8JsW8Iu3YxlMgNow4+zLw=">
+            <table:column id="c_org_energyos_espi_datacustodian_common_Currency_typeValue" property="typeValue" z="KLzU9mmIKY9U0K4FI2iHN7i0ssw="/>
+            <table:column id="c_org_energyos_espi_datacustodian_common_Currency_typeMap" property="typeMap" z="ia7GZpJU6crMxgvIzgs+TvNs1+E="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,11 +1,7 @@
-// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-05 21:16:54
-// [failed] script ../DataCustodian.roo
-quit
-// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-05 21:16:56
-// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-08-05 21:20:31
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-04-11 11:32:54
 ! ../preGeneratorHook
 project --topLevelPackage org.energyos.espi.DataCustodian
-jpa setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
+jpa setup --provider HIBERNATE --database MYSQL --databaseName datacustodian --userName root  --password bitnami
 logging setup --level INFO
 entity jpa --testAutomatically --class ~.common.AccumulationBehavior
 entity jpa --testAutomatically --class ~.common.AuthorizationStatus
@@ -40,9 +36,11 @@ entity jpa --testAutomatically --class ~.common._Token
 entity jpa --testAutomatically --class ~.common._AccessToken
 entity jpa --testAutomatically --class ~.common._ThirdParty
 entity jpa --testAutomatically --class ~.common.IdentifiedObject
+field string --class ~.common.IdentifiedObject --fieldName uuid --sizeMIN 16 --sizeMAX 16
+field string --class ~.common.IdentifiedObject --fieldName description
 entity jpa --testAutomatically --permitReservedWords --extends ~.common.IdentifiedObject --class ~.common.ApplicationInformation
 entity jpa --testAutomatically --permitReservedWords --extends ~.common.IdentifiedObject --class ~.common.Authorization
-entity jpa --testAutomatically --permitReservedWords --extends ~.common.IdentifiedObject --class ~.common.ElectricPowerQualitySummary 
+entity jpa --testAutomatically --permitReservedWords --extends ~.common.IdentifiedObject --class ~.common.ElectricPowerQualitySummary
 entity jpa --testAutomatically --permitReservedWords --extends ~.common.IdentifiedObject --class ~.common.ElectricPowerUsageSummary
 entity jpa --testAutomatically --permitReservedWords --extends ~.common.IdentifiedObject --class ~.common.IntervalBlock
 entity jpa --testAutomatically --permitReservedWords --extends ~.common.IdentifiedObject --class ~.common.MeterReading
@@ -83,7 +81,7 @@ enum constant --permitReservedWords --class ~.common.AccumulationBehaviorEnum --
 enum constant --permitReservedWords --class ~.common.AccumulationBehaviorEnum --name latchingQuantity 
 enum constant --permitReservedWords --class ~.common.AccumulationBehaviorEnum --name boundedQuantity 
 field enum --permitReservedWords  --notNull --class ~.common.AccumulationBehavior --type ~.common.AccumulationBehaviorEnum --fieldName typeValue
-field number --notNull --class ~.common.AccumulationBehavior --type java.lang.integer  --fieldName typeMap
+field number --notNull --class ~.common.AccumulationBehavior --type java.lang.Integer  --fieldName typeMap
 enum type --class ~.common.DataCustodianEnum
 enum constant --class ~.common.DataCustodianEnum --name PublicUtilityCommission                              
 enum constant --class ~.common.DataCustodianEnum --name InvestorOwnedUtility                                 
@@ -92,7 +90,7 @@ enum constant --class ~.common.DataCustodianEnum --name Cooperative
 enum constant --class ~.common.DataCustodianEnum --name Private                                              
 enum constant --class ~.common.DataCustodianEnum --name Other                                                
 field enum --class ~.common.DataCustodianType --fieldName typeValue --type ~.common.DataCustodianEnum --notNull
-field number --class ~.common.DataCustodianType --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.DataCustodianType --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.CommodityEnum                                                                     
 enum constant --class ~.common.CommodityEnum --name none --permitReservedWords                               
 enum constant --class ~.common.CommodityEnum --name electricitySecondaryMetered --permitReservedWords        
@@ -121,7 +119,7 @@ enum constant --class ~.common.CommodityEnum --name tvLicense --permitReservedWo
 enum constant --class ~.common.CommodityEnum --name internet --permitReservedWords                           
 enum constant --class ~.common.CommodityEnum --name refuse --permitReservedWords                             
 field enum --class ~.common.Commodity --permitReservedWords --fieldName typeValue --type ~.common.CommodityEnum --notNull
-field number --class ~.common.Commodity --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.Commodity --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.ConsumptionTierEnum                                                               
 enum constant --class ~.common.ConsumptionTierEnum --name none --permitReservedWords                         
 enum constant --class ~.common.ConsumptionTierEnum --name consumptionTier1 --permitReservedWords             
@@ -132,7 +130,7 @@ enum constant --class ~.common.ConsumptionTierEnum --name consumptionTier5 --per
 enum constant --class ~.common.ConsumptionTierEnum --name consumptionTier6 --permitReservedWords             
 enum constant --class ~.common.ConsumptionTierEnum --name consumptionTier7 --permitReservedWords             
 field enum --class ~.common.ConsumptionTier --permitReservedWords --fieldName typeValue --type ~.common.ConsumptionTierEnum --notNull
-field number --class ~.common.ConsumptionTier --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.ConsumptionTier --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.CurrencyEnum                                                                      
 enum constant --class ~.common.CurrencyEnum --name other --permitReservedWords                               
 enum constant --class ~.common.CurrencyEnum --name USD --permitReservedWords                                 
@@ -149,7 +147,7 @@ enum constant --class ~.common.CurrencyEnum --name RUB --permitReservedWords
 enum constant --class ~.common.CurrencyEnum --name SEK --permitReservedWords                                 
 enum constant --class ~.common.CurrencyEnum --name INR --permitReservedWords                                 
 field enum --class ~.common.Currency --permitReservedWords --fieldName typeValue --type ~.common.CurrencyEnum --notNull
-field number --class ~.common.Currency --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.Currency --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.DataQualifierEnum                                                                 
 enum constant --class ~.common.DataQualifierEnum --name none --permitReservedWords                           
 enum constant --class ~.common.DataQualifierEnum --name average --permitReservedWords                        
@@ -167,7 +165,7 @@ enum constant --class ~.common.DataQualifierEnum --name forthMaximum --permitRes
 enum constant --class ~.common.DataQualifierEnum --name fifthMaximum --permitReservedWords                   
 enum constant --class ~.common.DataQualifierEnum --name sum --permitReservedWords                            
 field enum --class ~.common.DataQualifier --permitReservedWords --fieldName typeValue --type ~.common.DataQualifierEnum --notNull
-field number --class ~.common.DataQualifier --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.DataQualifier --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.DirectionOfFlowEnum                                                                 
 enum constant --class ~.common.DirectionOfFlowEnum --name none --permitReservedWords                           
 enum constant --class ~.common.DirectionOfFlowEnum --name forward --permitReservedWords                        
@@ -191,7 +189,7 @@ enum constant --class ~.common.DirectionOfFlowEnum --name reverse --permitReserv
 enum constant --class ~.common.DirectionOfFlowEnum --name total --permitReservedWords                          
 enum constant --class ~.common.DirectionOfFlowEnum --name totalByPhase --permitReservedWords                   
 field enum --class ~.common.DirectionOfFlow --permitReservedWords --fieldName typeValue --type ~.common.DirectionOfFlowEnum --notNull
-field number --class ~.common.DirectionOfFlow --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.DirectionOfFlow --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.KindEnum                                                                          
 enum constant --class ~.common.KindEnum --name none --permitReservedWords                                    
 enum constant --class ~.common.KindEnum --name apparentPowerFactor --permitReservedWords                     
@@ -319,7 +317,7 @@ enum constant --class ~.common.KindEnum --name connectionFee --permitReservedWor
 enum constant --class ~.common.KindEnum --name audibleVolume --permitReservedWords                           
 enum constant --class ~.common.KindEnum --name volumetricFlow --permitReservedWords                          
 field enum --class ~.common.Kind --permitReservedWords --fieldName typeValue --type ~.common.KindEnum --notNull
-field number --class ~.common.Kind --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.Kind --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.PhaseCodeEnum                                                                     
 enum constant --class ~.common.PhaseCodeEnum --name ABCN --permitReservedWords                               
 enum constant --class ~.common.PhaseCodeEnum --name ABC --permitReservedWords                                
@@ -349,7 +347,7 @@ enum constant --class ~.common.PhaseCodeEnum --name CAv --permitReservedWords
 enum constant --class ~.common.PhaseCodeEnum --name NG --permitReservedWords                                 
 enum constant --class ~.common.PhaseCodeEnum --name S1 --permitReservedWords                                 
 field enum --class ~.common.PhaseCode --permitReservedWords --fieldName typeValue --type ~.common.PhaseCodeEnum --notNull
-field number --class ~.common.PhaseCode --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.PhaseCode --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.UnitMultiplierEnum                                                                
 enum constant --class ~.common.UnitMultiplierEnum --name p --permitReservedWords                             
 enum constant --class ~.common.UnitMultiplierEnum --name n --permitReservedWords                             
@@ -365,7 +363,7 @@ enum constant --class ~.common.UnitMultiplierEnum --name none --permitReservedWo
 enum constant --class ~.common.UnitMultiplierEnum --name da --permitReservedWords                            
 enum constant --class ~.common.UnitMultiplierEnum --name h --permitReservedWords                             
 field enum --class ~.common.UnitMultiplier --permitReservedWords --fieldName typeValue --type ~.common.UnitMultiplierEnum --notNull
-field number --class ~.common.UnitMultiplier --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.UnitMultiplier --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.QualityOfReadingEnum                                                              
 enum constant --class ~.common.QualityOfReadingEnum --name valid --permitReservedWords                       
 enum constant --class ~.common.QualityOfReadingEnum --name manuallyEdited  --permitReservedWords             
@@ -381,7 +379,7 @@ enum constant --class ~.common.QualityOfReadingEnum --name other  --permitReserv
 enum constant --class ~.common.QualityOfReadingEnum --name validated  --permitReservedWords                  
 enum constant --class ~.common.QualityOfReadingEnum --name verified  --permitReservedWords                   
 field enum --class ~.common.QualityOfReading --permitReservedWords --fieldName typeValue --type ~.common.QualityOfReadingEnum --notNull
-field number --class ~.common.QualityOfReading --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.QualityOfReading --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.ServiceKindEnum                                                                   
 enum constant --class ~.common.ServiceKindEnum --name electricity --permitReservedWords                      
 enum constant --class ~.common.ServiceKindEnum --name gas  --permitReservedWords                             
@@ -394,7 +392,7 @@ enum constant --class ~.common.ServiceKindEnum --name rates  --permitReservedWor
 enum constant --class ~.common.ServiceKindEnum --name tvLicense  --permitReservedWords                       
 enum constant --class ~.common.ServiceKindEnum --name internet  --permitReservedWords                        
 field enum --class ~.common.ServiceKind --permitReservedWords --fieldName typeValue --type ~.common.ServiceKindEnum --notNull
-field number --class ~.common.ServiceKind --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.ServiceKind --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.TimeAttributeEnum                                                                 
 enum constant --class ~.common.TimeAttributeEnum --name none --permitReservedWords                           
 enum constant --class ~.common.TimeAttributeEnum --name tenMinute --permitReservedWords                      
@@ -438,7 +436,14 @@ enum constant --class ~.common.TimeAttributeEnum --name rollingBlock10MinIntvl2M
 enum constant --class ~.common.TimeAttributeEnum --name rollingBlock10MinIntvl1MinSubIntvl --permitReservedWords     
 enum constant --class ~.common.TimeAttributeEnum --name rollingBlock5MinIntvl1MinSubIntvl --permitReservedWords      
 field enum --class ~.common.TimeAttribute --permitReservedWords --fieldName typeValue --type ~.common.TimeAttributeEnum --notNull
-field number --class ~.common.TimeAttribute --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.TimeAttribute --fieldName typeMap --type java.lang.Integer --notNull
+enum type --class ~.common.ServiceStatusEnum
+enum constant --class ~.common.ServiceStatusEnum --name Unavailable --permitReservedWords
+enum constant --class ~.common.ServiceStatusEnum --name Normal --permitReservedWords
+enum constant --class ~.common.ServiceStatusEnum --name Active  --permitReservedWords                 
+enum constant --class ~.common.ServiceStatusEnum --name Revoked  --permitReservedWords                
+field enum --class ~.common.ServiceStatus --permitReservedWords --fieldName typeValue --type ~.common.ServiceStatusEnum --notNull
+field number --class ~.common.ServiceStatus --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.TOUEnum                                                                           
 enum constant --class ~.common.TOUEnum --name none --permitReservedWords                                     
 enum constant --class ~.common.TOUEnum --name touA --permitReservedWords                                     
@@ -457,7 +462,7 @@ enum constant --class ~.common.TOUEnum --name touM --permitReservedWords
 enum constant --class ~.common.TOUEnum --name touN --permitReservedWords                                     
 enum constant --class ~.common.TOUEnum --name touO --permitReservedWords                                     
 field enum --class ~.common.TOU  --permitReservedWords --fieldName typeValue --type ~.common.TOUEnum --notNull
-field number --class ~.common.TOU --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.TOU --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.TimePeriodOfInterestEnum                                                          
 enum constant --class ~.common.TimePeriodOfInterestEnum --name none  --permitReservedWords                   
 enum constant --class ~.common.TimePeriodOfInterestEnum --name billingPeriod --permitReservedWords           
@@ -466,8 +471,8 @@ enum constant --class ~.common.TimePeriodOfInterestEnum --name monthly --permitR
 enum constant --class ~.common.TimePeriodOfInterestEnum --name seasonal --permitReservedWords                
 enum constant --class ~.common.TimePeriodOfInterestEnum --name weekly --permitReservedWords                  
 enum constant --class ~.common.TimePeriodOfInterestEnum --name specificPeriod --permitReservedWords          
-field enum --class ~.common.TimePeriodOfInterest --permitReservedWords --fieldName typeValue --type ~.common.TimePeriodOfInterestEnum --notNull                                                             
-field number --class ~.common.TimePeriodOfInterest --fieldName typeMap --type java.lang.integer --notNull
+field enum --class ~.common.TimePeriodOfInterest --permitReservedWords --fieldName typeValue --type ~.common.TimePeriodOfInterestEnum --notNull
+field number --class ~.common.TimePeriodOfInterest --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.UnitSymbolEnum                                                                    
 enum constant --class ~.common.UnitSymbolEnum --name VA --permitReservedWords                                
 enum constant --class ~.common.UnitSymbolEnum --name W --permitReservedWords                                 
@@ -594,8 +599,8 @@ enum constant --class ~.common.UnitSymbolEnum --name wPerMK --permitReservedWord
 enum constant --class ~.common.UnitSymbolEnum --name WPerSec --permitReservedWords                           
 enum constant --class ~.common.UnitSymbolEnum --name WPerVA --permitReservedWords                            
 enum constant --class ~.common.UnitSymbolEnum --name WPerW --permitReservedWords                             
-field enum --class ~.common.UnitSymbol --permitReservedWords --fieldName typeValue --type ~.common.UnitSymbolEnum --notNull                                                             
-field number --class ~.common.UnitSymbol --fieldName typeMap --type java.lang.integer --notNull
+field enum --class ~.common.UnitSymbol --permitReservedWords --fieldName typeValue --type ~.common.UnitSymbolEnum --notNull
+field number --class ~.common.UnitSymbol --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.CPPEnum                                                                           
 enum constant --class ~.common.CPPEnum --name none  --permitReservedWords                                    
 enum constant --class ~.common.CPPEnum --name cppA  --permitReservedWords                                    
@@ -606,7 +611,7 @@ enum constant --class ~.common.CPPEnum --name cppE  --permitReservedWords
 enum constant --class ~.common.CPPEnum --name cppF  --permitReservedWords                                    
 enum constant --class ~.common.CPPEnum --name cppG  --permitReservedWords                                    
 field enum --class ~.common.CPP --permitReservedWords --fieldName typeValue --type ~.common.CPPEnum --notNull                                                             
-field number --class ~.common.CPP --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.CPP --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.StatusCodeEnum                                                                    
 enum constant --class ~.common.StatusCodeEnum --name Ok --permitReservedWords                                
 enum constant --class ~.common.StatusCodeEnum --name Created --permitReservedWords                           
@@ -622,35 +627,35 @@ enum constant --class ~.common.StatusCodeEnum --name MethodNotAllowed --permitRe
 enum constant --class ~.common.StatusCodeEnum --name Gone --permitReservedWords                              
 enum constant --class ~.common.StatusCodeEnum --name InternalServerError --permitReservedWords               
 field enum --class ~.common.StatusCode --permitReservedWords --fieldName typeValue --type ~.common.StatusCodeEnum --notNull                                                             
-field number --class ~.common.StatusCode --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.StatusCode --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.CRUDOperationEnum                                                                 
 enum constant --class ~.common.CRUDOperationEnum --name Create  --permitReservedWords                        
 enum constant --class ~.common.CRUDOperationEnum --name Read --permitReservedWords                           
 enum constant --class ~.common.CRUDOperationEnum --name Update --permitReservedWords                         
 enum constant --class ~.common.CRUDOperationEnum --name Delete --permitReservedWords                         
 field enum --class ~.common.CRUDOperation --permitReservedWords --fieldName typeValue --type ~.common.CRUDOperationEnum --notNull
-field number --class ~.common.CRUDOperation --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.CRUDOperation --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.DataCustodianApplicationStatusEnum                                                
 enum constant --class ~.common.DataCustodianApplicationStatusEnum --name Review  --permitReservedWords       
 enum constant --class ~.common.DataCustodianApplicationStatusEnum --name Production --permitReservedWords    
 enum constant --class ~.common.DataCustodianApplicationStatusEnum --name OnHold --permitReservedWords        
 enum constant --class ~.common.DataCustodianApplicationStatusEnum --name Revoked --permitReservedWords       
 field enum --class ~.common.DataCustodianApplicationStatus --permitReservedWords --fieldName typeValue --type ~.common.DataCustodianApplicationStatusEnum --notNull
-field number --class ~.common.DataCustodianApplicationStatus --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.DataCustodianApplicationStatus --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.ThirdPartyApplicationStatusEnum                                                
 enum constant --class ~.common.ThirdPartyApplicationStatusEnum --name Development  --permitReservedWords  
 enum constant --class ~.common.ThirdPartyApplicationStatusEnum --name ReviewTest --permitReservedWords    
 enum constant --class ~.common.ThirdPartyApplicationStatusEnum --name Production --permitReservedWords    
 enum constant --class ~.common.ThirdPartyApplicationStatusEnum --name Retired --permitReservedWords       
 field enum --class ~.common.ThirdPartyApplicationStatus --permitReservedWords --fieldName typeValue --type ~.common.ThirdPartyApplicationStatusEnum --notNull
-field number --class ~.common.ThirdPartyApplicationStatus --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.ThirdPartyApplicationStatus --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.ThirdPartyApplicationTypeEnum                                                  
 enum constant --class ~.common.ThirdPartyApplicationTypeEnum --name Web  --permitReservedWords            
 enum constant --class ~.common.ThirdPartyApplicationTypeEnum --name Desktop --permitReservedWords         
 enum constant --class ~.common.ThirdPartyApplicationTypeEnum --name Mobile --permitReservedWords          
 enum constant --class ~.common.ThirdPartyApplicationTypeEnum --name Device --permitReservedWords          
 field enum --class ~.common.ThirdPartyApplicationType --permitReservedWords --fieldName typeValue --type ~.common.ThirdPartyApplicationTypeEnum --notNull
-field number --class ~.common.ThirdPartyApplicationType --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.ThirdPartyApplicationType --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.ThirdPartyApplicationUseEnum                                                   
 enum constant --class ~.common.ThirdPartyApplicationUseEnum --name EnergyMangement  --permitReservedWords 
 enum constant --class ~.common.ThirdPartyApplicationUseEnum --name Comparisons --permitReservedWords      
@@ -658,19 +663,12 @@ enum constant --class ~.common.ThirdPartyApplicationUseEnum --name Government --
 enum constant --class ~.common.ThirdPartyApplicationUseEnum --name Academic --permitReservedWords         
 enum constant --class ~.common.ThirdPartyApplicationUseEnum --name LawEnforcement --permitReservedWords   
 field enum --class ~.common.ThirdPartyApplicationUse --permitReservedWords --fieldName typeValue --type ~.common.ThirdPartyApplicationUseEnum --notNull
-field number --class ~.common.ThirdPartyApplicationUse --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.ThirdPartyApplicationUse --fieldName typeMap --type java.lang.Integer --notNull
 enum type --class ~.common.AuthorizationStatusEnum                                                        
 enum constant --class ~.common.AuthorizationStatusEnum --name Revoked  --permitReservedWords              
 enum constant --class ~.common.AuthorizationStatusEnum --name Active  --permitReservedWords               
 field enum --class ~.common.AuthorizationStatus --permitReservedWords --fieldName typeValue --type  ~.common.AuthorizationStatusEnum --notNull
-field number --class ~.common.AuthorizationStatus --fieldName typeMap --type java.lang.integer --notNull
-enum type --class ~.common.ServiceStatusEnum
-enum constant --class ~.common.ServiceStatusEnum --name Unavailable --permitReservedWords
-enum constant --class ~.common.ServiceStatusEnum --name Normal --permitReservedWords
-enum constant --class ~.common.ServiceStatusEnum --name Active  --permitReservedWords                 
-enum constant --class ~.common.ServiceStatusEnum --name Revoked  --permitReservedWords                
-field enum --class ~.common.ServiceStatus --permitReservedWords --fieldName typeValue --type ~.common.ServiceStatusEnum --notNull                                                             
-field number --class ~.common.ServiceStatus --fieldName typeMap --type java.lang.integer --notNull
+field number --class ~.common.AuthorizationStatus --fieldName typeMap --type java.lang.Integer --notNull
 field string --class ~.domain.DataCustodian --fieldName name --sizeMin 3 --sizeMax 30
 field string --class ~.domain.DataCustodian --fieldName description --sizeMax 512
 field string --class ~.domain.DataCustodian --fieldName mRID --sizeMax 4 --sizeMin 4
@@ -698,8 +696,6 @@ field date --class ~.domain.RetailCustomer --fieldName customerSince --type java
 field reference --class ~.domain.RetailCustomer --fieldName authorizedDataCustodian --type ~.domain.DataCustodian --cardinality ONE_TO_ONE
 field set --class ~.domain.RetailCustomer --fieldName thirdPartys --type ~.domain.ThirdParty
 field set --class ~.domain.RetailCustomer --fieldName usagePoints --type ~.common.UsagePoint
-field string --class ~.common.IdentifiedObject --fieldName uuid --sizeMIN 16 --sizeMAX 16
-field string --class ~.common.IdentifiedObject --fieldName description
 field reference --class ~.common.ApplicationInformation --fieldName dataCustodianApplicationStatus --type ~.common.DataCustodianApplicationStatus
 field other --class ~.common.ApplicationInformation --fieldName dataCustodianDefaultBatchResource --type java.net.URI
 field other --class ~.common.ApplicationInformation --fieldName dataCustodianDefaultSubscriptionResource --type java.net.URI
@@ -762,7 +758,7 @@ field reference --class ~.common.ElectricPowerUsageSummary --fieldName qualityOf
 field reference --class ~.common.ElectricPowerUsageSummary --fieldName ratchetDemand --type ~.common.SummaryMeasurement
 field reference --class ~.common.ElectricPowerUsageSummary --fieldName ratchetDemandPeriod --type ~.common.DateTimeInterval
 field number --class ~.common.ElectricPowerUsageSummary --fieldName statusTimeStamp --type java.lang.Long
-field reference --class ~.common.IntervalBlock --permitReservedWords --fieldName interval --type ~.common.DateTimeInterval
+field reference --class ~.common.IntervalBlock --permitReservedWords --fieldName espiinterval --type ~.common.DateTimeInterval
 field set --class ~.common.IntervalBlock --fieldName intervalReading --type ~.common.IntervalReading --cardinality ONE_TO_MANY
 field reference --class ~.common.IntervalBlock --fieldName meterReading --type ~.common.MeterReading
 field reference --class ~.common.IntervalBlock  --fieldName readingType --type ~.common.ReadingType 
@@ -810,7 +806,7 @@ field reference --class ~.common.SummaryMeasurement --fieldName uom --type ~.com
 field number --class ~.common.SummaryMeasurement --fieldName summaryMeasurementValue --type java.lang.Long
 field number --class ~.common.UsagePoint --fieldName roleFlags --type java.lang.Short
 field reference --class ~.common.UsagePoint --fieldName serviceCategory --type ~.common.ServiceCategory
-field number --class ~.common.UsagePoint --fieldName status --type java.lang.Byte
+field number --class ~.common.UsagePoint --fieldName UP_status --type java.lang.Byte
 field reference --class ~.common.UsagePoint --fieldName address --type ~.domain.Address
 field reference --class ~.common.UsagePoint --fieldName location --type ~.domain.Location
 field reference --class ~.common.UsagePoint --fieldName retailCustomer --type ~.domain.RetailCustomer  --cardinality ONE_TO_ONE
@@ -820,6 +816,8 @@ web mvc all --package ~.web
 web mvc finder all
 web mvc language --code de
 web mvc language --code es
+osgi install --url http://spring-roo-addons.googlecode.com/files/net.tzolov.roo.addon.oauth2-1.1.0.jar
+oauth2 collocated-authorization-and-resource-server setup
 test integration --entity ~.domain.DataCustodian
 test integration --entity ~.domain.ThirdParty
 test integration --entity ~.domain.RetailCustomer
@@ -845,8 +843,9 @@ selenium test --controller ~.web.ReadingTypeController
 selenium test --controller ~.web.SubscriptionController
 selenium test --controller ~.web.UsagePointController
 ! ../DataCustodian_install.sh
-! mvn install
+! ../insertLicense.sh
+! mvn -e clean install
+perform eclipse
 // script ../DataCustodian.roo
-quit
-// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-08-05 21:22:35
-// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-29 16:36:57
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-04-11 11:43:50

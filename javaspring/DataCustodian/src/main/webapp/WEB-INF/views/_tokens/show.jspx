@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_common__Token" object="${_token_}" path="/_tokens" z="1CFmGDRdhWOgegFXSVWmMLZKZUo=">
+        <field:display field="token" id="s_org_energyos_espi_datacustodian_common__Token_token" object="${_token_}" z="hxC6g9ip1tmxlanP4xBqqBdbsUg="/>
+    </page:show>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_datacustodian_domain_ThirdParty" items="${thirdpartys}" z="y1KZTZl2U0qkgu6qZl3eMiFzazA=">
+        <table:table data="${thirdpartys}" id="l_org_energyos_espi_datacustodian_domain_ThirdParty" path="/thirdpartys" z="xyJEcigN71t8gl663ltnCZRbPpk=">
+            <table:column id="c_org_energyos_espi_datacustodian_domain_ThirdParty_name" property="name" z="aW7VFL9t+2r5SuY7TAOPfg04A+I="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_ThirdParty_description" property="description" z="zf6dkGW30SVl6gRIerMJ16hYmxE="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_ThirdParty_authorized" property="authorized" z="qdzgFKn1+nnny7JSzqx2XjsqjVA="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_ThirdParty_authorizedDataCustodian" property="authorizedDataCustodian" z="YFBqLoC+UJBl2EO4MKb+0kx7onQ="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_ThirdParty_retailCustomers" property="retailCustomers" z="R4m81nqMbrI36jzLaqec32tXr2A="/>
+            <table:column id="c_org_energyos_espi_datacustodian_domain_ThirdParty_applicationInformation" property="applicationInformation" z="2MvUEO5qBmy2hof4S+I31hyQE7Y="/>
+        </table:table>
+    </page:list>
+</div>

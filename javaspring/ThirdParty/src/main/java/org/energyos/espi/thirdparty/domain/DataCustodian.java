@@ -20,6 +20,7 @@
  ******************************************************************************
 */
 
+
 package org.energyos.espi.thirdparty.domain;
 
 import java.util.HashSet;

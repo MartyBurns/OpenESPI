@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_datacustodian_common_ReadingType" modelAttribute="readingType" path="/readingtypes" versionField="Version" z="ImoFiFojC59MN11BNyECZKYV6i8=">
+        <field:input field="uuid" id="c_org_energyos_espi_datacustodian_common_ReadingType_uuid" z="Y66zfuB509wCnYj1tQexu7fg6Ok="/>
+        <field:input field="description" id="c_org_energyos_espi_datacustodian_common_ReadingType_description" z="4uuO3NcQm+qQnm7S21GnVFwtlkU="/>
+        <field:select field="accumulationBehavior" id="c_org_energyos_espi_datacustodian_common_ReadingType_accumulationBehavior" itemValue="id" items="${accumulationbehaviors}" path="/accumulationbehaviors" z="P91cXCXdMlh3WLUBanyPmYJzmjo="/>
+        <field:select field="commodity" id="c_org_energyos_espi_datacustodian_common_ReadingType_commodity" itemValue="id" items="${commoditys}" path="/commoditys" z="HfPi8IjkCiSwtlZLBRLYdkhcUNA="/>
+        <field:select field="dataQualifier" id="c_org_energyos_espi_datacustodian_common_ReadingType_dataQualifier" itemValue="id" items="${dataqualifiers}" path="/dataqualifiers" z="0g4F0tgqpDP1RRrhMImGsriGP/k="/>
+        <field:select field="flowDirection" id="c_org_energyos_espi_datacustodian_common_ReadingType_flowDirection" itemValue="id" items="${directionofflows}" path="/directionofflows" z="filNewrCPMfVyTsCGv0fgzhFC+w="/>
+        <field:input field="intervalLength" id="c_org_energyos_espi_datacustodian_common_ReadingType_intervalLength" validationMessageCode="field_invalid_integer" z="XrUgrzSRbSNAM2PuXXMt3/2/bdU="/>
+        <field:select field="kind" id="c_org_energyos_espi_datacustodian_common_ReadingType_kind" itemValue="id" items="${kinds}" path="/kinds" z="tX7KtnU8seAlASXVQueuF20BDls="/>
+        <field:select field="phase" id="c_org_energyos_espi_datacustodian_common_ReadingType_phase" itemValue="id" items="${phasecodes}" path="/phasecodes" z="dF2MBYtNVbllKTDJ4/lcnHoHt4M="/>
+        <field:select field="powerOfTenMultiplier" id="c_org_energyos_espi_datacustodian_common_ReadingType_powerOfTenMultiplier" itemValue="id" items="${unitmultipliers}" path="/unitmultipliers" z="vRxm4oAGeK+eB7ofAJI/xb+MA7E="/>
+        <field:select field="timeAttribute" id="c_org_energyos_espi_datacustodian_common_ReadingType_timeAttribute" itemValue="id" items="${timeattributes}" path="/timeattributes" z="3uIE6/ruUf90wdz3Pd7BCeDkbB0="/>
+        <field:select field="uom" id="c_org_energyos_espi_datacustodian_common_ReadingType_uom" itemValue="id" items="${unitsymbols}" path="/unitsymbols" z="gmIYQ5Q5u8EUpnV4C6gJBAzJPbE="/>
+        <field:select field="consumptionTier" id="c_org_energyos_espi_datacustodian_common_ReadingType_consumptionTier" itemValue="id" items="${consumptiontiers}" path="/consumptiontiers" z="437r36XO0wLizKWywvQbKoWTQe4="/>
+        <field:select field="cpp" id="c_org_energyos_espi_datacustodian_common_ReadingType_cpp" itemValue="id" items="${cpps}" path="/cpps" z="MftNAhtTO70XznSxdXcXCGauTEA="/>
+        <field:select field="currency" id="c_org_energyos_espi_datacustodian_common_ReadingType_currency" itemValue="id" items="${currencys}" path="/currencys" z="7+W2KGuurV9jCmSZiWFdc5uVY3k="/>
+        <field:select field="interharmonic" id="c_org_energyos_espi_datacustodian_common_ReadingType_interharmonic" itemValue="id" items="${readinginterharmonics}" path="/readinginterharmonics" z="GFy0GfOE8BdIv7iZ1vqcRiiNTkM="/>
+        <field:select field="measuringPeriod" id="c_org_energyos_espi_datacustodian_common_ReadingType_measuringPeriod" itemValue="id" items="${timeattributes}" path="/timeattributes" z="UGoAHciDEaUx0whP3j81t8iczzM="/>
+        <field:select field="tou" id="c_org_energyos_espi_datacustodian_common_ReadingType_tou" itemValue="id" items="${tous}" path="/tous" z="wLrzrIN5wjyULgmmubMKFNtRxt4="/>
+        <field:select field="aggregate" id="c_org_energyos_espi_datacustodian_common_ReadingType_aggregate" itemValue="id" items="${dataqualifiers}" path="/dataqualifiers" z="VeXe8Jr2raxSGQ/cgHnrTJr3sHc="/>
+        <field:select field="argument" id="c_org_energyos_espi_datacustodian_common_ReadingType_argument" itemValue="id" items="${rationalnumbers}" path="/rationalnumbers" z="TvRUtgWris/x87O4cMBbTYQngRA="/>
+    </form:update>
+</div>

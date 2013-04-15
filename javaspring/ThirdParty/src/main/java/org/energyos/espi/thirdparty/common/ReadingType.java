@@ -20,6 +20,7 @@
  ******************************************************************************
 */
 
+
 package org.energyos.espi.thirdparty.common;
 
 import javax.persistence.ManyToOne;
@@ -29,7 +30,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
 @RooToString
-@RooJpaActiveRecord
+@RooJpaActiveRecord(inheritanceType = "TABLE_PER_CLASS")
 public class ReadingType extends IdentifiedObject {
 
     @ManyToOne

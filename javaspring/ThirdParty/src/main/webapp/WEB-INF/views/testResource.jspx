@@ -1,0 +1,12 @@
+<div xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+  <spring:message var="app_name" code="application_name" htmlEscape="false" />
+  <spring:message var="title" code="welcome_titlepane" arguments="${app_name}" htmlEscape="false" />
+  <util:panel id="title" title="${question}?">
+  
+	  <spring:url var="img" value="http://chart.apis.google.com/chart?chl=${answer}&amp;chs=100x100&amp;cht=qr&amp;chld=H%7C0" />
+	  <a href="http://tzolov.net" title="42"><img src="${img}" alt="${answer}" /></a>
+	  
+  </util:panel>
+</div>

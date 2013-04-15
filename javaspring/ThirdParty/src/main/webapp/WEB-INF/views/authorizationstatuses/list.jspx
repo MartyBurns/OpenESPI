@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_energyos_espi_thirdparty_common_AuthorizationStatus" items="${authorizationstatuses}" z="mJFy9+C3l92lzbb1pmaNJq4cjpA=">
+        <table:table data="${authorizationstatuses}" id="l_org_energyos_espi_thirdparty_common_AuthorizationStatus" path="/authorizationstatuses" z="jA6Ujv7fVExWoZOz/Gf8HFIA26E=">
+            <table:column id="c_org_energyos_espi_thirdparty_common_AuthorizationStatus_typeValue" property="typeValue" z="phgE+6Lun7Yhvtc33CJCMWp0CCI="/>
+            <table:column id="c_org_energyos_espi_thirdparty_common_AuthorizationStatus_typeMap" property="typeMap" z="bFFmoh354AVnqA0qoqHcEzBad88="/>
+        </table:table>
+    </page:list>
+</div>

@@ -7,7 +7,7 @@
         <field:display field="description" id="s_org_energyos_espi_datacustodian_common_UsagePoint_description" object="${usagepoint}" z="S2qjJpgyAgB6cx2UwDOrVxGoimI="/>
         <field:display field="roleFlags" id="s_org_energyos_espi_datacustodian_common_UsagePoint_roleFlags" object="${usagepoint}" z="mz4NW4t//IJHPsRP41UrPSAy1Ls="/>
         <field:display field="serviceCategory" id="s_org_energyos_espi_datacustodian_common_UsagePoint_serviceCategory" object="${usagepoint}" z="P09fjDkjTOoG6ceGIBSVyLFY7QE="/>
-        <field:display field="status" id="s_org_energyos_espi_datacustodian_common_UsagePoint_status" object="${usagepoint}" z="pQjDaldKsn4HLsA1P1cjnGF9NCQ="/>
+        <field:display field="UP_status" id="s_org_energyos_espi_datacustodian_common_UsagePoint_UP_status" object="${usagepoint}" z="ExqydNMoontHZm0x3K/dRiMproM="/>
         <field:display field="address" id="s_org_energyos_espi_datacustodian_common_UsagePoint_address" object="${usagepoint}" z="RUe6mFbf8VPOiGPbxErHd1C3cEg="/>
         <field:display field="location" id="s_org_energyos_espi_datacustodian_common_UsagePoint_location" object="${usagepoint}" z="rKrQTA46lNzhLFz2id6WFepZafg="/>
         <field:display field="retailCustomer" id="s_org_energyos_espi_datacustodian_common_UsagePoint_retailCustomer" object="${usagepoint}" z="hwjoPu5RJeOj21cDjRnNzQ1tbzI="/>

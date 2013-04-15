@@ -5,7 +5,7 @@
     <form:create id="fc_org_energyos_espi_datacustodian_common_IntervalBlock" modelAttribute="intervalBlock" path="/intervalblocks" render="${empty dependencies}" z="Ib401zTJWzKNWlUO8c2VZHUyYTQ=">
         <field:input field="uuid" id="c_org_energyos_espi_datacustodian_common_IntervalBlock_uuid" z="idxSIq9Iu6+8EGWzjwcsYcSUEfQ="/>
         <field:input field="description" id="c_org_energyos_espi_datacustodian_common_IntervalBlock_description" z="qIklfzVuIIM3Omu2KRlrHjwl7cA="/>
-        <field:select field="interval" id="c_org_energyos_espi_datacustodian_common_IntervalBlock_interval" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="kZJ1OaAsnAHYvnnXXK2M/N6rsT8="/>
+        <field:select field="espiinterval" id="c_org_energyos_espi_datacustodian_common_IntervalBlock_espiinterval" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="grh9Cm5e+h8NYMQh/d3mmiVuqCk="/>
         <field:simple field="intervalReading" id="c_org_energyos_espi_datacustodian_common_IntervalBlock_intervalReading" messageCode="entity_reference_not_managed" messageCodeAttribute="Interval Reading" z="sl4bSfWKNDTNGq3hom8nVlhvXxw="/>
         <field:select field="meterReading" id="c_org_energyos_espi_datacustodian_common_IntervalBlock_meterReading" itemValue="id" items="${meterreadings}" path="/meterreadings" z="sGS3q1Wg2iIEvG+f81bjWrf97lw="/>
         <field:select field="readingType" id="c_org_energyos_espi_datacustodian_common_IntervalBlock_readingType" itemValue="id" items="${readingtypes}" path="/readingtypes" z="xJnWutCqCqtQrLXRagbXU9luOpo="/>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_energyos_espi_datacustodian_domain_ThirdParty" object="${thirdparty}" path="/thirdpartys" z="hJUHrJaU9NnDe0zL8kI3VKNXp9s=">
+        <field:display field="name" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_name" object="${thirdparty}" z="DN3UVsZPtKl1nJMMxM9dIBNP5Lk="/>
+        <field:display field="description" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_description" object="${thirdparty}" z="iOF+aDS1xXa99pTsfrBUOXP9Y20="/>
+        <field:display field="authorized" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_authorized" object="${thirdparty}" z="17KHk/XznALULQS0ssQZFQhT85k="/>
+        <field:display field="authorizedDataCustodian" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_authorizedDataCustodian" object="${thirdparty}" z="8BuNxMO5LMia0wOS6vDws+JKrfE="/>
+        <field:display field="retailCustomers" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_retailCustomers" object="${thirdparty}" z="0EDDg+4M0gr210ddCRfJh5NSKko="/>
+        <field:display field="applicationInformation" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_applicationInformation" object="${thirdparty}" z="9YjqTvPAKUy/Xqmukhi8dGzjRGc="/>
+        <field:display field="dataCustodianApplicationStatus" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_dataCustodianApplicationStatus" object="${thirdparty}" z="gR+x+XFCSl0o/a75wflwuk+/Ins="/>
+        <field:display field="applicationTypes" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_applicationTypes" object="${thirdparty}" z="9cCDCT3UrxiR3MWHMCwprASU1LM="/>
+        <field:display field="authorizationStatus" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_authorizationStatus" object="${thirdparty}" z="7Dzy1mrS551JvB4mQjxE6cdgUc0="/>
+        <field:display field="applicationUse" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_applicationUse" object="${thirdparty}" z="JMdVFvGXte3kix4iB0gY8ZHFYCI="/>
+        <field:display field="serviceStatus" id="s_org_energyos_espi_datacustodian_domain_ThirdParty_serviceStatus" object="${thirdparty}" z="e9fyiG8IPrhv+yvdMSGUJwN3H6I="/>
+    </page:show>
+</div>

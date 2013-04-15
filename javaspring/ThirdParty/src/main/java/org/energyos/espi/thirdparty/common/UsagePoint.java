@@ -21,6 +21,7 @@
 */
 
 
+
 package org.energyos.espi.thirdparty.common;
 
 import javax.persistence.ManyToOne;
@@ -87,8 +88,8 @@ public class UsagePoint extends IdentifiedObject {
     @XmlElement(name = "ServiceCategory")
     private ServiceCategory serviceCategory;
 
-    @XmlElement
-    private Byte status;
+    @XmlElement(name = "status")
+    private Byte UP_status;
 
     @ManyToOne
     private Address address;

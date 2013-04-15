@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_energyos_espi_thirdparty_common_IntervalReading" modelAttribute="intervalReading" path="/intervalreadings" versionField="Version" z="fzuuYxVbyRV65kgKQTNBmbR8C3U=">
+        <field:input field="readingCost" id="c_org_energyos_espi_thirdparty_common_IntervalReading_readingCost" validationMessageCode="field_invalid_integer" z="bJOPC5LqCNLbMJ4EKLIxoVCMC14="/>
+        <field:select field="readingQuality" id="c_org_energyos_espi_thirdparty_common_IntervalReading_readingQuality" itemValue="id" items="${readingqualitys}" path="/readingqualitys" z="PAmd9F9Ljt0KIUOaxYzcKLtO0xE="/>
+        <field:select field="timePeriod" id="c_org_energyos_espi_thirdparty_common_IntervalReading_timePeriod" itemValue="id" items="${datetimeintervals}" path="/datetimeintervals" z="ulpG6dvhU1O4vTAYfQp1GtiA478="/>
+        <field:input field="value" id="c_org_energyos_espi_thirdparty_common_IntervalReading_value" validationMessageCode="field_invalid_integer" z="gUERVjUa66p3Wlel+fYbiqnSg9c="/>
+        <field:select field="intervalBlock" id="c_org_energyos_espi_thirdparty_common_IntervalReading_intervalBlock" itemValue="id" items="${intervalblocks}" path="/intervalblocks" z="FPiszIV4h16eVZ0XAF9MKY5mD2c="/>
+        <field:select field="usagePoint" id="c_org_energyos_espi_thirdparty_common_IntervalReading_usagePoint" itemValue="id" items="${usagepoints}" path="/usagepoints" z="gJN7gfa+Anq5/9CFoSguIzH0j5Y="/>
+    </form:update>
+</div>

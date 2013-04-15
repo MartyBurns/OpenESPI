@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="_accesstokens/list">
+        <put-attribute name="body" value="/WEB-INF/views/_accesstokens/list.jspx"/>
+    </definition>
+<definition extends="default" name="_accesstokens/show">
+        <put-attribute name="body" value="/WEB-INF/views/_accesstokens/show.jspx"/>
+    </definition>
+<definition extends="default" name="_accesstokens/create">
+        <put-attribute name="body" value="/WEB-INF/views/_accesstokens/create.jspx"/>
+    </definition>
+<definition extends="default" name="_accesstokens/update">
+        <put-attribute name="body" value="/WEB-INF/views/_accesstokens/update.jspx"/>
+    </definition>
+</tiles-definitions>
