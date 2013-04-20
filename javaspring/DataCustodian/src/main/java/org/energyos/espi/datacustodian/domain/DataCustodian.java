@@ -31,6 +31,12 @@ import javax.persistence.CascadeType;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
 import org.energyos.espi.datacustodian.common.ApplicationInformation;
 import org.energyos.espi.datacustodian.common.Authorization;
 import org.energyos.espi.datacustodian.common.DataCustodianApplicationStatus;
@@ -49,39 +55,65 @@ import org.energyos.espi.datacustodian.common.IdentifiedObject;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
+
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "DataCustodian", propOrder = {
+		"id",
+		"version",
+    "mRID",
+    "name",
+    "description",
+    "serviceType",
+    "retailCustomers",
+    "applicationInformation",
+    "authorizedThirdPartys",
+    "dataCustodianApplicationStatus",
+    "serviceStatus"
+})
+
 public class DataCustodian implements org.energyos.espi.datacustodian.common.DataCustodian {
 
     @Size(min = 4, max = 4)
+    @XmlElement
     static public String mRID; 
 
     @Size(min = 3, max = 30)
+    @XmlElement
     private String name;
 
     @Size(max = 512)
+    @XmlElement
     private String description;
 
     @ManyToOne
+    @XmlElement
     private DataCustodianType serviceType;
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @XmlElement
     private Set<ThirdParty> authorizedThirdPartys = new HashSet<ThirdParty>();
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @XmlElement
     private Set<RetailCustomer> retailCustomers = new HashSet<RetailCustomer>();
 
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<ApplicationInformation> applicationInformation = new HashSet<ApplicationInformation>();
 
     @ManyToOne
+    @XmlElement
     private DataCustodianApplicationStatus dataCustodianApplicationStatus;
 
     @ManyToOne
+    @XmlElement
     private ServiceStatus serviceStatus;
 
     // to retrieve and ESPI Visible object via it's UUID
     //
     public IdentifiedObject getResource(String uuid) {
-	// TODO find the ESPI vuisubke resiyrces managed by this data custodian
+	// TODO find the ESPI visible resources managed by this data custodian
 	//	return IdentifiedObject.findIdentifiedObject(uuid);
 	return null;
     }

@@ -75,7 +75,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @XmlType(name = "UsagePoint", propOrder = {
     "roleFlags",
     "serviceCategory",
-    "status"
+    "UP_status"
 })
 
 public class UsagePoint extends IdentifiedObject {
@@ -88,7 +88,7 @@ public class UsagePoint extends IdentifiedObject {
     @XmlElement(name = "ServiceCategory")
     private ServiceCategory serviceCategory;
 
-    @XmlElement(name="status")
+    @XmlElement(name="UP_status")
     private Byte UP_status;
 
     @ManyToOne

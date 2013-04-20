@@ -31,6 +31,13 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.XmlType;
+
 import org.energyos.espi.datacustodian.common.ApplicationInformation;
 import org.energyos.espi.datacustodian.common.AuthorizationStatus;
 import org.energyos.espi.datacustodian.common.DataCustodianApplicationStatus;
@@ -44,40 +51,55 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
+
+@XmlType(name = "ThirdParty")
+@XmlAccessorType(XmlAccessType.FIELD)
+
 public class ThirdParty {
 
     @Size(min = 3, max = 30)
+    @XmlElement(name="name")
     private String name;
 
     @Size(max = 512)
+    @XmlElement(name="description")
     private String description;
 
     @NotNull
+    @XmlElement(name="authorized")
     private Boolean authorized;
 
     @OneToOne
+    @XmlTransient
     private DataCustodian authorizedDataCustodian;
 
     @NotNull
     @ManyToMany(cascade = CascadeType.ALL)
+    @XmlElement
     private Set<RetailCustomer> retailCustomers = new HashSet<RetailCustomer>();
 
     @ManyToOne
+    @XmlElement(name="applicationInformation")
     private ApplicationInformation applicationInformation;
 
     @ManyToOne
+    @XmlElement(name="dataCustodianApplicationStatus")
     private DataCustodianApplicationStatus dataCustodianApplicationStatus;
 
     @NotNull
     @ManyToMany(cascade = CascadeType.ALL)
+    @XmlElement(name="applicationTypes")
     private Set<ThirdPartyApplicationType> applicationTypes = new HashSet<ThirdPartyApplicationType>();
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @XmlTransient
     private Set<AuthorizationStatus> authorizationStatus = new HashSet<AuthorizationStatus>();
 
     @ManyToOne
+    @XmlElement(name="applicationUse")
     private ThirdPartyApplicationUse applicationUse;
 
     @ManyToOne
+    @XmlElement(name="serviceStatus")
     private ServiceStatus serviceStatus;
 }
