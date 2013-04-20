@@ -25,6 +25,8 @@
 package org.energyos.espi.thirdparty.common;
 
 import java.net.URI;
+
+import javax.persistence.Column;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -90,8 +92,10 @@ public class Resource {
     private String responseRequired;
 
     @XmlAttribute
+    @Column(columnDefinition = "BIT")   // needed because of open hibernate bug 
     private Boolean signatureRequired;
 
     @XmlAttribute
+    @Column(columnDefinition = "BIT")   // needed because of open hibernate bug 
     private Boolean subscribable;
 }
