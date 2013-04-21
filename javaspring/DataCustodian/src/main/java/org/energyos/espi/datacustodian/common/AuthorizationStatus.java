@@ -25,6 +25,11 @@ package org.energyos.espi.datacustodian.common;
 
 import javax.persistence.Enumerated;
 import javax.validation.constraints.NotNull;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -32,12 +37,18 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
+
+@XmlType(name = "AuthorizationStatus")
+@XmlAccessorType(XmlAccessType.FIELD)
+
 public class AuthorizationStatus {
 
     @NotNull
     @Enumerated
+    @XmlElement(name="typeValue")
     private AuthorizationStatusEnum typeValue;
 
     @NotNull
+    @XmlElement(name="typeMap")
     private Integer typeMap;
 }

@@ -34,6 +34,14 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlIDREF;
+import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.XmlType;
+
 import org.energyos.espi.datacustodian.common.UsagePoint;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.javabean.RooJavaBean;
@@ -43,29 +51,43 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
+
+@XmlType(name = "RetailCustomer")
+@XmlAccessorType(XmlAccessType.FIELD)
+
 public class RetailCustomer {
 
     @Size(min = 3, max = 30)
+    @XmlElement(name="firstName")
     private String firstName;
 
     @Size(min = 3, max = 30)
+    @XmlElement(name="lastName")
     private String lastName;
 
     @Size(min = 6, max = 30)
+    @XmlElement(name="email")
     private String email;
 
     @NotNull
     @Past
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "M-")
+    @XmlElement(name="customerSince")
     private Date customerSince;
 
     @OneToOne
+    @XmlTransient
     private DataCustodian authorizedDataCustodian;
 
     @ManyToMany(cascade = CascadeType.ALL)
+    //@XmlElementWrapper(name="thirdPartys")
+    //@XmlElement(name="ThirdParty")
+    @XmlTransient
     private Set<ThirdParty> thirdPartys = new HashSet<ThirdParty>();
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @XmlElementWrapper(name="usagePoints")
+    @XmlElement(name="UsagePoint")
     private Set<UsagePoint> usagePoints = new HashSet<UsagePoint>();
 }

@@ -70,14 +70,14 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @XmlAccessorType(XmlAccessType.NONE)
 @XmlType(name = "IntervalBlock", propOrder = {
-    "interval",
+    "espiinterval",
     "intervalReading"
 })
 
 public class IntervalBlock extends IdentifiedObject {
 
     @ManyToOne
-    @XmlElement(name = "interval")
+    @XmlElement(name = "espiinterval")
     private DateTimeInterval espiinterval;
 
     @OneToMany(cascade = CascadeType.ALL)

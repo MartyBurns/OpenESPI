@@ -29,6 +29,11 @@ import javax.persistence.CascadeType;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+
 import org.energyos.espi.thirdparty.common.ApplicationInformation;
 import org.energyos.espi.thirdparty.common.DataCustodianApplicationStatus;
 import org.energyos.espi.thirdparty.common.DataCustodianType;
@@ -40,6 +45,10 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
+
+@XmlRootElement(name="DataCustodian")
+@XmlAccessorType(XmlAccessType.FIELD)
+
 public class DataCustodian {
 
     @Size(min = 3, max = 30)
@@ -52,6 +61,7 @@ public class DataCustodian {
     private DataCustodianType serviceType;
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @XmlTransient
     private Set<ThirdParty> authorizedThirdPartys = new HashSet<ThirdParty>();
 
     @ManyToMany(cascade = CascadeType.ALL)
