@@ -34,6 +34,11 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+
 import org.energyos.espi.thirdparty.common.UsagePoint;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.roo.addon.javabean.RooJavaBean;
@@ -43,6 +48,9 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
+
+@XmlRootElement(name="RetailCustomer")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class RetailCustomer {
 
     @Size(min = 3, max = 30)
@@ -64,6 +72,7 @@ public class RetailCustomer {
     private DataCustodian authorizedDataCustodian;
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @XmlTransient
     private Set<ThirdParty> thirdPartys = new HashSet<ThirdParty>();
 
     @ManyToMany(cascade = CascadeType.ALL)
