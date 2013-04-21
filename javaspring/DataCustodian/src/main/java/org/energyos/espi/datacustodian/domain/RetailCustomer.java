@@ -37,6 +37,8 @@ import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlIDREF;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
@@ -79,10 +81,13 @@ public class RetailCustomer {
     private DataCustodian authorizedDataCustodian;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @XmlElement(name="thirdPartys")
+    //@XmlElementWrapper(name="thirdPartys")
+    //@XmlElement(name="ThirdParty")
+    @XmlTransient
     private Set<ThirdParty> thirdPartys = new HashSet<ThirdParty>();
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @XmlElement(name="usagePoints")
+    @XmlElementWrapper(name="usagePoints")
+    @XmlElement(name="UsagePoint")
     private Set<UsagePoint> usagePoints = new HashSet<UsagePoint>();
 }

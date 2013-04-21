@@ -34,6 +34,7 @@ import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -73,7 +74,7 @@ import org.energyos.espi.datacustodian.common.IdentifiedObject;
     "serviceStatus"
 })
 
-public class DataCustodian implements org.energyos.espi.datacustodian.common.DataCustodian {
+public class DataCustodian  implements org.energyos.espi.datacustodian.common.DataCustodian {
 
     @Size(min = 4, max = 4)
     @XmlElement
@@ -92,11 +93,13 @@ public class DataCustodian implements org.energyos.espi.datacustodian.common.Dat
     private DataCustodianType serviceType;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @XmlElement
+    @XmlElementWrapper(name="authorizedThirdPartys")
+    @XmlElement(name="ThirdParty")
     private Set<ThirdParty> authorizedThirdPartys = new HashSet<ThirdParty>();
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @XmlElement
+    @XmlElementWrapper(name="retailCustomers")
+    @XmlElement(name="RetailCustomer")
     private Set<RetailCustomer> retailCustomers = new HashSet<RetailCustomer>();
 
     @ManyToMany(cascade = CascadeType.ALL)

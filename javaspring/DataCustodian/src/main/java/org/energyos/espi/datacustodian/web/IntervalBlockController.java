@@ -23,13 +23,71 @@
 
 package org.energyos.espi.datacustodian.web;
 
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
+import org.energyos.espi.datacustodian.common.ElectricPowerUsageSummary;
 import org.energyos.espi.datacustodian.common.IntervalBlock;
+import org.springframework.http.HttpHeaders;
 import org.springframework.roo.addon.web.mvc.controller.scaffold.RooWebScaffold;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @RequestMapping("/intervalblocks")
 @Controller
 @RooWebScaffold(path = "intervalblocks", formBackingObject = IntervalBlock.class)
 public class IntervalBlockController {
+	
+    @RequestMapping(method = RequestMethod.GET, value="/{id}", headers="Accept=application/atom+xml")
+    @ResponseBody
+    public String getResource(@PathVariable("id") Long id)  {
+
+        String xmlResult;
+        // get the resource                                                                                                                                                                                                                                                
+        IntervalBlock resource = IntervalBlock.findIntervalBlock(id);
+      
+        if (resource == null) {
+            // TODO establish the proper way to return the error streams                                                                                                                                                                                               
+            // return new ResponseEntity<byte[]>(HttpStatus.NOT_FOUND);   
+            return "400: Resource Not Found";
+        } else {
+            // marshal the resource                                                                                                                                                                                                                                       
+            JAXBContext context;
+            Marshaller m;
+            Writer w = null;
+
+            try {
+                context = JAXBContext.newInstance(org.energyos.espi.datacustodian.common.IntervalBlock.class);
+                m = context.createMarshaller();
+                m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+                w = new StringWriter();
+                m.marshal(resource, w);
+            } catch (JAXBException e1) {
+                // TODO Auto-generated catch block                                                                                                                                                                                                                         
+                e1.printStackTrace();
+            }
+            xmlResult = w.toString();
+            try {
+                w.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            HttpHeaders hdr = new HttpHeaders();
+            hdr.set("Content-Type", "application/atom+xml");
+            return xmlResult;
+            // we may want a response entity for respance encapsulation rather than just the raw string                                                                                                                                                                    
+            //                                                                                                                                                                                                                                                             
+            //      return new ResponseEntity<byte[]>(out.toByteArray(), headers, HttpStatus.OK);                                                                                                                                                                          
+        }
+ 
+    }
+
 }

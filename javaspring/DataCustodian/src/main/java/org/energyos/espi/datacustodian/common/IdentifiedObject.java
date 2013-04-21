@@ -29,6 +29,7 @@ import java.util.Iterator;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
@@ -96,7 +97,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 })
 
 public class IdentifiedObject {
-
+    @XmlID
     private String uuid;
 
     private String description;

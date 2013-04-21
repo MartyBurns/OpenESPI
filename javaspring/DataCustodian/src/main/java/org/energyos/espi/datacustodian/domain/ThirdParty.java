@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2011, 2012 EnergyOS.Org
+ * Copyright (c) 2011, 2012, 2013EnergyOS.Org
  *
  * Licensed by EnergyOS.Org under one or more contributor license agreements.
  * See the NOTICE file distributed with this work for additional information
@@ -26,17 +26,27 @@ package org.energyos.espi.datacustodian.domain;
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+import javax.persistence.Version;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.energyos.espi.datacustodian.common.ApplicationInformation;
 import org.energyos.espi.datacustodian.common.AuthorizationStatus;
@@ -48,11 +58,12 @@ import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
 
+@Entity
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
 
-@XmlType(name = "ThirdParty")
+@XmlRootElement(name="ThirdParty")
 @XmlAccessorType(XmlAccessType.FIELD)
 
 public class ThirdParty {
@@ -66,6 +77,7 @@ public class ThirdParty {
     private String description;
 
     @NotNull
+    @Column(columnDefinition = "BIT")   // needed because of open hibernate bug 
     @XmlElement(name="authorized")
     private Boolean authorized;
 
@@ -75,7 +87,8 @@ public class ThirdParty {
 
     @NotNull
     @ManyToMany(cascade = CascadeType.ALL)
-    @XmlElement
+    @XmlElementWrapper(name="retailCustomers")
+    @XmlElement(name="RetailCustomer")
     private Set<RetailCustomer> retailCustomers = new HashSet<RetailCustomer>();
 
     @ManyToOne
@@ -88,11 +101,13 @@ public class ThirdParty {
 
     @NotNull
     @ManyToMany(cascade = CascadeType.ALL)
-    @XmlElement(name="applicationTypes")
+    @XmlElementWrapper(name="applicationTypes")
+    @XmlElement(name="ThirdPartyApplicationType")
     private Set<ThirdPartyApplicationType> applicationTypes = new HashSet<ThirdPartyApplicationType>();
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @XmlTransient
+    @XmlElementWrapper(name="authorizationStatus")
+    @XmlElement(name="AuthorizationStatus")
     private Set<AuthorizationStatus> authorizationStatus = new HashSet<AuthorizationStatus>();
 
     @ManyToOne
@@ -102,4 +117,29 @@ public class ThirdParty {
     @ManyToOne
     @XmlElement(name="serviceStatus")
     private ServiceStatus serviceStatus;
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private Long id;
+
+	@Version
+    @Column(name = "version")
+    private Integer version;
+
+	public Long getId() {
+        return this.id;
+    }
+
+	public void setId(Long id) {
+        this.id = id;
+    }
+
+	public Integer getVersion() {
+        return this.version;
+    }
+
+	public void setVersion(Integer version) {
+        this.version = version;
+    }
 }

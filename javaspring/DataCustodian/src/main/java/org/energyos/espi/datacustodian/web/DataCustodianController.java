@@ -68,10 +68,7 @@ import javax.xml.bind.Marshaller;
 @Controller
 @RooWebScaffold(path = "datacustodians", formBackingObject = DataCustodian.class)
 public class DataCustodianController {
-
-	   private DataCustodian dataCustodianService;
-
-	    // from OAuth Example                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                               
 	    @RequestMapping(method = RequestMethod.GET, value="/{id}", headers="Accept=application/atom+xml")
 	    @ResponseBody
 	    public String getResource(@PathVariable("id") Long id)  {
@@ -91,7 +88,7 @@ public class DataCustodianController {
 	            Writer w = null;
 
 	            try {
-	                context = JAXBContext.newInstance(this.getClass());
+	                context = JAXBContext.newInstance(org.energyos.espi.datacustodian.domain.DataCustodian.class);
 	                m = context.createMarshaller();
 	                m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 	                w = new StringWriter();
@@ -109,7 +106,7 @@ public class DataCustodianController {
 	            HttpHeaders hdr = new HttpHeaders();
 	            hdr.set("Content-Type", "application/atom+xml");
 	            return xmlResult;
-	            // we may want a response entity for respance encapsulation rather than just the raw string                                                                                                                                                                    
+	            // we may want a response entity for response encapsulation rather than just the raw string                                                                                                                                                                    
 	            //                                                                                                                                                                                                                                                             
 	            //      return new ResponseEntity<byte[]>(out.toByteArray(), headers, HttpStatus.OK);                                                                                                                                                                          
 	        }
