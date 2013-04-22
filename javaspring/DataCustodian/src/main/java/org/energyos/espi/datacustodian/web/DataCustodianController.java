@@ -23,13 +23,18 @@
 
 package org.energyos.espi.datacustodian.web;
 
+import java.io.File;
+import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+
 import org.energyos.espi.datacustodian.common.ApplicationInformation;
 import org.energyos.espi.datacustodian.common.DataCustodianApplicationStatus;
 import org.energyos.espi.datacustodian.common.DataCustodianType;
@@ -38,10 +43,16 @@ import org.energyos.espi.datacustodian.common.ServiceStatus;
 import org.energyos.espi.datacustodian.domain.DataCustodian;
 import org.energyos.espi.datacustodian.domain.RetailCustomer;
 import org.energyos.espi.datacustodian.domain.ThirdParty;
+
+import org.energyos.espi.datacustodian.atom.*;
+
 import org.springframework.roo.addon.web.mvc.controller.scaffold.RooWebScaffold;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import org.springframework.validation.BindingResult;
@@ -50,12 +61,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.JAXBIntrospector;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.PropertyException;
+import javax.xml.bind.Unmarshaller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -69,7 +85,77 @@ import javax.xml.bind.Marshaller;
 @RooWebScaffold(path = "datacustodians", formBackingObject = DataCustodian.class)
 public class DataCustodianController {
                                                                                                                                                                                                                                                
-	    @RequestMapping(method = RequestMethod.GET, value="/{id}", headers="Accept=application/atom+xml")
+    @RequestMapping(method = RequestMethod.GET, value="/{id}/uploadmydata", headers="Accept=application/atom+xml")
+    @ResponseBody
+    public String getDownloadMyData(@PathVariable("id") Long id) {
+    	String xmlResult;
+		URL aFeed;
+		FeedType theFeed;
+	    Unmarshaller unmarshaller;
+        JAXBContext context;
+        Marshaller m;
+        Writer w = null;
+        JAXBContext jc;
+		
+        DataCustodian resource = DataCustodian.findDataCustodian(id);
+      
+        if (resource == null) {
+            // TODO establish the proper way to return the error streams                                                                                                                                                                                               
+            // return new ResponseEntity<byte[]>(HttpStatus.NOT_FOUND);   
+            return "400: Resource Not Found";
+        } else {
+        	// first upload and unmarshal     	
+    		try {
+				jc = JAXBContext.newInstance(org.energyos.espi.datacustodian.atom.FeedType.class);
+				try {
+					aFeed = new URL("http://www.openespi.org/sampleData/enernoc/10.xml");
+					try {
+						unmarshaller = jc.createUnmarshaller();
+			    		try {
+			    			theFeed = (FeedType) JAXBIntrospector.getValue(unmarshaller.unmarshal(aFeed));
+
+				            try {
+								context = JAXBContext.newInstance(org.energyos.espi.datacustodian.atom.FeedType.class);
+								m = context.createMarshaller();
+								m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+								m = context.createMarshaller();
+							    w = new StringWriter();
+								m.marshal(theFeed, w);
+							    xmlResult = w.toString();
+					            try {
+					                w.close();
+					            } catch (IOException e) {
+					                e.printStackTrace();
+					            }
+					            HttpHeaders hdr = new HttpHeaders();
+					            hdr.set("Content-Type", "application/atom+xml");
+					            return xmlResult;
+
+							} catch (JAXBException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+			    		} catch (JAXBException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+					} catch (JAXBException e2) {
+						// TODO Auto-generated catch block
+						e2.printStackTrace();
+					}
+				} catch (MalformedURLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+    		} catch (JAXBException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+    		}
+        }
+        return null;
+    }
+	
+	@RequestMapping(method = RequestMethod.GET, value="/{id}", headers="Accept=application/atom+xml")
 	    @ResponseBody
 	    public String getResource(@PathVariable("id") Long id)  {
 

@@ -128,8 +128,8 @@ public class IdentifiedObject {
         // TODO Make an OpenESPI mRID
     	this.uuid = "00000000-" + classes.get(theClass.getSimpleName()) + "00-" + uuidString;
         */
-       	this.uuid =  "00000000-0000-0000-0000-000000000000";
-    	this.description = "OPENESPI: testDescription";
+//       	this.uuid =  "00000000-0000-0000-0000-000000000000";
+//   	this.description = "OPENESPI: testDescription";
     }
 
     // constructor for use whe we are given the uuid from an import

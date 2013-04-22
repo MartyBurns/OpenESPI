@@ -26,12 +26,18 @@ package org.energyos.espi.thirdparty.web;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.JAXBIntrospector;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
+import org.energyos.espi.thirdparty.atom.FeedType;
+import org.energyos.espi.thirdparty.domain.ThirdParty;
 import org.energyos.espi.thirdparty.common.Subscription;
 import org.energyos.espi.thirdparty.domain.ThirdParty;
 import org.springframework.http.HttpHeaders;
@@ -47,7 +53,77 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RooWebScaffold(path = "thirdpartys", formBackingObject = ThirdParty.class)
 public class ThirdPartyController {
 
-    @RequestMapping(method = RequestMethod.GET, value="/testData/{id}", headers="Accept=application/atom+xml")
+    @RequestMapping(method = RequestMethod.GET, value="/{id}/uploadmydata", headers="Accept=application/atom+xml")
+    @ResponseBody
+    public String getDownloadMyData(@PathVariable("id") Long id) {
+    	String xmlResult;
+		URL aFeed;
+		FeedType theFeed;
+	    Unmarshaller unmarshaller;
+        JAXBContext context;
+        Marshaller m;
+        Writer w = null;
+        JAXBContext jc;
+		
+        ThirdParty resource = ThirdParty.findThirdParty(id);
+      
+        if (resource == null) {
+            // TODO establish the proper way to return the error streams                                                                                                                                                                                               
+            // return new ResponseEntity<byte[]>(HttpStatus.NOT_FOUND);   
+            return "400: Resource Not Found";
+        } else {
+        	// first upload and unmarshal     	
+    		try {
+				jc = JAXBContext.newInstance(org.energyos.espi.thirdparty.atom.FeedType.class);
+				try {
+					aFeed = new URL("http://www.openespi.org/sampleData/enernoc/10.xml");
+					try {
+						unmarshaller = jc.createUnmarshaller();
+			    		try {
+			    			theFeed = (FeedType) JAXBIntrospector.getValue(unmarshaller.unmarshal(aFeed));
+
+				            try {
+								context = JAXBContext.newInstance(org.energyos.espi.thirdparty.atom.FeedType.class);
+								m = context.createMarshaller();
+								m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+								m = context.createMarshaller();
+							    w = new StringWriter();
+								m.marshal(theFeed, w);
+							    xmlResult = w.toString();
+					            try {
+					                w.close();
+					            } catch (IOException e) {
+					                e.printStackTrace();
+					            }
+					            HttpHeaders hdr = new HttpHeaders();
+					            hdr.set("Content-Type", "application/atom+xml");
+					            return xmlResult;
+
+							} catch (JAXBException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+			    		} catch (JAXBException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+					} catch (JAXBException e2) {
+						// TODO Auto-generated catch block
+						e2.printStackTrace();
+					}
+				} catch (MalformedURLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+    		} catch (JAXBException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+    		}
+        }
+        return null;
+    }
+	
+    @RequestMapping(method = RequestMethod.GET, value="/{id}/testData", headers="Accept=application/atom+xml")
     @ResponseBody
     public String getBatchList(@PathVariable("id") Long id)  {
     	   

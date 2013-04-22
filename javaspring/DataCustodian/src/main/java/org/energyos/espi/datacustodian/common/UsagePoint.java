@@ -88,7 +88,7 @@ public class UsagePoint extends IdentifiedObject {
     @XmlElement(name = "ServiceCategory")
     private ServiceCategory serviceCategory;
 
-    @XmlElement(name="UP_status")
+    @XmlElement(name="status")
     private Byte UP_status;
 
     @ManyToOne
