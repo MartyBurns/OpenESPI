@@ -223,7 +223,7 @@ public class ThirdParty implements org.energyos.espi.thirdparty.common.ThirdPart
 	// TODO notice of availability of authorized EUI - cycle the batchList through readData
 	// update the resource and enque a request to grab the list asynchronously
     	boolean result = false; 
-    	String url = "http://localhost:9090/datacustodian/datacustodians/1";
+    	String url = "http://localhost:9090/datacustodian/datacustodians/1/uploadmydata";
     	String acceptString = "Accept=application/atom+xml";
 
     	RestTemplate rest = new RestTemplate();

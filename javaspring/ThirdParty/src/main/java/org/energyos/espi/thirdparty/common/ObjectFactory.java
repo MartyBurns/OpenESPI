@@ -55,17 +55,12 @@ import javax.xml.namespace.QName;
  */
 @XmlRegistry
 public class ObjectFactory {
-
-    private final static QName _PersonTypeName_QNAME = new QName("http://www.w3.org/2005/Atom", "name");
-    private final static QName _PersonTypeEmail_QNAME = new QName("http://www.w3.org/2005/Atom", "email");
-    private final static QName _PersonTypeUri_QNAME = new QName("http://www.w3.org/2005/Atom", "uri");
+	
     private final static QName _IntervalReading_QNAME = new QName("http://naesb.org/espi", "IntervalReading");
-    private final static QName _Entry_QNAME = new QName("http://www.w3.org/2005/Atom", "entry");
     private final static QName _IntervalBlock_QNAME = new QName("http://naesb.org/espi", "IntervalBlock");
     private final static QName _Object_QNAME = new QName("http://naesb.org/espi", "Object");
     private final static QName _ReadingType_QNAME = new QName("http://naesb.org/espi", "ReadingType");
     private final static QName _SummaryMeasurement_QNAME = new QName("http://naesb.org/espi", "SummaryMeasurement");
-    private final static QName _Feed_QNAME = new QName("http://www.w3.org/2005/Atom", "feed");
     private final static QName _Authorization_QNAME = new QName("http://naesb.org/espi", "Authorization");
     private final static QName _ElectricPowerQualitySummary_QNAME = new QName("http://naesb.org/espi", "ElectricPowerQualitySummary");
     private final static QName _ReadingQuality_QNAME = new QName("http://naesb.org/espi", "ReadingQuality");
@@ -79,36 +74,12 @@ public class ObjectFactory {
     private final static QName _UsagePoint_QNAME = new QName("http://naesb.org/espi", "UsagePoint");
     private final static QName _BatchItemInfo_QNAME = new QName("http://naesb.org/espi", "BatchItemInfo");
     private final static QName _ElectricPowerUsageSummary_QNAME = new QName("http://naesb.org/espi", "ElectricPowerUsageSummary");
-    private final static QName _FeedTypeCategory_QNAME = new QName("http://www.w3.org/2005/Atom", "category");
-    private final static QName _FeedTypeTitle_QNAME = new QName("http://www.w3.org/2005/Atom", "title");
-    private final static QName _FeedTypeAuthor_QNAME = new QName("http://www.w3.org/2005/Atom", "author");
-    private final static QName _FeedTypeId_QNAME = new QName("http://www.w3.org/2005/Atom", "id");
-    private final static QName _FeedTypeContributor_QNAME = new QName("http://www.w3.org/2005/Atom", "contributor");
-    private final static QName _FeedTypeUpdated_QNAME = new QName("http://www.w3.org/2005/Atom", "updated");
-    private final static QName _FeedTypeGenerator_QNAME = new QName("http://www.w3.org/2005/Atom", "generator");
-    private final static QName _FeedTypeSubtitle_QNAME = new QName("http://www.w3.org/2005/Atom", "subtitle");
-    private final static QName _FeedTypeIcon_QNAME = new QName("http://www.w3.org/2005/Atom", "icon");
-    private final static QName _FeedTypeLogo_QNAME = new QName("http://www.w3.org/2005/Atom", "logo");
-    private final static QName _FeedTypeLink_QNAME = new QName("http://www.w3.org/2005/Atom", "link");
-    private final static QName _FeedTypeRights_QNAME = new QName("http://www.w3.org/2005/Atom", "rights");
-    private final static QName _EntryTypeSummary_QNAME = new QName("http://www.w3.org/2005/Atom", "summary");
-    private final static QName _EntryTypeContent_QNAME = new QName("http://www.w3.org/2005/Atom", "content");
-    private final static QName _EntryTypeSource_QNAME = new QName("http://www.w3.org/2005/Atom", "source");
-    private final static QName _EntryTypePublished_QNAME = new QName("http://www.w3.org/2005/Atom", "published");
-
+ 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.energyos.espi.datacustodian.jaxb
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link LogoType }
-     * 
-     */
-    public LogoType createLogoType() {
-        return new LogoType();
     }
 
     /**
@@ -141,30 +112,6 @@ public class ObjectFactory {
      */
     public ElectricPowerQualitySummary createElectricPowerQualitySummary() {
         return new ElectricPowerQualitySummary();
-    }
-
-    /**
-     * Create an instance of {@link DateTimeType }
-     * 
-     */
-    public DateTimeType createDateTimeType() {
-        return new DateTimeType();
-    }
-
-    /**
-     * Create an instance of {@link CategoryType }
-     * 
-     */
-    public CategoryType createCategoryType() {
-        return new CategoryType();
-    }
-
-    /**
-     * Create an instance of {@link TextType }
-     * 
-     */
-    public TextType createTextType() {
-        return new TextType();
     }
 
     /**
@@ -216,27 +163,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GeneratorType }
-     * 
-     */
-    public GeneratorType createGeneratorType() {
-        return new GeneratorType();
-    }
-
-    /**
      * Create an instance of {@link TimeConfiguration }
      * 
      */
     public TimeConfiguration createTimeConfiguration() {
         return new TimeConfiguration();
-    }
-
-    /**
-     * Create an instance of {@link SourceType }
-     * 
-     */
-    public SourceType createSourceType() {
-        return new SourceType();
     }
 
     /**
@@ -264,14 +195,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ContentType }
-     * 
-     */
-    public ContentType createContentType() {
-        return new ContentType();
-    }
-
-    /**
      * Create an instance of {@link SummaryMeasurement }
      * 
      */
@@ -285,22 +208,6 @@ public class ObjectFactory {
      */
     public DateTimeInterval createDateTimeInterval() {
         return new DateTimeInterval();
-    }
-
-    /**
-     * Create an instance of {@link LinkType }
-     * 
-     */
-    public LinkType createLinkType() {
-        return new LinkType();
-    }
-
-    /**
-     * Create an instance of {@link FeedType }
-     * 
-     */
-    public FeedType createFeedType() {
-        return new FeedType();
     }
 
     /**
@@ -320,43 +227,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link EntryType }
-     * 
-     */
-    public EntryType createEntryType() {
-        return new EntryType();
-    }
-
-    /**
      * Create an instance of {@link IntervalReading }
      * 
      */
     public IntervalReading createIntervalReading() {
         return new IntervalReading();
-    }
-
-    /**
-     * Create an instance of {@link IconType }
-     * 
-     */
-    public IconType createIconType() {
-        return new IconType();
-    }
-
-    /**
-     * Create an instance of {@link PersonType }
-     * 
-     */
-    public PersonType createPersonType() {
-        return new PersonType();
-    }
-
-    /**
-     * Create an instance of {@link IdType }
-     * 
-     */
-    public IdType createIdType() {
-        return new IdType();
     }
 
     /**
@@ -384,57 +259,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UriType }
-     * 
-     */
-    public UriType createUriType() {
-        return new UriType();
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "name", scope = PersonType.class)
-    public JAXBElement<String> createPersonTypeName(String value) {
-        return new JAXBElement<String>(_PersonTypeName_QNAME, String.class, PersonType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "email", scope = PersonType.class)
-    @XmlJavaTypeAdapter(NormalizedStringAdapter.class)
-    public JAXBElement<String> createPersonTypeEmail(String value) {
-        return new JAXBElement<String>(_PersonTypeEmail_QNAME, String.class, PersonType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UriType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "uri", scope = PersonType.class)
-    public JAXBElement<UriType> createPersonTypeUri(UriType value) {
-        return new JAXBElement<UriType>(_PersonTypeUri_QNAME, UriType.class, PersonType.class, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link IntervalReading }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://naesb.org/espi", name = "IntervalReading")
     public JAXBElement<IntervalReading> createIntervalReading(IntervalReading value) {
         return new JAXBElement<IntervalReading>(_IntervalReading_QNAME, IntervalReading.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EntryType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "entry")
-    public JAXBElement<EntryType> createEntry(EntryType value) {
-        return new JAXBElement<EntryType>(_Entry_QNAME, EntryType.class, null, value);
     }
 
     /**
@@ -471,15 +301,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://naesb.org/espi", name = "SummaryMeasurement")
     public JAXBElement<SummaryMeasurement> createSummaryMeasurement(SummaryMeasurement value) {
         return new JAXBElement<SummaryMeasurement>(_SummaryMeasurement_QNAME, SummaryMeasurement.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link FeedType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "feed")
-    public JAXBElement<FeedType> createFeed(FeedType value) {
-        return new JAXBElement<FeedType>(_Feed_QNAME, FeedType.class, null, value);
     }
 
     /**
@@ -599,337 +420,5 @@ public class ObjectFactory {
         return new JAXBElement<ElectricPowerUsageSummary>(_ElectricPowerUsageSummary_QNAME, ElectricPowerUsageSummary.class, null, value);
     }
 
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CategoryType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "category", scope = FeedType.class)
-    public JAXBElement<CategoryType> createFeedTypeCategory(CategoryType value) {
-        return new JAXBElement<CategoryType>(_FeedTypeCategory_QNAME, CategoryType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "title", scope = FeedType.class)
-    public JAXBElement<TextType> createFeedTypeTitle(TextType value) {
-        return new JAXBElement<TextType>(_FeedTypeTitle_QNAME, TextType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "author", scope = FeedType.class)
-    public JAXBElement<PersonType> createFeedTypeAuthor(PersonType value) {
-        return new JAXBElement<PersonType>(_FeedTypeAuthor_QNAME, PersonType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "id", scope = FeedType.class)
-    public JAXBElement<IdType> createFeedTypeId(IdType value) {
-        return new JAXBElement<IdType>(_FeedTypeId_QNAME, IdType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EntryType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "entry", scope = FeedType.class)
-    public JAXBElement<EntryType> createFeedTypeEntry(EntryType value) {
-        return new JAXBElement<EntryType>(_Entry_QNAME, EntryType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "contributor", scope = FeedType.class)
-    public JAXBElement<PersonType> createFeedTypeContributor(PersonType value) {
-        return new JAXBElement<PersonType>(_FeedTypeContributor_QNAME, PersonType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DateTimeType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "updated", scope = FeedType.class)
-    public JAXBElement<DateTimeType> createFeedTypeUpdated(DateTimeType value) {
-        return new JAXBElement<DateTimeType>(_FeedTypeUpdated_QNAME, DateTimeType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GeneratorType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "generator", scope = FeedType.class)
-    public JAXBElement<GeneratorType> createFeedTypeGenerator(GeneratorType value) {
-        return new JAXBElement<GeneratorType>(_FeedTypeGenerator_QNAME, GeneratorType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "subtitle", scope = FeedType.class)
-    public JAXBElement<TextType> createFeedTypeSubtitle(TextType value) {
-        return new JAXBElement<TextType>(_FeedTypeSubtitle_QNAME, TextType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IconType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "icon", scope = FeedType.class)
-    public JAXBElement<IconType> createFeedTypeIcon(IconType value) {
-        return new JAXBElement<IconType>(_FeedTypeIcon_QNAME, IconType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LogoType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "logo", scope = FeedType.class)
-    public JAXBElement<LogoType> createFeedTypeLogo(LogoType value) {
-        return new JAXBElement<LogoType>(_FeedTypeLogo_QNAME, LogoType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LinkType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "link", scope = FeedType.class)
-    public JAXBElement<LinkType> createFeedTypeLink(LinkType value) {
-        return new JAXBElement<LinkType>(_FeedTypeLink_QNAME, LinkType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "rights", scope = FeedType.class)
-    public JAXBElement<TextType> createFeedTypeRights(TextType value) {
-        return new JAXBElement<TextType>(_FeedTypeRights_QNAME, TextType.class, FeedType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "title", scope = EntryType.class)
-    public JAXBElement<TextType> createEntryTypeTitle(TextType value) {
-        return new JAXBElement<TextType>(_FeedTypeTitle_QNAME, TextType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CategoryType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "category", scope = EntryType.class)
-    public JAXBElement<CategoryType> createEntryTypeCategory(CategoryType value) {
-        return new JAXBElement<CategoryType>(_FeedTypeCategory_QNAME, CategoryType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "author", scope = EntryType.class)
-    public JAXBElement<PersonType> createEntryTypeAuthor(PersonType value) {
-        return new JAXBElement<PersonType>(_FeedTypeAuthor_QNAME, PersonType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "id", scope = EntryType.class)
-    public JAXBElement<IdType> createEntryTypeId(IdType value) {
-        return new JAXBElement<IdType>(_FeedTypeId_QNAME, IdType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "summary", scope = EntryType.class)
-    public JAXBElement<TextType> createEntryTypeSummary(TextType value) {
-        return new JAXBElement<TextType>(_EntryTypeSummary_QNAME, TextType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ContentType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "content", scope = EntryType.class)
-    public JAXBElement<ContentType> createEntryTypeContent(ContentType value) {
-        return new JAXBElement<ContentType>(_EntryTypeContent_QNAME, ContentType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LinkType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "link", scope = EntryType.class)
-    public JAXBElement<LinkType> createEntryTypeLink(LinkType value) {
-        return new JAXBElement<LinkType>(_FeedTypeLink_QNAME, LinkType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "contributor", scope = EntryType.class)
-    public JAXBElement<PersonType> createEntryTypeContributor(PersonType value) {
-        return new JAXBElement<PersonType>(_FeedTypeContributor_QNAME, PersonType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DateTimeType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "updated", scope = EntryType.class)
-    public JAXBElement<DateTimeType> createEntryTypeUpdated(DateTimeType value) {
-        return new JAXBElement<DateTimeType>(_FeedTypeUpdated_QNAME, DateTimeType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "source", scope = EntryType.class)
-    public JAXBElement<TextType> createEntryTypeSource(TextType value) {
-        return new JAXBElement<TextType>(_EntryTypeSource_QNAME, TextType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "rights", scope = EntryType.class)
-    public JAXBElement<TextType> createEntryTypeRights(TextType value) {
-        return new JAXBElement<TextType>(_FeedTypeRights_QNAME, TextType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DateTimeType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "published", scope = EntryType.class)
-    public JAXBElement<DateTimeType> createEntryTypePublished(DateTimeType value) {
-        return new JAXBElement<DateTimeType>(_EntryTypePublished_QNAME, DateTimeType.class, EntryType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CategoryType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "category", scope = SourceType.class)
-    public JAXBElement<CategoryType> createSourceTypeCategory(CategoryType value) {
-        return new JAXBElement<CategoryType>(_FeedTypeCategory_QNAME, CategoryType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "title", scope = SourceType.class)
-    public JAXBElement<TextType> createSourceTypeTitle(TextType value) {
-        return new JAXBElement<TextType>(_FeedTypeTitle_QNAME, TextType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IconType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "icon", scope = SourceType.class)
-    public JAXBElement<IconType> createSourceTypeIcon(IconType value) {
-        return new JAXBElement<IconType>(_FeedTypeIcon_QNAME, IconType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LogoType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "logo", scope = SourceType.class)
-    public JAXBElement<LogoType> createSourceTypeLogo(LogoType value) {
-        return new JAXBElement<LogoType>(_FeedTypeLogo_QNAME, LogoType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "author", scope = SourceType.class)
-    public JAXBElement<PersonType> createSourceTypeAuthor(PersonType value) {
-        return new JAXBElement<PersonType>(_FeedTypeAuthor_QNAME, PersonType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link IdType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "id", scope = SourceType.class)
-    public JAXBElement<IdType> createSourceTypeId(IdType value) {
-        return new JAXBElement<IdType>(_FeedTypeId_QNAME, IdType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LinkType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "link", scope = SourceType.class)
-    public JAXBElement<LinkType> createSourceTypeLink(LinkType value) {
-        return new JAXBElement<LinkType>(_FeedTypeLink_QNAME, LinkType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PersonType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "contributor", scope = SourceType.class)
-    public JAXBElement<PersonType> createSourceTypeContributor(PersonType value) {
-        return new JAXBElement<PersonType>(_FeedTypeContributor_QNAME, PersonType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DateTimeType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "updated", scope = SourceType.class)
-    public JAXBElement<DateTimeType> createSourceTypeUpdated(DateTimeType value) {
-        return new JAXBElement<DateTimeType>(_FeedTypeUpdated_QNAME, DateTimeType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GeneratorType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "generator", scope = SourceType.class)
-    public JAXBElement<GeneratorType> createSourceTypeGenerator(GeneratorType value) {
-        return new JAXBElement<GeneratorType>(_FeedTypeGenerator_QNAME, GeneratorType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "rights", scope = SourceType.class)
-    public JAXBElement<TextType> createSourceTypeRights(TextType value) {
-        return new JAXBElement<TextType>(_FeedTypeRights_QNAME, TextType.class, SourceType.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link TextType }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://www.w3.org/2005/Atom", name = "subtitle", scope = SourceType.class)
-    public JAXBElement<TextType> createSourceTypeSubtitle(TextType value) {
-        return new JAXBElement<TextType>(_FeedTypeSubtitle_QNAME, TextType.class, SourceType.class, value);
-    }
-
+ 
 }

@@ -74,6 +74,8 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "BatchItemInfo", propOrder = {
+		"id",
+		"version",
     "name",
     "operation",
     "statusCode",

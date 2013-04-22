@@ -28,6 +28,7 @@ import javax.persistence.ManyToOne;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
 import org.springframework.roo.addon.javabean.RooJavaBean;
@@ -58,10 +59,12 @@ import org.springframework.roo.addon.tostring.RooToString;
  * 
  * 
  */
-@XmlAccessorType(XmlAccessType.NONE)
+@XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "IntervalReading", propOrder = {
-	// TODO Fixe cost element
+	// TODO Fix cost element
     //    "cost",
+	"id",
+	"version",
     "readingCost",
     "readingQuality",
     "timePeriod",
@@ -88,8 +91,10 @@ public class IntervalReading {
     private Integer value;
 
     @ManyToOne
+    @XmlTransient
     private IntervalBlock intervalBlock;
 
     @ManyToOne
+    @XmlTransient
     private UsagePoint usagePoint;
 }

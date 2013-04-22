@@ -88,7 +88,7 @@ public class Resource {
 
     @Size(max = 8)
     @XmlAttribute
-    @XmlJavaTypeAdapter(HexBinaryAdapter.class)
+    //@XmlJavaTypeAdapter(HexBinaryAdapter.class)
     private String responseRequired;
 
     @XmlAttribute
