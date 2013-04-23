@@ -30,3 +30,4 @@
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://naesb.org/espi", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package org.energyos.espi.datacustodian.common;
+

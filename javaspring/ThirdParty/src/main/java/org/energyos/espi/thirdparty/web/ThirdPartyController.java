@@ -46,6 +46,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @RequestMapping("/thirdpartys")
@@ -53,9 +54,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RooWebScaffold(path = "thirdpartys", formBackingObject = ThirdParty.class)
 public class ThirdPartyController {
 
-    @RequestMapping(method = RequestMethod.GET, value="/{id}/uploadmydata", headers="Accept=application/atom+xml")
+    @RequestMapping(method = RequestMethod.GET, value="/{id}/uploadmydata", params={"url"}, headers="Accept=application/atom+xml")
     @ResponseBody
-    public String getDownloadMyData(@PathVariable("id") Long id) {
+    public String getDownloadMyData(@PathVariable("id") Long id, @RequestParam("url") String aUrl) {
     	String xmlResult;
 		URL aFeed;
 		FeedType theFeed;
@@ -74,16 +75,16 @@ public class ThirdPartyController {
         } else {
         	// first upload and unmarshal     	
     		try {
-				jc = JAXBContext.newInstance(org.energyos.espi.thirdparty.atom.FeedType.class);
+				jc = JAXBContext.newInstance("org.energyos.espi.thirdparty.atom:org.energyos.espi.thirdparty.common");
 				try {
-					aFeed = new URL("http://www.openespi.org/sampleData/enernoc/10.xml");
+					aFeed = new URL(aUrl);
 					try {
 						unmarshaller = jc.createUnmarshaller();
 			    		try {
 			    			theFeed = (FeedType) JAXBIntrospector.getValue(unmarshaller.unmarshal(aFeed));
 
 				            try {
-								context = JAXBContext.newInstance(org.energyos.espi.thirdparty.atom.FeedType.class);
+								context = JAXBContext.newInstance("org.energyos.espi.thirdparty.atom:org.energyos.espi.thirdparty.common");
 								m = context.createMarshaller();
 								m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 								m = context.createMarshaller();
@@ -147,7 +148,7 @@ public class ThirdPartyController {
             Writer w = null;
 
             try {
-                context = JAXBContext.newInstance(org.energyos.espi.thirdparty.domain.ThirdParty.class);
+                context = JAXBContext.newInstance("org.energyos.espi.thirdparty.atom:org.energyos.espi.thirdparty.common");
                 m = context.createMarshaller();
                 m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
                 w = new StringWriter();
@@ -192,7 +193,7 @@ public class ThirdPartyController {
             Writer w = null;
 
             try {
-                context = JAXBContext.newInstance(org.energyos.espi.thirdparty.domain.ThirdParty.class);
+                context = JAXBContext.newInstance("org.energyos.espi.thirdparty.atom:org.energyos.espi.thirdparty.common");
                 m = context.createMarshaller();
                 m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
                 w = new StringWriter();

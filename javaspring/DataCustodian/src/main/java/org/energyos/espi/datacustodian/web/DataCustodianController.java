@@ -85,9 +85,59 @@ import javax.xml.bind.Marshaller;
 @RooWebScaffold(path = "datacustodians", formBackingObject = DataCustodian.class)
 public class DataCustodianController {
                                                                                                                                                                                                                                                
-    @RequestMapping(method = RequestMethod.GET, value="/{id}/uploadmydata", headers="Accept=application/atom+xml")
+	   @RequestMapping(method = RequestMethod.GET, value="/{id}/insertDownloadMyDataFile", params={"url"}, headers="Accept=application/atom+xml")
+	    @ResponseBody
+	    public String insertDownloadMyDataFile(@PathVariable("id") Long id, @RequestParam("url") String aUrl) {
+		   // TODO: change return from String to HttpResponseEntity with proper content
+	    	String xmlResult;
+			URL aFeed;
+			FeedType theFeed;
+		    Unmarshaller unmarshaller;
+	        JAXBContext context;
+	        Marshaller m;
+	        Writer w = null;
+	        JAXBContext jc;
+			
+	        DataCustodian resource = DataCustodian.findDataCustodian(id);
+	      
+	        if (resource == null) {
+	            // TODO establish the proper way to return the error streams                                                                                                                                                                                               
+	            // return new ResponseEntity<byte[]>(HttpStatus.NOT_FOUND);   
+	            return "400: Resource Not Found";
+	        } else {
+	        	// first upload and unmarshal     	
+	    		try {
+					jc = JAXBContext.newInstance("org.energyos.espi.datacustodian.atom:org.energyos.espi.datacustodian.common");
+					try {
+						aFeed = new URL(aUrl);
+						try {
+							unmarshaller = jc.createUnmarshaller();
+				    		try {
+				    			theFeed = (FeedType) JAXBIntrospector.getValue(unmarshaller.unmarshal(aFeed));				    	 
+		                    } catch (JAXBException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+						} catch (JAXBException e2) {
+							// TODO Auto-generated catch block
+							e2.printStackTrace();
+						}
+					} catch (MalformedURLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+	    		} catch (JAXBException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+	    		}
+	        }
+	        return "200 - Ok";
+	    }
+		 
+	@RequestMapping(method = RequestMethod.GET, value="/{id}/uploadmydata", params={"url"}, headers="Accept=application/atom+xml")
     @ResponseBody
-    public String getDownloadMyData(@PathVariable("id") Long id) {
+    public String getDownloadMyData(@PathVariable("id") Long id, @RequestParam("url") String aUrl) {
+	    // TODO: change return from String to HttpResponseEntity with proper content
     	String xmlResult;
 		URL aFeed;
 		FeedType theFeed;
@@ -106,16 +156,16 @@ public class DataCustodianController {
         } else {
         	// first upload and unmarshal     	
     		try {
-				jc = JAXBContext.newInstance(org.energyos.espi.datacustodian.atom.FeedType.class);
+				jc = JAXBContext.newInstance("org.energyos.espi.datacustodian.atom:org.energyos.espi.datacustodian.common");
 				try {
-					aFeed = new URL("http://www.openespi.org/sampleData/enernoc/10.xml");
+					aFeed = new URL(aUrl);
 					try {
 						unmarshaller = jc.createUnmarshaller();
 			    		try {
 			    			theFeed = (FeedType) JAXBIntrospector.getValue(unmarshaller.unmarshal(aFeed));
 
 				            try {
-								context = JAXBContext.newInstance(org.energyos.espi.datacustodian.atom.FeedType.class);
+								context = JAXBContext.newInstance("org.energyos.espi.datacustodian.atom:org.energyos.espi.datacustodian.common");
 								m = context.createMarshaller();
 								m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 								m = context.createMarshaller();
@@ -158,7 +208,7 @@ public class DataCustodianController {
 	@RequestMapping(method = RequestMethod.GET, value="/{id}", headers="Accept=application/atom+xml")
 	    @ResponseBody
 	    public String getResource(@PathVariable("id") Long id)  {
-
+		   // TODO: change return from String to HttpResponseEntity with proper content
 	        String xmlResult;
 	        // get the resource                                                                                                                                                                                                                                                
 	        DataCustodian resource = DataCustodian.findDataCustodian(id);
@@ -174,7 +224,7 @@ public class DataCustodianController {
 	            Writer w = null;
 
 	            try {
-	                context = JAXBContext.newInstance(org.energyos.espi.datacustodian.domain.DataCustodian.class);
+	                context = JAXBContext.newInstance("org.energyos.espi.datacustodian.atom:org.energyos.espi.datacustodian.common");
 	                m = context.createMarshaller();
 	                m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 	                w = new StringWriter();
