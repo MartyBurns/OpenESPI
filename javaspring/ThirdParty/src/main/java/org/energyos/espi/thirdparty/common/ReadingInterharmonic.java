@@ -60,6 +60,8 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ReadingInterharmonic", propOrder = {
+    "id",
+	"version",
     "numerator",
     "denominator"
 })

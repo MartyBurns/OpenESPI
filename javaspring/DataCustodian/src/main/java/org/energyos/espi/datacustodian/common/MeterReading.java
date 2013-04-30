@@ -32,6 +32,7 @@ import javax.persistence.OneToOne;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
@@ -68,6 +69,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class MeterReading extends IdentifiedObject {
 
     @OneToOne
+    @XmlJavaTypeAdapter(type=UsagePoint.class, value=UsagePointAdapter.class)
     private UsagePoint usagePoint;
 
     @OneToMany(cascade = CascadeType.ALL)

@@ -23,8 +23,15 @@
 
 package org.energyos.espi.thirdparty.domain;
 
+import java.io.IOException;
 import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import javax.persistence.CascadeType;
@@ -35,14 +42,18 @@ import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.JAXBIntrospector;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.stream.XMLStreamReader;
 
+import org.energyos.espi.thirdparty.atom.FeedType;
 import org.energyos.espi.thirdparty.common.ApplicationInformation;
 import org.energyos.espi.thirdparty.common.Authorization;
 import org.energyos.espi.thirdparty.common.AuthorizationStatus;
@@ -57,6 +68,7 @@ import org.energyos.espi.thirdparty.domain.RetailCustomer;
 import org.energyos.espi.thirdparty.common.DataCustodianApplicationStatus;
 import org.energyos.espi.thirdparty.common.ServiceStatus;
 import org.energyos.espi.thirdparty.common.IntervalBlock;
+import org.energyos.espi.thirdparty.common.Subscription;
 import org.energyos.espi.thirdparty.common.ThirdPartyApplicationType;
 import org.energyos.espi.thirdparty.common.ThirdPartyApplicationUse;
 import org.energyos.espi.thirdparty.common.IdentifiedObject;
@@ -220,39 +232,33 @@ public class ThirdParty implements org.energyos.espi.thirdparty.common.ThirdPart
      */
     @Override
 	public boolean NotifyData_(List batchList) {
-	// TODO notice of availability of authorized EUI - cycle the batchList through readData
-	// update the resource and enque a request to grab the list asynchronously
-    	boolean result = false; 
-    	String url = "http://localhost:9090/datacustodian/datacustodians/1/uploadmydata";
-    	String acceptString = "Accept=application/atom+xml";
-
-    	RestTemplate rest = new RestTemplate();
-
-    	HttpHeaders headers = new HttpHeaders();
-    	headers.add("Accept", "application/atom+xml");
-    	// headers.add("Authorization", String.format("Bearer %s", authToken));
-
-    	HttpEntity<String> requestEntity = new HttpEntity<String>(acceptString, headers);
-    	ResponseEntity<String> responseEntity = 
-    	        rest.exchange(url, HttpMethod.GET, requestEntity, String.class);
-
-    	HttpStatus status = responseEntity.getStatusCode();
-    	
-        JAXBContext jc;
-		try {
-			jc = JAXBContext.newInstance(org.energyos.espi.thirdparty.domain.DataCustodian.class);
-		    //File xml = new File("src/forum11152046/input.xml");
-			Unmarshaller unmarshaller = jc.createUnmarshaller();
-			StringReader reader = new StringReader(responseEntity.getBody());
-	        DataCustodian resource = (DataCustodian) unmarshaller.unmarshal(reader);
-		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+	    // TODO notice of availability of authorized EUI - cycle the batchList through readData
+	    // update the resource and enqueue a request to grab the list asynchronously
+        Iterator<Subscription> iterator = batchList.iterator();
+        while (iterator.hasNext()) {
+            RestTemplate rest = new RestTemplate();
+            // now retrieve the feed related to this subscription
+            rest.getForEntity(iterator.next().getSubscriptionParameters(), FeedType.class, "");    
+          }
 	return true;
     }
 
+   	public List<FeedType> NotifyData_Test(List <Subscription> batchList) {
+   	    // TODO notice of availability of authorized EUI - cycle the batchList through readData
+   	    // update the resource and enqueue a request to grab the list asynchronously
+       	List <FeedType> result = new ArrayList <FeedType> ();
+       	Iterator<Subscription> iterator = batchList.iterator();
+       	while (iterator.hasNext()) {
+           	RestTemplate rest = new RestTemplate();
+           	// now retrieve the feed related to this subscription
+            ResponseEntity<FeedType> theFeedEntity = rest.getForEntity(iterator.next().getSubscriptionParameters(), FeedType.class, "");
+            result.add((FeedType) JAXBIntrospector.getValue(theFeedEntity.getBody()));            
+       	}
+       	
+     	return result;
+     }
+
+    
     /**
      * This method can be implemented by the Authorized Third Party to allow
      * asynchronous transfers to use the "push" model for delivery. If used, notify is

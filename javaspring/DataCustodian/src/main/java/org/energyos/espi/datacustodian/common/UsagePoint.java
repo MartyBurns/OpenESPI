@@ -77,6 +77,7 @@ import org.springframework.roo.addon.tostring.RooToString;
     "serviceCategory",
     "UP_status"
 })
+@XmlJavaTypeAdapter(UsagePointAdapter.class)
 
 public class UsagePoint extends IdentifiedObject {
 
