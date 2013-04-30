@@ -59,6 +59,8 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RationalNumber", propOrder = {
+    "id",
+    "version",
     "numerator",
     "denominator"
 })

@@ -26,9 +26,11 @@ package org.energyos.espi.thirdparty.common;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.UUID;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
@@ -96,62 +98,26 @@ import org.springframework.roo.addon.tostring.RooToString;
 })
 
 public class IdentifiedObject {
-
+    @XmlID
     private String uuid;
-
     private String description;
    
     public IdentifiedObject () {
- 
-    	/*
-        HashMap classes = new HashMap();
-        classes.put("IntervalBlock", "01");
-        classes.put("MeterReading", "02");
-        classes.put("UsagePoint", 03);
-        classes.put("ElectricPowerUsageSummary", "04");
-        classes.put("TimeConfiguration", "05" );
-        classes.put("ApplicationInformation", "06");
-        classes.put("Authorization", "07");
-        classes.put("Subscription", "08");
-        classes.put("ElectricPowerQualitySummary", "09");
-        classes.put("ReadingType", "0a");
-        
-    	Class theClass;
-    	theClass = this.getClass();
-    	if (this.getId() == null) {
-    		uuidString = "0000-0000-000000000000";
-    	} else {
-    	   	// TODO need to xxxx-xxxx-xxxxxxxxxxxx it.
-  	    	String uuidString = Long.toString(this.getId(), 16);
-    	}
-        // TODO Make an OpenESPI mRID
-    	this.uuid = "00000000-" + classes.get(theClass.getSimpleName()) + "00-" + uuidString;
-        */
-       	this.uuid =  "00000000-0000-0000-0000-000000000000";
-    	this.description = "OPENESPI: testDescription";
+    	uuid = UUID.randomUUID().toString();
+        description = "Description: " + uuid.toString();
     }
 
     // constructor for use whe we are given the uuid from an import
     //
-    public IdentifiedObject (String uuid) {
-	    this.uuid = uuid;
-	    this.description = "Description: " + uuid;
+    public IdentifiedObject (String aUuid) {
+        uuid = aUuid;
+	    description = "Description: " + aUuid;
     }
 
 	public static IdentifiedObject findIdentifiedObject(String uuid) {
 		// TODO Auto-generated method stub
-		// this is ugly but it works (sledgehammer:)
-		IdentifiedObject result = null;
-		IdentifiedObject temp;
-		java.util.List<IdentifiedObject> allResources = IdentifiedObject.findAllIdentifiedObjects();
-		Iterator<IdentifiedObject> itr = allResources.iterator(); 
-		while(itr.hasNext()) {
-			temp = itr.next();
-			if (temp.uuid == uuid) {
-				return temp;
-			}
-		}
 		return null;
 	}
     
 }
+

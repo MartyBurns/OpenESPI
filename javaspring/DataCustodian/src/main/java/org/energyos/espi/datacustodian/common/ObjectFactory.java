@@ -191,7 +191,9 @@ public class ObjectFactory {
      * 
      */
     public UsagePoint createUsagePoint() {
-        return new UsagePoint();
+    	UsagePoint usagePoint = new UsagePoint();
+    	usagePoint.entityManager.persist(usagePoint);
+        return usagePoint;
     }
 
     /**
@@ -224,14 +226,6 @@ public class ObjectFactory {
      */
     public ReadingInterharmonic createReadingInterharmonic() {
         return new ReadingInterharmonic();
-    }
-
-    /**
-     * Create an instance of {@link EntryType }
-     * 
-     */
-    public EntryType createEntryType() {
-        return new EntryType();
     }
 
     /**
