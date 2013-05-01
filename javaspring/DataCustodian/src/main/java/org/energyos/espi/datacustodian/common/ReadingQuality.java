@@ -27,8 +27,8 @@ package org.energyos.espi.datacustodian.common;
 import javax.persistence.ManyToOne;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
@@ -68,6 +68,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class ReadingQuality {
 
     @ManyToOne
-    @XmlElement(required = true)
+    @XmlJavaTypeAdapter(QualityOfReadingAdapter.class)
     private QualityOfReading quality;
 }

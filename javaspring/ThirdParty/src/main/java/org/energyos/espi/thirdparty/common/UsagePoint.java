@@ -34,10 +34,8 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-import org.energyos.espi.thirdparty.domain.Address;
-import org.energyos.espi.thirdparty.domain.DataCustodian;
-import org.energyos.espi.thirdparty.domain.Location;
-import org.energyos.espi.thirdparty.domain.RetailCustomer;
+import org.energyos.espi.thirdparty.domain.*;
+
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -77,6 +75,7 @@ import org.springframework.roo.addon.tostring.RooToString;
     "serviceCategory",
     "UP_status"
 })
+@XmlJavaTypeAdapter(UsagePointAdapter.class)
 
 public class UsagePoint extends IdentifiedObject {
 
@@ -88,7 +87,7 @@ public class UsagePoint extends IdentifiedObject {
     @XmlElement(name = "ServiceCategory")
     private ServiceCategory serviceCategory;
 
-    @XmlElement(name = "UP_status")
+    @XmlElement(name="status")
     private Byte UP_status;
 
     @ManyToOne
