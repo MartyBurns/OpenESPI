@@ -44,14 +44,12 @@ public class AccumulationBehaviorAdapter extends XmlAdapter<String, Accumulation
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(AccumulationBehavior v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

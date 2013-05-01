@@ -44,14 +44,12 @@ public class UnitSymbolAdapter extends XmlAdapter<String, UnitSymbol> {
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(UnitSymbol v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

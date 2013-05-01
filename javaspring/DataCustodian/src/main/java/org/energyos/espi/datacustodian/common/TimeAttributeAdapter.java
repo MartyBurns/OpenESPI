@@ -44,14 +44,12 @@ public class TimeAttributeAdapter extends XmlAdapter<String, TimeAttribute> {
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(TimeAttribute v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

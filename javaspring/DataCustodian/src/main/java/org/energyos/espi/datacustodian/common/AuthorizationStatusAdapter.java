@@ -44,14 +44,12 @@ public class AuthorizationStatusAdapter extends XmlAdapter<String, Authorization
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(AuthorizationStatus v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

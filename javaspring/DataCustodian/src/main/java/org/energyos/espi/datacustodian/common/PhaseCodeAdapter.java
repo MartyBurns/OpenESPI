@@ -44,14 +44,12 @@ public class PhaseCodeAdapter extends XmlAdapter<String, PhaseCode> {
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(PhaseCode v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 
