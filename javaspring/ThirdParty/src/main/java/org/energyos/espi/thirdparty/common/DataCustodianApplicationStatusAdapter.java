@@ -44,14 +44,12 @@ public class DataCustodianApplicationStatusAdapter extends XmlAdapter<String, Da
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(DataCustodianApplicationStatus v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

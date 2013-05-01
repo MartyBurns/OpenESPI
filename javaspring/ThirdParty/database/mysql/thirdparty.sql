@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Apr 15, 2013 at 11:36 AM
+-- Generation Time: May 01, 2013 at 03:22 PM
 -- Server version: 5.5.28
 -- PHP Version: 5.4.9
 
@@ -492,26 +492,10 @@ CREATE TABLE IF NOT EXISTS `identified_object` (
   `description` varchar(255) DEFAULT NULL,
   `uuid` varchar(255) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
-  `interval_length` int(11) DEFAULT NULL,
   `bill_last_period` bigint(20) DEFAULT NULL,
   `bill_to_date` bigint(20) DEFAULT NULL,
   `cost_additional_last_period` bigint(20) DEFAULT NULL,
   `status_time_stamp` bigint(20) DEFAULT NULL,
-  `up_status` tinyint(4) DEFAULT NULL,
-  `role_flags` smallint(6) DEFAULT NULL,
-  `flicker_plt` bigint(20) DEFAULT NULL,
-  `flicker_pst` bigint(20) DEFAULT NULL,
-  `harmonic_voltage` bigint(20) DEFAULT NULL,
-  `long_interruptions` bigint(20) DEFAULT NULL,
-  `mains_voltage` bigint(20) DEFAULT NULL,
-  `measurement_protocol` tinyint(4) DEFAULT NULL,
-  `power_frequency` bigint(20) DEFAULT NULL,
-  `rapid_voltage_changes` bigint(20) DEFAULT NULL,
-  `short_interruptions` bigint(20) DEFAULT NULL,
-  `supply_voltage_dips` bigint(20) DEFAULT NULL,
-  `supply_voltage_imbalance` bigint(20) DEFAULT NULL,
-  `supply_voltage_variations` bigint(20) DEFAULT NULL,
-  `temp_overvoltage` bigint(20) DEFAULT NULL,
   `data_custodian_default_batch_resource` tinyblob,
   `data_custodian_default_subscription_resource` tinyblob,
   `data_custodian_third_party_id` varchar(32) DEFAULT NULL,
@@ -526,29 +510,29 @@ CREATE TABLE IF NOT EXISTS `identified_object` (
   `third_party_email` varchar(64) DEFAULT NULL,
   `third_party_name` varchar(64) DEFAULT NULL,
   `third_party_phone` varchar(32) DEFAULT NULL,
+  `subscription_parameters` varchar(255) DEFAULT NULL,
+  `up_status` tinyint(4) DEFAULT NULL,
+  `role_flags` smallint(6) DEFAULT NULL,
   `access_token` varchar(32) DEFAULT NULL,
   `authorization_server` tinyblob,
   `resource` tinyblob,
   `third_party` varchar(32) DEFAULT NULL,
-  `subscription_parameters` varchar(255) DEFAULT NULL,
-  `accumulation_behavior` bigint(20) DEFAULT NULL,
-  `aggregate` bigint(20) DEFAULT NULL,
-  `argument` bigint(20) DEFAULT NULL,
-  `commodity` bigint(20) DEFAULT NULL,
-  `consumption_tier` bigint(20) DEFAULT NULL,
-  `cpp` bigint(20) DEFAULT NULL,
-  `currency` bigint(20) DEFAULT NULL,
-  `data_qualifier` bigint(20) DEFAULT NULL,
-  `flow_direction` bigint(20) DEFAULT NULL,
-  `interharmonic` bigint(20) DEFAULT NULL,
-  `kind` bigint(20) DEFAULT NULL,
-  `measuring_period` bigint(20) DEFAULT NULL,
-  `phase` bigint(20) DEFAULT NULL,
-  `power_of_ten_multiplier` bigint(20) DEFAULT NULL,
-  `time_attribute` bigint(20) DEFAULT NULL,
-  `tou` bigint(20) DEFAULT NULL,
-  `uom` bigint(20) DEFAULT NULL,
+  `flicker_plt` bigint(20) DEFAULT NULL,
+  `flicker_pst` bigint(20) DEFAULT NULL,
+  `harmonic_voltage` bigint(20) DEFAULT NULL,
+  `long_interruptions` bigint(20) DEFAULT NULL,
+  `mains_voltage` bigint(20) DEFAULT NULL,
+  `measurement_protocol` tinyint(4) DEFAULT NULL,
+  `power_frequency` bigint(20) DEFAULT NULL,
+  `rapid_voltage_changes` bigint(20) DEFAULT NULL,
+  `short_interruptions` bigint(20) DEFAULT NULL,
+  `supply_voltage_dips` bigint(20) DEFAULT NULL,
+  `supply_voltage_imbalance` bigint(20) DEFAULT NULL,
+  `supply_voltage_variations` bigint(20) DEFAULT NULL,
+  `temp_overvoltage` bigint(20) DEFAULT NULL,
+  `interval_length` int(11) DEFAULT NULL,
   `billing_period` bigint(20) DEFAULT NULL,
+  `currency` bigint(20) DEFAULT NULL,
   `current_billing_period_over_all_consumption` bigint(20) DEFAULT NULL,
   `current_day_last_year_net_consumption` bigint(20) DEFAULT NULL,
   `current_day_net_consumption` bigint(20) DEFAULT NULL,
@@ -560,69 +544,85 @@ CREATE TABLE IF NOT EXISTS `identified_object` (
   `quality_of_reading` bigint(20) DEFAULT NULL,
   `ratchet_demand` bigint(20) DEFAULT NULL,
   `ratchet_demand_period` bigint(20) DEFAULT NULL,
+  `espiinterval` bigint(20) DEFAULT NULL,
+  `meter_reading` bigint(20) DEFAULT NULL,
+  `reading_type` bigint(20) DEFAULT NULL,
+  `data_custodian_application_status` bigint(20) DEFAULT NULL,
+  `third_party_application_status` bigint(20) DEFAULT NULL,
+  `third_party_application_type` bigint(20) DEFAULT NULL,
+  `third_party_application_use` bigint(20) DEFAULT NULL,
   `address` bigint(20) DEFAULT NULL,
   `data_custodian` bigint(20) DEFAULT NULL,
   `location` bigint(20) DEFAULT NULL,
   `retail_customer` bigint(20) DEFAULT NULL,
   `service_category` bigint(20) DEFAULT NULL,
-  `summary_interval` bigint(20) DEFAULT NULL,
-  `data_custodian_application_status` bigint(20) DEFAULT NULL,
-  `third_party_application_status` bigint(20) DEFAULT NULL,
-  `third_party_application_type` bigint(20) DEFAULT NULL,
-  `third_party_application_use` bigint(20) DEFAULT NULL,
-  `espiinterval` bigint(20) DEFAULT NULL,
-  `meter_reading` bigint(20) DEFAULT NULL,
-  `reading_type` bigint(20) DEFAULT NULL,
-  `usage_point` bigint(20) DEFAULT NULL,
   `authorized_period` bigint(20) DEFAULT NULL,
   `published_period` bigint(20) DEFAULT NULL,
   `status` bigint(20) DEFAULT NULL,
+  `usage_point` bigint(20) DEFAULT NULL,
+  `summary_interval` bigint(20) DEFAULT NULL,
+  `accumulation_behavior` bigint(20) DEFAULT NULL,
+  `aggregate` bigint(20) DEFAULT NULL,
+  `argument` bigint(20) DEFAULT NULL,
+  `commodity` bigint(20) DEFAULT NULL,
+  `consumption_tier` bigint(20) DEFAULT NULL,
+  `cpp` bigint(20) DEFAULT NULL,
+  `data_qualifier` bigint(20) DEFAULT NULL,
+  `flow_direction` bigint(20) DEFAULT NULL,
+  `interharmonic` bigint(20) DEFAULT NULL,
+  `kind` bigint(20) DEFAULT NULL,
+  `measuring_period` bigint(20) DEFAULT NULL,
+  `phase` bigint(20) DEFAULT NULL,
+  `power_of_ten_multiplier` bigint(20) DEFAULT NULL,
+  `time_attribute` bigint(20) DEFAULT NULL,
+  `tou` bigint(20) DEFAULT NULL,
+  `uom` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKEB649F63268F1829` (`current_day_net_consumption`),
   KEY `FKEB649F63560B971E` (`previous_day_last_year_overall_consumption`),
   KEY `FKEB649F6372FEE588` (`authorized_period`),
   KEY `FKEB649F631E1EB75F` (`current_billing_period_over_all_consumption`),
+  KEY `FKEB649F63C7ABF343` (`cpp`),
   KEY `FKEB649F637B97C7BA` (`status`),
   KEY `FKEB649F63C7A8B0FD` (`quality_of_reading`),
-  KEY `FKEB649F63C7ABF343` (`cpp`),
-  KEY `FKEB649F63619F2698` (`service_category`),
-  KEY `FKEB649F63E4C407D3` (`data_custodian`),
   KEY `FKEB649F632F36A5F1` (`measuring_period`),
   KEY `FKEB649F63984700B7` (`argument`),
+  KEY `FKEB649F63E4C407D3` (`data_custodian`),
+  KEY `FKEB649F63619F2698` (`service_category`),
   KEY `FKEB649F63B2B603F0` (`reading_type`),
   KEY `FKEB649F63F6F57CA8` (`billing_period`),
   KEY `FKEB649F63D6401F3C` (`meter_reading`),
-  KEY `FKEB649F6385947866` (`accumulation_behavior`),
   KEY `FKEB649F63C0E5BC19` (`power_of_ten_multiplier`),
+  KEY `FKEB649F6385947866` (`accumulation_behavior`),
   KEY `FKEB649F634F8F42D7` (`previous_day_overall_consumption`),
   KEY `FKEB649F6368A52D70` (`current_day_last_year_net_consumption`),
   KEY `FKEB649F63285E41C0` (`phase`),
   KEY `FKEB649F638A477097` (`commodity`),
   KEY `FKEB649F631C6E45D5` (`published_period`),
-  KEY `FKEB649F633EF04692` (`ratchet_demand_period`),
   KEY `FKEB649F63610074A0` (`consumption_tier`),
+  KEY `FKEB649F633EF04692` (`ratchet_demand_period`),
   KEY `FKEB649F637BDF6AA7` (`previous_day_net_consumption`),
   KEY `FKEB649F6378B985E1` (`summary_interval`),
   KEY `FKEB649F637D7BBAD4` (`location`),
+  KEY `FKEB649F63E5CDF99C` (`aggregate`),
   KEY `FKEB649F63130B0344` (`usage_point`),
   KEY `FKEB649F63C680A73E` (`address`),
-  KEY `FKEB649F63E5CDF99C` (`aggregate`),
   KEY `FKEB649F63EA0D87C0` (`third_party_application_use`),
   KEY `FKEB649F632DDA02CB` (`kind`),
   KEY `FKEB649F63C53E6889` (`interharmonic`),
-  KEY `FKEB649F634175518F` (`espiinterval`),
   KEY `FKEB649F635F48E245` (`currency`),
-  KEY `FKEB649F63F5D10DF2` (`third_party_application_status`),
+  KEY `FKEB649F634175518F` (`espiinterval`),
   KEY `FKEB649F63E44CC5B6` (`time_attribute`),
   KEY `FKEB649F63A46E3844` (`peak_demand`),
-  KEY `FKEB649F6326BCF268` (`data_custodian_application_status`),
+  KEY `FKEB649F63F5D10DF2` (`third_party_application_status`),
   KEY `FKEB649F635A91F66A` (`ratchet_demand`),
+  KEY `FKEB649F6326BCF268` (`data_custodian_application_status`),
   KEY `FKEB649F6370731985` (`retail_customer`),
-  KEY `FKEB649F6357A2B802` (`third_party_application_type`),
   KEY `FKEB649F63C7AC72B1` (`tou`),
+  KEY `FKEB649F6357A2B802` (`third_party_application_type`),
+  KEY `FKEB649F63B59FD2B2` (`uom`),
   KEY `FKEB649F639F319A2F` (`flow_direction`),
   KEY `FKEB649F63B9AACA32` (`data_qualifier`),
-  KEY `FKEB649F63B59FD2B2` (`uom`),
   KEY `FKEB649F6397C85F59` (`current_day_overall_consumption`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -967,8 +967,8 @@ CREATE TABLE IF NOT EXISTS `resource` (
   `href` tinyblob,
   `reply_to` tinyblob,
   `response_required` varchar(8) DEFAULT NULL,
-  `signature_required` tinyint(1) DEFAULT NULL,
-  `subscribable` tinyint(1) DEFAULT NULL,
+  `signature_required` bit(1) DEFAULT NULL,
+  `subscribable` bit(1) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
@@ -1159,7 +1159,14 @@ CREATE TABLE IF NOT EXISTS `third_party` (
   KEY `FK1A321A0EA5AFC380` (`service_status`),
   KEY `FK1A321A0E14E3F3F1` (`application_use`),
   KEY `FK1A321A0E59CC36F7` (`authorized_data_custodian`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `third_party`
+--
+
+INSERT INTO `third_party` (`id`, `authorized`, `description`, `name`, `version`, `application_use`, `authorized_data_custodian`, `data_custodian_application_status`, `service_status`) VALUES
+(2, 1, 'An EnergyOS Sample Third Party provided for testing purposes', 'EnergyOS ThirdParty', 0, 1, NULL, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -1237,6 +1244,13 @@ CREATE TABLE IF NOT EXISTS `third_party_application_types` (
   KEY `FK328A60D9890441F2` (`application_types`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `third_party_application_types`
+--
+
+INSERT INTO `third_party_application_types` (`third_party`, `application_types`) VALUES
+(2, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -1276,6 +1290,13 @@ CREATE TABLE IF NOT EXISTS `third_party_authorization_status` (
   KEY `FKDD7B980958301A40` (`authorization_status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `third_party_authorization_status`
+--
+
+INSERT INTO `third_party_authorization_status` (`third_party`, `authorization_status`) VALUES
+(2, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -1302,7 +1323,54 @@ CREATE TABLE IF NOT EXISTS `time_attribute` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=123 ;
+
+--
+-- Dumping data for table `time_attribute`
+--
+
+INSERT INTO `time_attribute` (`id`, `type_map`, `type_value`, `version`) VALUES
+(82, 0, 0, 0),
+(83, 1, 1, 0),
+(84, 2, 2, 0),
+(85, 3, 3, 0),
+(86, 4, 4, 0),
+(87, 5, 5, 0),
+(88, 6, 6, 0),
+(89, 7, 7, 0),
+(90, 10, 8, 0),
+(91, 14, 9, 0),
+(92, 15, 10, 0),
+(93, 16, 11, 0),
+(94, 31, 12, 0),
+(95, 50, 13, 0),
+(96, 51, 14, 0),
+(97, 52, 15, 0),
+(98, 53, 16, 0),
+(99, 54, 17, 0),
+(100, 55, 18, 0),
+(101, 56, 19, 0),
+(102, 57, 20, 0),
+(103, 58, 21, 0),
+(104, 59, 22, 0),
+(105, 60, 23, 0),
+(106, 61, 24, 0),
+(107, 62, 25, 0),
+(108, 63, 26, 0),
+(109, 64, 27, 0),
+(110, 65, 28, 0),
+(111, 66, 29, 0),
+(112, 67, 30, 0),
+(113, 68, 31, 0),
+(114, 69, 32, 0),
+(115, 70, 33, 0),
+(116, 71, 34, 0),
+(117, 72, 35, 0),
+(118, 73, 36, 0),
+(119, 74, 37, 0),
+(120, 75, 38, 0),
+(121, 76, 39, 0),
+(122, 77, 40, 0);
 
 -- --------------------------------------------------------
 
@@ -1614,17 +1682,17 @@ CREATE TABLE IF NOT EXISTS `_token` (
 -- Constraints for table `batch_item_info`
 --
 ALTER TABLE `batch_item_info`
-  ADD CONSTRAINT `FKAC9F2795D605890D` FOREIGN KEY (`operation`) REFERENCES `crudoperation` (`id`),
-  ADD CONSTRAINT `FKAC9F2795C136C7C` FOREIGN KEY (`status_code`) REFERENCES `status_code` (`id`);
+  ADD CONSTRAINT `FKAC9F2795C136C7C` FOREIGN KEY (`status_code`) REFERENCES `status_code` (`id`),
+  ADD CONSTRAINT `FKAC9F2795D605890D` FOREIGN KEY (`operation`) REFERENCES `crudoperation` (`id`);
 
 --
 -- Constraints for table `data_custodian`
 --
 ALTER TABLE `data_custodian`
-  ADD CONSTRAINT `FK88BA4F99CD190F5C` FOREIGN KEY (`application_information`) REFERENCES `identified_object` (`id`),
   ADD CONSTRAINT `FK88BA4F9926BCF268` FOREIGN KEY (`data_custodian_application_status`) REFERENCES `data_custodian_application_status` (`id`),
   ADD CONSTRAINT `FK88BA4F997232727F` FOREIGN KEY (`service_type`) REFERENCES `data_custodian_type` (`id`),
-  ADD CONSTRAINT `FK88BA4F99A5AFC380` FOREIGN KEY (`service_status`) REFERENCES `service_status` (`id`);
+  ADD CONSTRAINT `FK88BA4F99A5AFC380` FOREIGN KEY (`service_status`) REFERENCES `service_status` (`id`),
+  ADD CONSTRAINT `FK88BA4F99CD190F5C` FOREIGN KEY (`application_information`) REFERENCES `identified_object` (`id`);
 
 --
 -- Constraints for table `data_custodian_authorized_third_partys`
@@ -1644,7 +1712,6 @@ ALTER TABLE `data_custodian_retail_customers`
 -- Constraints for table `identified_object`
 --
 ALTER TABLE `identified_object`
-  ADD CONSTRAINT `FKEB649F6397C85F59` FOREIGN KEY (`current_day_overall_consumption`) REFERENCES `summary_measurement` (`id`),
   ADD CONSTRAINT `FKEB649F63130B0344` FOREIGN KEY (`usage_point`) REFERENCES `identified_object` (`id`),
   ADD CONSTRAINT `FKEB649F631C6E45D5` FOREIGN KEY (`published_period`) REFERENCES `date_time_interval` (`id`),
   ADD CONSTRAINT `FKEB649F631E1EB75F` FOREIGN KEY (`current_billing_period_over_all_consumption`) REFERENCES `summary_measurement` (`id`),
@@ -1671,6 +1738,7 @@ ALTER TABLE `identified_object`
   ADD CONSTRAINT `FKEB649F637D7BBAD4` FOREIGN KEY (`location`) REFERENCES `location` (`id`),
   ADD CONSTRAINT `FKEB649F6385947866` FOREIGN KEY (`accumulation_behavior`) REFERENCES `accumulation_behavior` (`id`),
   ADD CONSTRAINT `FKEB649F638A477097` FOREIGN KEY (`commodity`) REFERENCES `commodity` (`id`),
+  ADD CONSTRAINT `FKEB649F6397C85F59` FOREIGN KEY (`current_day_overall_consumption`) REFERENCES `summary_measurement` (`id`),
   ADD CONSTRAINT `FKEB649F63984700B7` FOREIGN KEY (`argument`) REFERENCES `rational_number` (`id`),
   ADD CONSTRAINT `FKEB649F639F319A2F` FOREIGN KEY (`flow_direction`) REFERENCES `direction_of_flow` (`id`),
   ADD CONSTRAINT `FKEB649F63A46E3844` FOREIGN KEY (`peak_demand`) REFERENCES `summary_measurement` (`id`),
@@ -1702,17 +1770,17 @@ ALTER TABLE `identified_object_interval_blocks`
 -- Constraints for table `identified_object_interval_reading`
 --
 ALTER TABLE `identified_object_interval_reading`
-  ADD CONSTRAINT `FKE37BDA6EBECA2F96` FOREIGN KEY (`interval_reading`) REFERENCES `interval_reading` (`id`),
-  ADD CONSTRAINT `FKE37BDA6E270C9DE8` FOREIGN KEY (`identified_object`) REFERENCES `identified_object` (`id`);
+  ADD CONSTRAINT `FKE37BDA6E270C9DE8` FOREIGN KEY (`identified_object`) REFERENCES `identified_object` (`id`),
+  ADD CONSTRAINT `FKE37BDA6EBECA2F96` FOREIGN KEY (`interval_reading`) REFERENCES `interval_reading` (`id`);
 
 --
 -- Constraints for table `interval_reading`
 --
 ALTER TABLE `interval_reading`
-  ADD CONSTRAINT `FK8B7AC512C0CA318` FOREIGN KEY (`interval_block`) REFERENCES `identified_object` (`id`),
   ADD CONSTRAINT `FK8B7AC512130B0344` FOREIGN KEY (`usage_point`) REFERENCES `identified_object` (`id`),
   ADD CONSTRAINT `FK8B7AC5127EAADB02` FOREIGN KEY (`reading_quality`) REFERENCES `reading_quality` (`id`),
-  ADD CONSTRAINT `FK8B7AC512B07DAC16` FOREIGN KEY (`time_period`) REFERENCES `date_time_interval` (`id`);
+  ADD CONSTRAINT `FK8B7AC512B07DAC16` FOREIGN KEY (`time_period`) REFERENCES `date_time_interval` (`id`),
+  ADD CONSTRAINT `FK8B7AC512C0CA318` FOREIGN KEY (`interval_block`) REFERENCES `identified_object` (`id`);
 
 --
 -- Constraints for table `reading_quality`
@@ -1737,8 +1805,8 @@ ALTER TABLE `retail_customer_third_partys`
 -- Constraints for table `retail_customer_usage_points`
 --
 ALTER TABLE `retail_customer_usage_points`
-  ADD CONSTRAINT `FK1E7DD5C6C9ACBF13` FOREIGN KEY (`usage_points`) REFERENCES `identified_object` (`id`),
-  ADD CONSTRAINT `FK1E7DD5C670731985` FOREIGN KEY (`retail_customer`) REFERENCES `retail_customer` (`id`);
+  ADD CONSTRAINT `FK1E7DD5C670731985` FOREIGN KEY (`retail_customer`) REFERENCES `retail_customer` (`id`),
+  ADD CONSTRAINT `FK1E7DD5C6C9ACBF13` FOREIGN KEY (`usage_points`) REFERENCES `identified_object` (`id`);
 
 --
 -- Constraints for table `service_category`
@@ -1750,45 +1818,45 @@ ALTER TABLE `service_category`
 -- Constraints for table `summary_measurement`
 --
 ALTER TABLE `summary_measurement`
-  ADD CONSTRAINT `FK695998A3C0E5BC19` FOREIGN KEY (`power_of_ten_multiplier`) REFERENCES `unit_multiplier` (`id`),
-  ADD CONSTRAINT `FK695998A3B59FD2B2` FOREIGN KEY (`uom`) REFERENCES `unit_symbol` (`id`);
+  ADD CONSTRAINT `FK695998A3B59FD2B2` FOREIGN KEY (`uom`) REFERENCES `unit_symbol` (`id`),
+  ADD CONSTRAINT `FK695998A3C0E5BC19` FOREIGN KEY (`power_of_ten_multiplier`) REFERENCES `unit_multiplier` (`id`);
 
 --
 -- Constraints for table `third_party`
 --
 ALTER TABLE `third_party`
-  ADD CONSTRAINT `FK1A321A0E59CC36F7` FOREIGN KEY (`authorized_data_custodian`) REFERENCES `data_custodian` (`id`),
   ADD CONSTRAINT `FK1A321A0E14E3F3F1` FOREIGN KEY (`application_use`) REFERENCES `third_party_application_use` (`id`),
   ADD CONSTRAINT `FK1A321A0E26BCF268` FOREIGN KEY (`data_custodian_application_status`) REFERENCES `data_custodian_application_status` (`id`),
+  ADD CONSTRAINT `FK1A321A0E59CC36F7` FOREIGN KEY (`authorized_data_custodian`) REFERENCES `data_custodian` (`id`),
   ADD CONSTRAINT `FK1A321A0EA5AFC380` FOREIGN KEY (`service_status`) REFERENCES `service_status` (`id`);
 
 --
 -- Constraints for table `third_party_application_information`
 --
 ALTER TABLE `third_party_application_information`
-  ADD CONSTRAINT `FKBA35B58CCD190F5C` FOREIGN KEY (`application_information`) REFERENCES `identified_object` (`id`),
-  ADD CONSTRAINT `FKBA35B58C360D50B7` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`);
+  ADD CONSTRAINT `FKBA35B58C360D50B7` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`),
+  ADD CONSTRAINT `FKBA35B58CCD190F5C` FOREIGN KEY (`application_information`) REFERENCES `identified_object` (`id`);
 
 --
 -- Constraints for table `third_party_application_types`
 --
 ALTER TABLE `third_party_application_types`
-  ADD CONSTRAINT `FK328A60D9890441F2` FOREIGN KEY (`application_types`) REFERENCES `third_party_application_type` (`id`),
-  ADD CONSTRAINT `FK328A60D9360D50B7` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`);
+  ADD CONSTRAINT `FK328A60D9360D50B7` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`),
+  ADD CONSTRAINT `FK328A60D9890441F2` FOREIGN KEY (`application_types`) REFERENCES `third_party_application_type` (`id`);
 
 --
 -- Constraints for table `third_party_authorization_status`
 --
 ALTER TABLE `third_party_authorization_status`
-  ADD CONSTRAINT `FKDD7B980958301A40` FOREIGN KEY (`authorization_status`) REFERENCES `authorization_status` (`id`),
-  ADD CONSTRAINT `FKDD7B9809360D50B7` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`);
+  ADD CONSTRAINT `FKDD7B9809360D50B7` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`),
+  ADD CONSTRAINT `FKDD7B980958301A40` FOREIGN KEY (`authorization_status`) REFERENCES `authorization_status` (`id`);
 
 --
 -- Constraints for table `third_party_retail_customers`
 --
 ALTER TABLE `third_party_retail_customers`
-  ADD CONSTRAINT `FK6E5B262AA6912604` FOREIGN KEY (`retail_customers`) REFERENCES `retail_customer` (`id`),
-  ADD CONSTRAINT `FK6E5B262A360D50B7` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`);
+  ADD CONSTRAINT `FK6E5B262A360D50B7` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`),
+  ADD CONSTRAINT `FK6E5B262AA6912604` FOREIGN KEY (`retail_customers`) REFERENCES `retail_customer` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

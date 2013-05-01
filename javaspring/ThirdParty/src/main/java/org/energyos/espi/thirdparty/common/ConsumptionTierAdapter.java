@@ -44,14 +44,12 @@ public class ConsumptionTierAdapter extends XmlAdapter<String, ConsumptionTier> 
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(ConsumptionTier v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

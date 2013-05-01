@@ -44,14 +44,12 @@ public class UnitMultiplierAdapter extends XmlAdapter<String, UnitMultiplier> {
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(UnitMultiplier v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

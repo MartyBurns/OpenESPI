@@ -44,14 +44,12 @@ public class TimePeriodOfInterestAdapter extends XmlAdapter<String, TimePeriodOf
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(TimePeriodOfInterest v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 
