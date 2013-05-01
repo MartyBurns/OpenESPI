@@ -29,6 +29,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlValue;
 
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
@@ -39,16 +40,15 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJpaActiveRecord
 
 @XmlType(name = "AuthorizationStatus")
-@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.NONE)
 
 public class AuthorizationStatus {
 
     @NotNull
     @Enumerated
-    @XmlElement(name="typeValue")
     private AuthorizationStatusEnum typeValue;
 
     @NotNull
-    @XmlElement(name="typeMap")
+    @XmlValue
     private Integer typeMap;
 }

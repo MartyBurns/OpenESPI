@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2011, 2012 EnergyOS.Org
+ * Copyright (c) 2011, 2012, 2013 EnergyOS.Org
  *
  * Licensed by EnergyOS.Org under one or more contributor license agreements.
  * See the NOTICE file distributed with this work for additional information
@@ -24,65 +24,92 @@
 package org.energyos.espi.thirdparty.common;
 
 import javax.persistence.ManyToOne;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.jpa.activerecord.RooJpaActiveRecord;
 import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
 @RooToString
-@RooJpaActiveRecord(inheritanceType = "TABLE_PER_CLASS")
+@RooJpaActiveRecord
+
+@XmlAccessorType(XmlAccessType.NONE)
+@XmlType(name = "ReadingType")
+
 public class ReadingType extends IdentifiedObject {
 
     @ManyToOne
+    @XmlJavaTypeAdapter(AccumulationBehaviorAdapter.class)
     private AccumulationBehavior accumulationBehavior;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(CommodityAdapter.class)
     private Commodity commodity;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(DataQualifierAdapter.class)
     private DataQualifier dataQualifier;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(DirectionOfFlowAdapter.class)
     private DirectionOfFlow flowDirection;
 
     private Integer intervalLength;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(KindAdapter.class)
     private Kind kind;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(PhaseCodeAdapter.class)
     private PhaseCode phase;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(UnitMultiplierAdapter.class)
     private UnitMultiplier powerOfTenMultiplier;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(TimeAttributeAdapter.class)
     private TimeAttribute timeAttribute;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(UnitSymbolAdapter.class)
     private UnitSymbol uom;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(ConsumptionTierAdapter.class)
     private ConsumptionTier consumptionTier;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(CPPAdapter.class)
     private CPP cpp;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(CurrencyAdapter.class)
     private Currency currency;
 
     @ManyToOne
+    @XmlElement
     private ReadingInterharmonic interharmonic;
 
     @ManyToOne
+    @XmlElement
     private TimeAttribute measuringPeriod;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(TOUAdapter.class)
     private TOU tou;
 
     @ManyToOne
+    @XmlJavaTypeAdapter(DataQualifierAdapter.class)
     private DataQualifier aggregate;
 
     @ManyToOne
+    @XmlElement
     private RationalNumber argument;
 }

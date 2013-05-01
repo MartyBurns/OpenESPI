@@ -23,23 +23,22 @@
 
 package org.energyos.espi.datacustodian.common;
 
-import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class UsagePointAdapter extends XmlAdapter<UsagePoint, String> {
+public class UsagePointAdapter extends XmlAdapter<String, UsagePoint> {
    
 	@Override
-	public String unmarshal(UsagePoint v)
+	public UsagePoint unmarshal(String v)
 			throws Exception {
 		// TODO Auto-generated method stub
-		return null;
+		return new UsagePoint();
 	}
 
 	@Override
-	public UsagePoint marshal(String v)
+	public String marshal(UsagePoint v)
 			throws Exception {
 		// TODO Auto-generated method stub
-		return null;
+		return "A Usage Point";
 	}
 
 }
