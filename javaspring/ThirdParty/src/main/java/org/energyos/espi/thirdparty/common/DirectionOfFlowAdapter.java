@@ -44,14 +44,12 @@ public class DirectionOfFlowAdapter extends XmlAdapter<String, DirectionOfFlow> 
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(DirectionOfFlow v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

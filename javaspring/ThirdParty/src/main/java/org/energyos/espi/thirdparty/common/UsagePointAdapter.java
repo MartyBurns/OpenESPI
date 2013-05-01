@@ -30,14 +30,12 @@ public class UsagePointAdapter extends XmlAdapter<String, UsagePoint> {
 	@Override
 	public UsagePoint unmarshal(String v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return new UsagePoint();
 	}
 
 	@Override
 	public String marshal(UsagePoint v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return "A Usage Point";
 	}
 

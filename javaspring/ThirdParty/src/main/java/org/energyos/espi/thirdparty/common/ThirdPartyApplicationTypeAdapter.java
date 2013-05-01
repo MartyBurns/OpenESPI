@@ -44,14 +44,12 @@ public class ThirdPartyApplicationTypeAdapter extends XmlAdapter<String, ThirdPa
            	aKind = iterator.next();
             if (aKind.getTypeMap() == value) { break; }
        	}
-		// TODO Auto-generated method stub
 		return aKind;
 	}
 
 	@Override
 	public String marshal(ThirdPartyApplicationType v)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return v.getTypeMap().toString();
 	}
 

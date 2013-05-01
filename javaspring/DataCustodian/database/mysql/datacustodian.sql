@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Apr 15, 2013 at 11:37 AM
+-- Generation Time: May 01, 2013 at 03:23 PM
 -- Server version: 5.5.28
 -- PHP Version: 5.4.9
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `accumulation_behavior` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `accumulation_behavior`
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `address` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `authorization_status` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `authorization_status`
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `batch_item_info` (
   PRIMARY KEY (`id`),
   KEY `FKAC9F279538943F23` (`status_code`),
   KEY `FKAC9F2795B9476106` (`operation`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `commodity` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
 
 --
 -- Dumping data for table `commodity`
@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `consumption_tier` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `consumption_tier`
@@ -189,7 +189,7 @@ CREATE TABLE IF NOT EXISTS `cpp` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `cpp`
@@ -217,7 +217,7 @@ CREATE TABLE IF NOT EXISTS `crudoperation` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `crudoperation`
@@ -241,7 +241,7 @@ CREATE TABLE IF NOT EXISTS `currency` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `currency`
@@ -281,7 +281,14 @@ CREATE TABLE IF NOT EXISTS `data_custodian` (
   KEY `FK88BA4F99C468EB8F` (`data_custodian_application_status`),
   KEY `FK88BA4F9988F19B79` (`service_status`),
   KEY `FK88BA4F99B065A5F8` (`service_type`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `data_custodian`
+--
+
+INSERT INTO `data_custodian` (`id`, `description`, `name`, `version`, `data_custodian_application_status`, `service_status`, `service_type`) VALUES
+(4, 'A sample organization to play the role of a DataCustodian in the OpenESPI implementation', 'EnergyOS DataCustodian', 0, 2, 2, 6);
 
 -- --------------------------------------------------------
 
@@ -309,7 +316,7 @@ CREATE TABLE IF NOT EXISTS `data_custodian_application_status` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `data_custodian_application_status`
@@ -361,7 +368,7 @@ CREATE TABLE IF NOT EXISTS `data_custodian_type` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `data_custodian_type`
@@ -387,7 +394,7 @@ CREATE TABLE IF NOT EXISTS `data_qualifier` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `data_qualifier`
@@ -422,7 +429,7 @@ CREATE TABLE IF NOT EXISTS `date_time_interval` (
   `start` bigint(20) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=162 ;
 
 -- --------------------------------------------------------
 
@@ -434,7 +441,7 @@ CREATE TABLE IF NOT EXISTS `dest_rule` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -448,7 +455,7 @@ CREATE TABLE IF NOT EXISTS `direction_of_flow` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `direction_of_flow`
@@ -489,7 +496,7 @@ CREATE TABLE IF NOT EXISTS `espiobject_factorys` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -503,6 +510,18 @@ CREATE TABLE IF NOT EXISTS `identified_object` (
   `description` varchar(255) DEFAULT NULL,
   `uuid` varchar(255) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
+  `subscription_parameters` varchar(255) DEFAULT NULL,
+  `bill_last_period` bigint(20) DEFAULT NULL,
+  `bill_to_date` bigint(20) DEFAULT NULL,
+  `cost_additional_last_period` bigint(20) DEFAULT NULL,
+  `status_time_stamp` bigint(20) DEFAULT NULL,
+  `access_token` varchar(32) DEFAULT NULL,
+  `authorization_server` tinyblob,
+  `resource` tinyblob,
+  `third_party` varchar(32) DEFAULT NULL,
+  `up_status` tinyint(4) DEFAULT NULL,
+  `role_flags` smallint(6) DEFAULT NULL,
+  `interval_length` int(11) DEFAULT NULL,
   `flicker_plt` bigint(20) DEFAULT NULL,
   `flicker_pst` bigint(20) DEFAULT NULL,
   `harmonic_voltage` bigint(20) DEFAULT NULL,
@@ -516,17 +535,6 @@ CREATE TABLE IF NOT EXISTS `identified_object` (
   `supply_voltage_imbalance` bigint(20) DEFAULT NULL,
   `supply_voltage_variations` bigint(20) DEFAULT NULL,
   `temp_overvoltage` bigint(20) DEFAULT NULL,
-  `interval_length` int(11) DEFAULT NULL,
-  `bill_last_period` bigint(20) DEFAULT NULL,
-  `bill_to_date` bigint(20) DEFAULT NULL,
-  `cost_additional_last_period` bigint(20) DEFAULT NULL,
-  `status_time_stamp` bigint(20) DEFAULT NULL,
-  `access_token` varchar(32) DEFAULT NULL,
-  `authorization_server` tinyblob,
-  `resource` tinyblob,
-  `third_party` varchar(32) DEFAULT NULL,
-  `up_status` tinyint(4) DEFAULT NULL,
-  `role_flags` smallint(6) DEFAULT NULL,
   `data_custodian_default_batch_resource` tinyblob,
   `data_custodian_default_subscription_resource` tinyblob,
   `data_custodian_third_party_id` varchar(32) DEFAULT NULL,
@@ -541,29 +549,8 @@ CREATE TABLE IF NOT EXISTS `identified_object` (
   `third_party_email` varchar(64) DEFAULT NULL,
   `third_party_name` varchar(64) DEFAULT NULL,
   `third_party_phone` varchar(32) DEFAULT NULL,
-  `subscription_parameters` varchar(255) DEFAULT NULL,
-  `espiinterval` bigint(20) DEFAULT NULL,
-  `meter_reading` bigint(20) DEFAULT NULL,
-  `reading_type` bigint(20) DEFAULT NULL,
-  `summary_interval` bigint(20) DEFAULT NULL,
-  `accumulation_behavior` bigint(20) DEFAULT NULL,
-  `aggregate` bigint(20) DEFAULT NULL,
-  `argument` bigint(20) DEFAULT NULL,
-  `commodity` bigint(20) DEFAULT NULL,
-  `consumption_tier` bigint(20) DEFAULT NULL,
-  `cpp` bigint(20) DEFAULT NULL,
-  `currency` bigint(20) DEFAULT NULL,
-  `data_qualifier` bigint(20) DEFAULT NULL,
-  `flow_direction` bigint(20) DEFAULT NULL,
-  `interharmonic` bigint(20) DEFAULT NULL,
-  `kind` bigint(20) DEFAULT NULL,
-  `measuring_period` bigint(20) DEFAULT NULL,
-  `phase` bigint(20) DEFAULT NULL,
-  `power_of_ten_multiplier` bigint(20) DEFAULT NULL,
-  `time_attribute` bigint(20) DEFAULT NULL,
-  `tou` bigint(20) DEFAULT NULL,
-  `uom` bigint(20) DEFAULT NULL,
   `billing_period` bigint(20) DEFAULT NULL,
+  `currency` bigint(20) DEFAULT NULL,
   `current_billing_period_over_all_consumption` bigint(20) DEFAULT NULL,
   `current_day_last_year_net_consumption` bigint(20) DEFAULT NULL,
   `current_day_net_consumption` bigint(20) DEFAULT NULL,
@@ -575,7 +562,6 @@ CREATE TABLE IF NOT EXISTS `identified_object` (
   `quality_of_reading` bigint(20) DEFAULT NULL,
   `ratchet_demand` bigint(20) DEFAULT NULL,
   `ratchet_demand_period` bigint(20) DEFAULT NULL,
-  `usage_point` bigint(20) DEFAULT NULL,
   `authorized_period` bigint(20) DEFAULT NULL,
   `published_period` bigint(20) DEFAULT NULL,
   `status` bigint(20) DEFAULT NULL,
@@ -584,58 +570,79 @@ CREATE TABLE IF NOT EXISTS `identified_object` (
   `location` bigint(20) DEFAULT NULL,
   `retail_customer` bigint(20) DEFAULT NULL,
   `service_category` bigint(20) DEFAULT NULL,
+  `accumulation_behavior` bigint(20) DEFAULT NULL,
+  `aggregate` bigint(20) DEFAULT NULL,
+  `argument` bigint(20) DEFAULT NULL,
+  `commodity` bigint(20) DEFAULT NULL,
+  `consumption_tier` bigint(20) DEFAULT NULL,
+  `cpp` bigint(20) DEFAULT NULL,
+  `data_qualifier` bigint(20) DEFAULT NULL,
+  `flow_direction` bigint(20) DEFAULT NULL,
+  `interharmonic` bigint(20) DEFAULT NULL,
+  `kind` bigint(20) DEFAULT NULL,
+  `measuring_period` bigint(20) DEFAULT NULL,
+  `phase` bigint(20) DEFAULT NULL,
+  `power_of_ten_multiplier` bigint(20) DEFAULT NULL,
+  `time_attribute` bigint(20) DEFAULT NULL,
+  `tou` bigint(20) DEFAULT NULL,
+  `uom` bigint(20) DEFAULT NULL,
+  `usage_point` bigint(20) DEFAULT NULL,
+  `summary_interval` bigint(20) DEFAULT NULL,
   `data_custodian_application_status` bigint(20) DEFAULT NULL,
   `third_party_application_status` bigint(20) DEFAULT NULL,
   `third_party_application_type` bigint(20) DEFAULT NULL,
   `third_party_application_use` bigint(20) DEFAULT NULL,
+  `espiinterval` bigint(20) DEFAULT NULL,
+  `meter_reading` bigint(20) DEFAULT NULL,
+  `reading_type` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKEB649F63AEC253D0` (`current_day_net_consumption`),
   KEY `FKEB649F63DE3ED2C5` (`previous_day_last_year_overall_consumption`),
   KEY `FKEB649F639E4ADEEF` (`authorized_period`),
   KEY `FKEB649F63A651F306` (`current_billing_period_over_all_consumption`),
-  KEY `FKEB649F63F9CC00F3` (`status`),
-  KEY `FKEB649F63F2F4AA64` (`quality_of_reading`),
   KEY `FKEB649F632B03BE7C` (`cpp`),
-  KEY `FKEB649F637BCAE451` (`service_category`),
-  KEY `FKEB649F63C805DFCC` (`data_custodian`),
-  KEY `FKEB649F631D4027DE` (`argument`),
+  KEY `FKEB649F63F2F4AA64` (`quality_of_reading`),
+  KEY `FKEB649F63F9CC00F3` (`status`),
   KEY `FKEB649F6312787DEA` (`measuring_period`),
+  KEY `FKEB649F63C805DFCC` (`data_custodian`),
+  KEY `FKEB649F637BCAE451` (`service_category`),
+  KEY `FKEB649F631D4027DE` (`argument`),
   KEY `FKEB649F63164F8629` (`reading_type`),
   KEY `FKEB649F632241760F` (`billing_period`),
   KEY `FKEB649F63E5D6E423` (`meter_reading`),
-  KEY `FKEB649F63CDE7664D` (`accumulation_behavior`),
   KEY `FKEB649F6345DEE340` (`power_of_ten_multiplier`),
+  KEY `FKEB649F63CDE7664D` (`accumulation_behavior`),
   KEY `FKEB649F63D7C27E7E` (`previous_day_overall_consumption`),
   KEY `FKEB649F63F0D86917` (`current_day_last_year_net_consumption`),
-  KEY `FKEB649F63289E2D10` (`commodity`),
   KEY `FKEB649F63C6B4FE39` (`phase`),
+  KEY `FKEB649F63289E2D10` (`commodity`),
   KEY `FKEB649F6347BA3F3C` (`published_period`),
-  KEY `FKEB649F636A3C3FF9` (`ratchet_demand_period`),
   KEY `FKEB649F637B2C3259` (`consumption_tier`),
+  KEY `FKEB649F636A3C3FF9` (`ratchet_demand_period`),
   KEY `FKEB649F63412A64E` (`previous_day_net_consumption`),
   KEY `FKEB649F63A4057F48` (`summary_interval`),
   KEY `FKEB649F63618F0B3B` (`location`),
-  KEY `FKEB649F63D61E2DF7` (`address`),
   KEY `FKEB649F633F8BD5EB` (`usage_point`),
+  KEY `FKEB649F63D61E2DF7` (`address`),
   KEY `FKEB649F63C90FD195` (`aggregate`),
   KEY `FKEB649F63D1D92A27` (`third_party_application_use`),
-  KEY `FKEB649F63D915670` (`interharmonic`),
   KEY `FKEB649F63357B9EB2` (`kind`),
-  KEY `FKEB649F63435C32AC` (`currency`),
+  KEY `FKEB649F63D915670` (`interharmonic`),
   KEY `FKEB649F636CC14AF6` (`espiinterval`),
+  KEY `FKEB649F63435C32AC` (`currency`),
   KEY `FKEB649F633FF8FE2B` (`third_party_application_status`),
-  KEY `FKEB649F632CA173EB` (`peak_demand`),
   KEY `FKEB649F63C78E9DAF` (`time_attribute`),
+  KEY `FKEB649F632CA173EB` (`peak_demand`),
   KEY `FKEB649F63C468EB8F` (`data_custodian_application_status`),
   KEY `FKEB649F63E2C53211` (`ratchet_demand`),
   KEY `FKEB649F63F56C40AC` (`retail_customer`),
   KEY `FKEB649F63694B627B` (`third_party_application_type`),
   KEY `FKEB649F632B043DEA` (`tou`),
+  KEY `FKEB649F63E220A559` (`uom`),
   KEY `FKEB649F63B95D57E8` (`flow_direction`),
   KEY `FKEB649F639CECA22B` (`data_qualifier`),
-  KEY `FKEB649F63E220A559` (`uom`),
   KEY `FKEB649F631FFB9B00` (`current_day_overall_consumption`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=811 ;
 
 -- --------------------------------------------------------
 
@@ -687,7 +694,7 @@ CREATE TABLE IF NOT EXISTS `interval_reading` (
   KEY `FK8B7AC5123A40229` (`reading_quality`),
   KEY `FK8B7AC512DBC9A57D` (`time_period`),
   KEY `FK8B7AC512EF4E7B11` (`interval_block`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -701,7 +708,7 @@ CREATE TABLE IF NOT EXISTS `kind` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=126 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=127 ;
 
 --
 -- Dumping data for table `kind`
@@ -844,7 +851,7 @@ CREATE TABLE IF NOT EXISTS `location` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -858,7 +865,7 @@ CREATE TABLE IF NOT EXISTS `phase_code` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
 
 --
 -- Dumping data for table `phase_code`
@@ -905,7 +912,7 @@ CREATE TABLE IF NOT EXISTS `quality_of_reading` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `quality_of_reading`
@@ -937,7 +944,7 @@ CREATE TABLE IF NOT EXISTS `rational_number` (
   `numerator` bigint(20) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -951,7 +958,7 @@ CREATE TABLE IF NOT EXISTS `reading_interharmonic` (
   `numerator` bigint(20) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -965,7 +972,7 @@ CREATE TABLE IF NOT EXISTS `reading_quality` (
   `quality` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKE584EA4CAFAA5FFF` (`quality`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -978,11 +985,11 @@ CREATE TABLE IF NOT EXISTS `resource` (
   `href` tinyblob,
   `reply_to` tinyblob,
   `response_required` varchar(8) DEFAULT NULL,
-  `signature_required` tinyint(1) DEFAULT NULL,
+  `signature_required` bit(1) DEFAULT NULL,
   `subscribable` tinyint(1) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1000,7 +1007,7 @@ CREATE TABLE IF NOT EXISTS `retail_customer` (
   `authorized_data_custodian` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK6834339A3D0E0EF0` (`authorized_data_custodian`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 -- --------------------------------------------------------
 
@@ -1042,7 +1049,7 @@ CREATE TABLE IF NOT EXISTS `service_category` (
   `kind` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK72EFE348D7E78B3` (`kind`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1056,7 +1063,7 @@ CREATE TABLE IF NOT EXISTS `service_kind` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `service_kind`
@@ -1086,7 +1093,7 @@ CREATE TABLE IF NOT EXISTS `service_status` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `service_status`
@@ -1110,7 +1117,7 @@ CREATE TABLE IF NOT EXISTS `status_code` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `status_code`
@@ -1147,7 +1154,7 @@ CREATE TABLE IF NOT EXISTS `summary_measurement` (
   PRIMARY KEY (`id`),
   KEY `FK695998A3E220A559` (`uom`),
   KEY `FK695998A345DEE340` (`power_of_ten_multiplier`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1157,7 +1164,7 @@ CREATE TABLE IF NOT EXISTS `summary_measurement` (
 
 CREATE TABLE IF NOT EXISTS `third_party` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `authorized` tinyint(1) NOT NULL,
+  `authorized` bit(1) NOT NULL,
   `description` varchar(512) DEFAULT NULL,
   `name` varchar(30) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
@@ -1172,7 +1179,7 @@ CREATE TABLE IF NOT EXISTS `third_party` (
   KEY `FK1A321A0EFCAF9658` (`application_use`),
   KEY `FK1A321A0E4C681F83` (`application_information`),
   KEY `FK1A321A0E3D0E0EF0` (`authorized_data_custodian`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 -- --------------------------------------------------------
 
@@ -1186,7 +1193,7 @@ CREATE TABLE IF NOT EXISTS `third_party_application_status` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `third_party_application_status`
@@ -1210,7 +1217,7 @@ CREATE TABLE IF NOT EXISTS `third_party_application_type` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `third_party_application_type`
@@ -1248,7 +1255,7 @@ CREATE TABLE IF NOT EXISTS `third_party_application_use` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `third_party_application_use`
@@ -1301,7 +1308,54 @@ CREATE TABLE IF NOT EXISTS `time_attribute` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=123 ;
+
+--
+-- Dumping data for table `time_attribute`
+--
+
+INSERT INTO `time_attribute` (`id`, `type_map`, `type_value`, `version`) VALUES
+(82, 0, 0, 0),
+(83, 1, 1, 0),
+(84, 2, 2, 0),
+(85, 3, 3, 0),
+(86, 4, 4, 0),
+(87, 5, 5, 0),
+(88, 6, 6, 0),
+(89, 7, 7, 0),
+(90, 10, 8, 0),
+(91, 14, 9, 0),
+(92, 15, 10, 0),
+(93, 16, 11, 0),
+(94, 31, 12, 0),
+(95, 50, 13, 0),
+(96, 51, 14, 0),
+(97, 52, 15, 0),
+(98, 53, 16, 0),
+(99, 54, 17, 0),
+(100, 55, 18, 0),
+(101, 56, 19, 0),
+(102, 57, 20, 0),
+(103, 58, 21, 0),
+(104, 59, 22, 0),
+(105, 60, 23, 0),
+(106, 61, 24, 0),
+(107, 62, 25, 0),
+(108, 63, 26, 0),
+(109, 64, 27, 0),
+(110, 65, 28, 0),
+(111, 66, 29, 0),
+(112, 67, 30, 0),
+(113, 68, 31, 0),
+(114, 69, 32, 0),
+(115, 70, 33, 0),
+(116, 71, 34, 0),
+(117, 72, 35, 0),
+(118, 73, 36, 0),
+(119, 74, 37, 0),
+(120, 75, 38, 0),
+(121, 76, 39, 0),
+(122, 77, 40, 0);
 
 -- --------------------------------------------------------
 
@@ -1313,7 +1367,7 @@ CREATE TABLE IF NOT EXISTS `time_configuration` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1327,7 +1381,7 @@ CREATE TABLE IF NOT EXISTS `time_period_of_interest` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1341,7 +1395,7 @@ CREATE TABLE IF NOT EXISTS `tou` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `tou`
@@ -1377,7 +1431,7 @@ CREATE TABLE IF NOT EXISTS `unit_multiplier` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `unit_multiplier`
@@ -1410,7 +1464,7 @@ CREATE TABLE IF NOT EXISTS `unit_symbol` (
   `type_value` int(11) NOT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=124 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=125 ;
 
 --
 -- Dumping data for table `unit_symbol`
@@ -1551,7 +1605,7 @@ CREATE TABLE IF NOT EXISTS `uuidtype` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1564,7 +1618,7 @@ CREATE TABLE IF NOT EXISTS `_access_token` (
   `access_token` varchar(255) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1577,7 +1631,7 @@ CREATE TABLE IF NOT EXISTS `_retail_customer` (
   `retail_customerid` varchar(255) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1590,7 +1644,7 @@ CREATE TABLE IF NOT EXISTS `_third_party` (
   `third_partyid` varchar(255) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 -- --------------------------------------------------------
 
@@ -1603,7 +1657,7 @@ CREATE TABLE IF NOT EXISTS `_token` (
   `token` varchar(255) DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 --
 -- Constraints for dumped tables
@@ -1613,15 +1667,15 @@ CREATE TABLE IF NOT EXISTS `_token` (
 -- Constraints for table `batch_item_info`
 --
 ALTER TABLE `batch_item_info`
-  ADD CONSTRAINT `FKAC9F2795B9476106` FOREIGN KEY (`operation`) REFERENCES `crudoperation` (`id`),
-  ADD CONSTRAINT `FKAC9F279538943F23` FOREIGN KEY (`status_code`) REFERENCES `status_code` (`id`);
+  ADD CONSTRAINT `FKAC9F279538943F23` FOREIGN KEY (`status_code`) REFERENCES `status_code` (`id`),
+  ADD CONSTRAINT `FKAC9F2795B9476106` FOREIGN KEY (`operation`) REFERENCES `crudoperation` (`id`);
 
 --
 -- Constraints for table `data_custodian`
 --
 ALTER TABLE `data_custodian`
-  ADD CONSTRAINT `FK88BA4F99B065A5F8` FOREIGN KEY (`service_type`) REFERENCES `data_custodian_type` (`id`),
   ADD CONSTRAINT `FK88BA4F9988F19B79` FOREIGN KEY (`service_status`) REFERENCES `service_status` (`id`),
+  ADD CONSTRAINT `FK88BA4F99B065A5F8` FOREIGN KEY (`service_type`) REFERENCES `data_custodian_type` (`id`),
   ADD CONSTRAINT `FK88BA4F99C468EB8F` FOREIGN KEY (`data_custodian_application_status`) REFERENCES `data_custodian_application_status` (`id`);
 
 --
@@ -1649,10 +1703,10 @@ ALTER TABLE `data_custodian_retail_customers`
 -- Constraints for table `identified_object`
 --
 ALTER TABLE `identified_object`
-  ADD CONSTRAINT `FKEB649F631FFB9B00` FOREIGN KEY (`current_day_overall_consumption`) REFERENCES `summary_measurement` (`id`),
   ADD CONSTRAINT `FKEB649F6312787DEA` FOREIGN KEY (`measuring_period`) REFERENCES `time_attribute` (`id`),
   ADD CONSTRAINT `FKEB649F63164F8629` FOREIGN KEY (`reading_type`) REFERENCES `identified_object` (`id`),
   ADD CONSTRAINT `FKEB649F631D4027DE` FOREIGN KEY (`argument`) REFERENCES `rational_number` (`id`),
+  ADD CONSTRAINT `FKEB649F631FFB9B00` FOREIGN KEY (`current_day_overall_consumption`) REFERENCES `summary_measurement` (`id`),
   ADD CONSTRAINT `FKEB649F632241760F` FOREIGN KEY (`billing_period`) REFERENCES `date_time_interval` (`id`),
   ADD CONSTRAINT `FKEB649F63289E2D10` FOREIGN KEY (`commodity`) REFERENCES `commodity` (`id`),
   ADD CONSTRAINT `FKEB649F632B03BE7C` FOREIGN KEY (`cpp`) REFERENCES `cpp` (`id`),
@@ -1707,17 +1761,17 @@ ALTER TABLE `identified_object_interval_blocks`
 -- Constraints for table `identified_object_interval_reading`
 --
 ALTER TABLE `identified_object_interval_reading`
-  ADD CONSTRAINT `FKE37BDA6ED8F5ED4F` FOREIGN KEY (`interval_reading`) REFERENCES `interval_reading` (`id`),
-  ADD CONSTRAINT `FKE37BDA6EA4E75E1` FOREIGN KEY (`identified_object`) REFERENCES `identified_object` (`id`);
+  ADD CONSTRAINT `FKE37BDA6EA4E75E1` FOREIGN KEY (`identified_object`) REFERENCES `identified_object` (`id`),
+  ADD CONSTRAINT `FKE37BDA6ED8F5ED4F` FOREIGN KEY (`interval_reading`) REFERENCES `interval_reading` (`id`);
 
 --
 -- Constraints for table `interval_reading`
 --
 ALTER TABLE `interval_reading`
-  ADD CONSTRAINT `FK8B7AC512EF4E7B11` FOREIGN KEY (`interval_block`) REFERENCES `identified_object` (`id`),
   ADD CONSTRAINT `FK8B7AC5123A40229` FOREIGN KEY (`reading_quality`) REFERENCES `reading_quality` (`id`),
   ADD CONSTRAINT `FK8B7AC5123F8BD5EB` FOREIGN KEY (`usage_point`) REFERENCES `identified_object` (`id`),
-  ADD CONSTRAINT `FK8B7AC512DBC9A57D` FOREIGN KEY (`time_period`) REFERENCES `date_time_interval` (`id`);
+  ADD CONSTRAINT `FK8B7AC512DBC9A57D` FOREIGN KEY (`time_period`) REFERENCES `date_time_interval` (`id`),
+  ADD CONSTRAINT `FK8B7AC512EF4E7B11` FOREIGN KEY (`interval_block`) REFERENCES `identified_object` (`id`);
 
 --
 -- Constraints for table `reading_quality`
@@ -1742,8 +1796,8 @@ ALTER TABLE `retail_customer_third_partys`
 -- Constraints for table `retail_customer_usage_points`
 --
 ALTER TABLE `retail_customer_usage_points`
-  ADD CONSTRAINT `FK1E7DD5C6F62D91BA` FOREIGN KEY (`usage_points`) REFERENCES `identified_object` (`id`),
-  ADD CONSTRAINT `FK1E7DD5C6F56C40AC` FOREIGN KEY (`retail_customer`) REFERENCES `retail_customer` (`id`);
+  ADD CONSTRAINT `FK1E7DD5C6F56C40AC` FOREIGN KEY (`retail_customer`) REFERENCES `retail_customer` (`id`),
+  ADD CONSTRAINT `FK1E7DD5C6F62D91BA` FOREIGN KEY (`usage_points`) REFERENCES `identified_object` (`id`);
 
 --
 -- Constraints for table `service_category`
@@ -1772,15 +1826,15 @@ ALTER TABLE `third_party`
 -- Constraints for table `third_party_application_types`
 --
 ALTER TABLE `third_party_application_types`
-  ADD CONSTRAINT `FK328A60D99AACEC6B` FOREIGN KEY (`application_types`) REFERENCES `third_party_application_type` (`id`),
-  ADD CONSTRAINT `FK328A60D9628E235E` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`);
+  ADD CONSTRAINT `FK328A60D9628E235E` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`),
+  ADD CONSTRAINT `FK328A60D99AACEC6B` FOREIGN KEY (`application_types`) REFERENCES `third_party_application_type` (`id`);
 
 --
 -- Constraints for table `third_party_authorization_status`
 --
 ALTER TABLE `third_party_authorization_status`
-  ADD CONSTRAINT `FKDD7B9809D6645379` FOREIGN KEY (`authorization_status`) REFERENCES `authorization_status` (`id`),
-  ADD CONSTRAINT `FKDD7B9809628E235E` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`);
+  ADD CONSTRAINT `FKDD7B9809628E235E` FOREIGN KEY (`third_party`) REFERENCES `third_party` (`id`),
+  ADD CONSTRAINT `FKDD7B9809D6645379` FOREIGN KEY (`authorization_status`) REFERENCES `authorization_status` (`id`);
 
 --
 -- Constraints for table `third_party_retail_customers`
